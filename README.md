@@ -1,5 +1,5 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=443940&assignment_repo_type=GroupAssignmentRepo)
-# TÍTULO DO PROJETO
+# Grupo 3 - Lanchonete
 
 `CURSO: Sistemas de Informação`
 
@@ -19,7 +19,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Orientador
 
-* Nome completo do professor 1
+* Kleber Jackes Ferreira de Souza
 
 # Planejamento
 
