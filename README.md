@@ -12,7 +12,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-- Nome completo do aluno 1
+- William Xavier de Barros
 - Fernanda Alves Cordeiro
 - João Pedro Pinto Matozinhos
 - Gabriele Fernanda Lima
