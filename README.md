@@ -16,7 +16,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 - Fernanda Alves Cordeiro
 - João Pedro Pinto Matozinhos
 - Gabriele Fernanda Lima
-- Nome completo do aluno 5
+- Bruna Lourenço Duarte
 
 ## Orientador
 
