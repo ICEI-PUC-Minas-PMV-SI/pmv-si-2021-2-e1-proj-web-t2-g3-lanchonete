@@ -44,6 +44,14 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 >
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
+---
+
+A aplicação Web desenvolvida pelo grupo tem por finalidade conceder aos donos de lanchonetes locais e de pequeno porte a oportunidade de estruturar um sistema _e-commerce_ em suas empresas, para que possam fomentar o comércio local, atrair mais clientes, objetivando recuperar as perdas causadas pela pandemia do COVID-19 e alavancar as vendas.
+
+Sendo assim, esta aplicação busca realizar o atendimento de lanchonetes de maneira virtual, possibilitando os clientes de fazerem o autoatendimento e realizarem o pagamento pelo site, o que proporciona maior facilidade para o consumidor.
+
+---
+
 ## Justificativa
 
 Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
