@@ -28,6 +28,12 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 > - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
+---
+
+A pandemia do COVID-19 consolidou de fato a comercialização através da internet, modelo conhecido como e-commerce (comércio eletrônico). No entanto, comerciantes locais e de pequeno porte ainda encontram dificuldades para instaurar esse modelo de comércio, já que é necessário um considerável investimento para realizar o processo de vendas online e, infelizmente, muitos desses comerciantes não possuem tal capital para investir e contratar uma empresa para criar um sistema de vendas virtual.
+
+---
+
 ## Objetivos
 
 Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima.
