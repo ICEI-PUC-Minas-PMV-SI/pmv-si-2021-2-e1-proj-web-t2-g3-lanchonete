@@ -22,7 +22,6 @@ Descreva também o contexto em que essa aplicação será usada, se houver: empr
 
 Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
-
 > **Links Úteis**:
 >
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -33,7 +32,7 @@ Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Think
 
 A pandemia do COVID-19 consolidou de fato a comercialização através da internet, modelo conhecido como e-commerce (comércio eletrônico). No entanto, comerciantes locais e de pequeno porte ainda encontram dificuldades para instaurar esse modelo de comércio, já que é necessário um considerável investimento para realizar o processo de vendas online e, infelizmente, muitos desses comerciantes não possuem tal capital para investir e contratar uma empresa para criar um sistema de vendas virtual.
 
-Nesse sentido o presente trabalho busca compreender  a importância do e-commerce de lanches e salgados para pequenas empresas em Belo Horizonte ?
+Nesse sentido o presente trabalho busca compreender a importância do e-commerce de lanches e salgados para pequenas empresas em Belo Horizonte ?
 
 ---
 
@@ -64,6 +63,18 @@ O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estat�
 > **Links Úteis**:
 >
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+
+---
+
+O motivo pelo qual o grupo se propôs a realizar esta aplicação se deve ao fato de que durante a pandemia do COVID-19 os comércios foram obrigados a fechar as suas lojas por um certo tempo e portanto não puderam realizar o atendimento presencial. Como consequência, muitos comerciantes, principalmente os donos de empresas de pequeno porte, tiveram problemas financeiros.
+
+De acordo com um levantamento divulgado pela Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) em 2020, mais de 135 mil lojas foram fechadas e 500 mil empregos perdidos no Brasil entre abril e junho diante da crise provocada pela pandemia do coronavírus.
+
+Além disso, o economista do Ibre/FGV, Rodolpho Tobler, afirma "O fundo do poço é maior para as pequenas empresas e elas têm tido mais dificuldade para sair dele", ao se referir aos efeitos da crise provocada pela pandemia de coronavírus.
+
+Diante disso, percebe-se a grande vulnerabilidade dos pequenos comerciantes e a implantação de um sistema _e-commerce_ surge como uma solução a este impasse, visto que os clientes podem fazer seus pedidos virtualmente e receberem o produto em suas casas. Sendo assim, as vendas não ficam estagnadas e aos poucos os empresários conseguem se recuperar.
+
+---
 
 ## Público-Alvo
 
