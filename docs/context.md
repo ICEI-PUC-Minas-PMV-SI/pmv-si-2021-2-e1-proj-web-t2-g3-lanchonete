@@ -22,6 +22,8 @@ Descreva também o contexto em que essa aplicação será usada, se houver: empr
 
 Nesse momento, o grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
+Qual é a importância do e-commerce de lanches e salgados para pequenas empresas em Belo Horizonte ?
+
 > **Links Úteis**:
 >
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
