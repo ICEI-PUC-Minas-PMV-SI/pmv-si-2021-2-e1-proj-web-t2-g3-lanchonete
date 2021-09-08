@@ -8,8 +8,7 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-Vamos criar um sistema e-commerce com ênfase nos comerciantes locais de regiões menores, mais especificamente nos donos de lanchonetes de pequeno porte, para gerenciar, facilitar o autoatendimento e conceder mais agilidade na realização dos pedidos.
+Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes locais, mais especificamente nos donos de lanchonetes de pequeno porte, para gerenciar, facilitar o autoatendimento e conceder mais agilidade no recebimento dos seus pedidos.
 
 ## Integrantes
 
