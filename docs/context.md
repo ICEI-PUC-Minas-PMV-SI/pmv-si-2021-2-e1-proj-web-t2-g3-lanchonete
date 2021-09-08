@@ -50,7 +50,11 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 O objetivo desse projeto é desenvolver uma aplicação Web cuja principal finalidade é conceder aos donos de lanchonetes locais e de pequeno porte a oportunidade de estruturar um sistema _e-commerce_ em suas empresas, para que possam fomentar o comércio local, atrair mais clientes, objetivando recuperar as perdas causadas pela pandemia do COVID-19 e alavancar as vendas.
 
-Sendo assim, esta aplicação busca realizar o atendimento de lanchonetes de maneira virtual, possibilitando os clientes de fazerem o autoatendimento e realizarem o pagamento pelo site, o que proporciona maior facilidade para o consumidor.
+Pode-se destacar os seguintes objetivos específicos:
+
+- Realizar o atendimento virtual;
+- Possibilitar o pagamento pelo site;
+- Proporcionar maior facilidade ao consumidor.
 
 ---
 
