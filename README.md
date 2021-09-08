@@ -8,7 +8,7 @@
 
 `SEMESTRE: 1º`
 
-Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes locais, mais especificamente nos donos de lanchonetes de pequeno porte, para gerenciar, facilitar o autoatendimento e conceder mais agilidade no recebimento dos seus pedidos.
+Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes locais, mais especificamente nos donos de lanchonetes de pequeno porte, para gerenciar, facilitar o autoatendimento do cliente e trazer mais agilidade no recebimento dos seus pedidos.
 
 ## Integrantes
 
