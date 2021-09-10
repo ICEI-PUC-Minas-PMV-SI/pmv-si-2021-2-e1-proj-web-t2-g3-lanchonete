@@ -19,13 +19,6 @@ Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes loca
 -  Vinícius Damasceno Souza
 -  William Xavier de Barros
 
-- William Xavier de Barros
-- Fernanda Alves Cordeiro
-- João Pedro Pinto Matozinhos
-- Gabriele Fernanda Lima
-- Bruna Lourenço Duarte
-- Vinícius Damasceno Souza
-
 ## Orientador
 
 - Kleber Jackes Ferreira de Souza
