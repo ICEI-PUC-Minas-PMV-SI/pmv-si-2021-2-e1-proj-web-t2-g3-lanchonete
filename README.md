@@ -17,6 +17,7 @@ Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes loca
 - João Pedro Pinto Matozinhos
 - Gabriele Fernanda Lima
 - Bruna Lourenço Duarte
+- Vinícius Damasceno Souza
 
 ## Orientador
 
