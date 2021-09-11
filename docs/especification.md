@@ -8,7 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 1. José da Silva é um homem de 58 anos que possui uma pequena lanchonete que proporciona o sustento de sua família. Devido a pandemia do COVID-19 e as medidas restritivas, Sr. José foi obrigado a fechar o seu comércio durante semanas e isso ocasionou a paralisação das vendas e por consequência, ele teme não conseguir pagar o salário dos funcionários e nem mesmo as despesas de sua família. Como solução urgente, José pretende começar a fazer vendas pela internet e entregar os produtos na casa do cliente. No entanto, José não possui conhecimentos sobre tecnologia e, portanto, não sabe como realizar todo esse processo e também não possui capital suficiente para contratar uma empresa especializada em criação de e-commerce. Dessa forma, o comerciante está à procura de um grupo de desenvolvedores que possa criar um sistema e-commerce acessível para a sua lanchonete.
 
-4. Raquel Oliveira é uma mulher de 25 anos, solteira, que trabalha em uma empresa de desenvolvimento de sistemas fiscais por período integral e a noite cursa faculdade de Sistemas de Informação. Raquel nunca gostou de cozinha e ultimamente e ultimamente o tempo têm sido seu grande inimigo. A mesma busca uma plataforma, onde possa pedir sua comida sem precisar olhar valor ou calcular o frete antes de escolher realmente o prato desejado e não o mais em conta.
+
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
