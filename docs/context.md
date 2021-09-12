@@ -2,7 +2,7 @@
 
 Com o advento da pandemia do COVID-19, o comércio global foi afetado de maneira repentina e vários desafios surgiram. Devido às medidas de isolamento social (_lockdown_) e fechamento das lojas, os comerciantes, principalmente os locais, passaram por várias dificuldades que causaram uma situação de total vulnerabilidade, visto que as medidas restritivas os impediam de abrir as lojas e dessa forma a venda de produtos declinou consideravelmente.
 
-Diante desse cenário de desafio, as empresas tiveram que se adaptar ou senão as vendas ficariam zeradas, gerando graves problemas financeiros, demissões de funcionários ou até mesmo falências. Como solução, a compra por sites, aplicativos e a entrega dos produtos na casa do consumidor cresceram exponencialmente.
+Diante desse cenário de desafio, as empresas tiveram que se adaptar ou senão as vendas ficariam zeradas, gerando graves problemas financeiros, demissões de funcionários ou até mesmo falências. Como solução, a compra por sites, aplicativos e o sistema delivery cresceram exponencialmente.
 
 No entanto, a rápida adaptabilidade e inovação aconteceu em grande parte somente nas empresas de grande/médio porte, já que elas possuem um alto poder de investimento. Diante disso, foi gerado uma competição desigual, visto que, como as vendas estavam estagnadas, as empresas de pequeno porte não possuíam caixa para se adaptar e investir na criação de um _e-commerce_, por exemplo.
 
