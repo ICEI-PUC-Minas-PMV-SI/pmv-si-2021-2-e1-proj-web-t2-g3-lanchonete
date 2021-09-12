@@ -34,6 +34,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | -------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
 | Empresário           | Estruturar um sistema e-commerce na minha empresa  | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja | Oferecer maior facilidade aos clientes                             |
+| Universitária | De facilidade/praticidade | Solicitar e realizar minhas refeições diárias | 
+| Mal cozinheira | De  uma variedade no cardápio | Saborear bons e diferentes pratos |
 | Advogado | Atendimento sem sair do trabalho | Poupar o tempo de ir em casa  ou em um restaurante fazer suas refeições |
 |  Atleta | Marmitas personalisadas, preparadas e entregues diariamente em seu trabalho | Manter a boa forma e facilitar o trabalho de preparar essas marmitas |
 
