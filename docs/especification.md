@@ -34,7 +34,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | -------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
 | Empresário           | Estruturar um sistema e-commerce na minha empresa  | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja | Oferecer maior facilidade aos clientes                             |
-
+| Advogado | Atendimento sem sair do trabalho | Poupar o tempo de ir em casa  ou em um restaurante fazer suas refeições |
+|  Atleta | Marmitas personalisadas, preparadas e entregues diariamente em seu trabalho | Manter a boa forma e facilitar o trabalho de preparar essas marmitas |
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
 > **Links Úteis**:
