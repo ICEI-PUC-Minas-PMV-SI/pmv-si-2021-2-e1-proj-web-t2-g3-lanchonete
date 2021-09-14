@@ -14,7 +14,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 6. Marcelo Costa é um advogado de 36 anos, tem esposa e dois filhos. Ele trabalha em um escritório focado na área de direito contratual, que fica longe de sua casa, Marcelo trabalha por dois períodos e  só chega em casa na parte da noite. Seu hobby é jogar futebol nos fins de semana e para melhorar seu desempenho, Marcelo busca manter uma dieta balanceada. Pela falta de tempo para fazer e montar suas marmitas para seguir a dieta, Marcelo diariamente pede suas marmitas por um e-commerce prático e inovador, onde recebe todas suas refeições em seu serviço, preparadas e aquecidas.
 
-7. Niara Gonçalves da Cruz é professora universitária e doutoranda em Contabilidade na UFM, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
+7. Niara Gonçalves da Cruz é vegetariana, professora universitária e doutoranda em Contabilidade na UFMG, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
 
 
 
@@ -32,16 +32,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Empresária | Disponibilizar promoções | Aumentar o número de clientes |
 | Advogado | Atendimento sem sair do trabalho | Poupar o tempo de ir em casa  ou em um restaurante fazer suas refeições |
 |  Atleta | Marmitas personalisadas, preparadas e entregues diariamente em seu trabalho | Manter a boa forma e facilitar o trabalho de preparar essas marmitas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| Atarefada | Lanchar em horários tardios | Poupar tempo de fazer comida muito tarde |
+| Vegetariana | Estabelecimentos que tenham diversidade de comida | Ter alimentação condizente com seus hábitos alimentares |
 
 ## Requisitos
 
