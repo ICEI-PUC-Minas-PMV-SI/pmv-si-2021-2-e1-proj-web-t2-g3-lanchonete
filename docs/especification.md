@@ -14,7 +14,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 6. Marcelo Costa é um advogado de 36 anos, tem esposa e dois filhos. Ele trabalha em um escritório focado na área de direito contratual, que fica longe de sua casa, Marcelo trabalha por dois períodos e  só chega em casa na parte da noite. Seu hobby é jogar futebol nos fins de semana e para melhorar seu desempenho, Marcelo busca manter uma dieta balanceada. Pela falta de tempo para fazer e montar suas marmitas para seguir a dieta, Marcelo diariamente pede suas marmitas por um e-commerce prático e inovador, onde recebe todas suas refeições em seu serviço, preparadas e aquecidas.
 
-
+7. Niara Gonçalves da Cruz é professora universitária e doutoranda em Contabilidade na UFM, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
 
 
 
