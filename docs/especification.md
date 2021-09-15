@@ -12,7 +12,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 5. Marcia é uma mulher de 29 anos, divorciada e formada em administração. Atualmente, mora de aluguel com seus dois filhos de 8 e 4 anos, respectivamente, e retira seu sustento de sua lanchonete delivery que funciona de terça a domingo no período de 18:00 às 23:00 horas. Seu único funcionário é o motoboy que realiza suas entregas. Entretanto, Márcia tem muita dificuldade em atender apenas por telefone e whatsapp e precisa de um sistema e-commerce para que ela possa escalonar seu negócio e automatizar processos. Ela também deseja disponibilizar promoções em determinados dias da semana  como estratégia para aumento de clientes, mas não tem muito capital para investir em  aplicativo mobile próprio.
 
-6. Marcelo Costa é um advogado de 36 anos, tem esposa e dois filhos. Ele trabalha em um escritório focado na área de direito contratual, que fica longe de sua casa, Marcelo trabalha por dois períodos e  só chega em casa na parte da noite. Seu hobby é jogar futebol nos fins de semana e para melhorar seu desempenho, Marcelo busca manter uma dieta balanceada. Pela falta de tempo para fazer e montar suas marmitas para seguir a dieta, Marcelo diariamente pede suas marmitas por um e-commerce prático e inovador, onde recebe todas suas refeições em seu serviço, preparadas e aquecidas.
+6. Marcelo Costa é um advogado de 36 anos de idade, tem esposa e dois filhos . Ele trabalha em um escritório de advocacia focado na área de direito contratual. Seu hobby é jogar futebol aos fins de semana e saborear bons lanches com sua família. Para manter o bom desempenho no futebol, seguindo sua dieta e sem deixar de comer lanches com sua família, Marcelo sempre pede seus lanches fit em uma lanchonete no sistema e-commerce prático e inovador, onde recebe tudo no conforto de sua casa.
 
 7. Niara Gonçalves da Cruz é vegetariana, professora universitária e doutoranda em Contabilidade na UFMG, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
 
@@ -30,8 +30,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Mal cozinheira | De  uma variedade no cardápio | Saborear bons e diferentes pratos |
 | Empresária | Escalonar meu negócio | Melhorar a qualidade vida |
 | Empresária | Disponibilizar promoções | Aumentar o número de clientes |
-| Advogado | Atendimento sem sair do trabalho | Poupar o tempo de ir em casa  ou em um restaurante fazer suas refeições |
-|  Atleta | Marmitas personalisadas, preparadas e entregues diariamente em seu trabalho | Manter a boa forma e facilitar o trabalho de preparar essas marmitas |
+| Advogado | Atendimento sem sair de casa| Comer com sua família de forma saudável, no conforto de sua casa|
+|  Atleta | Lanches fit e saborosos, entregues em casa| Aproveitar e saborear com sua família sem sair da dieta|
 | Atarefada | Lanchar em horários tardios | Poupar tempo de fazer comida muito tarde |
 | Vegetariana | Estabelecimentos que tenham diversidade de comida | Ter alimentação condizente com seus hábitos alimentares |
 
