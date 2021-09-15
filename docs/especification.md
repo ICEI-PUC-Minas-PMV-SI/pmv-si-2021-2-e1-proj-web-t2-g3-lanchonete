@@ -8,32 +8,30 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 1. José da Silva é um homem de 58 anos que possui uma pequena lanchonete que proporciona o sustento de sua família. Devido a pandemia do COVID-19 e as medidas restritivas, Sr. José foi obrigado a fechar o seu comércio durante semanas e isso ocasionou a paralisação das vendas e por consequência, ele teme não conseguir pagar o salário dos funcionários e nem mesmo as despesas de sua família. Como solução urgente, José pretende começar a fazer vendas pela internet e entregar os produtos na casa do cliente. No entanto, José não possui conhecimentos sobre tecnologia e, portanto, não sabe como realizar todo esse processo e também não possui capital suficiente para contratar uma empresa especializada em criação de e-commerce. Dessa forma, o comerciante está à procura de um grupo de desenvolvedores que possa criar um sistema e-commerce acessível para a sua lanchonete.
 
-4. Raquel Oliveira é uma mulher de 25 anos, solteira, que trabalha em uma empresa de desenvolvimento de sistemas fiscais por período integral e a noite cursa faculdade de Sistemas de Informação. Raquel nunca gostou de cozinhar ou se quer preparar seus lanches mesmo sendo  sua preferência de refeição. Ultimamente o tempo têm sido seu grande inimigo e por cansar de se arriscar na cozinha a mesma busca um sistema e-commerce local, que possa disponibilizar principalmente no período noturno para que possa solicitar o lanche desejado após a sua chegada da faculdade sem limitações em decorrência ao horário.
+2. Raquel Oliveira é uma mulher de 25 anos, solteira, que trabalha em uma empresa de desenvolvimento de sistemas fiscais por período integral e a noite cursa faculdade de Sistemas de Informação. Raquel nunca gostou de cozinhar ou se quer preparar seus lanches mesmo sendo sua preferência de refeição. Ultimamente o tempo têm sido seu grande inimigo e por cansar de se arriscar na cozinha a mesma busca um sistema e-commerce local, que possa disponibilizar principalmente no período noturno para que possa solicitar o lanche desejado após a sua chegada da faculdade sem limitações em decorrência ao horário.
 
-5. Marcia é uma mulher de 29 anos, divorciada e formada em administração. Atualmente, mora de aluguel com seus dois filhos de 8 e 4 anos, respectivamente, e retira seu sustento de sua lanchonete delivery que funciona de terça a domingo no período de 18:00 às 23:00 horas. Seu único funcionário é o motoboy que realiza suas entregas. Entretanto, Márcia tem muita dificuldade em atender apenas por telefone e whatsapp e precisa de um sistema e-commerce para que ela possa escalonar seu negócio e automatizar processos. Ela também deseja disponibilizar promoções em determinados dias da semana  como estratégia para aumento de clientes, mas não tem muito capital para investir em  aplicativo mobile próprio.
+3. Marcia é uma mulher de 29 anos, divorciada e formada em administração. Atualmente, mora de aluguel com seus dois filhos de 8 e 4 anos, respectivamente, e retira seu sustento de sua lanchonete delivery que funciona de terça a domingo no período de 18:00 às 23:00 horas. Seu único funcionário é o motoboy que realiza suas entregas. Entretanto, Márcia tem muita dificuldade em atender apenas por telefone e whatsapp e precisa de um sistema e-commerce para que ela possa escalonar seu negócio e automatizar processos. Ela também deseja disponibilizar promoções em determinados dias da semana como estratégia para aumento de clientes, mas não tem muito capital para investir em aplicativo mobile próprio.
 
-6. Marcelo Costa é um advogado de 36 anos de idade, tem esposa e dois filhos . Ele trabalha em um escritório de advocacia focado na área de direito contratual. Seu hobby é jogar futebol aos fins de semana e saborear bons lanches com sua família. Para manter o bom desempenho no futebol, seguindo sua dieta e sem deixar de comer lanches com sua família, Marcelo sempre pede seus lanches fit em uma lanchonete no sistema e-commerce prático e inovador, onde recebe tudo no conforto de sua casa.
+4. Marcelo Costa é um advogado de 36 anos de idade, tem esposa e dois filhos . Ele trabalha em um escritório de advocacia focado na área de direito contratual. Seu hobby é jogar futebol aos fins de semana e saborear bons lanches com sua família. Para manter o bom desempenho no futebol, seguindo sua dieta e sem deixar de comer lanches com sua família, Marcelo sempre pede seus lanches fit em uma lanchonete no sistema e-commerce prático e inovador, onde recebe tudo no conforto de sua casa.
 
-7. Niara Gonçalves da Cruz é vegetariana, professora universitária e doutoranda em Contabilidade na UFMG, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
-
-
+5. Niara Gonçalves da Cruz é vegetariana, professora universitária e doutoranda em Contabilidade na UFMG, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-| EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                 | PARA ... `MOTIVO/VALOR`                                            |
-| -------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
-| Empresário           | Estruturar um sistema e-commerce na minha empresa  | Fazer o atendimento virtual e realizar entregas na casa do cliente |
-| Dono de lanchonete   | Disponibilizar o pagamento através do site da loja | Oferecer maior facilidade aos clientes                             |
-| Universitária | De facilidade/praticidade | Solicitar e realizar meus lanches noturnos |
-| Mal cozinheira | De  uma variedade no cardápio | Saborear bons e diferentes lanches |
-| Empresária | Escalonar meu negócio | Melhorar a qualidade vida |
-| Empresária | Disponibilizar promoções | Aumentar o número de clientes |
-| Advogado | Atendimento sem sair de casa| Comer com sua família de forma saudável, no conforto de sua casa|
-|  Atleta | Lanches fit e saborosos, entregues em casa| Aproveitar e saborear com sua família sem sair da dieta|
-| Atarefada | Lanchar em horários tardios | Poupar tempo de fazer comida muito tarde |
-| Vegetariana | Estabelecimentos que tenham diversidade de comida | Ter alimentação condizente com seus hábitos alimentares |
+| EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                     | PARA ... `MOTIVO/VALOR`                                            |
+| -------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
+| Empresário           | Disponibilizar os produtos da minha empresa em um site | Fazer o atendimento virtual e realizar entregas na casa do cliente |
+| Dono de lanchonete   | Disponibilizar o pagamento através do site da loja     | Oferecer maior facilidade aos clientes                             |
+| Universitária        | De facilidade/praticidade                              | Solicitar e realizar meus lanches noturnos                         |
+| Mal cozinheira       | De uma variedade no cardápio                           | Saborear bons e diferentes lanches                                 |
+| Empresária           | Escalonar meu negócio                                  | Melhorar a qualidade vida                                          |
+| Empresária           | Disponibilizar promoções                               | Aumentar o número de clientes                                      |
+| Advogado             | Atendimento sem sair de casa                           | Comer com sua família de forma saudável, no conforto de sua casa   |
+| Atleta               | Lanches fit e saborosos, entregues em casa             | Aproveitar e saborear com sua família sem sair da dieta            |
+| Atarefada            | Lanchar em horários tardios                            | Poupar tempo de fazer comida muito tarde                           |
+| Vegetariana          | Estabelecimentos que tenham diversidade de comida      | Ter alimentação condizente com seus hábitos alimentares            |
 
 ## Requisitos
 
