@@ -8,7 +8,7 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 1. José da Silva é um homem de 58 anos que possui uma pequena lanchonete que proporciona o sustento de sua família. Devido a pandemia do COVID-19 e as medidas restritivas, Sr. José foi obrigado a fechar o seu comércio durante semanas e isso ocasionou a paralisação das vendas e por consequência, ele teme não conseguir pagar o salário dos funcionários e nem mesmo as despesas de sua família. Como solução urgente, José pretende começar a fazer vendas pela internet e entregar os produtos na casa do cliente. No entanto, José não possui conhecimentos sobre tecnologia e, portanto, não sabe como realizar todo esse processo e também não possui capital suficiente para contratar uma empresa especializada em criação de e-commerce. Dessa forma, o comerciante está à procura de um grupo de desenvolvedores que possa criar um sistema e-commerce acessível para a sua lanchonete.
 
-4. Raquel Oliveira é uma mulher de 25 anos, solteira, que trabalha em uma empresa de desenvolvimento de sistemas fiscais por período integral e a noite cursa faculdade de Sistemas de Informação. Raquel nunca gostou de cozinhar e ultimamente o tempo têm sido seu grande inimigo. Por cansar de se arriscar na cozinha, a mesma busca um sistema e-commerce local onde exista uma variedade significativa no cardápio, facilitando sua rotina diária.
+4. Raquel Oliveira é uma mulher de 25 anos, solteira, que trabalha em uma empresa de desenvolvimento de sistemas fiscais por período integral e a noite cursa faculdade de Sistemas de Informação. Raquel nunca gostou de cozinhar ou se quer preparar seus lanches mesmo sendo  sua preferência de refeição. Ultimamente o tempo têm sido seu grande inimigo e por cansar de se arriscar na cozinha a mesma busca um sistema e-commerce local, que possa disponibilizar principalmente no período noturno para que possa solicitar o lanche desejado após a sua chegada da faculdade sem limitações em decorrência ao horário.
 
 5. Marcia é uma mulher de 29 anos, divorciada e formada em administração. Atualmente, mora de aluguel com seus dois filhos de 8 e 4 anos, respectivamente, e retira seu sustento de sua lanchonete delivery que funciona de terça a domingo no período de 18:00 às 23:00 horas. Seu único funcionário é o motoboy que realiza suas entregas. Entretanto, Márcia tem muita dificuldade em atender apenas por telefone e whatsapp e precisa de um sistema e-commerce para que ela possa escalonar seu negócio e automatizar processos. Ela também deseja disponibilizar promoções em determinados dias da semana  como estratégia para aumento de clientes, mas não tem muito capital para investir em  aplicativo mobile próprio.
 
@@ -26,8 +26,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | -------------------- | -------------------------------------------------- | ------------------------------------------------------------------ |
 | Empresário           | Estruturar um sistema e-commerce na minha empresa  | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja | Oferecer maior facilidade aos clientes                             |
-| Universitária | De facilidade/praticidade | Solicitar e realizar minhas refeições diárias | 
-| Mal cozinheira | De  uma variedade no cardápio | Saborear bons e diferentes pratos |
+| Universitária | De facilidade/praticidade | Solicitar e realizar meus lanches noturnos |
+| Mal cozinheira | De  uma variedade no cardápio | Saborear bons e diferentes lanches |
 | Empresária | Escalonar meu negócio | Melhorar a qualidade vida |
 | Empresária | Disponibilizar promoções | Aumentar o número de clientes |
 | Advogado | Atendimento sem sair de casa| Comer com sua família de forma saudável, no conforto de sua casa|
