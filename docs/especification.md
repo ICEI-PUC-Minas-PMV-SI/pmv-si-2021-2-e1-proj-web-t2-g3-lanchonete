@@ -26,8 +26,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | -------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
 | Empresário           | Disponibilizar os produtos da minha empresa em um site | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja     | Oferecer maior facilidade aos clientes                             |
-| Universitária        | De facilidade/praticidade                              | Solicitar e realizar meus lanches noturnos                         |
-| Mal cozinheira       | De uma variedade no cardápio                           | Saborear bons e diferentes lanches                                 |
+| Universitária | Solicitar meus lanches em uma aplicação Web | Ter mais facilidade e praticidade nos meus lanches noturnos |
+| Universitária | Pesquisar sobre as variedades de lanches disponíveis | Saborear bons e diferentes lanches |
 | Empresária           | Escalonar meu negócio                                  | Melhorar a qualidade vida                                          |
 | Empresária           | Disponibilizar promoções                               | Aumentar o número de clientes                                      |
 | Advogado             | Atendimento sem sair de casa                           | Comer com sua família de forma saudável, no conforto de sua casa   |
