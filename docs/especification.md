@@ -16,6 +16,8 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 5. Niara Gonçalves da Cruz é vegetariana, professora universitária e doutoranda em Contabilidade na UFMG, tem 31 anos de idade e uma rotina extremamente rígida em relação aos seus horários. Atualmente ela leciona em duas faculdades, sendo uma em Belo Horizonte e outra na cidade de Curvelo. Essa rotina intensa de estudos, aliada a elaboração de aulas, determina que a Niara delegue muitos afazeres do dia a dia, dentre eles suas refeições. Ela não dispõe de tempo para realizar nenhuma de suas refeições e necessita de serviços de aplicativos para que possa se alimentar. Outro aspecto particular dia a dia de Niara relaciona-se ao fato de que, por dar aulas em outra cidade, ao chegar em Belo Horizonte, a maior parte dadas lanchonetes já estão fechadas o que é um problema para pessoas que gostam de variedade para escolher o que deseja comer.
 
+6. Pedro Augusto Fernandes, 54 anos, Ensino Fundamental Incompleto, casado há 35 anos com Dona Juraide, pai de 04 filhos adultos. Responsável pela pequena lanchonete que já está na família desde os tempos de seu pai, Pedro foi criado ajudando no trabalho da lanchonete, que hoje continua como fonte de sustento da família dele, e com o apoio da esposa e de 01 dos filhos a lanchonete segue ainda desenvolvendo suas atividades contando com 05 funcionários. Com a Pandemia de Covid19 que ocasionou muitas mudanças, restrições no funcionamento dos comércios em geral e também várias restrições de circulação de pessoas como pode-se ver na Lei 13.979 de 06/02/2020, o Sr. Pedro viu a quantidade de vendas cair, precisou fechar as portas de sua lanchonete e com isso o faturamento da empresa despencou, para evitar a falência a família precisou se reinventar e buscou no comércio eletrônico, uma possibilidade de manter a lanchonete em funcionamento. Por isso o Sr. Pedro e família estão procurando alguém que possa ajuda-los a vender na internet, porém um baixo custo, de forma prática e segura.
+
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
@@ -32,6 +34,8 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Atleta               | Lanches fit e saborosos, entregues em casa             | Aproveitar e saborear com sua família sem sair da dieta            |
 | Atarefada            | Lanchar em horários tardios                            | Poupar tempo de fazer comida muito tarde                           |
 | Vegetariana          | Estabelecimentos que tenham diversidade de comida      | Ter alimentação condizente com seus hábitos alimentares            |
+| Universitária        | Lanchar em sua casa com sua família                    | Praticidade e comodidade                                           |
+| Gerente de lanchonete| Gerenciar comandas através de aplicação web            | Ter relatórios de lanches vendidos                                 |
 
 ## Requisitos
 
