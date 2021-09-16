@@ -26,12 +26,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | -------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
 | Empresário           | Disponibilizar os produtos da minha empresa em um site | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja     | Oferecer maior facilidade aos clientes                             |
-| Universitária | Solicitar meus lanches em uma aplicação Web | Ter mais facilidade e praticidade nos meus lanches noturnos |
-| Universitária | Pesquisar sobre as variedades de lanches disponíveis | Saborear bons e diferentes lanches |
+| Universitária        | Solicitar meus lanches em uma aplicação Web            | Ter mais facilidade e praticidade nos meus lanches noturnos        |
+| Universitária        | Pesquisar sobre as variedades de lanches disponíveis   | Saborear bons e diferentes lanches                                 |
 | Empresária           | Escalonar meu negócio                                  | Melhorar a qualidade vida                                          |
 | Empresária           | Disponibilizar promoções                               | Aumentar o número de clientes                                      |
-| Advogado             | Atendimento sem sair de casa                           | Comer com sua família de forma saudável, no conforto de sua casa   |
-| Atleta               | Lanches fit e saborosos, entregues em casa             | Aproveitar e saborear com sua família sem sair da dieta            |
+| Advogado             | Realizar o pagamento online                            | Ter praticidade ao pagar                                           |
+| Atleta               | Solicitar lanches fit, de forma virtual                | Aproveitar e saborear com sua família sem sair da dieta            |
 | Atarefada            | Lanchar em horários tardios                            | Poupar tempo de fazer comida muito tarde                           |
 | Vegetariana          | Estabelecimentos que tenham diversidade de comida      | Ter alimentação condizente com seus hábitos alimentares            |
 | Mãe de 1ª viagem     | Lanchar em sua casa com sua bebê                       | Praticidade e comodidade                                           |
