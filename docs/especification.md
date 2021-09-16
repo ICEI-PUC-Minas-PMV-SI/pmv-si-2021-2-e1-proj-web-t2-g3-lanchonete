@@ -34,7 +34,7 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 | Atleta               | Lanches fit e saborosos, entregues em casa             | Aproveitar e saborear com sua família sem sair da dieta            |
 | Atarefada            | Lanchar em horários tardios                            | Poupar tempo de fazer comida muito tarde                           |
 | Vegetariana          | Estabelecimentos que tenham diversidade de comida      | Ter alimentação condizente com seus hábitos alimentares            |
-| Universitária        | Lanchar em sua casa com sua família                    | Praticidade e comodidade                                           |
+| Mãe de 1ª viagem     | Lanchar em sua casa com sua bebê                       | Praticidade e comodidade                                           |
 | Gerente de lanchonete| Gerenciar comandas através de aplicação web            | Ter relatórios de lanches vendidos                                 |
 
 ## Requisitos
