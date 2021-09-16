@@ -28,7 +28,7 @@ O motivo pelo qual o grupo se propôs a realizar esta aplicação se deve ao fat
 
 De acordo com um levantamento divulgado pela Confederação Nacional do Comércio de Bens, Serviços e Turismo (CNC) em 2020, mais de 135 mil lojas foram fechadas e 500 mil empregos perdidos no Brasil entre abril e junho diante da crise provocada pela pandemia do coronavírus. Além disso, o economista do Ibre/FGV, Rodolpho Tobler, afirma "O fundo do poço é maior para as pequenas empresas e elas têm tido mais dificuldade para sair dele", ao se referir aos efeitos da crise.
 
-Diante disso, percebe-se a grande vulnerabilidade dos pequenos comerciantes e a implantação de um sistema _e-commerce_ surge como uma solução a este impasse, visto que os clientes podem fazer seus pedidos virtualmente e receberem o produto em suas casas. Sendo assim, as vendas não ficam estagnadas e aos poucos os empresários conseguem se recuperar.
+Diante disso, percebe-se a grande vulnerabilidade dos pequenos comerciantes e a implantação de um sistema _e-commerce_ surge como uma solução a este impasse, visto que os clientes podem fazer seus pedidos de forma virtual e receberem o produto em suas casas. Sendo assim, as vendas não ficam estagnadas e aos poucos os empresários conseguem se recuperar.
 
 ## Público-Alvo
 
