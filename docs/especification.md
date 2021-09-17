@@ -1,6 +1,8 @@
 # Especificações do Projeto
 
-Com o início da pandemia, muitos comerciantes passaram a ter problemas com seus negócios, e, em decorrência o mundo todo foi afetado. Através de pesquisas descobriu-se que a principal saída para o caos seria o uso do delivery ou seja, para não perder o consumidor, os comerciantes teriam que investir em formas de compras e vendas virtuais e o delivery se sobressaiu. O atual projeto visa desenvolver uma aplicação Web para lanchonetes onde o principal objetivo é facilitar as vendas, ajudando tanto o consumidor final disponibilizando um sistema e-commerce quanto aos comerciantes que não possuem o capital necessário para um grande investimento.
+Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+
+Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## Personas
 
@@ -20,7 +22,7 @@ Com o início da pandemia, muitos comerciantes passaram a ter problemas com seus
 
 Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
-| EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                     | PARA ... `MOTIVO/VALOR`                                            |
+| EU                   | QUERO/PRECISO                                          | PARA                                                               |
 | -------------------- | ------------------------------------------------------ | ------------------------------------------------------------------ |
 | Empresário           | Disponibilizar os produtos da minha empresa em um site | Fazer o atendimento virtual e realizar entregas na casa do cliente |
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja     | Oferecer maior facilidade aos clientes                             |
@@ -47,18 +49,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA      |
 | RF-003 | Cadastro de cliente                     | ALTA       |
 | RF-004 | Cadastro de forma de pagamento          | ALTA       |
-| RF-005 | Cadastro de promoções                   | MÉDIA      |
-| RF-006 | Ranking de lanches mais vendidos        | MÉDIA      |
+| RF-005 | Cadastrar e gerenciar de promoções      | MÉDIA      |
+| RF-006 | Ranking de lanches mais vendidos        | BAIXA      |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                            | Prioridade |
 | ------- | ----------------------------------------------------------------- | ---------- |
-| RNF-001 | A aplicação deverá ser multiplataforma                            | MÉDIA      |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s             | BAIXA      |
-| RNF-003 | O sistema deverá ter confiabilidade                               | MÉDIA      |
-| RNF-004 | A aplicação deve ter boa usablidade                               | ALTA       |
-| RNF-005 | O sistema deve ser responsivo                                     | MÉDIA      |
+| RNF-001 | O site deve ser multiplataforma                                   | MÉDIA      |
+| RNF-002 | O site deve processar requisições do usuário em no máximo 3s      | BAIXA      |
+| RNF-003 | O site deve ter confiabilidade                                    | MÉDIA      |
+| RNF-004 | O site deve ter boa usabilidade                                   | ALTA       |
+| RNF-005 | O site deve ser responsivo                                        | MÉDIA      |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
