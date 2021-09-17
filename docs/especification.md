@@ -1,6 +1,6 @@
 # Especificações do Projeto
 
-Com o início da pandemia, muitos comerciantes passaram a ter problemas com seus negócios, e, em decorrência o mundo todo foi afetado. Através de pesquisas descobriu-se que a principal saída para o caos seria o uso do delivery ou seja, para não perder o consumidor, os comerciantes teriam que investir em formas de compras e vendas virtuais, e o delivery se sobressaiu.
+Com o início da pandemia, muitos comerciantes passaram a ter problemas com seus negócios, e, em decorrência o mundo todo foi afetado. Através de pesquisas descobriu-se que a principal saída para o caos seria o uso do delivery ou seja, para não perder o consumidor, os comerciantes teriam que investir em formas de compras e vendas virtuais, e o delivery se sobressaiu. O atual projeto visa desenvolver uma aplicação Web para lanchonetes onde o principal objetivo é facilitar e modernizar a compra e venda, ajudando tanto ao consumidor final quanto aos comerciantes, disponibilizando um sistema e-commerce para maior facilidade, agilidade e gestão de negócios.
 
 ## Personas
 
