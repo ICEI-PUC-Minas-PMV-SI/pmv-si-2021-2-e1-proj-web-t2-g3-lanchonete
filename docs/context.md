@@ -19,7 +19,7 @@ Diante desse cenário, o grupo se propõe a criar uma aplicação Web direcionad
 
 A pandemia do Covid-19 consolidou a comercialização por meio da Internet, modelo conhecido como e-commerce (comércio eletrônico). No entanto, comerciantes de pequeno porte ainda encontram dificuldades para adotar esse modelo de comércio, já que se faz necessário um considerável investimento para realizar o processo de vendas online e, infelizmente, muitos desses comerciantes não possuem capital satisfatório para investir e contratar empresas especializadas na criação de sistemas de vendas virtuais.
 
-#"Como os comerciantes de pequeno porte se adaptarão à nova realidade do comércio global que é baseada no e-commerce?"
+"Como os comerciantes de pequeno porte se adaptarão à nova realidade do comércio global que é baseada no e-commerce?"
 
 ## Objetivos
 
