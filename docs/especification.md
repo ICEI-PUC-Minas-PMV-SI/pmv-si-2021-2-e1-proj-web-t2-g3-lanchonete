@@ -61,11 +61,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 | ID      | Descrição do Requisito                                            | Prioridade |
 | ------- | ----------------------------------------------------------------- | ---------- |
-| RNF-001 | O site deve ser multiplataforma                                   | MÉDIA      |
-| RNF-002 | O site deve processar requisições do usuário em no máximo 3s      | BAIXA      |
+| RNF-001 | O site deve ter boa usabilidade                                   | ALTA       |
+| RNF-002 | O site deve ser multiplataforma                                   | MÉDIA      |
 | RNF-003 | O site deve ter confiabilidade                                    | MÉDIA      |
-| RNF-004 | O site deve ter boa usabilidade                                   | ALTA       |
-| RNF-005 | O site deve ser responsivo                                        | MÉDIA      |
+| RNF-004 | O site deve ser responsivo                                        | MÉDIA      |
+| RNF-005 | O site deve processar requisições do usuário em no máximo 3s      | BAIXA      |
+
 
 ## Restrições
 
