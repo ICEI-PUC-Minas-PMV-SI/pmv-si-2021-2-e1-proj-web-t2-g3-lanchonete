@@ -1,8 +1,6 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Com o início da pandemia, muitos comerciantes passaram a ter problemas com seus negócios, e, em decorrência o mundo todo foi afetado. através de pesquisas descobriu-se que a principal saída para o caos seria o uso do delivery. Ou seja, para não perder o consumidor, os comerciantes teriam que investir em formas de compras e vendas virtuais, e o delivery se sobressaiu.
 
 ## Personas
 
