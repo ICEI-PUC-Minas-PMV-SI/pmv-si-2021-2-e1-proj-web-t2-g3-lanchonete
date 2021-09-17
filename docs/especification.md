@@ -44,9 +44,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | ID     | Descrição do Requisito                  | Prioridade |
 | ------ | --------------------------------------- | ---------- |
 | RF-001 | Cadastro de cliente                     | ALTA       |
-| RF-002 | Cadastro de forma de pagamento          | ALTA       |
-| RF-003 | Cadastrar e gerenciar de promoções      | MÉDIA      |
-| RF-004 | Ranking de lanches mais vendidos        | BAIXA      |
+| RF-002 | Cadastro de lanche                      | ALTA       |
+| RF-003 | Cadastro de bebida                      | ALTA       |
+| RF-004 | Cadastro de forma de pagamento          | ALTA       |
+| RF-005 | Cadastrar e gerenciar de promoções      | MÉDIA      |
+| RF-006 | Ranking de lanches mais vendidos        | BAIXA      |
 
 ### Requisitos não Funcionais
 
