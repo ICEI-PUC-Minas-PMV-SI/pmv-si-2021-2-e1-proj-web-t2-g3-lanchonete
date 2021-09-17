@@ -30,7 +30,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Empresária           | Disponibilizar promoções                               | Aumentar o número de clientes                                      |
 | Advogado             | Realizar o pagamento online                            | Ter praticidade ao pagar                                           |
 | Atleta               | Solicitar lanches fit, de forma virtual                | Aproveitar e saborear com sua família sem sair da dieta            |
-| Atarefada            | Lanchar em horários tardios                            | Poupar tempo de fazer comida muito tarde                           |
+| Atarefada                | Solicitar comida congelada                            | Poupar tempo de fazer comida durante o dia                          |
 | Vegetariana          | Estabelecimentos que tenham diversidade de comida      | Ter alimentação condizente com seus hábitos alimentares            |
 | Mãe de 1ª viagem     | Lanchar em sua casa com sua bebê                       | Praticidade e comodidade                                           |
 | Gerente de lanchonete| Gerenciar comandas através de aplicação web            | Ter relatórios de lanches vendidos                                 |
