@@ -48,12 +48,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-003 | Cadastrar bebidas                       | ALTA       |
 | RF-004 | Cadastrar formas de pagamento           | ALTA       |
 | RF-005 | Cadastrar promoções                     | MÉDIA      |
-| RF-006 | Ranquear lanches mais vendidos          | BAIXA      |
-| RF-007 | Emitir comanda                          | MÉDIA      |
-| RF-008 | Emitir relatório de vendas              | BAIXA      |
-| RF-009 | Cadastrar modalidade de fidelização     | BAIXA      |
-| RF-010 | Avaliar pedidos                         | BAIXA      |
-| RF-011 | Pesquisar lanches                       | MÉDIA      |
+| RF-006 | Emitir comanda                          | MÉDIA      |
+| RF-007 | Pesquisar lanches                       | MÉDIA      |
+| RF-008 | Ranquear lanches mais vendidos          | BAIXA      |
+| RF-009 | Emitir relatório de vendas              | BAIXA      |
+| RF-010 | Cadastrar modalidade de fidelização     | BAIXA      |
+| RF-011 | Avaliar pedidos                         | BAIXA      |
+
 
 
 ### Requisitos não Funcionais
