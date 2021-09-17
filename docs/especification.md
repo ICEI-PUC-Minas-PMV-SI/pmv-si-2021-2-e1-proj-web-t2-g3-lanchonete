@@ -28,7 +28,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Dono de lanchonete   | Disponibilizar o pagamento através do site da loja     | Oferecer maior facilidade aos clientes                             |
 | Universitária        | Solicitar meus lanches em uma aplicação Web            | Ter mais facilidade e praticidade nos meus lanches noturnos        |
 | Universitária        | Pesquisar sobre as variedades de lanches disponíveis   | Saborear bons e diferentes lanches                                 |
-| Empresária           | Escalonar meu negócio                                  | Melhorar a qualidade vida                                          |
+| Empresária           | Saber quais os lanches mais vendidos                   | Ajustar os preços dos lanches                                      |
 | Empresária           | Disponibilizar promoções                               | Aumentar o número de clientes                                      |
 | Advogado             | Realizar o pagamento online                            | Ter praticidade ao pagar                                           |
 | Atleta               | Solicitar lanches fit, de forma virtual                | Aproveitar e saborear com sua família sem sair da dieta            |
@@ -49,14 +49,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-002 | Emitir um relatório de tarefas no mês   | MÉDIA      |
 | RF-003 | Cadastro de cliente                     | ALTA       |
 | RF-004 | Cadastro de forma de pagamento          | ALTA       |
+| RF-005 | Cadastro de promoções                   | MÉDIA      |
+| RF-006 | Ranking de lanches mais vendidos        | MÉDIA      |
 
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                            | Prioridade |
 | ------- | ----------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA      |
+| RNF-001 | A aplicação deverá ser multiplataforma                            | MÉDIA      |
 | RNF-002 | Deve processar requisições do usuário em no máximo 3s             | BAIXA      |
 | RNF-003 | O sistema deverá ter confiabilidade                               | MÉDIA      |
+| RNF-004 | A aplicação deve ter boa usablidade                               | ALTA       |
+| RNF-005 | O sistema deve ser responsivo                                     | MÉDIA      |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
