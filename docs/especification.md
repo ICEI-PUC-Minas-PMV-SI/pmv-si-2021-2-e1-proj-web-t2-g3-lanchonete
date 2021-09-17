@@ -50,9 +50,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-005 | Cadastrar promoções                     | MÉDIA      |
 | RF-006 | Ranquear lanches mais vendidos          | BAIXA      |
 | RF-007 | Emitir comanda                          | MÉDIA      |
-| RF-008 | Emitir relatório de vendas              | MÉDIA      |
+| RF-008 | Emitir relatório de vendas              | BAIXA      |
 | RF-009 | Cadastrar modalidade de fidelização     | BAIXA      |
 | RF-010 | Avaliar pedidos                         | BAIXA      |
+| RF-011 | Pesquisar lanches                       | MÉDIA      |
 
 
 ### Requisitos não Funcionais
