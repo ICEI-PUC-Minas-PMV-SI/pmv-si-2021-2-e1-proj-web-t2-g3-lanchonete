@@ -34,7 +34,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 ## CARDÁPIO
-## FIDELIDADE 
+## FIDELIDADE
 ## LOGIN
 ## LOGIN CLIENTE
 ## LOGIN ADMINISTRADOR
@@ -45,6 +45,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 ## PERFIL CLIENTE
 ## PEDIDOS - CLIENTE
 ## FIDELIDADE - CLIENTE
+## CARTÕES SALVOS - CLIENTE
 ## PERFIL - ADMINISTRADOR
 ## FINANCEIRO - ADMINISTRADOR
 ## CADASTRO - ADMINISTRADOR

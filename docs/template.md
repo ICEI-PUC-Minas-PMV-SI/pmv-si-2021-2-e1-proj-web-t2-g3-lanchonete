@@ -10,4 +10,5 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 > - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
 
 ## TEMPLATE PADRÃO CLIENTE
+ O template padrão do cliente é composto por um cabeçalho
 ## TEMPLATE PADRÃO ADMINISTRADOR
