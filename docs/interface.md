@@ -63,7 +63,7 @@ Página para os clientes fazerem login.
 
 ## LOGIN ADMINISTRADOR
 
-Página para os administradores fazerem login.
+Página para os administradores fazerem login.  
 ![Login Admin](https://user-images.githubusercontent.com/85374847/136380479-1cf57e81-a857-42d8-9183-5b237c64a4da.png)
 
 ---
