@@ -34,9 +34,6 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 
-Pagina Home.
-![Home](https://user-images.githubusercontent.com/89883396/136483085-1f7a2022-e01f-4fed-bf11-9d632f589ca0.png)
-
 ---
 
 ## CARDÁPIO
@@ -86,6 +83,11 @@ Página para novos clientes se cadastrarem.
 ---
 
 ## CARRINHO - PRÉ VISUALIZAÇÃO PEDIDO
+ 
+Página carrinho.
+![Carrinho](https://user-images.githubusercontent.com/89817369/136483909-bf7c3c5b-53fa-4219-8c23-75ef0f450a39.png)
+
+---
 
 ## CARRINHO - FINALIZAÇÃO DO PEDIDO
 
