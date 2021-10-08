@@ -36,7 +36,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 Pagina Home
 
-![Lanchonete WARMBURGUER](https://user-images.githubusercontent.com/86330652/136482244-fc9bb11c-ac6f-4584-b1b1-5484ac2cfec2.png)
+![Lanchonete WARMBURGUER](docs\img\Wireframes\Home.png)
 
 ---
 
