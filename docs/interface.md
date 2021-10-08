@@ -100,6 +100,11 @@ Página de Finalização do Pedido.
 ---
 ## PERFIL CLIENTE
 
+Página para o cliente alterar dados e/ou excluir seu cadastro.
+![MEUS DADOS](https://user-images.githubusercontent.com/89786617/136479906-6ef7836e-cca6-472f-94ca-d1b15951c0e1.png)
+
+---
+
 ## PEDIDOS - CLIENTE
 
 ## FIDELIDADE - CLIENTE
