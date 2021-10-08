@@ -104,7 +104,7 @@ Página de Finalização do Pedido.
 
 ## ENDEREÇOS
 Página de consulta a todos os endereços de entrega disponíveis para o cliente.
-
+![Endereços](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-2-e1-proj-web-t2-g3-lanchonete/blob/main/docs/img/Wireframes/endere%C3%A7os.png)
 
 ## PERFIL CLIENTE
 
