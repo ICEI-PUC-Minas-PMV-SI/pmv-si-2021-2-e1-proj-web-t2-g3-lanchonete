@@ -107,9 +107,25 @@ Página para o cliente alterar dados e/ou excluir seu cadastro.
 
 ## PEDIDOS - CLIENTE
 
+Página para o cliente acompanhar seus pedidos.
+![MEUS PEDIDOS](https://user-images.githubusercontent.com/89786617/136479065-846149e0-5c63-43cb-b434-6a9640ae0f7c.png)
+
+---
+
 ## FIDELIDADE - CLIENTE
 
+
+Página para o cliente acompanhar seus vales compras, descontos e brindes.
+![PROGRAMAS DE FIDELIDADE](https://user-images.githubusercontent.com/89786617/136479509-ebd90256-2240-43fb-8768-2e9605d8710e.png)
+
+---
+
 ## CARTÕES SALVOS - CLIENTE
+
+Página para o cliente visualizar, adicionar ou excluir cartões de crédito e/ou débito.
+![MEUS DADOS](https://user-images.githubusercontent.com/89786617/136479669-b2f4e7fa-d19a-4e51-b960-a6a6f262e38c.png)
+
+---
 
 ## PERFIL - ADMINISTRADOR
 
