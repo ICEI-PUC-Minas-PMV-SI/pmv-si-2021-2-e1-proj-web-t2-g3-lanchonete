@@ -102,6 +102,10 @@ Página de Finalização do Pedido.
 
 ---
 
+## ENDEREÇOS
+Página de consulta a todos os endereços de entrega disponíveis para o cliente.
+
+
 ## PERFIL CLIENTE
 
 Página para o cliente alterar dados e/ou excluir seu cadastro.
@@ -132,7 +136,13 @@ Página para o cliente visualizar, adicionar ou excluir cartões de crédito e/o
 
 ## PERFIL - ADMINISTRADOR
 
+Página para o administrador alterar dados de seu cadastro.
+
+
 ## FINANCEIRO - ADMINISTRADOR
+
+Página para controle financeiro de entradas e saídas na lanchonete do administrador.
+
 
 ## CADASTRO - ADMINISTRADOR
 
@@ -141,6 +151,9 @@ Página que exibe os produtos disponíveis e indisponíveis na lanchonete. Além
 
 
 ## FORMULÁRIO DE CADASTRO - ADMINISTRADOR
+
+Página com finalidade de cadastro de itens pelo administrador.
+
 
 ## GESTÃO DE COMANDAS - ADMINISTRADOR
 
