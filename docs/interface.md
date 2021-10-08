@@ -115,3 +115,6 @@ Página de Finalização do Pedido.
 ## FORMULÁRIO DE CADASTRO - ADMINISTRADOR
 
 ## GESTÃO DE COMANDAS - ADMINISTRADOR
+
+Página de gestão de comandas.
+![Comandas](https://user-images.githubusercontent.com/89883396/136486634-037ed07d-d38d-41c3-b710-b331f62cafbd.png)
