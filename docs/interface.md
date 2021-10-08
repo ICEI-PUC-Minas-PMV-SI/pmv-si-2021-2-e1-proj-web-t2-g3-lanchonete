@@ -48,8 +48,11 @@ Página que exibe os produtos oferecidos pela lanchonete.
 
 ## FIDELIDADE
 
----
+Página que exibe os programas de fidelidade da lanchonete.
+![template cliente Fernanda](https://user-images.githubusercontent.com/89883201/136618727-4976aadf-08a0-4e4e-b84f-f9ee2ab0f4fc.png)
 
+
+---
 ## LOGIN
 
 Página que permite o usuário acessar como administrador ou cliente.
@@ -132,6 +135,9 @@ Página para o cliente visualizar, adicionar ou excluir cartões de crédito e/o
 ## FINANCEIRO - ADMINISTRADOR
 
 ## CADASTRO - ADMINISTRADOR
+
+Página que exibe os produtos disponíveis e indisponíveis na lanchonete. Além disso, permite que o administrador possa inserir novos produtos
+![template Fernanda](https://user-images.githubusercontent.com/89883201/136618593-01dbb6fb-d29b-4aca-8ab3-b155c95fd68c.png)
 
 ## FORMULÁRIO DE CADASTRO - ADMINISTRADOR
 
