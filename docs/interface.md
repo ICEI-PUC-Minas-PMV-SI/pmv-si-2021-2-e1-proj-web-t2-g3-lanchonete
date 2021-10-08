@@ -35,8 +35,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 ## HOME
 
 Pagina Home
-
-![Lanchonete WARMBURGUER](docs\img\Wireframes\Home.png)
+tttttttttttttttttttttt
 
 ---
 
