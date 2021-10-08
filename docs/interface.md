@@ -34,6 +34,9 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 
+Pagina Home
+![Lanchonete WARMBURGUER](https://user-images.githubusercontent.com/86330652/136482244-fc9bb11c-ac6f-4584-b1b1-5484ac2cfec2.png)
+
 ---
 
 ## CARDÁPIO
