@@ -91,6 +91,10 @@ Página carrinho.
 
 ## CARRINHO - FINALIZAÇÃO DO PEDIDO
 
+Página de Finalização do Pedido.
+![Finalização do pedido](https://user-images.githubusercontent.com/89817369/136484505-e739d267-f026-4079-a6ae-07221a6f3e4f.png)
+
+---
 ## PERFIL CLIENTE
 
 ## PEDIDOS - CLIENTE
