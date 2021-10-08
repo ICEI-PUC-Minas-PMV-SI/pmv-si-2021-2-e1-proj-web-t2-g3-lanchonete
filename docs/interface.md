@@ -6,7 +6,7 @@ Nosso projeto visa atender a todo o fluxo de interações entre cliente e admini
 
 O fluxograma de interações etre as páginas é mostrado na imagem a seguir. 
 
-![Usuário](img/userflow.jpg)
+![Userflow]()
 
 
 ## Wireframes
