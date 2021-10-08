@@ -1,12 +1,12 @@
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
-Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Nosso projeto visa atender a todo o fluxo de interações entre cliente e administrador para que o processo ocorra de maneirá fácil e segura para ambas as partes. As páginas da plataforma atendem a um design simples e intuitivo buscando uma boa usabilidade e seguem um padrão de cores visualmente confortável para o usuário.
 
 ## User Flow
 
-![Exemplo de UserFlow](img/userflow.jpg)
+O fluxograma de interações etre as páginas é mostrado na imagem a seguir. 
+
+![Usuário](img/userflow.jpg)
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
@@ -18,19 +18,9 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Todas as páginas referentes ao acesso do cliente da lanchonete possuem três blocos principais: Cabeçalho, conteúdo e rodapé.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
-
-> **Links Úteis**:
->
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Já as páginas refrentes ao acesso do adminsitrador possuem dois blocos principais: Menu lateral e conteúdo.
 
 ## HOME
 
@@ -176,6 +166,8 @@ Página que exibe os produtos disponíveis e indisponíveis na lanchonete. Além
 ## FORMULÁRIO DE CADASTRO - ADMINISTRADOR
 
 Página com finalidade de cadastro de itens pelo administrador.
+
+![Formulário](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-2-e1-proj-web-t2-g3-lanchonete/blob/main/docs/img/Wireframes/formulario.png)
 
 
 ## GESTÃO DE COMANDAS - ADMINISTRADOR
