@@ -34,6 +34,9 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 
+ Pégina Home, a partir dela tanto o cliente quanto o administrador terá acesso as demais telas.
+![Home](![Home](https://user-images.githubusercontent.com/89883396/136483085-1f7a2022-e01f-4fed-bf11-9d632f589ca0.png)
+
 ---
 
 ## CARDÁPIO
