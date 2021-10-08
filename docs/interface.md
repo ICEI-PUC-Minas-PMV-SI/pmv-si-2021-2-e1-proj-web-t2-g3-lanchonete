@@ -34,7 +34,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 
-Pégina Home, a partir dela tanto o cliente quanto o administrador terá acesso as demais telas.
+Página Home, a partir dela tanto o cliente quanto o administrador terá acesso as demais telas.
 ![Home](https://user-images.githubusercontent.com/89883396/136483085-1f7a2022-e01f-4fed-bf11-9d632f589ca0.png)
 
 ---
@@ -73,7 +73,7 @@ Página para os administradores fazerem login.
 
 ## LOGIN - RECUPERAR SENHA
 
-Página que possibilita o cliente recuperar sua senha, caso tenha esquecido.
+Página que possibilita o cliente ou o administrador recuperar sua senha, caso tenha esquecido.
 ![Recuperar Senha](https://user-images.githubusercontent.com/85374847/136380498-543c5e00-2b51-48cd-bf28-54d1f1d0cd6d.png)
 
 ---
