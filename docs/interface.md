@@ -107,6 +107,10 @@ Página de Finalização do Pedido.
 
 ## FINANCEIRO - ADMINISTRADOR
 
+Página teste para link.
+![Página financeira](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2021-2-e1-proj-web-t2-g3-lanchonete/blob/main/docs/img/Wireframes/Login%20Cliente.png)
+
+
 ## CADASTRO - ADMINISTRADOR
 
 ## FORMULÁRIO DE CADASTRO - ADMINISTRADOR
