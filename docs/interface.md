@@ -34,7 +34,7 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## HOME
 
- Pégina Home, a partir dela tanto o cliente quanto o administrador terá acesso as demais telas.
+Pégina Home, a partir dela tanto o cliente quanto o administrador terá acesso as demais telas.
 ![Home](https://user-images.githubusercontent.com/89883396/136483085-1f7a2022-e01f-4fed-bf11-9d632f589ca0.png)
 
 ---
@@ -67,7 +67,7 @@ Página para os clientes fazerem login.
 ## LOGIN ADMINISTRADOR
 
 Página para os administradores fazerem login.  
-![Login Admin](https://user-images.githubusercontent.com/85374847/136380479-1cf57e81-a857-42d8-9183-5b237c64a4da.png)
+![Login Admin](https://user-images.githubusercontent.com/85374847/136591846-de2864dc-8c8f-4262-8386-c5ef2f2b838d.png)
 
 ---
 
@@ -86,7 +86,7 @@ Página para novos clientes se cadastrarem.
 ---
 
 ## CARRINHO - PRÉ VISUALIZAÇÃO PEDIDO
- 
+
 Página carrinho.
 ![Carrinho](https://user-images.githubusercontent.com/89817369/136483909-bf7c3c5b-53fa-4219-8c23-75ef0f450a39.png)
 
@@ -98,6 +98,7 @@ Página de Finalização do Pedido.
 ![Finalização do pedido](https://user-images.githubusercontent.com/89817369/136484505-e739d267-f026-4079-a6ae-07221a6f3e4f.png)
 
 ---
+
 ## PERFIL CLIENTE
 
 Página para o cliente alterar dados e/ou excluir seu cadastro.
@@ -113,7 +114,6 @@ Página para o cliente acompanhar seus pedidos.
 ---
 
 ## FIDELIDADE - CLIENTE
-
 
 Página para o cliente acompanhar seus vales compras, descontos e brindes.
 ![PROGRAMAS DE FIDELIDADE](https://user-images.githubusercontent.com/89786617/136479509-ebd90256-2240-43fb-8768-2e9605d8710e.png)
