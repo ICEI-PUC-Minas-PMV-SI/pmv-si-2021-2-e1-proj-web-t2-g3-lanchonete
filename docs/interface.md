@@ -161,7 +161,8 @@ Página para controle financeiro de entradas e saídas na lanchonete do administ
 
 ## CADASTRO - ADMINISTRADOR
 
-Página que exibe os produtos disponíveis e indisponíveis na lanchonete. Além disso, permite que o administrador possa inserir novos produtos
+Página que exibe os produtos disponíveis e indisponíveis na lanchonete. Além disso, permite que o administrador possa inserir novos produtos.
+
 ![template admintre](https://user-images.githubusercontent.com/89883201/136620242-d4cafb4e-dba4-4ce0-9bc3-412cda51cb88.png)
 
 
@@ -175,4 +176,5 @@ Página com finalidade de cadastro de itens pelo administrador.
 ## GESTÃO DE COMANDAS - ADMINISTRADOR
 
 Página de gestão de comandas.
+
 ![Comandas](https://user-images.githubusercontent.com/89883396/136486634-037ed07d-d38d-41c3-b710-b331f62cafbd.png)
