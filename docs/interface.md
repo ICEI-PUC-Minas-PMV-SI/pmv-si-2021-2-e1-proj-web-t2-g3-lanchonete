@@ -14,7 +14,15 @@ O fluxograma de interações etre as páginas é mostrado na imagem a seguir.
 
 Todas as páginas referentes ao acesso do cliente da lanchonete possuem três blocos principais: Cabeçalho, conteúdo e rodapé.
 
-Já as páginas refrentes ao acesso do adminsitrador possuem dois blocos principais: Menu lateral e conteúdo.
+![Wireframe Cliente](img/Wireframes/Wireframecliente.png)
+
+---
+
+As páginas referentes ao acesso do administrador possuem dois blocos principais: Menu lateral e conteúdo.
+
+![Wireframe Cliente](img/Wireframes/Wireframeadmin.png)
+
+---
 
 ## HOME
 
