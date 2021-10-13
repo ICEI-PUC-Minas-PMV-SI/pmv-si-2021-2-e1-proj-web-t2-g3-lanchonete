@@ -47,6 +47,10 @@ header {
   gap: 28px;
 }
 
+ul li a:hover {
+  color: #ff9a00;
+}
+
 .login-carrinho ul {
   display: flex;
   align-items: center;
@@ -92,6 +96,10 @@ header {
   align-items: center;
   gap: 5px;
   margin: 0 25px;
+}
+
+.enderecos span:hover {
+  color: #bc1823;
 }
 
 main {
