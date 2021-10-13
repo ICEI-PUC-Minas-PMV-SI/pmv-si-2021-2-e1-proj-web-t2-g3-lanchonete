@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 ul li {
@@ -14,7 +15,7 @@ ul li {
 
 body {
   font-family: 'Roboto', 'Oxygen', sans-serif;
-  color: white;
+  color: #ffffff;
 }
 
 header {
@@ -85,7 +86,7 @@ header {
 }
 
 .horario,
-.enderecos {
+.enderecos a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +101,7 @@ main {
 footer {
   background-color: #bc1823;
   height: 100px;
-  color: white;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   display: flex;
