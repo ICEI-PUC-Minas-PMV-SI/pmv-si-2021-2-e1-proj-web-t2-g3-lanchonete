@@ -89,21 +89,56 @@
     margin: 0 auto;
 }
 
-#visaoGeral{
+#square1{
     color: #ff9a00;
-    height: 500px;
+    height: 300px;
     margin: 15px;
     border-color: #bc1823;
-    text-align: center;
     border: 2px solid #bc1823;
-    
+
 }
 #texto{
-    padding-top: 15px;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
 }
 #texto2{
-    padding-top: 15px;
+    margin-top: 70px;
+    float: right;
+    margin-right: 50px;
+    background-color: black;
+    display: flex;
+    
+    
 }
 #texto3{
-    padding-top: 15px;
+    margin-top: 70px;
+    margin-left: 50px;
+    float: left;
+    display: flex;
+    background-color: black;
+}
+#numero{
+    padding: 20px;
+    display: flex;
+    float: left;
+    margin-top: 150px;
+    color: #ff9a00;
+    background-color:aqua;
+    
+
+}
+#numero2{
+    padding: 20px;
+    float: right;
+    display: flex;
+    margin-top: 150px; 
+    color: #ff9a00;
+    background-color: black;
+
+}
+#periodo{
+    color: black;
+    text-align: center;
 }
