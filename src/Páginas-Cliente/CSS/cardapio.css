@@ -227,6 +227,103 @@ main {
   background-size: cover;
 }
 
+.box-produtos {
+  margin: 16px 70px;
+  margin-bottom: 100px;
+}
+
+.box-produtos h1 {
+  color: #bc1823;
+  font: bold 50px 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+.linha-produtos {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.box-produto {
+  background-color: #f7f3f3;
+  width: 390px;
+  height: 165px;
+  display: flex;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 8px;
+  position: relative;
+}
+
+.box-produto .image img {
+  width: 147px;
+  height: 147px;
+}
+
+.box-produto .image-vertical img {
+  height: 147px;
+}
+
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nome-produto {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.descricao-produto {
+  font: 14px 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+.precos {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.line-icon {
+  position: absolute;
+  top: 10px;
+  right: 114px;
+  width: 90px;
+  height: 3px;
+}
+
+.line-icon2 {
+  position: absolute;
+  top: 10px;
+  right: 124px;
+  width: 80px;
+  height: 3px;
+}
+
+.preco-antigo-produto {
+  color: #989797;
+  font: normal bold 18px 'Nunito', sans-serif;
+}
+
+.preco-novo-produto {
+  font: normal bold 18px 'Nunito', sans-serif;
+}
+
+.plus-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 24px;
+}
+
+.plus-icon:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 footer {
   background-color: #bc1823;
   height: 100px;
