@@ -246,12 +246,12 @@ footer {
   gap: 10px;
 }
 
-.social-media a img {
+#social-media a img {
   width: 25px;
   margin: 0 6px;
 }
 
-.social-media a img:hover {
+#social-media a img:hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
