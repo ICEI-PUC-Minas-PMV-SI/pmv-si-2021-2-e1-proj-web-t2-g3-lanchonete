@@ -149,12 +149,27 @@ main {
   padding: 12px;
 }
 
-#pesquisa p {
-  font: bold 14px 'Roboto', sans-serif;
-  color: #ffffff;
+#pesquisa input {
+  background-color: #c4c4c4;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
-#pesquisa img {
+#pesquisa button {
+  background-color: #c4c4c4;
+  border: none;
+  border-style: none;
+}
+
+#pesquisa button:hover {
+  background-color: #c4c4c4;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+#pesquisa button img {
   width: 25px;
 }
 
