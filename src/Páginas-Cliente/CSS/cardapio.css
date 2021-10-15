@@ -25,7 +25,7 @@ header {
   padding: 10px 0;
 }
 
-.main-header {
+#main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,7 +42,7 @@ header {
   width: 20px;
 }
 
-.menu ul {
+#menu ul {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -80,7 +80,7 @@ ul li a:hover {
   top: -2px;
 }
 
-.sub-header {
+#sub-header {
   background-color: #ff9a00;
   height: 35px;
   display: flex;
@@ -90,8 +90,8 @@ ul li a:hover {
   font-weight: 600;
 }
 
-.horario,
-.enderecos a {
+#horario,
+#enderecos a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +99,7 @@ ul li a:hover {
   margin: 0 25px;
 }
 
-.enderecos span:hover {
+#enderecos span:hover {
   color: #bc1823;
 }
 
