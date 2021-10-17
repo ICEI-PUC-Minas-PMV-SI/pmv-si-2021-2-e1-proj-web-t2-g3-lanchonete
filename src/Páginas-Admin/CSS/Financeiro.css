@@ -89,56 +89,95 @@
     margin: 0 auto;
 }
 
-#square1{
+#bloco1{
     color: #ff9a00;
-    height: 300px;
+    height: 250px;
     margin: 15px;
     border-color: #bc1823;
     border: 2px solid #bc1823;
 
 }
-#texto{
-    align-items: center;
-    text-align: center;
-    display: block;
-    
-}
-#texto2{
-    margin-top: 70px;
-    float: right;
-    margin-right: 50px;
-    background-color: black;
-    display: flex;
-    
-    
-}
-#texto3{
-    margin-top: 70px;
-    margin-left: 50px;
-    float: left;
-    display: flex;
-    background-color: black;
-}
-#numero{
-    border: 15px solid #bc1823;
-    float: left;
-    display: flex;
-    margin-top: 150px; 
-    color: #ff9a00;
-    background-color: black;
-    
 
+#visaoGeral{
+  align-items: center;
+  text-align: center;
 }
-#numero2{
-    padding: 20px;
-    float: right;
-    display: flex;
-    margin-top: 150px; 
-    color: #ff9a00;
-    background-color: black;
 
+#icone2{
+position: relative;
+bottom: 30px;
 }
+
+#iconeFinanceiro{
+height: 100px;
+margin-top: 30px;
+}
+
+.lista1{
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.lista2{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#valor1{
+  width: 130px;
+  height: 40px;
+  border: 3px solid #bc1823;
+  border-width: 0px 0px 3px 0px;
+  position: relative;
+  bottom: 150px;
+}
+
+#valor2{
+  width: 130px;
+  height: 40px;
+  border: 3px solid #bc1823;
+  border-width: 0px 0px 3px 0px;
+  position: relative;
+  bottom: 150px;
+}
+
 #periodo{
-    color: black;
-    text-align: center;
+  color: #ff9a00;
+  text-align: center;
+}
+.inicio{
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+
+
+
+}
+#inicio-fim{
+  width: 100px;
+  height: 35px;
+
+}
+.data{
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#datas{
+  border-color: #bc1823;
+  border-style: solid;
+  width: 100px;
+  height: 35px;
 }
