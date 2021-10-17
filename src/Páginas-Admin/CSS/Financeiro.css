@@ -120,12 +120,12 @@
     background-color: black;
 }
 #numero{
-    padding: 20px;
-    display: flex;
+    border: 15px solid #bc1823;
     float: left;
-    margin-top: 150px;
+    display: flex;
+    margin-top: 150px; 
     color: #ff9a00;
-    background-color:aqua;
+    background-color: black;
     
 
 }
