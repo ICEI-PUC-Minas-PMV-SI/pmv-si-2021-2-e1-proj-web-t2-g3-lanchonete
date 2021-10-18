@@ -37,6 +37,7 @@ h3 {
 
 .opcoes {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   align-items: center;
   justify-content: center;
@@ -61,4 +62,11 @@ h3 {
 
 #x-icon img {
   width: 30px;
+}
+
+@media only screen and (max-width: 320px) {
+  #admin,
+  #cliente {
+    font: normal bold 15px 'Roboto', sans-serif;
+  }
 }
