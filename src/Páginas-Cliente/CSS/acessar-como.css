@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  color: #ffffff;
+  font: normal 500 20px 'Roboto', sans-serif;
+}
+
+.caixa {
+  background-color: #bc1823;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.opcoes {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#admin,
+#cliente {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 210px;
+  text-align: center;
+  padding: 5px 10px;
+  font: normal bold 20px 'Roboto', sans-serif;
+}
+
+#x-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#x-icon img {
+  width: 30px;
+}
