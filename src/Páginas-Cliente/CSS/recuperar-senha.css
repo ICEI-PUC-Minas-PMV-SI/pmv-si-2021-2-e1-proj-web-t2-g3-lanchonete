@@ -44,19 +44,19 @@ h3 {
 }
 
 .inputs {
-  width: 540px;
+  width: 100%;
 }
 
 #email,
 .button {
-  width: 520px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 input {
   background-color: #efefef;
-  width: 520px;
+  width: 90%;
   height: 48px;
   font: normal normal 16px 'Roboto', sans-serif;
   margin-bottom: 20px;
@@ -67,7 +67,7 @@ input {
 button {
   background-color: #ff9a00;
   color: #ffffff;
-  width: 500px;
+  width: 90%;
   height: 48px;
   font: normal 700 16px 'Roboto', sans-serif;
   border: none;
@@ -83,4 +83,13 @@ button {
 
 #x-icon img {
   width: 30px;
+}
+
+@media only screen and (max-width: 280px) {
+  h3 {
+    font: normal bold 20px 'Nunito', sans-serif;
+  }
+  .texto {
+    font: normal 700 14px 'Roboto', sans-serif;
+  }
 }
