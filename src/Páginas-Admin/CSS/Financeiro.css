@@ -157,13 +157,11 @@ margin-top: 30px;
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
-
-
-
 }
 #inicio-fim{
   width: 100px;
   height: 35px;
+  text-align: center;
 
 }
 .data{
@@ -178,6 +176,6 @@ margin-top: 30px;
 #datas{
   border-color: #bc1823;
   border-style: solid;
-  width: 100px;
-  height: 35px;
+  width: 150px;
+  height: 40px;
 }
