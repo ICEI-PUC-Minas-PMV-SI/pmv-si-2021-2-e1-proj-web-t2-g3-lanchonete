@@ -47,20 +47,20 @@ h3 {
 }
 
 .inputs {
-  width: 540px;
+  width: 100%;
 }
 
 #email,
 #senha,
 .button {
-  width: 440px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 input {
   background-color: #efefef;
-  width: 500px;
+  width: 90%;
   height: 48px;
   font: normal normal 16px 'Roboto', sans-serif;
   margin: 0 20px 20px 20px;
@@ -71,7 +71,7 @@ input {
 button {
   background-color: #ff9a00;
   color: #ffffff;
-  width: 440px;
+  width: 90%;
   height: 48px;
   font: normal 700 16px 'Roboto', sans-serif;
   border: none;
@@ -86,13 +86,13 @@ p {
 }
 
 .button a {
-  width: 550px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 #button-cadastro {
-  width: 500px;
+  width: 90%;
   margin-top: 60px;
 }
 
