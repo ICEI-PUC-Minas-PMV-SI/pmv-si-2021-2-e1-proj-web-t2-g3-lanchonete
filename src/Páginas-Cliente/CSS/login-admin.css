@@ -51,20 +51,20 @@ h3 {
 }
 
 .inputs {
-  width: 520px;
+  width: 100%;
 }
 
 #cpf,
 #senha,
 .button {
-  width: 468px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 input {
   background-color: #efefef;
-  width: 422px;
+  width: 90%;
   height: 48px;
   font: normal normal 16px 'Roboto', sans-serif;
   margin: 0 20px 20px 20px;
@@ -75,7 +75,7 @@ input {
 button {
   background-color: #ff9a00;
   color: #ffffff;
-  width: 422px;
+  width: 90%;
   height: 48px;
   font: normal 700 16px 'Roboto', sans-serif;
   border: none;
