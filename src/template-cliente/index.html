@@ -7,7 +7,13 @@
     <title>WarmBurguer</title>
   </head>
 
-  <link rel="stylesheet" href="/src/template-cliente/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
   <body>
     <div class="container">
       <header>
@@ -15,50 +21,59 @@
         <div class="main-header">
           <div class="logo">
             <a href="#">
-              <img
-                src="/src/template-cliente/midia/logo-lanchonete.png"
-                alt="Logo da Lanchonete"
-              />
+              <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
             </a>
           </div>
 
-        <!--Segundo componente Cabeçalho Principal--> 
-        <div class="menu">
+          <!--Segundo componente Cabeçalho Principal-->
+          <div class="menu">
             <ul>
               <li>
-                <img
-                  src="/src/template-cliente/midia/home-icon.png"
-                  alt="Ícone home"
-                  class="icon"
-                />
-                <span>HOME</span>
+                <a href="#">
+                  <img
+                    src="midia/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
+                </a>
               </li>
-              <li>CARDÁPIO</li>
-              <li>FIDELIDADE</li>
-              <li>SOBRE NÓS</li>
+              <li>
+                <a href="#">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="#"> FIDELIDADE </a>
+              </li>
+              <li>
+                <a href="#"> SOBRE NÓS </a>
+              </li>
             </ul>
-        </div>
+          </div>
 
-        <!--Terceiro componente Cabeçalho-->
+          <!--Terceiro componente Cabeçalho-->
           <div class="login-carrinho">
             <ul>
               <li id="login">
-                <img
-                  src="/src/template-cliente/midia/login-icon.png"
-                  alt="Ícone login"
-                  id="login-icon"
-                  class="icon"
-                />
-                <span>LOGIN</span>
+                <a href="#">
+                  <img
+                    src="midia/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
               </li>
               <li id="carrinho">
-                <img
-                  src="/src/template-cliente/midia/cart-icon.png"
-                  alt="Ícone carrinho"
-                  id="cart-icon"
-                  class="icon"
-                />
-                <span>CARRINHO</span>
+                <a href="#">
+                  <img
+                    src="midia/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
               </li>
             </ul>
           </div>
@@ -68,50 +83,40 @@
         <!--Início cabeçalho inferior-->
         <div class="sub-header">
           <div class="horario">
-            <img
-              src="/src/template-cliente/midia/clock-icon.png"
-              alt="Ícone relógio"
-              class="icon"
-            />
+            <img src="midia/clock-icon.png" alt="Ícone relógio" class="icon" />
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div class="enderecos">
-            <img
-              src="/src/template-cliente/midia/location-icon.png"
-              alt="Ícone localização"
-              class="icon"
-            />
-            <span>ENDEREÇOS DE ENTREGA</span>
+            <a href="#">
+              <img
+                src="midia/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
+              />
+              <span>ENDEREÇOS DE ENTREGA</span>
+            </a>
           </div>
         </div>
       </header>
       <main></main>
 
-
       <footer>
         <div class="box-footer">
           <div class="social-media">
             <a href="#">
-              <img
-                src="/src/template-cliente/midia/facebook-icon.png"
-                alt="Ícone Facebook"
-              />
+              <img src="midia/facebook-icon.png" alt="Ícone Facebook" />
             </a>
             <a href="#">
-              <img
-                src="/src/template-cliente/midia/instagram-icon.png"
-                alt="Ícone Instagram"
-              />
+              <img src="midia/instagram-icon.png" alt="Ícone Instagram" />
             </a>
             <a href="#">
-              <img
-                src="/src/template-cliente/midia/tiktok-icon.png"
-                alt="Ícone TikTok"
-              />
+              <img src="midia/tiktok-icon.png" alt="Ícone TikTok" />
             </a>
           </div>
           <div class="infos">
-            <p>Copyright 2021 | Warmburguer | All rights reserved</p>
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
           </div>
         </div>
       </footer>

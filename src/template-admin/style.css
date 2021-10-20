@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: #ffffff;
 }
 
 body {
@@ -43,7 +44,7 @@ header {
   margin-top: 30px;
 }
 
-ul li {
+ul li a {
   list-style: none;
   background-color: #ff9a00;
   margin-bottom: 17px;
@@ -53,7 +54,7 @@ ul li {
   padding: 5px;
 }
 
-ul li p {
+ul li a p {
   width: 50%;
   margin-left: 10px;
 }
