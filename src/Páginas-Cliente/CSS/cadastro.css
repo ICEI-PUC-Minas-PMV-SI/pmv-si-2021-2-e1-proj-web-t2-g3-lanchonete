@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #f9f9f9;
+}
+
+header {
+  background-color: #bc1823;
+  width: 100%;
+  height: 136px;
+  padding: 10px 0;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.icon {
+  width: 20px;
+}
+
+#menu ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+ul li a:hover {
+  color: #ff9a00;
+}
+
+#login-carrinho ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#login,
+#carrinho {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 15px;
+}
+
+#login-icon {
+  width: 28px;
+  position: absolute;
+  right: 42px;
+  top: -1px;
+}
+
+#cart-icon {
+  width: 16px;
+  position: absolute;
+  right: 85px;
+  top: -2px;
+}
+
+#sub-header {
+  background-color: #ff9a00;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#horario,
+#enderecos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0 25px;
+}
+
+#enderecos span:hover {
+  color: #bc1823;
+}
+
+.caixa {
+  background-color: #bc1823;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 40px 10px;
+}
+
+h3 {
+  color: #ffffff;
+  font: normal bold 35px 'Roboto Slab', sans-serif;
+  margin-bottom: 10px;
+}
+
+.caixa-inputs {
+  width: 65%;
+}
+
+.inputs {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  font: normal bold 18px 'Nunito', sans-serif;
+}
+
+input {
+  background-color: #efefef;
+  height: 35px;
+  margin-top: 5px;
+  padding: 15px;
+  border: none;
+}
+
+.input-grande {
+  width: 50%;
+}
+
+.input-medio {
+  width: 33%;
+}
+
+.input-pequeno {
+  width: 25%;
+}
+
+#sexo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.masculino,
+.feminino {
+  display: flex;
+  align-items: center;
+}
+
+#masculino,
+#feminino {
+  margin-right: 5px;
+}
+
+.rua-numero {
+  display: flex;
+  gap: 4px;
+}
+
+#rua {
+  width: 78%;
+}
+
+#numero {
+  width: 22%;
+}
+
+.input-grande input,
+.input-medio input,
+.input-pequeno input,
+#rua input,
+#numero input {
+  width: 100%;
+}
+
+button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 170px;
+  height: 50px;
+  font: normal 700 20px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+footer {
+  background-color: #bc1823;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a img {
+  width: 25px;
+  margin: 0 6px;
+}
+
+.social-media a img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
