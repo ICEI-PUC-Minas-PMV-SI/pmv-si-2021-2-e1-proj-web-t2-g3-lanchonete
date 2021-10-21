@@ -103,7 +103,7 @@ ul li a:hover {
 }
 
 main {
-    height: 550px;
+    height: 521px;
   
 }
 
@@ -132,31 +132,29 @@ main {
 .aside-menu{
   padding-left: 20px;
   padding-top: 20px;
+  
 }
 
 .content-principal{
   padding-left: 20px;
   padding-top: 20px;
+  border-left: #000 solid 1px;
 }
 
 .content-principal> form> div{
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .content-principal h3{
   font-size: 16px;
   color: #bc1823;
-  margin-top: 20px;
+  margin-top: 15px;
   
 }
 
 .content-principal label {
   font-size: 14px;
   margin-bottom: 5px;
-}
-
-.content-principal>div.lateral{
-  position:relative;
 }
 
 .mdbotoes{
@@ -166,6 +164,7 @@ main {
   justify-content: space-between;
   color: #ffffff;
   background-color: #ff9a00;
+  border-bottom-right-radius: 2px;
   width: 90px;
   height: 30px;
   
