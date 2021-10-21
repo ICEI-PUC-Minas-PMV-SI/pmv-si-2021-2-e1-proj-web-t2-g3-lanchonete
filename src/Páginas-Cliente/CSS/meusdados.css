@@ -103,7 +103,7 @@ ul li a:hover {
 }
 
 main {
-    height: 521px;
+    height: 550px;
   
 }
 
@@ -119,13 +119,56 @@ main {
   .aside-menu {
     align-self: start;
   }
+
+.aside-menu a{
+  color: #000;
+  
 }
 
-.aside-menu> ul> li a:hover {
-  color: #000;
-  text-decoration: none;
-  ;
+.aside-menu> ul> li{
+  margin-bottom: 30px;
+}
 
+.aside-menu{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.content-principal{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.content-principal> form> div{
+  margin-bottom: 5px;
+}
+
+.content-principal h3{
+  font-size: 16px;
+  color: #bc1823;
+  margin-top: 20px;
+  
+}
+
+.content-principal label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.content-principal>div.lateral{
+  position:relative;
+}
+
+.mdbotoes{
+  margin-top: 15px;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: #ff9a00;
+  width: 90px;
+  height: 30px;
+  
 }
 
 
