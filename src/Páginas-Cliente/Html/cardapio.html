@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio</title>
+
+    <link rel="stylesheet" href="../CSS/cardapio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
-  <link rel="stylesheet" href="../CSS/cardapio.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
   <body>
     <div class="container">
       <header>
@@ -26,6 +27,13 @@
               />
             </a>
           </div>
+          <!-- <div class="menu-section on">
+            <div class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+          </div> -->
           <nav id="menu">
             <ul>
               <li>
@@ -39,7 +47,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">CARDÁPIO</a>
+                <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
                 <a href="#"> FIDELIDADE </a>
@@ -49,10 +57,10 @@
               </li>
             </ul>
           </nav>
-          <div class="login-carrinho">
+          <nav id="login-carrinho">
             <ul>
               <li id="login">
-                <a href="#">
+                <a href="../acessar-como/acessar-como.html">
                   <img
                     src="../midia/cardapio/icons/login-icon.png"
                     alt="Ícone login"
@@ -74,7 +82,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
         <div id="sub-header">
           <div id="horario">
@@ -162,12 +170,14 @@
                   </p>
                 </div>
                 <div class="precos">
-                  <img
-                    src="../midia/cardapio/icons/line-icon.png"
-                    alt="Ícone linha"
-                    class="line-icon"
-                  />
-                  <p class="preco-antigo-produto">R$ 23,90</p>
+                  <div class="caixa-preco-antigo">
+                    <img
+                      src="../midia/cardapio/icons/line-icon.png"
+                      alt="Ícone linha"
+                      class="line-icon"
+                    />
+                    <p class="preco-antigo-produto">R$ 23,90</p>
+                  </div>
                   <p class="preco-novo-produto">R$ 18,90</p>
                 </div>
               </div>
@@ -194,12 +204,14 @@
                   </p>
                 </div>
                 <div class="precos">
-                  <img
-                    src="../midia/cardapio/icons/line-icon.png"
-                    alt="Ícone linha"
-                    class="line-icon"
-                  />
-                  <p class="preco-antigo-produto">R$ 14,90</p>
+                  <div class="caixa-preco-antigo">
+                    <img
+                      src="../midia/cardapio/icons/line-icon.png"
+                      alt="Ícone linha"
+                      class="line-icon"
+                    />
+                    <p class="preco-antigo-produto">R$ 23,90</p>
+                  </div>
                   <p class="preco-novo-produto">R$ 10,90</p>
                 </div>
               </div>
@@ -278,12 +290,14 @@
                   </p>
                 </div>
                 <div class="precos">
-                  <img
-                    src="../midia/cardapio/icons/line-icon.png"
-                    alt="Ícone linha"
-                    class="line-icon2"
-                  />
-                  <p class="preco-antigo-produto">R$ 7,90</p>
+                  <div class="caixa-preco-antigo">
+                    <img
+                      src="../midia/cardapio/icons/line-icon.png"
+                      alt="Ícone linha"
+                      class="line-icon2"
+                    />
+                    <p class="preco-antigo-produto">R$ 7,90</p>
+                  </div>
                   <p class="preco-novo-produto">R$ 5,90</p>
                 </div>
               </div>
@@ -298,7 +312,7 @@
               <div class="image">
                 <img
                   src="../midia/cardapio/images/promocao/sanduiche-peito-peru.png"
-                  alt="Sanduíche Peito de Peru"
+                  alt="Sanduíche Natural de Peito de Peru"
                 />
               </div>
               <div class="produto">
@@ -312,13 +326,323 @@
                   </p>
                 </div>
                 <div class="precos">
-                  <img
-                    src="../midia/cardapio/icons/line-icon.png"
-                    alt="Ícone linha"
-                    class="line-icon"
-                  />
-                  <p class="preco-antigo-produto">R$ 20,90</p>
+                  <div class="caixa-preco-antigo">
+                    <img
+                      src="../midia/cardapio/icons/line-icon.png"
+                      alt="Ícone linha"
+                      class="line-icon"
+                    />
+                    <p class="preco-antigo-produto">R$ 23,90</p>
+                  </div>
                   <p class="preco-novo-produto">R$ 18,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="lanches" class="box-produtos">
+          <h1>LANCHES</h1>
+          <div class="linha-produtos">
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/x-burguer.png"
+                  alt="Hambúrguer X-Burguer"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">X-Burguer</h3>
+                  <p class="descricao-produto">
+                    Pão, hambúrguer, queijo prato, tomate e alface
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 10,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/x-cheese.png"
+                  alt="Hambúrguer X-Cheese"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">X-Cheese</h3>
+                  <p class="descricao-produto">
+                    Pão, hambúrguer, queijo prato, queijo cheddar, muçarela
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 12,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/x-picanha-duplo.png"
+                  alt="Hambúrguer X-Picanha Duplo"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">X-Picanha Duplo</h3>
+                  <p class="descricao-produto">
+                    Pão, 2 hambúrgueres de picanha, queijo cheddar, tomate,
+                    alface e milho verde
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 16,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/x-tudo.png"
+                  alt="Hambúrguer X-Tudo"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">X-Tudo</h3>
+                  <p class="descricao-produto">
+                    Pão, 2 hambúrgueres, bacon, queijo prato, presunto,
+                    muçarela, cebola caramelizada, tomate, alface e milho verde
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 18,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/frango-frito.png"
+                  alt="Frango Frito"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Balde de Frango Frito (5 un)</h3>
+                  <p class="descricao-produto">
+                    Delicioso frango frito americano crocante. Acompanha molho
+                    de alho
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 14,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/cachorro-quente.png"
+                  alt="Cachorro Quente"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Cachorro Quente</h3>
+                  <p class="descricao-produto">
+                    Pão, salsicha, queijo, bacon e mostarda
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 7,90</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/mini-pizza.png"
+                  alt="Mini Pizza"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Mini Pizza</h3>
+                  <p class="descricao-produto">
+                    Calabresa, queijo muçarela, cebola, tomate e orégano
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 6,50</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/coxinha.png"
+                  alt="Coxinha"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Coxinha de Frango</h3>
+                  <p class="descricao-produto">
+                    Deliciosa coxinha de frango caseira
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 4,50 (1 un)</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/pão-de-queijo.png"
+                  alt="Pão de Queijo"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Pão de Queijo</h3>
+                  <p class="descricao-produto">
+                    Pão de queijo fresquinho que só em Minas tem
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 3,50 (1 un)</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/pastel-carne.png"
+                  alt="Pastel de Carne"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Pastel de Carne</h3>
+                  <p class="descricao-produto">Pastel de Carne frito na hora</p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 3,50</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/pastel-queijo.png"
+                  alt="Pastel de Queijo"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Pastel de Queijo</h3>
+                  <p class="descricao-produto">
+                    Pastel de Queijo frito na hora
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 3,50</p>
+                </div>
+              </div>
+              <a href="#"
+                ><img
+                  src="../midia/cardapio/icons/plus-icon.png"
+                  alt="Ícone adicionar"
+                  class="plus-icon"
+              /></a>
+            </div>
+            <div class="box-produto">
+              <div class="image">
+                <img
+                  src="../midia/cardapio/images/lanches/batata-frita.png"
+                  alt="Batata Frita"
+                />
+              </div>
+              <div class="produto">
+                <div>
+                  <h3 class="nome-produto">Batata Frita</h3>
+                  <p class="descricao-produto">
+                    Batata frita crocante <br />
+                    Acompanha ketchup
+                  </p>
+                </div>
+                <div class="precos">
+                  <p class="preco-novo-produto">R$ 2,50</p>
                 </div>
               </div>
               <a href="#"
