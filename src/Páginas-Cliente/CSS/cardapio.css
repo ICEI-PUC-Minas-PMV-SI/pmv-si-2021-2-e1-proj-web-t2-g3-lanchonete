@@ -29,12 +29,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 25px;
   font-size: 16px;
   font-weight: bolder;
-}
-
-.logo {
-  margin-left: 25px;
 }
 
 .logo img {
@@ -45,8 +42,7 @@ header {
   width: 20px;
 }
 
-#menu ul,
-#login-carrinho ul {
+#menu ul {
   display: flex;
   align-items: center;
   gap: 28px;
@@ -56,16 +52,18 @@ ul li a:hover {
   color: #ff9a00;
 }
 
+#login-carrinho ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
 #login,
 #carrinho {
   display: flex;
   align-items: center;
   position: relative;
   margin-left: 15px;
-}
-
-#carrinho {
-  margin-right: 25px;
 }
 
 #login-icon {
@@ -80,11 +78,6 @@ ul li a:hover {
   position: absolute;
   right: 85px;
   top: -2px;
-}
-
-.menu-hamburguer {
-  display: none;
-  margin-right: 25px;
 }
 
 #sub-header {
@@ -394,147 +387,15 @@ footer {
   }
 }
 
-/* Transformar em menu em hamburguer */
-/* Para saber mais, ver o vídeo "Responsividade na prática" da Rocketseat
-- minuto 42:40 */
-/* @media only screen and (max-width: 890px) {
+@media only screen and (max-width: 890px) {
   nav {
     display: none;
-  }
-
-  .one,
-  .two,
-  .three {
-    background-color: #ff9a00;
-    height: 5px;
-    width: 100%;
-    margin: 6px auto;
-
-    transition-duration: 0.3s;
-  }
-
-  .menu-toggle {
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-  }
-
-  .menu-section.on {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40vw;
-    height: 66vh;
-    background-color: rgba(0, 0, 0, 0.445);
-    z-index: 1;
-  }
-
-  .menu-section.on nav {
-    display: block;
-  }
-
-  .menu-section.on .menu-toggle {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-  }
-
-  .menu-section.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-  }
-
-  .menu-section.on .menu-toggle .two {
-    opacity: 0;
-  }
-
-  .menu-section.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(8px, -9px);
-  }
-} */
-
-/* @media only screen and (max-width: 889px) {
-  .menu-hamburguer {
-    display: flex;
-  }
-
-  #checkbox-menu {
-    position: absolute;
-    opacity: 0;
-  }
-
-  label {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 22px;
-    width: 30px;
-  }
-
-  label span {
-    position: absolute;
-    display: block;
-    height: 5px;
-    width: 100%;
-    border-radius: 30px;
-    background: #ff9a00;
-    transition: 0.25s ease-in-out;
-  }
-
-  label span:nth-child(1) {
-    top: 0;
-  }
-
-  label span:nth-child(2) {
-    top: 8px;
-  }
-
-  label span:nth-child(3) {
-    top: 16px;
-  }
-
-  #checkbox-menu:checked + label span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: 8px;
-  }
-
-  #checkbox-menu:checked + label span:nth-child(2) {
-    opacity: 0;
-  }
-
-  #checkbox-menu:checked + label span:nth-child(3) {
-    transform: rotate(45deg);
-    top: 8px;
-  }
-
-  #menu {
-    background: #1d075f;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 136px;
-    left: 0;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 1;
-  }
-
-  #menu ul {
-    display: block;
-  }
-
-  #menu ul li {
-    margin: 50px 0;
-    line-height: 30px;
-  }
-
-  #checkbox-menu:checked ~ #menu {
-    background-color: chartreuse;
   }
 
   .box-produtos h1 {
     font: bold 45px 'Roboto', sans-serif;
   }
-} */
+}
 
 @media only screen and (max-width: 645px) {
   .boxes {
@@ -816,3 +677,52 @@ footer {
     width: 15px;
   }
 }
+
+/* Transformar em menu em hamburguer */
+/* Para saber mais, ver o vídeo "Responsividade na prática" da Rocketseat
+- minuto 42:40 */
+/* @media only screen and (max-width: 890px) {
+  nav {
+    display: none;
+  }
+  .one,
+  .two,
+  .three {
+    background-color: #ff9a00;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
+    transition-duration: 0.3s;
+  }
+  .menu-toggle {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .menu-section.on {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    height: 66vh;
+    background-color: rgba(0, 0, 0, 0.445);
+    z-index: 1;
+  }
+  .menu-section.on nav {
+    display: block;
+  }
+  .menu-section.on .menu-toggle {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+  }
+  .menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+    opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(8px, -9px);
+  }
+} */
