@@ -18,6 +18,12 @@ body {
   color: #ffffff;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background-color: #bc1823;
   height: 136px;
@@ -103,7 +109,7 @@ ul li a:hover {
 }
 
 main {
-  height: 521px;
+  flex-grow: 1;
 }
 
 footer {
