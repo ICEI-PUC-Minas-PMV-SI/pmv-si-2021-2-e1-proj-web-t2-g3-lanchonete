@@ -62,6 +62,7 @@ input {
   margin-bottom: 20px;
   padding: 5px 15px;
   border: none;
+  outline: none;
 }
 
 button {
