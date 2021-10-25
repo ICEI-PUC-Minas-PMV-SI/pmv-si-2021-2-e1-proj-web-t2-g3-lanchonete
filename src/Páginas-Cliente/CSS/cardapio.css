@@ -115,7 +115,6 @@ ul li a:hover {
 }
 
 main {
-  height: 70%;
   color: black;
 }
 
@@ -140,8 +139,10 @@ main {
 }
 
 .scroll-banner {
+  height: 16px;
   margin-bottom: 115px;
   opacity: 0;
+  font-size: 1%;
 }
 
 #pesquisa-carrinho {
@@ -402,7 +403,8 @@ footer {
     margin: 20px auto 75px auto;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     text-align: center;
     margin-left: 0;
   }
@@ -413,7 +415,8 @@ footer {
     display: none;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 45px 'Roboto', sans-serif;
   }
 }
@@ -464,8 +467,12 @@ footer {
   }
 
   #banner {
-    margin-top: 30px;
+    margin-top: 170px;
   }
+}
+
+.scroll-banner {
+  margin-bottom: 140px;
 }
 
 @media only screen and (max-width: 430px) {
@@ -477,7 +484,8 @@ footer {
     width: 240px;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 40px 'Roboto', sans-serif;
   }
 
@@ -547,7 +555,8 @@ footer {
     width: 225px;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 35px 'Roboto', sans-serif;
   }
 
