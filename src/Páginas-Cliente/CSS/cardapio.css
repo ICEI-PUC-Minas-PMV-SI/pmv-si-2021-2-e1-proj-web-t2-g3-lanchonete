@@ -23,15 +23,22 @@ header {
   width: 100%;
   height: 136px;
   padding: 10px 0;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 
 #main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 25px;
   font-size: 16px;
   font-weight: bolder;
+}
+
+.logo {
+  margin-left: 25px;
 }
 
 .logo img {
@@ -50,6 +57,10 @@ header {
 
 ul li a:hover {
   color: #ff9a00;
+}
+
+#login-carrinho {
+  margin-right: 25px;
 }
 
 #login-carrinho ul {
@@ -104,7 +115,6 @@ ul li a:hover {
 }
 
 main {
-  height: 70%;
   color: black;
 }
 
@@ -112,7 +122,7 @@ main {
   width: 100%;
   height: 284px;
   margin: 20px auto;
-  background-image: url(midia/images/pagina-principal/banner.png);
+  background-image: url(../midia/cardapio/images/pagina-principal/banner.png);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -126,6 +136,12 @@ main {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1.2px;
   -webkit-text-stroke-color: #000;
+}
+
+.scroll-banner {
+  height: 135px;
+  opacity: 0;
+  font-size: 1%;
 }
 
 #pesquisa-carrinho {
@@ -224,31 +240,36 @@ main {
 }
 
 #box1 {
-  background-image: url(midia/images/pagina-principal/lanches.png);
+  background-image: url(../midia/cardapio/images/pagina-principal/lanches.png);
   background-size: cover;
 }
 
 #box2 {
-  background-image: url(midia/images/pagina-principal/lanches-fit.png);
+  background-image: url(../midia/cardapio/images/pagina-principal/lanches-fit.png);
   background-size: cover;
 }
 
 #box3 {
-  background-image: url(midia/images/pagina-principal/bebidas.png);
+  background-image: url(../midia/cardapio/images/pagina-principal/bebidas.png);
   background-size: cover;
 }
 
 #box4 {
-  background-image: url(midia/images/pagina-principal/sobremesas.png);
+  background-image: url(../midia/cardapio/images/pagina-principal/sobremesas.png);
   background-size: cover;
 }
 
 .box-produtos {
   margin: 0 20px;
+}
+
+.box-produtos-sobremesas {
+  margin: 0 20px;
   margin-bottom: 70px;
 }
 
-.box-produtos h1 {
+.box-produtos h1,
+.box-produtos-sobremesas h1 {
   color: #bc1823;
   font: bold 50px 'Roboto', sans-serif;
   margin-left: 60px;
@@ -381,7 +402,8 @@ footer {
     margin: 20px auto 75px auto;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     text-align: center;
     margin-left: 0;
   }
@@ -392,7 +414,8 @@ footer {
     display: none;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 45px 'Roboto', sans-serif;
   }
 }
@@ -443,7 +466,11 @@ footer {
   }
 
   #banner {
-    margin-top: 30px;
+    margin-top: 35px;
+  }
+
+  .scroll-banner {
+    height: 155px;
   }
 }
 
@@ -456,7 +483,8 @@ footer {
     width: 240px;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 40px 'Roboto', sans-serif;
   }
 
@@ -526,7 +554,8 @@ footer {
     width: 225px;
   }
 
-  .box-produtos h1 {
+  .box-produtos h1,
+  .box-produtos-sobremesas h1 {
     font: bold 35px 'Roboto', sans-serif;
   }
 
@@ -685,7 +714,6 @@ footer {
   nav {
     display: none;
   }
-
   .one,
   .two,
   .three {
@@ -693,16 +721,13 @@ footer {
     height: 5px;
     width: 100%;
     margin: 6px auto;
-
     transition-duration: 0.3s;
   }
-
   .menu-toggle {
     width: 40px;
     height: 30px;
     margin-right: 20px;
   }
-
   .menu-section.on {
     position: absolute;
     top: 0;
@@ -712,25 +737,20 @@ footer {
     background-color: rgba(0, 0, 0, 0.445);
     z-index: 1;
   }
-
   .menu-section.on nav {
     display: block;
   }
-
   .menu-section.on .menu-toggle {
     position: absolute;
     top: 15px;
     right: 25px;
   }
-
   .menu-section.on .menu-toggle .one {
     transform: rotate(45deg) translate(7px, 7px);
   }
-
   .menu-section.on .menu-toggle .two {
     opacity: 0;
   }
-
   .menu-section.on .menu-toggle .three {
     transform: rotate(-45deg) translate(8px, -9px);
   }
