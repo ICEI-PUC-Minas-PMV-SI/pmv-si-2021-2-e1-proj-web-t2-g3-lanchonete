@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="../CSS/cadastro.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div id="main-header">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="../midia/cardapio/icons/logo-lanchonete.png"
+                alt="Logo da Lanchonete"
+              />
+            </a>
+          </div>
+          <!-- <div class="menu-section on">
+            <div class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+          </div> -->
+          <nav id="menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="../midia/cardapio/icons/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="#"> FIDELIDADE </a>
+              </li>
+              <li>
+                <a href="#"> SOBRE NÓS </a>
+              </li>
+            </ul>
+          </nav>
+          <nav id="login-carrinho">
+            <ul>
+              <li id="login">
+                <a href="acessar-como.html">
+                  <img
+                    src="../midia/cardapio/icons/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
+              </li>
+              <li id="carrinho">
+                <a href="#">
+                  <img
+                    src="../midia/cardapio/icons/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="sub-header">
+          <div id="horario">
+            <img
+              src="../midia/cardapio/icons/clock-icon.png"
+              alt="Ícone relógio"
+              class="icon"
+            />
+            <span>ABERTO 18:00 às 02:00</span>
+          </div>
+          <div id="enderecos">
+            <a href="#">
+              <img
+                src="../midia/cardapio/icons/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
+              />
+              <span>ENDEREÇOS DE ENTREGA</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="caixa">
+          <h3>CADASTRO</h3>
+          <div class="caixa-inputs">
+            <div class="inputs">
+              <div class="input-grande">
+                <label for="email">E-mail</label> <br />
+                <input type="email" id="email" minlength="10" required />
+              </div>
+              <div class="input-grande">
+                <label for="email-confirmar">Confirmar e-mail</label> <br />
+                <input
+                  type="email"
+                  id="email-confirmar"
+                  minlength="10"
+                  required
+                />
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input-grande gap">
+                <label for="nome">Nome</label> <br />
+                <input type="text" id="nome" required />
+              </div>
+              <div class="input-grande">
+                <label for="senha">Senha</label> <br />
+                <input type="password" id="senha" minlength="8" required />
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input-pequeno">
+                <label for="cpf">CPF</label> <br />
+                <input type="number" id="cpf" required />
+              </div>
+              <div class="input-pequeno">
+                <label for="telefone">Telefone</label> <br />
+                <input type="number" id="senha" minlength="10" required />
+              </div>
+              <div class="input-pequeno">
+                <label for="nascimento">Data de Nascimento</label> <br />
+                <input type="date" id="nascimento" required />
+              </div>
+              <div class="sexo">
+                <label for="sexo">Sexo</label>
+                <div id="sexo">
+                  <div class="masculino">
+                    <input type="radio" id="masculino" required />
+                    <label for="masculino">Masc.</label>
+                  </div>
+                  <div class="feminino">
+                    <input type="radio" id="feminino" required />
+                    <label for="feminino">Fem.</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input-medio">
+                <label for="cep">CEP</label> <br />
+                <input type="number" id="cep" required />
+              </div>
+              <div class="input-medio">
+                <label for="cidade">Cidade</label> <br />
+                <input type="text" id="cidade" required />
+              </div>
+              <div class="rua-numero input-medio">
+                <div id="rua">
+                  <label for="rua">Rua</label> <br />
+                  <input type="text" id="rua" required />
+                </div>
+                <div id="numero">
+                  <label for="numero">Nº</label> <br />
+                  <input type="number" id="numero" required />
+                </div>
+              </div>
+            </div>
+            <div class="inputs">
+              <div class="input-medio">
+                <label for="bairro">Bairro</label> <br />
+                <input type="text" id="bairro" required />
+              </div>
+              <div class="input-medio">
+                <label for="complemeto">Complemento</label> <br />
+                <input type="text" id="complemento" required />
+              </div>
+              <div class="input-medio">
+                <label for="referencia">Ponto de Referência</label> <br />
+                <input type="text" id="referencia" required />
+              </div>
+            </div>
+          </div>
+          <button type="submit">CADASTRAR</button>
+        </div>
+      </main>
+
+      <footer>
+        <div class="box-footer">
+          <div class="social-media">
+            <a href="https://pt-br.facebook.com/">
+              <img
+                src="../midia/cardapio/icons/facebook-icon.png"
+                alt="Ícone Facebook"
+              />
+            </a>
+            <a href="https://www.instagram.com">
+              <img
+                src="../midia/cardapio/icons/instagram-icon.png"
+                alt="Ícone Instagram"
+              />
+            </a>
+            <a href="https://www.tiktok.com/pt-BR/">
+              <img
+                src="../midia/cardapio/icons/tiktok-icon.png"
+                alt="Ícone TikTok"
+              />
+            </a>
+          </div>
+          <div class="infos">
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
