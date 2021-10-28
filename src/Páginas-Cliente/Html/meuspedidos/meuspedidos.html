@@ -105,11 +105,11 @@
         <aside class="aside-menu">
           <ul>
               <li> Olá, nome do usuário</li>
-              <li> <strong><a href="pedidos.html">PEDIDOS</strong></li></a> 
-              <li> <strong><a href="fidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
+              <li> <strong><a href="meuspedidos.html">PEDIDOS</strong></li></a> 
+              <li> <strong><a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
               <li><strong> <a href="meusdados.html">MEUS DADOS</li> </strong></a>
               <li> <strong><a href="cartoes.html">CARTÕES SALVOS</li></strong></a> 
-              <li><strong> <a href="index.html">SAIR</li></strong></a> 
+              <li><strong> <a href="Index.html">SAIR</li></strong></a> 
     
           </ul>
          </aside>
@@ -118,22 +118,44 @@
 
             <h2> PEDIDOS </h2>
 
-            <table class="tmpedidos">
-               <thread>Número</thread>
-               <thread>Comanda/Descrição</thread>
-               <thread>Valor Total/Pagamento</thread>
-               <thread>Data</thread>
-               <thread>Status</thread>
-               <tbody>
-               <td>00001</td>
-               <td>comanda</td>
-               <td>valor</td>
-               <td>dd/mm/aaaa</td>
-               <td>ENTREGUE</td>
-            </tbody>
-            </table>
-        </div>
+            <div class="mpedidos">
+
+              <table class="tablecpedidos">
+                <thread >
+                 <th class="thp"> Número</th>
+                 <th class="thp" id="cdescricao">Comanda/Descrição</th>
+                 <th class="thp" id="cvalortotal">Valor Total/Pagamento</th>
+                 <th class="thp">Data</th>
+                 <th class="thp">Status<th>
+                </thread>
+  
+                 <tbody>
+                 <tr> 
+                 <td class="tdp" id="pnumero">00001</td>
+                 <td class="tdp" id="pcomanda"> comanda</td>
+                 <td class="tdp" id="pvalortotal">valor</td>
+                 <td class="tdp" id="pdata">dd/mm/aaaa</td>
+                 <td class="tdp"id="pstatus">status</td>
+                 </tr>
+  
+                 <tr> 
+                  <td class="tdp" id="pnumero">00002</td>
+                  <td class="tdp" id="pcomanda">comanda comanda</td>
+                  <td class="tdp" id="pvalortotal">valor</td>
+                  <td class="tdp" id="pdata">dd/mm/aaaa</td>
+                  <td class="tdp"id="pstatus">status</td>
+                  </tr>
+              </tbody>
+              </table>
+
+
+            </div>
+
+                  
+            
+        </div>     
     </div>
+  </div>
  
     </main>
 

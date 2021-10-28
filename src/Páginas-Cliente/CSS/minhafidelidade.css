@@ -102,18 +102,19 @@
     color: #bc1823;
   }
   
+  /*edições da pagina meus dados */
+
   main {
-      height: 521px;
+      min-height: 521px;
     
   }
   
-  /*edições da pagina meus dados*/
-  @media (min-width: 450px) {
     .main-principal{
       color: #000;
       display: grid;
       grid-template-columns: 200px 1fr;
       grid-gap: 16px;
+      
     }
   
     .aside-menu {
@@ -140,41 +141,47 @@
     padding-top: 20px;
     padding-right:20px;
     border-left: #000 solid 1px;
+    
+    
   }
   
-  
-  }
-
   .mfidelidade{
     padding-top:30px;
+    padding-bottom: 10px;
     
   }
 
-  table {
+  
+  .tablecfidelidade {
     padding-top: 2px;
     margin-bottom: 2px;
     text-align: center;
     width: 100%;
     border: #bc1823 solid 1px;
-         
-  }
-  
-  th {
-    color:#bc1823;
-    margin-left:none;
-    margin-right: none;
-    padding: 5px 2px;
-    border:none;
-    border-spacing: 0px;
+    border-collapse: collapse;
+
+       
   }
 
-   td {
+  .tablecfidelidade tbody tr {
+    border: #bc1823 solid 1px; 
+  }
+  
+
+  .thf {
+    width: 10% 30% 15% 10% 15% 20%;
+    color: #bc1823;
     margin-left:none;
     margin-right: none;
-    padding: 5px 2px;
-    border-top: #bc1823 solid 1px;
-    border-left: none;
-    border-right: none;
+    padding: 10px 2px;
+  
+  }
+
+   .tdf {
+    width: 10% 30% 15% 10% 15% 20%;
+    margin-left:none;
+    margin-right: none;
+    padding: 8px 2px;
     border-spacing: 0px;
        
   }
