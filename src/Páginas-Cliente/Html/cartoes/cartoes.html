@@ -7,7 +7,7 @@
     <title>WarmBurguer</title>
   </head>
 
-  <link rel="stylesheet" href="../../CSS/meusdados.css" />
+  <link rel="stylesheet" href="../../CSS/cartoes.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -104,45 +104,55 @@
 
         <aside class="aside-menu">
           <ul>
-            <li> Olá, nome do usuário</li>
-            <li> <strong><a href="meuspedidos.html">PEDIDOS</strong></li></a> 
-            <li> <strong><a href="fidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
-            <li><strong> <a href="meusdados.html">MEUS DADOS</li> </strong></a>
-            <li> <strong><a href="cartoes.html">CARTÕES SALVOS</li></strong></a> 
-            <li><strong> <a href="index.html">SAIR</li></strong></a> 
-      
+              <li> Olá, nome do usuário</li>
+              <li> <strong><a href="meuspedidos.html">PEDIDOS</strong></li></a> 
+              <li> <strong><a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
+              <li><strong> <a href="meusdados.html">MEUS DADOS</li> </strong></a>
+              <li> <strong><a href="cartoes.html">CARTÕES SALVOS</li></strong></a> 
+              <li><strong> <a href="Index.html">SAIR</li></strong></a> 
+    
           </ul>
          </aside>
 
         <div class="content-principal">
+
+            <h2> CARTÕES SALVOS </h2>
+
+                        
+            <div class="mcartoes">
+
+                 <table class="tablecartoes">
+                
+                  <thread> 
+                    <th class="thc">Número do cartão</th>
+                    <th class="thc"> Validade </th>
+                    <th class="thc">Bandeira</th>
+                    <th class="thc">Nome no cartão</th>
+                    <th class="thc">Ação</th>
+                  </thread>
+                  <tbody>
+                    <tr> 
+                      <td class="tdc"> 1234.4567.1234.4569</td>
+                      <td class="tdc">02/2029</td>
+                      <td class="tdc"> Mastercard </td>
+                      <td class="tdc"> Ana Beatriz Silva </td>
+                      <td class="tdc">Excluir</td>
+                    </tr>
+                    
+                  </tbody>
+                  </table>
+                         
+                  
+
+            </div>
             
-                <div>
-                    <h2> CARTÕES SALVOS</h2><br><br>
-                    
-                    <table class="">
-                        <thread>Número do cartão </thread>
-                        <thread>Validade</thread>
-                        <thread> CVC/Pagamento</thread>
-                        <thread>Nome no cartão </thread>
-                        <thread>CPF/CNPJ do titular do cartão </thread>
-                        <thread>Bandeira do cartão </thread>
-
-                        <tbody>
-                        <td>5502.0001.1234.5678</td>
-                        <td>02/2029</td>
-                        <td>123</td>
-                        <td>Ana Beatriz Gomes</td>
-                        <td>Crédito Visa </td>
-                        </tbody>
-
-                    </table>
-
-                    
-                    <button class="ctbotoes"><strong><a href="adicionarcartao.html"> ADICIONAR CARTÃO</strong></button></a>
-                    <button class="ctbotoes"><strong>EXCLUIR</strong></button>  
-                     </div>  
-                     
+            <div class="cbotoes"> 
+              <button  class="addcartao" >ADICIONAR CARTÃO</button>
+            </div>
+            
+          
         </div>
+    </div>
  
     </main>
 

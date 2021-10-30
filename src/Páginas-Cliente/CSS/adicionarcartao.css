@@ -107,8 +107,13 @@
     
   }
   
-  /*edições da pagina meus dados*/
-  @media (min-width: 450px) {
+  /*edições da pagina adicionar cartao */
+
+  main {
+   min-height: 521px;
+  
+}
+  
     .main-principal{
       color: #000;
       display: grid;
@@ -127,6 +132,7 @@
   
   .aside-menu> ul> li{
     margin-bottom: 30px;
+    font-weight: bold;
   }
   
   .aside-menu{
@@ -141,34 +147,41 @@
     border-left: #000 solid 1px;
   }
   
-  .content-principal> form> div{
-    margin-bottom: 2px;
+  .tituloncartao{
+    padding-top:20px;
+    padding-bottom: 30px;
+   
   }
   
-  .content-principal h3{
-    font-size: 16px;
-    color: #bc1823;
-    margin-top: 15px;
+  .ncartao {
+    margin-top: 5px;
+    padding-top: 20px;
+    font-size: 14px;
+     padding-top: 5px;
     
   }
-  
-  .content-principal label {
-    font-size: 14px;
-    margin-bottom: 5px;
+
+
+
+  #logo{
+    margin-right: 5px ;
+    margin-left: 10px;
   }
-  
-  .mdbotoes{
-    margin-top: 15px;
-    margin-right: 30px;
-    align-items: center;
-    justify-content: space-between;
+
+    
+   .addcartoes2{
+    margin-top: 20px;
+    align-items: center;    
     color: #ffffff;
+    justify-content: space-between;
     background-color: #ff9a00;
     border-bottom-right-radius: 2px;
     width: 90px;
     height: 30px;
+    font-weight: bold;
     
   }
+
   
   
   footer {
