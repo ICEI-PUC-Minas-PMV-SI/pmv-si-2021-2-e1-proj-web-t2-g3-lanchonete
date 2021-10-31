@@ -157,13 +157,13 @@
     font-size: 160%;
     text-align: center;
     position: absolute;
-    right: 860px;
+    left: 140px;
     top: 500px;
     margin-top: 1cm;
     background-color: #ff9a00;
     border-radius: 30px 30px 30px 30px;
     width: 345px;
-    height: 64px;
+    height: 50px;
   }
 
   #x-cheese{
@@ -179,4 +179,3 @@
     right: 50px;
     top: 300px;
   }
-  
