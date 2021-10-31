@@ -226,8 +226,11 @@ margin-top: -3mm;
     color: white;
     background-color: #ff9a00;
     border-radius: 70px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
     text-align: center;
-    width: 35%;
+    width: 30%;
     margin-left: 33%;
     margin-top: 5%;
     
@@ -290,7 +293,7 @@ margin-top: -3mm;
   text-align: center;
   width: 30%;
   margin-top: 5%;
-  margin-left: 35%;
+  margin-left: 33%;
 }
 
 .formulario-cartao{
