@@ -22,6 +22,10 @@
     background-color: #bc1823;
     height: 136px;
     padding: 10px 0;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 10;
   }
   
   .main-header {
