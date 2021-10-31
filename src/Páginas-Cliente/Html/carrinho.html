@@ -100,7 +100,7 @@
       </header>
 
 
-      <!--CARRINHO: Produtos, total, quantidade-->
+<!--CARRINHO: Produtos, total, quantidade-->
 <body>
         <div class="titulo-da-pag"><h1> <img src="../midia/cart-icon.png" alt=""> Meu carrinho</h1></div>
 
@@ -115,14 +115,32 @@
 
         <div class="divisoria"><hr><br><br></div>
 
+<!--Frete-->
         <div class="frete"> <b><p>Consulte o valor da entrega:</p></b> </div>
-
+        <div class="inserircep">
+          <form action="">
+            <label for="InsirirCep">Inserir o CEP aqui:</label>
+            <input type="text" id="InsirirCep">
+            <button>Confirmar</button>
+          </form>
+        </div>
+<!--Cupom-->
         <div class="cupom"><b><p>Possui algum cupom de desconto?</p></b></div>
-        
 
+        <div class="inserircupom">
+
+          <form action="">
+            <label for="InserirCupom">Inserir o Cupom aqui:</label>
+            <input type="text" id="InserirCupom">
+            <button>Confirmar</button>
+          </form>
+        </div>
+<!--Subtotal-->
         <div class="subtotal"><P>Subtotal do pedido:</P></div>
         <div class="subtotal-valor">R$18,90</div>
-
+<!--Continuar-comprando-->
+        <div class="continuarcomprando"><button> <img src="../Html/pagamento/comprarmais.png" alt=""><b>Continuar comprando</b></button></div>
+<!--Finalização de pedido-->
         <div class="finalizar-botao"><h1>Finalizar compra</h1></div>
 
 </body>
