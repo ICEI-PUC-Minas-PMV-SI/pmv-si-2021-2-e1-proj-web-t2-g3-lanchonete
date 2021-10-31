@@ -145,19 +145,13 @@ margin-top: -3mm;
 }
 
 .botao{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
-    background-position: 218px center;
     width: 250px;
     height:70px;
-    border:1px solid #ddd;
     color: white;
-    background-color: #bc1823;
     border-radius: 10px;
     text-align: center;
     margin-left: 2cm;
+    margin-top: 20px;
 }
 
 .observaçao{
