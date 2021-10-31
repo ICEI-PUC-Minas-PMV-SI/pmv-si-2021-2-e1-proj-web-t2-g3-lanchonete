@@ -194,9 +194,14 @@ margin-top: 25mm;
 
 .finalizar-botao{
   color: black;
-  text-align: center;
   background-color: #ff9a00;
   border-radius: 70px;
+  text-align: center;
+  width: 500px;
+  margin-left: 420px;
+  position: absolute;
+  top: 33cm;
+
 }
 
 

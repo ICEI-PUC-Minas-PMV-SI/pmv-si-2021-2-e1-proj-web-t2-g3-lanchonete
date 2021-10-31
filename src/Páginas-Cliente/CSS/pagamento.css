@@ -114,6 +114,62 @@
   background-color: #bc1823;
 }
 
+.nome-pedido{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin-left: 10mm;
+    margin-top: 20mm;
+}
+
+.linha-pedido{
+    color: black;
+inline-size: 19cm;
+margin-left: 45mm;
+margin-top: -3mm;
+
+}
+
+.preço{
+    color: black;
+margin-left: 25cm;
+margin-top: -3mm;
+}
+
+.linha1{
+    color: black;
+    inline-size: 100%;
+    margin-top: 20mm;
+    height: 1px;
+
+}
+
+.botao{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+    background-position: 218px center;
+    width: 250px;
+    height:70px;
+    border:1px solid #ddd;
+    color: black;
+    background-color: #bc1823;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 2cm;
+}
+
+.observaçao{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    float: right;
+    margin-right: 4cm;
+    margin-top: -10mm;
+}
+
+
 
   
   footer {
