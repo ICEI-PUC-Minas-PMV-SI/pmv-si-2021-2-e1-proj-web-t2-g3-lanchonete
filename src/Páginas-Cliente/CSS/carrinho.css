@@ -123,9 +123,16 @@ main {
   text-align: center;
 }
 
+
+
+
+
 body h1 img {
   width: 35px;
 }
+
+
+
 
 
 
@@ -138,6 +145,10 @@ body h1 img {
   margin-top: 34px;
 }
 
+
+
+
+
 .total{
 color: black;
 font-family: 'Roboto', 'Oxygen', sans-serif;
@@ -147,12 +158,17 @@ margin-right: -250px;
 margin-top: 34px;
 }
 
+
+
+
+
 .produtos{
   margin-left: 39px;
   padding-top: 38px;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   color: black;
 }
+
 
 
 
@@ -165,12 +181,17 @@ margin-top: 34px;
 }
 
 
+
+
+
 .divisoria {
   color: black;
 align-self: center;
 margin-top: 25mm;
-
 }
+
+
+
 
 
 
@@ -182,6 +203,9 @@ margin-top: 25mm;
   font-size: 30px;
 }
 
+
+
+
 .inserircep{
   color: black;
   margin-left: 39px;
@@ -190,9 +214,8 @@ margin-top: 25mm;
   font-size: 20px;
   box-shadow: 0 4px 8px gray;
   width: 30%;
-
-
 }
+
 
 
 
@@ -205,6 +228,9 @@ margin-top: 25mm;
   margin-top: 90px;
 }
 
+
+
+
 .inserircupom{
   color: black;
   margin-left: 39px;
@@ -213,7 +239,6 @@ margin-top: 25mm;
   font-size: 20px;
   box-shadow: 0 4px 8px gray;
   width: 30%;
-
 }
 
 
@@ -230,12 +255,18 @@ margin-top: 25mm;
 }
 
 
+
+
+
 .subtotal-valor{
   color: green;
   margin-left: 185px;
   margin-top: -4mm;
   font-family: 'Roboto', 'Oxygen', sans-serif;
 }
+
+
+
 
 
 .continuarcomprando{
@@ -248,6 +279,8 @@ margin-top: 25mm;
   margin-left:39px;
   margin-top: -70px;
 }
+
+
 
 
 
