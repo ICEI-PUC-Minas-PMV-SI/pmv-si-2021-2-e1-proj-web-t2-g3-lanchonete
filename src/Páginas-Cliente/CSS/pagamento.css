@@ -109,14 +109,14 @@
   .resumo-do-pedido{
   color: fffffff;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 22px;
   background-color: #bc1823;
 }
 
 .nome-pedido{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 18px;
     margin-left: 10mm;
     margin-top: 20mm;
@@ -127,13 +127,13 @@
 inline-size: 19cm;
 margin-left: 45mm;
 margin-top: -3mm;
-
 }
 
 .preço{
     color: black;
 margin-left: 25cm;
 margin-top: -3mm;
+font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 .linha1{
@@ -141,7 +141,6 @@ margin-top: -3mm;
     inline-size: 100%;
     margin-top: 20mm;
     height: 1px;
-
 }
 
 .botao{
@@ -152,33 +151,31 @@ margin-top: -3mm;
     text-align: center;
     margin-left: 2cm;
     margin-top: 20px;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 .observaçao{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 22px;
     float: right;
     margin-right: 4cm;
     margin-top: -10mm;
     box-shadow: 0 4px 8px gray;
-
   }
 
 .taxa-entrega{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 20px;
     margin-left: 3cm;
     margin-top: 15mm;
-
 }
 
 .linha2{
     color: black;
     inline-size: 100%;
     margin-top: 15mm;
-
 }
 
 .linha3{
@@ -190,15 +187,13 @@ margin-top: -3mm;
 
 .total-do-pedido{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 170%;
     margin-left: 3cm;
     margin-top: 0%;
     display: flex;
     justify-content:left ;
     align-items: center;
-
-
 }
 
 .linha4{
@@ -206,12 +201,11 @@ margin-top: -3mm;
     inline-size: 50%;
     margin-left: 28%;
     margin-top: 00%;
- 
 }
 
 .valor-total2{
     color: green;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 170%;
     margin-left: 83%;
     margin-top: 0%;
@@ -224,6 +218,7 @@ margin-top: -3mm;
 
 .alterar-pedido{
     color: white;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     background-color: #ff9a00;
     border-radius: 70px;
     border-style:solid;
@@ -233,12 +228,11 @@ margin-top: -3mm;
     width: 30%;
     margin-left: 33%;
     margin-top: 5%;
-    
   }
 
   .dados-entrega{
       color: white;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-family: 'Roboto', 'Oxygen', sans-serif;
       font-size: 120%;
       margin-top: 5%;
       background-color:#bc1823;
@@ -247,24 +241,24 @@ margin-top: -3mm;
 
   .titulo-entrega{
     color: white;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     background-color: #bc1823;
     text-align: center;
     width: 0%;
     margin-left: 34%;
     margin-top: -12mm;
-
   }
 
   .endereçodeentrega{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 120%;
     margin-top: 5mm;
     margin-left: 4%;
   }
   .complemento{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 120%;
     margin-left: 4%;
 
@@ -272,23 +266,24 @@ margin-top: -3mm;
 
   .tempo-entrega{
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 120%;
     margin-left: 4%;
   }
   
 .pagar-site{
   color: #ffffff;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   background-color: #bc1823;
   text-align: center;
   font-size: 120%;
   margin-top: 3%;
-
 }
 
 .adicionar-cartao{
   color:white;
   font-size: 200%;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   background-color: #ff9a00;
   border-style:solid;
   border-width: thin;
@@ -302,6 +297,7 @@ margin-top: -3mm;
 
 .formulario-cartao{
 color: black;
+font-family: 'Roboto', 'Oxygen', sans-serif;
 width: 80%;
 margin: 0 auto;
 box-shadow: 0 4px 8px #999;
@@ -314,7 +310,7 @@ margin-top: 100px;
 .PagarEntrega{
   color: white;
   background-color:#bc1823;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 20px;
   text-align: center;
   margin-top: 2%;
@@ -323,26 +319,28 @@ margin-top: 100px;
 
 .escolher-cartao{
 margin-left: 5%;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-family: 'Roboto', 'Oxygen', sans-serif;
 box-shadow: 0 4px 8px #999;
 width: 10%;
 margin-top: 7%;
-
 }
 
 .dinheiro{
   margin-left: 30%;
   margin-top: -13%;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   box-shadow: 0 4px 8px #999;
 width: 17%;
 }
 
 .ender-pix{
   color: black;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 .troco{
   color: black;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   float: right;
   margin-right: 8%;
   box-shadow: 0 4px 8px #999;
@@ -352,7 +350,7 @@ width: 17%;
 
 .botao-finalizar{
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 20px;
   text-align: center;
   border-radius: 70px;
@@ -364,7 +362,6 @@ border-style:solid;
   border-width: thin;
   border-color: black;
   margin-bottom: -30%;
-  
 }
 
 
