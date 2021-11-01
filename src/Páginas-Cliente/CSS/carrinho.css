@@ -178,7 +178,7 @@ margin-top: 25mm;
 .frete{
   color: black;
   margin-left: 1cm;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 30px;
 }
 
@@ -186,7 +186,7 @@ margin-top: 25mm;
   color: black;
   margin-left: 39px;
   margin-top: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 20px;
   box-shadow: 0 4px 8px gray;
   width: 30%;
@@ -200,7 +200,7 @@ margin-top: 25mm;
 .cupom{
   color: black;
   margin-left: 39px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 30px;
   margin-top: 90px;
 }
@@ -209,7 +209,7 @@ margin-top: 25mm;
   color: black;
   margin-left: 39px;
   margin-top: 25px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 20px;
   box-shadow: 0 4px 8px gray;
   width: 30%;
@@ -226,7 +226,7 @@ margin-top: 25mm;
   color: black;
   margin-top: 5%;
   margin-left: 39px;
-
+  font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 
@@ -234,12 +234,13 @@ margin-top: 25mm;
   color: green;
   margin-left: 185px;
   margin-top: -4mm;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 
 .continuarcomprando{
   font-size: 200px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   text-align:center;
   width:max-content;
   color: black;
@@ -252,6 +253,7 @@ margin-top: 25mm;
 
 .finalizar-botao{
   color: white;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   background-color: #ff9a00;
   border-style:solid;
   border-width: thin;
