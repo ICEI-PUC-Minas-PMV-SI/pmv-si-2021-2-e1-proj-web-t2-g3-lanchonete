@@ -240,6 +240,7 @@ margin-top: 25mm;
   color: black;
   float: left;
   margin-left:39px;
+  margin-top: -70px;
 }
 
 
@@ -247,13 +248,15 @@ margin-top: 25mm;
 .finalizar-botao{
   color: white;
   background-color: #ff9a00;
+  border-style:solid;
+  border-width: thin;
+  border-color: black;
   border-radius: 70px;
   text-align: center;
   width: 500px;
   margin-left: 420px;
-  position: absolute;
-  top: 1050px;
-
+  margin-top: 20%;
+  margin-bottom: -30%;
 }
 
 
