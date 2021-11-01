@@ -104,18 +104,16 @@
   
   /*edições da pagina meus dados */
 
-  main {
-      min-height: 521px;
-    
-  }
   
-    .main-principal{
+    .main-principal-br{
       color: #000;
       display: grid;
       grid-template-columns: 200px 1fr;
       grid-gap: 16px;
+      min-height: 521px;
       
     }
+  
   
     .aside-menu {
       align-self: start;
@@ -128,15 +126,17 @@
   
   .aside-menu> ul> li{
     margin-bottom: 30px;
+
   }
   
   .aside-menu{
     padding-left: 20px;
     padding-top: 20px;
+   
     
   }
   
-  .content-principal{
+  .content-principal-br{
     padding-left: 20px;
     padding-top: 20px;
     padding-right:20px;
@@ -186,7 +186,7 @@
     border-spacing: 0px;
        
   }
-   
+}
   
   
   footer {

@@ -106,17 +106,15 @@
   
   /*edições da pagina meus pedidos*/
 
-  main {
-    min-height: 521px;
-  
-}
-    .main-principal{
+ 
+    .main-principal-br{
       color: #000;
       display: grid;
       grid-template-columns: 200px 1fr;
       grid-gap: 16px;
+      min-height: 521px;
     }
-}
+
   
     .aside-menu {
       align-self: start;
@@ -137,7 +135,7 @@
     
   }
   
-  .content-principal{
+  .content-principal-br{
     padding-left: 20px;
     padding-top: 20px;
     border-left: #000 solid 1px;

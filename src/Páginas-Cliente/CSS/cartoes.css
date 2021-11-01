@@ -104,18 +104,16 @@ ul li a:hover {
 
 /*edições da pagina cartoes */
 
-main {
-    min-height: 521px;
-  
-}
-
-  .main-principal{
+@media (min-width: 500px) {
+  .main-principal-br{
     color: #000;
     display: grid;
     grid-template-columns: 200px 1fr;
     grid-gap: 16px;
+    min-height: 521px;
     
   }
+}
 
   .aside-menu {
     align-self: start;
@@ -136,7 +134,7 @@ main {
   
 }
 
-.content-principal{
+.content-principal-br{
   padding-left: 20px;
   padding-top: 20px;
   padding-right:20px;
@@ -193,19 +191,22 @@ main {
   padding-bottom: 10px;
  
 }
+
+.addcartao:hover{
+  background-color: #bc1823;
+ 
+}
  
 .addcartao{
-
   align-items: center;
   font-weight: bold;
-  /*justify-content: space-between;*/
-  color: #ffffff;
+    color: #ffffff;
   background-color: #ff9a00;
   border-bottom-right-radius: 2px;
   width: 90px;
   height: 40px;
   border: solid 1px #ff9a00;
-
+}
 
 footer {
   background-color: #bc1823;

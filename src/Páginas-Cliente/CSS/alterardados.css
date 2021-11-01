@@ -102,16 +102,16 @@
     color: #bc1823;
   }
   
-   
-  /*edições da pagina adicionar cartao */
+  
+  
+  /*edições da pagina meus dados*/
 
  
-      .main-principal-br{
+  .main-principal-br{
       color: #000;
       display: grid;
       grid-template-columns: 200px 1fr;
       grid-gap: 16px;
-      min-height: 521px;
     }
   
   
@@ -126,7 +126,6 @@
   
   .aside-menu> ul> li{
     margin-bottom: 30px;
-    font-weight: bold;
   }
   
   .aside-menu{
@@ -139,47 +138,95 @@
     padding-left: 20px;
     padding-top: 20px;
     border-left: #000 solid 1px;
+    min-height: 521px;
   }
-
-
-  .formadc h2{
-   margin-top: 15px;
-    }
-
-  .formadc label, div{
-    padding-top: 2px;
+  
+  .perfil > h2{
+    margin-top: 15px;
+  
+  }
+  .formalt> div{
     margin-bottom: 2px;
   }
   
-  .novocartao h2{
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .content-principal-br h3{
+    font-size: 16px;
+    color: #bc1823;
+    margin-top: 15px;
+    
   }
-
- 
-  .imgvs{
-    display: inline-block;
-   
-  }
-
-  .imgms{
-    display: inline-block;
-    }
   
-  .btncartoes2:hover{
-    background-color: #bc1823;
-
+  .content-principal-br label {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
+  
+  .dtn{
+  display:inline-block;
+  }
+  
+  
+  .genero{
+    display: inline-block;
+    margin-left: 11%;
+  }
+  
+  .rua2, .ptr{
+    display: inline-block;
+   }
+  
+   .num{
+     display: inline-block;
+     margin-left: 20%;
+   }
+  
+  .bairro {
+    display: inline-block;
+    margin-left: 5%;
+  }
+  
+  .cep{
+    display: inline-block;
+    margin-left: 11%;
+  }
+  
+  .cidade{
+    display: inline-block;
+    margin-left: 8%;
+  }
+  
+  #mdalterar2, #mdcancelar2 {
+    background-color: #bc1823;
+    margin-top: 30px;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #ff9a00;
+    border-bottom-right-radius: 2px;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+      
+  }
+  
+  #mdalterar2:hover{
+    background-color: #bc1823;
+  }
+  
 
-  .btncartoes2{
-  margin-top: 30px;
-  justify-content: center;
-  color: #ffffff;
-  background-color: #ff9a00;
-  border-bottom-right-radius: 2px;
-  width: 90px;
-  height: 30px;
-  font-weight: bold;
+  
+  #mdcancelar2:hover{
+    background-color: #bc1823;
+  }
+  
+  .btnalterar2 {
+    display: inline-block;
+    margin-left: 25%;
+  }
+    
+  
+  .btncancelar2{
+    display: inline-block;
+    margin-left: 5%;
   }
   
   footer {
@@ -210,4 +257,7 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
+  
+  
+  
   
