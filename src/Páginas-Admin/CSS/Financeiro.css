@@ -157,12 +157,19 @@ margin-top: 30px;
   display: flex;
   justify-content: space-around;
   margin-top: 40px;
+  
 }
 #inicio-fim{
   width: 100px;
   height: 35px;
   text-align: center;
-
+  position: relative;
+  bottom: 25px;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  color: #ff9a00;
+  font-weight: bold;
+  
 }
 .data{
   color: black;
@@ -178,4 +185,44 @@ margin-top: 30px;
   border-style: solid;
   width: 150px;
   height: 40px;
+}
+#pesquisar{
+  display: block;
+  text-align: center;
+  
+}
+#button1{
+  font-size: 20px;
+  background-color: #ff9a00;
+  border: 0px;
+  padding: 5px;
+  font-weight: bold;
+}
+#tabela{
+  justify-content: center;
+  margin-top: 25px;
+}
+table{
+  
+  background-color: white;
+  color: white;
+  border-style: solid;
+  margin: 0 auto;
+  table-layout: auto;
+}
+th, td{
+  background-color: #ff9a00;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 10px;
+  border: #bc1823;
+  border: 10px;
+  border-top:5px;
+  border-bottom: 5px;
+  border-left: 5px;
+  border-right: 5px;
+}
+td{
+  border-color: black;
+  border: 5px;
 }
