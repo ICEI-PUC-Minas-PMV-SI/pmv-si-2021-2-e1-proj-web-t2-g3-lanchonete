@@ -83,9 +83,9 @@ main {
 .tabela {
   color: black;
   margin-top: 8%;
-  border-width: thin;
   border-style: solid;
   border-color: #bc1823;
+  border-width: 1px;
   line-height: 180%;
 
 }
@@ -125,7 +125,7 @@ main {
 }
 
 #pesquisa-cliente {
-  background: rgba(196, 196, 196, 0.1);
+  background: white(196, 196, 196, 0.1);
   width: 100%;
   height: 54px;
   display: flex;
@@ -136,17 +136,20 @@ main {
 }
 
 #pesquisa-cliente {
-  background: #c4c4c4;
+  background: white;
   width: 300px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;  
 }
 
 #pesquisa-cliente input {
-  background-color: #c4c4c4;
+  background-color: white;
   border: none;
   outline: none;
   padding: 5px;
@@ -154,17 +157,65 @@ main {
 }
 
 #pesquisa-cliente button {
-  background-color: #c4c4c4;
+  background-color: white;
   border: none;
   border-style: none;
 }
 
 #pesquisa-cliente button:hover {
-  background-color: #c4c4c4;
+  background-color: white;
   -webkit-transform: scale(1.09);
   transform: scale(1.09);
 }
 
 #pesquisa-cliente img {
+  width: 25px;
+}
+
+#data {
+  background: white (255, 255, 255, 0.1);
+  width: 100%;
+  height: 54px;
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+  margin-top: 30px;
+  padding: 10px 80px;
+}
+
+#data {
+  background: white;
+  width: 210px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;  
+}
+
+#data input {
+  background-color:white;
+  border: none;
+  outline: none;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#data button {
+  background-color: white;
+  border: none;
+  border-style: none;
+}
+
+#data button:hover {
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+#data img {
   width: 25px;
 }
