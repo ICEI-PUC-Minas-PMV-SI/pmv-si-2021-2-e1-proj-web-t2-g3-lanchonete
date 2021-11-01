@@ -82,7 +82,7 @@ main {
 
 .tabela {
   color: black;
-  margin-top: 8%;
+  margin-top: 5%;
   border-style: solid;
   border-color: #bc1823;
   border-width: 1px;
@@ -131,7 +131,8 @@ main {
   display: flex;
   gap: 25px;
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 6%;
+  margin-left: 22%;
   padding: 10px 80px;
 }
 
@@ -179,7 +180,9 @@ main {
   display: flex;
   gap: 25px;
   justify-content: flex-end;
-  margin-top: 30px;
+  position: relative;
+  margin-top: -2.5%;
+  margin-left: 2%;
   padding: 10px 80px;
 }
 
@@ -193,7 +196,7 @@ main {
   padding: 9px;
   border-color:#bc1823;
   border-width: 1px;
-  border-style: solid;  
+  border-style: solid;
 }
 
 #data input {
