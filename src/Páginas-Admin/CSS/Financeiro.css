@@ -11,7 +11,7 @@
   
   body {
     font-family: 'Roboto', 'Oxygen', sans-serif;
-    color: white;
+    /*color: white;*/
   }
   
   .container {
@@ -23,7 +23,9 @@
   header {
     background-color: #bc1823;
     height: 100vh;
+    width: 13%;
     grid-area: header;
+    position: fixed;
   }
   
   .menu {
@@ -87,14 +89,16 @@
     text-align: center;
     align-items: center;
     margin: 0 auto;
+    color: #ffffff;
+
 }
 
 #bloco1{
     color: #ff9a00;
     height: 250px;
     margin: 15px;
-    border-color: #bc1823;
-    border: 2px solid #bc1823;
+    border-color: black;
+    border: 2px solid black;
 
 }
 
@@ -159,17 +163,29 @@ margin-top: 30px;
   margin-top: 40px;
   
 }
-#inicio-fim{
+#inicio-fim1{
   width: 100px;
   height: 35px;
   text-align: center;
   position: relative;
+  left: 6px;
   bottom: 25px;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 20px;
-  color: #ff9a00;
+  color:black;
   font-weight: bold;
-  
+}
+#inicio-fim2{
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  position: relative;
+  right: 6px;
+  bottom: 25px;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
 }
 .data{
   color: black;
@@ -181,7 +197,7 @@ margin-top: 30px;
   margin-left: 15px;
 }
 #datas{
-  border-color: #bc1823;
+  border-color: black;
   border-style: solid;
   width: 150px;
   height: 40px;
@@ -198,31 +214,36 @@ margin-top: 30px;
   padding: 5px;
   font-weight: bold;
 }
-#tabela{
-  justify-content: center;
-  margin-top: 25px;
-}
-table{
-  
-  background-color: white;
-  color: white;
-  border-style: solid;
+
+table, th, td {
+  border: 2px solid black;
+  padding: 10px;
   margin: 0 auto;
-  table-layout: auto;
-}
-th, td{
-  background-color: #ff9a00;
   border-collapse: collapse;
   text-align: center;
-  padding: 10px;
-  border: #bc1823;
-  border: 10px;
-  border-top:5px;
-  border-bottom: 5px;
-  border-left: 5px;
-  border-right: 5px;
 }
-td{
-  border-color: black;
-  border: 5px;
+th{
+  width: 200px;
+}
+table{
+  position: relative;
+  top: 45px;
+  
+}
+#botaoImprimir{
+  text-align: center;
+  text-decoration:underline;
+  margin-top: 60px;
+}
+#ranking{
+  text-align: center;
+  color: #ff9a00;
+  margin-top: 40px;
+}
+#fidelidade{
+  text-align: center;
+  margin-top: 100px;
+  color: #ff9a00;
+  position: relative;
+  top: 10px;
 }
