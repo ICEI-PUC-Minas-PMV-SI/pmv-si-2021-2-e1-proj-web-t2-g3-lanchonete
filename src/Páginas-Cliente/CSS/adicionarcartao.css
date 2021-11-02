@@ -105,7 +105,8 @@
    
   /*edições da pagina adicionar cartao */
 
- 
+  
+
       .main-principal-br{
       color: #000;
       display: grid;
@@ -134,7 +135,11 @@
     padding-top: 20px;
     
   }
+
+  @media (min-width: 768px) {
+
   
+  }
   .content-principal-br{
     padding-left: 20px;
     padding-top: 20px;
@@ -149,6 +154,7 @@
   .formadc label, div{
     padding-top: 2px;
     margin-bottom: 2px;
+    
   }
   
   .novocartao h2{
@@ -157,13 +163,18 @@
   }
 
  
-  .imgvs{
+  img.logovs{
     display: inline-block;
+    height:30px;
+    widht: 35 px;
+
    
   }
 
-  .imgms{
+  img.logoms{
     display: inline-block;
+    height:50px;
+    widht: 50px;
     }
   
   .btncartoes2:hover{
@@ -181,6 +192,83 @@
   height: 30px;
   font-weight: bold;
   }
+
+  }
+
+  @media (max-width:767px) {
+
+
+    .content-principal-br{
+      padding-left: 5px;
+      padding-top: 20px;
+      border-left: #000 solid 1px;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+  
+  
+    .formadc h2{
+     margin-top: 15px;
+      }
+  
+    .formadc label, div{
+      padding-top: 2px;
+      margin-bottom: 2px;
+      margin-left: 2px;
+      
+    }
+    
+    .novocartao h2{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+   
+    img.logovs{
+      height:15px;
+      widht: 15 px;
+       
+    }
+  
+    img.logoms{
+      height:25px;
+      widht: 25px;
+      }
+    
+    .btncartoes2:hover{
+      background-color: #bc1823;
+  
+    }
+  
+    .btncartoes2{
+    margin-top: 30px;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #ff9a00;
+    border-bottom-right-radius: 2px;
+    width: 90px;
+    height: 30px;
+    font-weight: bold;
+    }
+    background-color: #bc1823;
+
+  }
+
+  .btncartoes2{
+  margin-top: 30px;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #ff9a00;
+  border-bottom-right-radius: 2px;
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+
+  } 
+
+
   
   footer {
     background-color: #bc1823;
@@ -210,4 +298,5 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
   }
+
   

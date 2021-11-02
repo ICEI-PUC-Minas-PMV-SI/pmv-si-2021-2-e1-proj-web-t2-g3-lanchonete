@@ -104,7 +104,7 @@ ul li a:hover {
 
 /*edições da pagina cartoes */
 
-@media (min-width: 500px) {
+
   .main-principal-br{
     color: #000;
     display: grid;
@@ -113,7 +113,7 @@ ul li a:hover {
     min-height: 521px;
     
   }
-}
+
 
   .aside-menu {
     align-self: start;
@@ -134,13 +134,14 @@ ul li a:hover {
   
 }
 
+@media (min-width: 768px){
+
 .content-principal-br{
   padding-left: 20px;
   padding-top: 20px;
   padding-right:20px;
   border-left: #000 solid 1px;
-  
-  
+   
 }
 
 .mcartoes{
@@ -149,8 +150,6 @@ ul li a:hover {
   
 }
 
-
-
 .tablecartoes {
   padding-top: 2px;
   margin-bottom: 2px;
@@ -158,13 +157,16 @@ ul li a:hover {
   width: 100%;
   border: #bc1823 solid 1px;
   border-collapse: collapse;
-
-     
+   
 }
 
 .tablecartoes tbody tr {
   border: #bc1823 solid 1px; 
 }
+
+.tablecartoes tbody tr:nth-child(2n) {
+  background-color: #fae8d0;
+} 
 
 
 .thc {
@@ -207,6 +209,85 @@ ul li a:hover {
   height: 40px;
   border: solid 1px #ff9a00;
 }
+}
+
+@media (max-width: 767px){
+
+  .content-principal-br{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right:20px;
+    border-left: #000 solid 1px;
+     
+  }
+  
+  .mcartoes{
+    padding-top:30px;
+    padding-bottom: 10px;
+    
+  }
+  
+  .tablecartoes {
+    padding-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    width: 100%;
+    border: #bc1823 solid 1px;
+    border-collapse: collapse;
+     
+  }
+  
+  .tablecartoes tbody tr {
+    border: #bc1823 solid 1px; 
+  }
+  
+  .tablecartoes tbody tr  {
+   display: flex; 
+   flex-direction: column;
+  }
+
+  .tablecartoes tbody tr:nth-child(2n) {
+    background-color: #fae8d0;
+  } 
+  
+  
+  .tablecartoes th {
+    display: none; 
+  
+  }
+  
+   .tdc {
+    margin-left:none;
+    margin-right: none;
+    padding: 8px 2px;
+    border-spacing: 0px;
+       
+  }
+  
+  .cbotoes{
+    padding-top: 20px;
+    padding-bottom: 10px;
+   
+  }
+  
+  .addcartao:hover{
+    background-color: #bc1823;
+   
+  }
+   
+  .addcartao{
+    align-items: center;
+    font-weight: bold;
+      color: #ffffff;
+    background-color: #ff9a00;
+    border-bottom-right-radius: 2px;
+    width: 90px;
+    height: 40px;
+    border: solid 1px #ff9a00;
+  }
+  }
+
+
 
 footer {
   background-color: #bc1823;
@@ -228,7 +309,7 @@ footer {
 }
 
 .social-media a img {
-  width: 25px;
+width: 25px;
   margin: 0 6px;
 }
 

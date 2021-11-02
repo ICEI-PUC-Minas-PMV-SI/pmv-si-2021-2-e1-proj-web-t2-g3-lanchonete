@@ -104,7 +104,7 @@
   
   /*edições da pagina meus dados */
 
-  
+   
     .main-principal-br{
       color: #000;
       display: grid;
@@ -135,7 +135,9 @@
    
     
   }
-  
+
+  @media (min-width: 768px) {
+
   .content-principal-br{
     padding-left: 20px;
     padding-top: 20px;
@@ -167,6 +169,9 @@
     border: #bc1823 solid 1px; 
   }
   
+  .tablecpedidos tbody tr:nth-child(2n) {
+    background-color: #fae8d0;
+  } 
 
   .thf {
     width: 10% 30% 15% 10% 15% 20%;
@@ -188,6 +193,55 @@
   }
 }
   
+@media (max-width: 767px) {
+  
+  
+.content-principal-br{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right:20px;
+  border-left: #000 solid 1px;
+   
+}
+
+.mfidelidade{
+  padding-top:30px;
+  padding-bottom: 10px;
+  }
+
+
+.tablecfidelidade {
+  padding-top: 2px;
+  margin-bottom: 2px;
+  text-align: center;
+  border: #bc1823 solid 1px;
+  border-collapse: collapse;
+   
+}
+
+.tablecfidelidade tbody tr {
+  border: #bc1823 solid 1px; 
+}
+
+.tablecfidelidade tbody tr {
+  display:flex;
+  flex-direction: column;
+}
+
+.tablecfidelidade th{
+  display:none;
+}
+
+.tablecfidelidade tbody tr:nth-child(2n) {
+  background-color: #fae8d0;
+} 
+
+ .tdf {
+   
+  padding: 8px 2px;
+     
+}
+}
   
   footer {
     background-color: #bc1823;
