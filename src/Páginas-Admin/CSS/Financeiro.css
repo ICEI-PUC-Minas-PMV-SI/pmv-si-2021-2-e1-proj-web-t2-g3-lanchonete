@@ -21,11 +21,9 @@
   }
   
   header {
-    background-color: #bc1823;
+    background-color: black;
     height: 100vh;
-    width: 13%;
     grid-area: header;
-    position: fixed;
   }
   
   .menu {
@@ -246,4 +244,5 @@ table{
   color: #ff9a00;
   position: relative;
   top: 10px;
+
 }
