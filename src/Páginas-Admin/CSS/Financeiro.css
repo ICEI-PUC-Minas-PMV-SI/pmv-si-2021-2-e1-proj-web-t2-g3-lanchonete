@@ -21,9 +21,12 @@
   }
   
   header {
-    background-color: black;
+    background-color:#bc1823;
     height: 100vh;
     grid-area: header;
+    position: sticky;
+    z-index: 10;
+    top: 0;
   }
   
   .menu {
