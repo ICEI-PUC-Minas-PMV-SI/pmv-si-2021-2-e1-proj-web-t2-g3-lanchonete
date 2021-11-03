@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WarmBurguer</title>
+  </head>
+
+  <link rel="stylesheet" href="../../template-cliente/style.css" />
+  <link rel="stylesheet" href="../CSS/enderecos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <header>
+        <!--Primeiro componente Cabeçalho Principal-->
+        <div class="main-header">
+          <div class="logo">
+            <a href="#">
+              <img src="../../template-cliente/midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+            </a>
+          </div>
+
+          <!--Segundo componente Cabeçalho Principal-->
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../template-cliente/midia/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="#"> FIDELIDADE </a>
+              </li>
+              <li>
+                <a href="#"> SOBRE NÓS </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Terceiro componente Cabeçalho-->
+          <div class="login-carrinho">
+            <ul>
+              <li id="login">
+                <a href="#">
+                  <img
+                    src="../../template-cliente/midia/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
+              </li>
+              <li id="carrinho">
+                <a href="#">
+                  <img
+                    src="../../template-cliente/midia/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Encerramento Cabeçalho Principal-->
+
+        <!--Início cabeçalho inferior-->
+        <div class="sub-header">
+          <div class="horario">
+            <img src="../../template-cliente/midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+            <span>ABERTO 18:00 às 02:00</span>
+          </div>
+          <div class="enderecos">
+            <a href="#">
+              <img
+                src="../../template-cliente/midia/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
+              />
+              <span>ENDEREÇOS DE ENTREGA</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+          <div id="pesquisar">
+            <form name="pesquisar_endereco" action="../Html/enderecos.html" method="post">
+                <input id="cep" type="search" name="cep"  placeholder="Buscar CEP" >
+                <input id="endereco" type="search" name="cep"  placeholder="Buscar Bairro"><br>
+                <input type="submit" name="Pesquisar" value="Pesquisar">
+            </form>
+          </div>
+          <br><br>
+
+
+          <div id="tabela">
+            <table>
+                <tr>
+                    <th id="cep">CEP</th>
+                    <th id="bairro">BAIRRO</th>
+                </tr>
+                <tr>
+                    <td>30830-740</td>
+                    <td>Alípio de Melo</td>
+                </tr>
+                <tr>
+                    <td>30421-660</td>
+                    <td>Ventosa</td>
+                </tr>
+
+                <tr>
+                    <td>31080-030</td>
+                    <td>Santa Inês</td>
+                </tr>
+                <tr>
+                    <td>30380-475</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+
+                <tr>
+                    <td>30380-438</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+                <tr>
+                    <td>30380-474</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+
+                <tr>
+                    <td>30380-476</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+                <tr>
+                    <td>30380-473</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+
+                <tr>
+                    <td>30380-471</td>
+                    <td>Conjunto Santa Maria</td>
+                </tr>
+                <tr>
+                    <td>30692-515</td>
+                    <td>Itaipu (Barreiro)</td>
+                </tr>
+
+                <tr>
+                    <td>30250-222</td>
+                    <td>Santana do Cafezal</td>
+                </tr>
+
+                <tr>
+                    <td>30250-141</td>
+                    <td>Santana do Cafezal</td>
+                </tr>
+
+            </table>
+         </div>
+      </main>
+
+      <footer>
+        <div class="box-footer">
+          <div class="social-media">
+            <a href="#">
+              <img src="../../template-cliente/midia/facebook-icon.png" alt="Ícone Facebook" />
+            </a>
+            <a href="#">
+              <img src="../../template-cliente/midia/instagram-icon.png" alt="Ícone Instagram" />
+            </a>
+            <a href="#">
+              <img src="../../template-cliente/midia/tiktok-icon.png" alt="Ícone TikTok" />
+            </a>
+          </div>
+          <div class="infos">
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
