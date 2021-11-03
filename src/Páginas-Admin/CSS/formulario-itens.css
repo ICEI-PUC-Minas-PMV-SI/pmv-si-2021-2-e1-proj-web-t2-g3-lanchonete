@@ -1,0 +1,84 @@
+*{
+    color: black;
+    font-family: 'Roboto',  sans-serif;
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #bc1823;
+    color: white;
+}
+select{
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border: 0px solid black;
+    background-color: #ff9a00;
+    appearance:none;
+}
+label{
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size:25px;
+    
+}
+#input1{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: #ff9a00;
+    border: 0px solid black;
+}
+#input2{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+    background-color: #ff9a00;
+    border: 0px solid black;
+}
+input[type="file"]{
+    padding: 20px 45px;
+    width: 200px;
+    background-color: #ff9a00;
+    color: #ff9a00;
+    text-transform: uppercase;
+    text-align: center;
+    display:flex;
+    margin: 0 auto;
+    cursor: pointer;
+    right: 50px;
+    border: 0px solid black;
+}
+#input3{
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: #ff9a00;
+    border: 0px solid black;
+    appearance: none;
+    
+}
+input[type="submit"]{
+    border: 0px solid black;
+    width: 100px;
+    height: 40px;
+    background-color: #ff9a00;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
