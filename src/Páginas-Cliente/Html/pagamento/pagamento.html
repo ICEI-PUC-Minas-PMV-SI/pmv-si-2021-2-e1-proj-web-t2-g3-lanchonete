@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finalizar Pedido</title>
+  </head>
+
+  <link rel="stylesheet" href="../../CSS/pagamento.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <header>
+        <!--Primeiro componente Cabeçalho Principal-->
+        <div class="main-header">
+          <div class="logo">
+            <a href="#">
+              <img src="../../midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+            </a>
+          </div>
+
+          <!--Segundo componente Cabeçalho Principal-->
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="../../midia/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="../cardapio/cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="../fidelidade.html"> FIDELIDADE </a>
+              </li>
+              <li>
+                <a href="#"> SOBRE NÓS </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Terceiro componente Cabeçalho-->
+          <div class="login-carrinho">
+            <ul>
+              <li id="login">
+                <a href="">
+                  <img
+                    src="../../midia/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
+              </li>
+              <li id="carrinho">
+                <a href="../carrinho.html">
+                  <img
+                    src="../../midia/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Encerramento Cabeçalho Principal-->
+
+        <!--Início cabeçalho inferior-->
+        <div class="sub-header">
+          <div class="horario">
+            <img src="../../midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+            <span>ABERTO 18:00 às 02:00</span>
+          </div>
+          <div class="enderecos">
+            <a href="#">
+              <img
+                src="../../midia/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
+              />
+              <span>ENDEREÇOS DE ENTREGA</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+<!--Resumo do pedido-->
+<body>
+
+  <div class="resumo-do-pedido"><b><h1>Resumo do Pedido</h1></b></div>
+
+  <div class="nome-pedido"><b><p>1x X-Tudo</p></b></div>
+
+  <div class="linha-pedido"><hr></div>
+
+  <div class="preço"><b><p>R$18,90</p></b></div>
+
+  <div class="linha1"><hr></div>
+
+  <!-- opções de observação e retirar na lanchonete-->
+
+<div class="botao">
+  <form>
+    <label for=""></label> <br>
+  <select name="" id="">
+    <option value="">Entrega em casa</option>
+    <option value="">Retirar na lanchonete</option>
+  </select>
+  </form>
+</div>
+
+<div class="observaçao">
+<form class="card">
+     <label for="textareamensagem"><b>Adicionar observação:</b></label>
+     <textarea name="textareamensagem" id="textareamensagem" ></textarea>
+     <button>Confirmar</button>
+</form>
+</div>
+
+<!--Dados da entrega, endereço e alterar pedido-->
+
+  <div class="linha2"><hr></div>
+
+  <div class="taxa-entrega"><p>Taxa de entrega: R$3,90</p></div>
+
+  <div class="linha3"><hr></div>
+
+<div id="total">
+  <p id="primeiro">Total do pedido</p>
+  <p id="linha"></p>
+  <p id="valor" > R$18,90</p> 
+
+</div>
+
+
+<div class="alterar-pedido"><b><h1>Alterar Pedido</h1></b></div>
+
+<div class="dados-entrega"><b><h1>Dados da Entrega</h1></b></div>
+
+<div class="titulo-entrega"><h1><img src="../pagamento/entrega-novo.png" alt=""></h1></div>
+
+<div class="endereçodeentrega"><p>Endereço de entrega: Bairro, Belo Horizonte-MG, n°01</p> <br> </div>
+
+<div class="complemento"><p>Complemento: Apto.5  </p> <br> </div>
+
+<div class="tempo-entrega"><p>Tempo médio de entrega: 40 a 60 min  </p></div>
+
+<!--Pagamento-->
+
+<div class="pagar-site"><h1>Pague pelo site</h1></div>
+
+<!--Adicionar cartão-->
+
+<div class="adicionar-cartao"><b><p>Adicionar cartão</p></b></div>
+
+<div class="formulario-cartao">
+ <b><p>  <h1>Digite as informações do cartão que você  deseja usar para pagamento.</h1>
+ </p></b>
+  <form class="card"> 
+      <label for="NumeroCartao">Número do cartão:</label>
+      <input type="text" id="NumeroCartao">
+   <br> <br>
+      <label for="Validade">Validade:</label>
+      <input type="text" id="Validade">
+   <br> <br>
+      <label for="cvc">CVC:</label>
+      <input type="text" id="cvc">
+   <br> <br>
+      <label for="NomeNoCartao">Nome no cartão:</label>
+      <input type="text" id="NomeNoCartao">
+   <br> <br>
+      <label for="CpfCartao">CPF/CNPJ do titular do cartão:</label>
+      <input type="text" id="CpfCartao">
+   <br> <br>
+      <button>Adicionar</button>
+
+  </form>
+</div>
+
+<!--Pagamento na entrega-->
+
+        <div class="PagarEntrega">
+          <b><h1>Pague na entrega</h1></b>
+        </div>
+
+<div class="escolher-cartao">
+  <form >
+<select name="" id="escolher-cartao">
+  <option value="">visa débito</option>
+  <option value="">visa crédito</option>
+  <option value="">mastercard débito</option>
+  <option value="">mastercard crédito</option>
+</select>
+  </form>
+  <br> 
+  <img src="../pagamento/imagens/visa.png" alt="visa">
+  <img src="../pagamento/imagens/master.png" alt="master">
+</div>
+
+<div class="dinheiro">
+  <form action="">
+    <select name="" id="">
+      <option value="">Dinheiro</option>
+      <option value="">PIX</option>
+    </select>
+  </form>
+  <img src="../pagamento/imagens/dinheiro.png" alt="">
+  <img src="../pagamento/imagens/pix.png" alt="">
+  <div class="ender-pix"><b><p>email para PIX:warmburguer@gmail.com</p></b></div>
+</div>
+
+<div class="troco">
+  <form action="">
+    <label for="SeuTroco">Se precisar de troco, digite aqui o valor:</label>
+    <textarea name="SeuTroco" id="SeuTroco"></textarea>
+  </form>
+</div>
+
+<div class="botao-finalizar">
+  <b><h1>
+    Fazer Pedido
+  </h1></b>
+</div>
+
+
+</body>
+
+      <main></main>
+
+      <footer>
+        <div class="box-footer">
+          <div class="social-media">
+            <a href="#">
+              <img src="../../midia/facebook-icon.png" alt="Ícone Facebook" />
+            </a>
+            <a href="#">
+              <img src="../../midia/instagram-icon.png" alt="Ícone Instagram" />
+            </a>
+            <a href="#">
+              <img src="../../midia/tiktok-icon.png" alt="Ícone TikTok" />
+            </a>
+          </div>
+          <div class="infos">
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
