@@ -335,7 +335,54 @@
     margin-top: 6%;
   }
 
-  #comentarios {
+  #comentario01 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 130%;
+    text-align: center;
+    margin-top: 2.7%;
+    margin-left: 10%;
+    width: 300px;
+    height: 310px;
+    border-color: #ff9a00;
+    border-width: 2px;
+    border-style: solid;
+  }
+
+  #cmt01 {
+    margin-top: 13%;
+    width: 90%;
+    height: 18%;
+  }
+
+  #comentario02 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    font-size: 130%;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 20%;
+    width: 300px;
+    height: 310px;
+    border-color: #ff9a00;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    margin-left: 40%;
+    top: 298%;
+  }
+
+  #paulo {
+    font-size: 90%;
+  }
+
+  #cmt02 {
+    margin-top: 9%;
+    width: 90%;
+    height: 18%;
+  }
+
+  #comentario03 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     font-size: 140%;
@@ -347,9 +394,12 @@
     border-color: #ff9a00;
     border-width: 2px;
     border-style: solid;
+    position: absolute;
+    margin-left: 70%;
+    top: 298%;
   }
 
-  #jessica {
+  #cmt03 {
     margin-top: 10%;
     width: 90%;
     height: 18%;
