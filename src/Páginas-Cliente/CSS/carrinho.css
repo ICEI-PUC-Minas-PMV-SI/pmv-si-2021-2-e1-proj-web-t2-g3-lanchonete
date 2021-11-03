@@ -176,6 +176,7 @@ margin-top: 34px;
 .linha1 {
     color: black;
     inline-size: 60%;
+ 
     margin-left: 100px;
     margin-top: -9px;
 }
@@ -185,9 +186,9 @@ margin-top: 34px;
 
 
 .divisoria {
-  color: black;
-align-self: center;
-margin-top: 25mm;
+  color: gray;
+inline-size: 100%;
+margin-top: 10%;
 }
 
 
@@ -278,6 +279,7 @@ margin-top: 25mm;
   float: left;
   margin-left:39px;
   margin-top: -70px;
+  justify-content: center;
 }
 
 
