@@ -120,8 +120,8 @@
     color: black;
     font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 18px;
-    margin-left: 10mm;
-    margin-top: 20mm;
+    margin-left: 5%;
+    margin-top: 6%;
 }
 
 
@@ -129,9 +129,9 @@
 
 .linha-pedido{
     color: black;
-inline-size: 19cm;
-margin-left: 45mm;
-margin-top: -3mm;
+inline-size: 50%;
+margin-left: 15%;
+margin-top: -10px;
 }
 
 
@@ -139,8 +139,8 @@ margin-top: -3mm;
 
 .preço{
     color: black;
-margin-left: 25cm;
-margin-top: -3mm;
+margin-left: 71%;
+margin-top: -10px;
 font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
@@ -150,7 +150,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
 .linha1{
     color: black;
     inline-size: 100%;
-    margin-top: 20mm;
+    margin-top: 5%;
     height: 1px;
 }
 
@@ -164,7 +164,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
     color: white;
     border-radius: 10px;
     text-align: center;
-    margin-left: 2cm;
+    margin-left:1%;
     margin-top: 20px;
     font-family: 'Roboto', 'Oxygen', sans-serif;
 }
@@ -178,8 +178,8 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
     font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 22px;
     float: right;
-    margin-right: 4cm;
-    margin-top: -10mm;
+    margin-right: 8%;
+    margin-top: -45px;
     box-shadow: 0 4px 8px gray;
   }
 
@@ -191,8 +191,8 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
     color: black;
     font-family: 'Roboto', 'Oxygen', sans-serif;
     font-size: 20px;
-    margin-left: 3cm;
-    margin-top: 15mm;
+    margin-left: 4%;
+    margin-top: 50px;
 }
 
 
@@ -202,7 +202,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
 .linha2{
     color: black;
     inline-size: 100%;
-    margin-top: 15mm;
+    margin-top: 10px;
 }
 
 
@@ -218,47 +218,30 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
 
 
 
-
-
-.total-do-pedido{
-    color: black;
-    font-family: 'Roboto', 'Oxygen', sans-serif;
-    font-size: 170%;
-    margin-left: 100px;
-    margin-top: 0%;
-    display: flex;
-    justify-content:left ;
-    align-items: center;
+#total{
+  display: flex;
+  font-size: 25px;
+color: black;
+margin-left: 5%;
 }
 
 
 
 
-
-.linha4{
-    color: black;
-    inline-size: 50%;
-    margin-left: 28%;
-    margin-top: 00%;
+#linha{
+  width: 400px;
+  border-bottom: 1px solid black;
+  position: relative;
+  bottom: 6px;
+  margin-left: 5%;
 }
 
 
 
-
-
-.valor-total2{
-    color: green;
-    font-family: 'Roboto', 'Oxygen', sans-serif;
-    font-size: 170%;
-    margin-left: 83%;
-    margin-top: 0%;
-    display: flex;
-    align-items: center;
-} 
-
-
-
-
+#valor{
+  color: green;
+  margin-left:5%;
+}
 
 .alterar-pedido{
     color: white;
@@ -270,7 +253,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
     border-color: black;
     text-align: center;
     width: 30%;
-    margin-left: 33%;
+    margin-left:35% ;
     margin-top: 5%;
   }
 
@@ -364,7 +347,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
   text-align: center;
   width: 30%;
   margin-top: 5%;
-  margin-left: 33%;
+  margin-left: 35%;
 }
 
 
@@ -453,8 +436,8 @@ width: 17%;
   background-color:#ff9a00;
   margin-top: 10%;
   width: 400px;
-margin-left: 35%;
-border-style:solid;
+  margin-left: 35%;
+  border-style:solid;
   border-width: thin;
   border-color: black;
   margin-bottom: -30%;
