@@ -33,6 +33,7 @@ input{
 }
 #tabela{
     justify-content: center;
+    margin-bottom: 80px;
 }
 table, th, td{
     color: black;
