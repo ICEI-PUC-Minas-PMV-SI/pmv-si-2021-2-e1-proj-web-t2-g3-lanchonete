@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página do Administrador</title>
+
+  <link rel="stylesheet" href="../../template-admin/style.css" />
+  <link rel="stylesheet" href="../CSS/Perfil-admin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">
+            <img src="../../template-admin/midia/logo-lanchonete.png" alt="Logo Lanchonete" class="logo" />
+          </a>
+        </div>
+        <div class="botoes">
+          <ul>
+            <li>
+              <a href="../Html/Perfil-admin.html">
+                <img src="../../template-admin/midia/perfil-icon.png" alt="Ícone Perfil" class="icon" />
+                <p>Perfil</p>
+              </a>
+            </li>
+            <li>
+              <a href="../Html/Financeiro.html">
+                <img src="../../template-admin/midia/financeiro-icon.png" alt="Ícone Financeiro" class="icon" />
+                <p>Financeiro</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../../template-admin/midia/cardapio-icon.png" alt="Ícone Cardápio" class="icon" />
+                <p>Cardápio</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../../template-admin/midia/comandas-icon.png" alt="Ícone Comandas" class="icon" />
+                <p>Comandas</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="cabecalho2">
+        <h1 id="cabecalhoPerfil">Perfil</h1>
+      </div>
+
+      <div>
+        <h3 id="inicio">Dados Principais:</h3>
+        <br><br>
+      </div>
+      <form name="dados_principais" action="." method="post">
+        <div>
+          <label for="Nome">Nome:</label>
+          <input type="text" name="Nome" value="" required>
+        </div>
+        <br>
+        <div>
+          <label for="CPF">CPF:</label>
+          <input type="number" name="CPF" value="" required>
+        </div>
+        <br>
+        <div>
+          <label for="Rua">Rua:</label>
+          <input id="rua" type="text" name="Rua" value="" required>
+
+          <label for="Numero">Numero:</label>
+          <input id="number" type="number" name="Numero" value="" required>
+
+          <label for="Bairro">Bairro:</label>
+          <input id="text" type="Bairro" name="Bairro" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="Complemento">Complemento:</label>
+          <input type="text" name="Complemento" value="">
+        </div>
+        <br>
+
+        <div>
+          <label for="Referencia">Referência:</label>
+          <input id="referencia" type="text" name="Referencia" value="">
+
+          <label for="Cep">Cep:</label>
+          <input id="cep" type="number" name="Cep" value="" required>
+
+          <label for="Cidade">Cidade:</label>
+          <input id="text" type="Bairro" name="Cidade" value="" required>
+        </div>
+        <br>
+
+        <input id="salvar" type="submit" name="Salvar" value="Salvar">
+      </form>
+      <br>
+
+      <!--Fim do Primeiro formulário-->
+
+      <div>
+        <h3 id="inicio">Dados Empresariais:</h3>
+        <br><br>
+      </div>
+      <form name="dados_empresariais" action="." method="post">
+        <div>
+          <label for="CNPJ">CNPJ:</label>
+          <input type="number" name="CNPJ" value="" minlength="13" maxlength="13" required>
+        </div>
+        <br>
+        <div>
+          <label for="razao">Razão Social:</label>
+          <input type="text" name="razao" value="" required>
+        </div>
+        <br>
+        <div>
+          <label for="fantasia">Nome Fantasia:</label>
+          <input type="text" name="fantasia" value="">
+        </div>
+        <br>
+        <div>
+          <label for="Rua">Rua:</label>
+          <input id="rua" type="text" name="Rua" value="" required>
+
+          <label for="Numero">Numero:</label>
+          <input id="number" type="number" name="Numero" value="" required>
+
+          <label for="Bairro">Bairro:</label>
+          <input id="text" type="Bairro" name="Bairro" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="complemento">Complemento:</label>
+          <input id="complemento" type="text" name="complemento" value="">
+
+          <label for="Cep">Cep:</label>
+          <input id="cep" type="number" name="Cep" value="" required>
+
+          <label for="Cidade">Cidade:</label>
+          <input id="text" type="Bairro" name="Cidade" value="" required>
+        </div>
+        <br>
+
+        <input id="salvar" type="submit" name="Salvar" value="Salvar">
+
+      </form>
+      <br><br>
+      
+      <!--Fim do segundo formulário-->
+
+      <div>
+        <h3 id="inicio">Acesso/Login:</h3>
+        <br><br>
+      </div>
+      <form name="dados_acesso" action="." method="post">
+        <div>
+          <label for="Email">E-mail:</label>
+          <input id="email" type="email" name="Email" value="" required>
+
+          <label for="confirmar">Confirmar e-mail:</label>
+          <input id="email" type="email" name="confirmar" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="senha">Senha:</label>
+          <input id="senha" type="password" name="senha" value="" required>
+
+          <label for="senha">Confirmar senha:</label>
+          <input id="senha" type="password" name="senha" value="" required>
+        </div>
+        <br>
+
+        <input id="salvar" type="submit" name="Salvar" value="Salvar">
+
+      </form>
+      <br><br>
+
+      <!--Fim do terceiro formulário-->
+
+      <div>
+        <h3 id="inicio">Dados bancários:</h3>
+        <br><br>
+      </div>
+      <form name="dados_bancarios" action="." method="post">
+        <div>
+          <label for="agencia">Agência:</label>
+          <input type="number" name="Email" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="operacao">Operação:</label>
+          <input type="number" name="operacao" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="corrente">Conta Corrente:</label>
+          <input type="number" name="corrente" value="" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="PIX">PIX:</label>
+          <input type="text" name="PIX" value="" required>
+        </div>
+        <br>
+
+        <input id="salvar" type="submit" name="Salvar" value="Salvar">
+
+      </form>
+
+    </main>
+  </div>
+</body>
+
+</html>

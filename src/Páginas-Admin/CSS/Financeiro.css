@@ -25,7 +25,6 @@
     height: 100vh;
     grid-area: header;
     position: sticky;
-    z-index: 10;
     top: 0;
   }
   

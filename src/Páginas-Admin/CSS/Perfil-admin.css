@@ -1,0 +1,71 @@
+body{
+    color: black;
+
+}
+header{
+    height: 100%;
+}
+#cabecalho2{
+    background-color: #bc1823;
+    height: 50px;
+    display: flex;
+}
+#cabecalhoPerfil{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+#inicio{
+    padding-left: 80px;
+    padding-top: 80px;
+    color: #ff9a00;
+}
+label{
+    margin-top: 50px;
+    margin-left: 80px;
+    appearance: none;
+    font-weight: bold;
+}
+input{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    text-align: center;
+}
+
+#rua{
+    width: 250px;
+}
+#number{
+    width: 100px;
+}
+#referencia{
+    width: 200px;
+}
+#cep{
+    width: 130px;
+}
+#salvar{
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ff9a00;
+    padding: 10px;
+    margin-top: 20px;
+}
+#complemento{
+    width: 178px;
+}
+#email{
+    width: 250px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+#senha{
+    width: 250px;
+}
