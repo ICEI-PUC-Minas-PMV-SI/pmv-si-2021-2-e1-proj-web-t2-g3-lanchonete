@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu carrinho</title>
+  </head>
+
+  <link rel="stylesheet" href="../../Páginas-Cliente/CSS/carrinho.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <body>
+    <div class="container">
+      <header>
+        <!--Primeiro componente Cabeçalho Principal-->
+        <div class="main-header">
+          <div class="logo">
+            <a href="../Html/Index.html">
+              <img src="../midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+            </a>
+          </div>
+
+          <!--Segundo componente Cabeçalho Principal-->
+          <div class="menu">
+            <ul>
+              <li>
+                <a href="">
+                  <img
+                    src="../midia/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="../Html/cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="../Html/fidelidade.html"> FIDELIDADE </a>
+              </li>
+              <li>
+                <a href=""> SOBRE NÓS </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--Terceiro componente Cabeçalho-->
+          <div class="login-carrinho">
+            <ul>
+              <li id="login">
+                <a href="../Html/login-cliente.html">
+                  <img
+                    src="../midia/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
+              </li>
+              <li id="carrinho">
+                <a href="../Html/carrinho.html">
+                  <img
+                    src="../midia/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Encerramento Cabeçalho Principal-->
+
+        <!--Início cabeçalho inferior-->
+        <div class="sub-header">
+          <div class="horario">
+            <img src="../midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+            <span>ABERTO 18:00 às 02:00</span>
+          </div>
+          <div class="enderecos">
+            <a href="">
+              <img
+                src="../midia/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
+              />
+              <span>ENDEREÇOS DE ENTREGA</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+
+<!--CARRINHO: Produtos, total, quantidade-->
+<body>
+        <div class="titulo-da-pag"><h1> <img src="../midia/cart-icon.png" alt=""> Meu carrinho</h1></div>
+
+        <div class="quantidade"><h2>Quantidade <br> <br> <br> -1 1 +1
+        </h2></div>
+
+<div class="total"><h3>Total <br> <br> <br> R$18,90 </h3></div>
+
+<div class="produtos"><p>X-Tudo</p></div>
+
+        <div class="linha1"><hr></div>
+
+        <div class="divisoria"><hr><br><br></div>
+
+<!--Frete-->
+        <div class="frete"> <b><p>Consulte o valor da entrega:</p></b> </div>
+        <div class="inserircep">
+          <form action="">
+            <label for="InsirirCep">Inserir o CEP aqui:</label>
+            <input type="text" id="InsirirCep">
+            <button>Confirmar</button>
+          </form>
+        </div>
+<!--Cupom-->
+        <div class="cupom"><b><p>Possui algum cupom de desconto?</p></b></div>
+
+        <div class="inserircupom">
+
+          <form action="">
+            <label for="InserirCupom">Inserir o Cupom aqui:</label>
+            <input type="text" id="InserirCupom">
+            <button>Confirmar</button>
+          </form>
+        </div>
+<!--Subtotal-->
+        <div class="subtotal"><P>Subtotal do pedido:</P></div>
+        <div class="subtotal-valor">R$18,90</div>
+<!--Continuar-comprando-->
+        <div class="continuarcomprando">
+          <a href="../Html/cardapio.html"><button> <img src="../Html/pagamento/imagens/comprarmais.png" alt=""><b>Continuar comprando</b></button></a>
+        </div>
+<!--Finalização de pedido-->
+        <div class="finalizar-botao"><h1>Finalizar compra</h1></div>
+
+</body>
+
+
+
+      
+      <main></main>
+      
+      <footer>
+        <div class="box-footer">
+          <div class="social-media">
+            <a href="#">
+              <img src="../midia/facebook-icon.png" alt="Ícone Facebook" />
+            </a>
+            <a href="#">
+              <img src="../midia/instagram-icon.png" alt="Ícone Instagram" />
+            </a>
+            <a href="#">
+              <img src="../midia/tiktok-icon.png" alt="Ícone TikTok" />
+            </a>
+          </div>
+          <div class="infos">
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
