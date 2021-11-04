@@ -540,3 +540,16 @@
   #adcomentario img {
     width: 30px;
   }
+
+  #avaliacao {
+    position: absolute;
+    margin-top: -5.6%;
+    margin-left: 25%;
+    width: 10%;
+    height: 5%;
+  }
+
+  #avaliacao:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
