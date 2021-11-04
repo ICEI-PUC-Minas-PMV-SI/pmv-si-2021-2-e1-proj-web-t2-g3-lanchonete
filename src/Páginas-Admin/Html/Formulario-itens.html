@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/formulario-itens.css">
+    <link rel="stylesheet" href="../../template-admin/style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <main>
+        <form name="form_cadastro" action="" method="POST">
+            <div>
+                <label for="Categoria">Categoria</label>
+                <select name="categoria" required>
+                    <option value="">Selecione uma categoria</option>
+                    <option value="Lanches">Lanches</option>
+                    <option value="Lanches_Fit">Lanches Fit</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Sobremesas">Sobremesas</option>
+                    <option value="Promocao">Promoção</option>
+                </select>
+            </div>
+            <br>
+
+            <div>
+                <label for="Item">Item</label>
+                <input id="input1" type="text" name="Item" value="" placeholder="Digite o nome do Item" maxlength="40"
+                    required>
+            </div>
+            <br>
+
+            <div>
+                <label for="Ingredientes">Ingredientes</label>
+                <input id="input2" type="text" name="Ingredientes" value="" placeholder="Digite os ingredientes"
+                    required>
+            </div>
+            <br>
+
+            <div>
+                <label for="image">Imagem</label>
+                <input type="file" accept="image/x-png,image/gif,image/jpeg" name="image" value="" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="Disponibilidade">Disponibilidade</label>
+                <select name="Disponibilidade" required>
+                    <option value="Disponível">Disponível</option>
+                    <option value="Indisponível">Indisponível</option>
+                </select>
+
+            </div>
+            <br>
+
+            <div>
+                <label for="Valor">Valor</label>
+                <input id="input3" type="number" min="1" name="Item" value="" placeholder="Digite o valor em 'R$'"
+                    maxlength="6" required>
+            </div>
+            <br><br>
+
+            <div>
+                <input type="submit" name="CONCLUIR" value="Concluir">
+            </div>
+            <br><br>
+
+
+        </form>
+    </main>
+
+</body>
+
+</html>

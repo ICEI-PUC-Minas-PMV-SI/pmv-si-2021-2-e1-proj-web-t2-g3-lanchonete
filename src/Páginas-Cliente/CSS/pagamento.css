@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  body {
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #bc1823;
+    height: 136px;
+    padding: 10px 0;
+  }
+  
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  .icon {
+    width: 20px;
+  }
+  
+  .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  ul li a:hover {
+    color: #ff9a00;
+  }
+  
+  .login-carrinho ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  
+  #login,
+  #carrinho {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 15px;
+  }
+  
+  #login-icon {
+    width: 28px;
+    position: absolute;
+    right: 49px;
+    top: -1px;
+  }
+  
+  #cart-icon {
+    width: 16px;
+    position: absolute;
+    right: 93px;
+    top: -2px;
+  }
+  
+  .sub-header {
+    background-color: #ff9a00;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .horario,
+  .enderecos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0 25px;
+  }
+  
+  .enderecos span:hover {
+    color: #bc1823;
+  }
+  
+  main {
+    height: 521px;
+  }
+
+  .resumo-do-pedido{
+  color: fffffff;
+  text-align: center;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 22px;
+  background-color: #bc1823;
+}
+
+
+
+.nome-pedido{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 6%;
+}
+
+
+
+
+.linha-pedido{
+    color: black;
+inline-size: 50%;
+margin-left: 15%;
+margin-top: -10px;
+}
+
+
+
+
+.preço{
+    color: black;
+margin-left: 71%;
+margin-top: -10px;
+font-family: 'Roboto', 'Oxygen', sans-serif;
+}
+
+
+
+
+.linha1{
+    color: black;
+    inline-size: 100%;
+    margin-top: 5%;
+    height: 1px;
+}
+
+
+
+
+
+.botao{
+    width: 250px;
+    height:70px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-left:1%;
+    margin-top: 20px;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+}
+
+
+
+
+
+.observaçao{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 22px;
+    float: right;
+    margin-right: 8%;
+    margin-top: -45px;
+    box-shadow: 0 4px 8px gray;
+  }
+
+
+
+
+
+.taxa-entrega{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 20px;
+    margin-left: 4%;
+    margin-top: 50px;
+}
+
+
+
+
+
+.linha2{
+    color: black;
+    inline-size: 100%;
+    margin-top: 10px;
+}
+
+
+
+
+
+.linha3{
+    color: black;
+    inline-size: 100%;
+    height: 10mm;
+    margin-top: 15mm;
+}
+
+
+
+#total{
+  display: flex;
+  font-size: 25px;
+color: black;
+margin-left: 5%;
+}
+
+
+
+
+#linha{
+  width: 400px;
+  border-bottom: 1px solid black;
+  position: relative;
+  bottom: 6px;
+  margin-left: 5%;
+}
+
+
+
+#valor{
+  color: green;
+  margin-left:5%;
+}
+
+.alterar-pedido{
+    color: white;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    background-color: #ff9a00;
+    border-radius: 70px;
+    border-style:solid;
+    border-width: thin;
+    border-color: black;
+    text-align: center;
+    width: 30%;
+    margin-left:35% ;
+    margin-top: 5%;
+  }
+
+
+
+
+
+  .dados-entrega{
+      color: white;
+      font-family: 'Roboto', 'Oxygen', sans-serif;
+      font-size: 120%;
+      margin-top: 5%;
+      background-color:#bc1823;
+      text-align: center;
+  }
+
+
+
+
+
+  .titulo-entrega{
+    color: white;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    background-color: #bc1823;
+    text-align: center;
+    width: 0%;
+    margin-left: 34%;
+    margin-top: -12mm;
+  }
+
+
+
+
+
+  .endereçodeentrega{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 120%;
+    margin-top: 5mm;
+    margin-left: 4%;
+  }
+
+
+
+
+
+  .complemento{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 120%;
+    margin-left: 4%;
+  }
+
+
+
+
+
+  .tempo-entrega{
+    color: black;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    font-size: 120%;
+    margin-left: 4%;
+  }
+  
+
+
+
+
+.pagar-site{
+  color: #ffffff;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  background-color: #bc1823;
+  text-align: center;
+  font-size: 120%;
+  margin-top: 3%;
+}
+
+
+
+
+
+.adicionar-cartao{
+  color:white;
+  font-size: 200%;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  background-color: #ff9a00;
+  border-style:solid;
+  border-width: thin;
+  border-color: black;
+  border-radius: 70px;
+  text-align: center;
+  width: 30%;
+  margin-top: 5%;
+  margin-left: 35%;
+}
+
+
+
+
+
+.formulario-cartao{
+color: black;
+font-family: 'Roboto', 'Oxygen', sans-serif;
+width: 80%;
+margin: 0 auto;
+box-shadow: 0 4px 8px #999;
+background-color: #C4C4C4;
+margin-top: 100px;
+}
+
+
+
+
+
+.PagarEntrega{
+  color: white;
+  background-color:#bc1823;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+
+
+
+
+.escolher-cartao{
+margin-left: 5%;
+font-family: 'Roboto', 'Oxygen', sans-serif;
+box-shadow: 0 4px 8px #999;
+width: 10%;
+margin-top: 7%;
+}
+
+
+
+
+
+.dinheiro{
+  margin-left: 30%;
+  margin-top: -13%;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  box-shadow: 0 4px 8px #999;
+width: 17%;
+}
+
+
+
+
+.ender-pix{
+  color: black;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+}
+
+
+
+
+
+.troco{
+  color: black;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  float: right;
+  margin-right: 8%;
+  box-shadow: 0 4px 8px #999;
+  width: 30%;
+  margin-top: -7%;
+}
+
+
+
+
+
+.botao-finalizar{
+  color: white;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 70px;
+  background-color:#ff9a00;
+  margin-top: 10%;
+  width: 400px;
+  margin-left: 35%;
+  border-style:solid;
+  border-width: thin;
+  border-color: black;
+  margin-bottom: -30%;
+}
+
+
+
+
+
+
+
+
+
+
+  footer {
+    background-color: #bc1823;
+    height: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-media a img {
+    width: 25px;
+    margin: 0 6px;
+  }
+  
+  .social-media a img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  
