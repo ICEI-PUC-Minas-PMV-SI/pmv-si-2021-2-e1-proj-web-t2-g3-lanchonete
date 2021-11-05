@@ -1,160 +1,106 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen', sans-serif;
   }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-areas: 'header main';
+}
+
+header {
+  background-color: #bc1823;
+  height: 100vh;
+  grid-area: header;
+}
+
+.menu {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 10px;
+}
+
+.botoes {
+  width: 100%;
+  margin-top: 30px;
+}
+
+ul li a {
+  list-style: none;
+  background-color: #ff9a00;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+ul li a p {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.icon {
+  width: 20px;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo2 {
+  position: absolute;
+  margin-left: 0px;
+  top: 50px;
+}
+
+main {
+  grid-area: main;
+}
   
-  a {
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
-  ul li {
-    list-style: none;
-  }
-  
-  body {
-    font-family: 'Roboto', 'Oxygen', sans-serif;
-    color: #ffffff;
-  }
-  
-  header {
+    #mp{
     background-color: #bc1823;
-    height: 136px;
-    padding: 10px 0;
-  }
-  
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 25px;
-    font-size: 16px;
-    font-weight: bolder;
-  }
-  
-  .logo img {
-    width: 150px;
-  }
-  
-  .icon {
-    width: 20px;
-  }
-  
-  .menu ul {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-  }
-  
-  ul li a:hover {
-    color: #ff9a00;
-  }
-  
-  .login-carrinho ul {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-  }
-  
-  #login,
-  #carrinho {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: 15px;
-  }
-  
-  #login-icon {
-    width: 28px;
-    position: absolute;
-    right: 49px;
-    top: -1px;
-  }
-  
-  #cart-icon {
-    width: 16px;
-    position: absolute;
-    right: 93px;
-    top: -2px;
-  }
-  
-  .sub-header {
-    background-color: #ff9a00;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  
-  .horario,
-  .enderecos a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin: 0 25px;
-  }
-  
-  .enderecos span:hover {
-    color: #bc1823;
-  }
-  
-  
-  
-  /*edições da pagina meus pedidos*/
-
- 
-    .main-principal-br{
-      color: #000;
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      grid-gap: 16px;
-      min-height: 521px;
-    }
-
-  
-    .aside-menu {
-      align-self: start;
-    }
-  
-  .aside-menu a{
-    color: #000;
-    
-  }
-  
-  .aside-menu> ul> li{
-    margin-bottom: 30px;
-  }
-  
-  .aside-menu{
+    color:#ffffff;
+    width: 100%;
+    height: 40%;
     padding-left: 20px;
-    padding-top: 20px;
-    
-  }
-  
-  @media (min-width: 768px){
-
-  .content-principal-br{
-    padding-left: 20px;
-    padding-top: 20px;
-    border-left: #000 solid 1px;
-    
+    padding-top:30px;
+    padding-bottom: 10px;
+    margin-left: 2px;
+   
+      
   }
 
   .mpedidos{
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   .tablecpedidos {
-    padding-top: 2px;
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     text-align: center;
-    width: 100%;
+    width: 95%;
     border: #bc1823 solid 1px;
     border-collapse: collapse;
          
@@ -170,7 +116,7 @@
   
   
   .thp {
-    width: 10% 15% 30% 20% 25%;
+    width: 10% 20% 30% 20% 20%;
     color:#bc1823;
     padding: 10px 2px;
     word-wrap: break-word;
@@ -178,11 +124,10 @@
   }
 
    .tdp {
-    width: 10% 15% 30% 20% 25%;
+    width: 10% 20% 30% 20% 20%;;
     padding: 8px 2px;
     word-wrap: break-word;
-    
-             
+                
   }
 
   #pcomanda,#pvalortotal,
@@ -191,88 +136,29 @@
     text-align: left;
 
   }
-  }
 
-  @media (max-width: 767px){
 
-    .content-principal-br{
-      padding-left: 20px;
-      padding-top: 20px;
-      border-left: #000 solid 1px;
-      
-    }
-  
-    .mpedidos{
-      padding-top: 30px;
-      padding-bottom: 10px;
-    }
-  
-    .tablecpedidos {
-      padding-top: 2px;
-      margin-bottom: 2px;
-      margin-top: 2px;
-      text-align: center;
-      width: 100%;
-      border: #bc1823 solid 1px;
-      border-collapse: collapse;
-           
-    }
-   
-    .tablecpedidos tbody tr {
-      border: #bc1823 solid 1px; 
-    }
-     
-    .tablecpedidos tbody tr:nth-child(2n) {
-      background-color: #fae8d0;
-    } 
-    
-    .tablecpedidos tbody tr{
-      display: flex;
+  @media (max-width: 767px) {
+
+      .tablecpedidos tbody tr {
+      display:flex;
       flex-direction: column;
     }
-
+    
     .tablecpedidos th{
-      display: none;
+      display:none;
+    }
+
+  @media (max-width: 500px) {
+
+    .tablecpedidos tbody tr {
+      display:flex;
+      flex-direction: column;
     }
     
-      
-     .tdp {
-       padding: 8px 2px;
-         
-               
+    .tablecpedidos th{
+      display:none;
     }
-  
    
-    }
-  
-  footer {
-    background-color: #bc1823;
-    height: 100px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-  
-  .box-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .social-media a img {
-    width: 25px;
-    margin: 0 6px;
-  }
-  
-  .social-media a img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
-  }
-
- 
   

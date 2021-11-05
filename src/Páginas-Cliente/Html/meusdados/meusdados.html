@@ -4,126 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WarmBurguer</title>
-  </head>
+    <title>Página do Cliente</title>
 
-  <link rel="stylesheet" href="../../CSS/meusdados.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="stylesheet" href="../../CSS/meusdados.css"  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
     <div class="container">
       <header>
-        <!--Primeiro componente Cabeçalho Principal-->
-        <div class="main-header">
+        <div class="menu">
           <div class="logo">
             <a href="#">
-              <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+              <img
+                src="midia/logo-lanchonete.png"
+                alt="Logo Lanchonete"
+                class="logo"
+              />
             </a>
           </div>
-
-          <!--Segundo componente Cabeçalho Principal-->
-          <div class="menu">
+          <div class="botoes">
             <ul>
               <li>
                 <a href="#">
-                  <img
-                    src="midia/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
-                  <span>HOME</span>
+                 
+                  <p>Olá, nome do usuário </p>
                 </a>
               </li>
               <li>
-                <a href="#">CARDÁPIO</a>
-              </li>
-              <li>
-                <a href="#"> FIDELIDADE </a>
-              </li>
-              <li>
-                <a href="#"> SOBRE NÓS </a>
-              </li>
-            </ul>
-          </div>
-
-          <!--Terceiro componente Cabeçalho-->
-          <div class="login-carrinho">
-            <ul>
-              <li id="login">
                 <a href="#">
-                  <img
-                    src="midia/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
-                  <span>LOGIN</span>
+                <p>Pedidos</p>
                 </a>
               </li>
-              <li id="carrinho">
+                            <li>
                 <a href="#">
-                  <img
-                    src="midia/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
-                  <span>CARRINHO</span>
+                 <p>Programas de fidelidade</p>
                 </a>
               </li>
-            </ul>
+              <li>
+                <a href="#">
+                 <p>Perfil</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                 <p>Cartões salvos</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                 <p>Sair</p>
+                </a>
+              </li>
+              </ul>
           </div>
-        </div>
-        <!--Encerramento Cabeçalho Principal-->
-
-        <!--Início cabeçalho inferior-->
-        <div class="sub-header">
-          <div class="horario">
-            <img src="midia/clock-icon.png" alt="Ícone relógio" class="icon" />
-            <span>ABERTO 18:00 às 02:00</span>
-          </div>
-          <div class="enderecos">
+          <div class="logo">
             <a href="#">
               <img
-                src="midia/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
+                src="../../midia/logo2-lanchonete.png"
+                alt="Logo Lanchonete"
+                class="logo logo2"
               />
-              <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
         </div>
       </header>
-
       
-      <main class="main-principal-br">  
+      <main class="main-principal-br">
+        
+        <div class="content-principal-br">
 
-        <aside class="aside-menu">
-          <ul>
-            <li> Olá, nome do usuário</li>
-            <li> <strong><a href="meuspedidos.html">PEDIDOS</strong></li></a> 
-            <li> <strong><a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
-            <li><strong> <a href="meusdados.html">MEUS DADOS</li> </strong></a>
-            <li> <strong><a href="cartoes.html">CARTÕES SALVOS</li></strong></a> 
-            <li><strong> <a href="Index.html">SAIR</li></strong></a> 
-      
-          </ul>
-         </aside>
+          <div class=" perfil">
+            <h2 > PERFIL</h2>       
+           </div>
 
-         <div class="content-principal-br">
-          <form class="formd">
+          <form class="formd" id="formdados" method="get">
                                  
-                      <div class=" perfil">
-                       <h2 > PERFIL</h2>
+                     <div class="md">
                       <h3>Meus dados</h3>
                       <label>Nome:</label>  
                       <input type="text" name="nome" id="nome" disabled>
-                      
-                  </div>
+                      </div>
+
                   <div class="dtn">
                       <label>Data de nascimento:</label>     
                       <input type="number" name="nascimento" id="nome" disabled>
@@ -208,29 +174,8 @@
                          
           </form>
       </div>
-   
-      </main>
 
-    <footer>
-      <div class="box-footer">
-        <div class="social-media">
-          <a href="#">
-            <img src="midia/facebook-icon.png" alt="Ícone Facebook" />
-          </a>
-          <a href="#">
-            <img src="midia/instagram-icon.png" alt="Ícone Instagram" />
-          </a>
-          <a href="#">
-            <img src="midia/tiktok-icon.png" alt="Ícone TikTok" />
-          </a>
-        </div>
-        <div class="infos">
-          <p>
-            Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
+      </main>
+    </div>
+  </body>
 </html>
