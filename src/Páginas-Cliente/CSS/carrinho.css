@@ -174,9 +174,8 @@ margin-top: 34px;
 
 
 .linha1 {
-    color: black;
+    color: gray;
     inline-size: 60%;
- 
     margin-left: 100px;
     margin-top: -9px;
 }
@@ -189,6 +188,7 @@ margin-top: 34px;
   color: gray;
 inline-size: 100%;
 margin-top: 10%;
+
 }
 
 
@@ -211,7 +211,7 @@ margin-top: 10%;
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  border-color:#bc1823;
+  border-color:#ff9a00;
   border-width: 1px;
   border-style: solid;  
 }
@@ -268,7 +268,7 @@ margin-top: 10%;
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  border-color:#bc1823;
+  border-color: #ff9a00;
   border-width: 1px;
   border-style: solid;  
 }
@@ -309,44 +309,48 @@ margin-top: 10%;
 
 .subtotal{
   color: black;
+  display: flex;
   margin-top: 5%;
-  margin-left: 39px;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
+  margin-left: 8%;  
 }
 
 
 
 
 
-.subtotal-valor{
+#valorsubtotal{
   color: green;
-  margin-left: 185px;
-  margin-top: -4mm;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 15px;
 }
 
 
 
 
-
-.continuarcomprando{
-  font-size: 200px;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
-  text-align:center;
-  width:max-content;
-  color: black;
-  float: left;
-  margin-left:39px;
-  margin-top: -70px;
-  justify-content: center;
-}
-
-
-
-
-
-
+#ContinuarComprando{
+  margin-top: 5%;
+  margin-left: 8%;
   
+}
+
+
+
+
+
+#FinalizaçaoBotao{
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  color: #ffffff;
+  font-size: 160%;
+  text-align: center;
+  margin-top: 15%;
+  margin-left: 38%;
+  background-color: #ff9a00;
+  border-radius: 30px 30px 30px 30px;
+  width: 345px;
+  height: 50px;
+  border: none;
+  border-style: none;
+  margin-bottom: -30%;
+}
 
 
 
