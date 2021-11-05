@@ -146,11 +146,7 @@ body h1 img {
 }
 
 
-#negative{
-  color: black;
-  background-color: red;
-  width: 100%;
-}
+
 
 
 #number{
@@ -159,12 +155,21 @@ body h1 img {
 }
 
 #imgmais{
-  margin-left: 80%;
-  width: 25px;
+  margin-left: 90%;
+  width: 20px;
 }
 
 
-
+#imgmenos{
+  background-color: #ffffff;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: red;
+  width: 20px;
+  margin-left: 10%;
+  display: flex;
+  margin-top: -22%; 
+}
 
 
 .total{
@@ -383,7 +388,7 @@ margin-top: 5%;
   color: #ffffff;
   font-size: 160%;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-left: 38%;
   background-color: #ff9a00;
   border-radius: 30px;
@@ -391,7 +396,13 @@ margin-top: 5%;
   height: 50px;
   border: none;
   border-style: none;
-  margin-bottom: -60px;
+  margin-bottom: -30%;
+}
+
+.ajuste{
+  color: #ffffff;
+  display: flex;
+  margin-bottom: -30%;
 }
 
 

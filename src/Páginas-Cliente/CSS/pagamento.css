@@ -164,17 +164,19 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
     color: white;
     border-radius: 10px;
     text-align: center;
-    margin-left:1%;
-    margin-top: 5%;
+    margin-left: 2%;
+    margin-top: 0%;
     font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 
 #TextoObservaçao{
   color: black;
-  margin-left: 70%;
-  margin-bottom: 1%;
-  margin-top: -20px;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-bottom: 0%;
+  margin-top: 1%;
 }
 
 
@@ -184,9 +186,9 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
   height: 54px;
   display: flex;
   gap: 25px;
-  margin-top: 0%;
-  margin-left: 70%;
-  margin-bottom: 5%;
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-bottom: 1%;
   padding: 10px 80px;
 }
 
@@ -225,7 +227,7 @@ font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 #observaçao img {
-  width: 25px;
+  width: 20px;
 }
 
 
@@ -386,7 +388,7 @@ margin-left: 5%;
   font-size: 160%;
   text-align: center;
   margin-top: 5%;
-  margin-bottom: -5%;
+  margin-bottom: 3%;
   margin-left: 38%;
   background-color: #ff9a00;
   border-radius: 30px 30px 30px 30px;
@@ -458,7 +460,6 @@ width: 17%;
 
 .tit-troco, .troco{
   box-shadow: 0 4px 8px silver;
-
 }
 
 
@@ -480,7 +481,7 @@ width: 17%;
   height: 54px;
   display: flex;
   gap: 25px;
-  margin-top: -5%;
+  margin-top: -4%;
   margin-left: 70%;
   padding: 10px 80px;
   margin-bottom: 1%;
@@ -524,7 +525,7 @@ width: 17%;
 }
 
 .troco img {
-  width: 21px;
+  width: 20px;
   margin-bottom: 1%;
 }
 
@@ -550,7 +551,11 @@ width: 17%;
 
 
 
-
+.ajuste{
+  color: #ffffff;
+  display: flex;
+  margin-bottom: -30%;
+}
 
 
 
