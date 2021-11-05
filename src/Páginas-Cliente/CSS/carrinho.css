@@ -192,30 +192,60 @@ margin-top: 10%;
 }
 
 
+#frete{
+  background: white(196, 196, 196, 0.1);
+  width: 100px;
+  height: 54px;
+  display: flex;
+  gap: 25px;
+  margin-top: 6%;
+  margin-left: 8%;
+  padding: 10px 80px;
+}
 
+#frete{
+  background: white;
+  width: 300px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;  
+}
 
+#frete input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
 
+#frete button {
+  background-color: white;
+  border: none;
+  border-style: none;
+  
+}
 
+#frete button:hover{ 
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
 
-.frete{
-  color: black;
-  margin-left: 1cm;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
-  font-size: 30px;
+#frete img {
+  width: 25px;
 }
 
 
 
 
-.inserircep{
-  color: black;
-  margin-left: 39px;
-  margin-top: 25px;
-  font-family: 'Roboto', 'Oxygen', sans-serif;
-  font-size: 20px;
-  box-shadow: 0 4px 8px gray;
-  width: 30%;
-}
+
+
 
 
 
@@ -241,6 +271,8 @@ margin-top: 10%;
   box-shadow: 0 4px 8px gray;
   width: 30%;
 }
+
+
 
 
 
