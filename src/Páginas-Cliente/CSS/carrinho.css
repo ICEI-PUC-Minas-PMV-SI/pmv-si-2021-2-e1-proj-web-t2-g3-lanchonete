@@ -146,6 +146,23 @@ body h1 img {
 }
 
 
+#negative{
+  color: black;
+  background-color: red;
+  width: 100%;
+}
+
+
+#number{
+  color: black;
+  font-size: 20px;
+}
+
+#imgmais{
+  width: 25px;
+}
+
+
 
 
 
@@ -192,13 +209,26 @@ margin-top: 10%;
 }
 
 
+
+
+
+.tit-frete{
+  color: black;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 8%;
+  
+}
+
+
+
 #frete{
   background: white(196, 196, 196, 0.1);
   width: 100px;
   height: 54px;
   display: flex;
   gap: 25px;
-  margin-top: 6%;
+  margin-top: 1%;
   margin-left: 8%;
   padding: 10px 80px;
 }
@@ -233,18 +263,28 @@ margin-top: 10%;
 
 #frete button:hover{ 
   background-color: white;
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #frete img {
-  width: 25px;
+  width: 22px;
 }
 
 
 
 
 
+
+
+.tit-cupom{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+margin-left: 8%;
+margin-top: 5%;
+
+}
 
 
 
@@ -255,7 +295,7 @@ margin-top: 10%;
   height: 54px;
   display: flex;
   gap: 25px;
-  margin-top: 6%;
+  margin-top: 1%;
   margin-left: 8%;
   padding: 10px 80px;
 }
@@ -290,12 +330,12 @@ margin-top: 10%;
 
 #cupom button:hover{ 
   background-color: white;
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 #cupom img {
-  width: 40px;
+  width: 23px;
 }
 
 
@@ -344,12 +384,12 @@ margin-top: 10%;
   margin-top: 15%;
   margin-left: 38%;
   background-color: #ff9a00;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   width: 345px;
   height: 50px;
   border: none;
   border-style: none;
-  margin-bottom: -30%;
+  margin-bottom: -60px;
 }
 
 
