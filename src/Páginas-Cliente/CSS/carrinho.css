@@ -166,9 +166,8 @@ body h1 img {
   border-style: solid;
   border-color: red;
   width: 20px;
-  margin-left: 10%;
-  display: flex;
-  margin-top: -22%; 
+  float: right;
+
 }
 
 
