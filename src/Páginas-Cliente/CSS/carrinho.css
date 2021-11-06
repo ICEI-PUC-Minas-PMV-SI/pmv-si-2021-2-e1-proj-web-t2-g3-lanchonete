@@ -116,27 +116,18 @@ main {
 
 
 
-.titulo-da-pag{
+.titulo-da-pag {
   font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 23px;
   background-color: #bc1823; 
   text-align: center;
 }
 
-
-
-
-
 body h1 img {
   width: 35px;
 }
 
-
-
-
-
-
-.quantidade{
+.quantidade {
   font-family: 'Roboto', 'Oxygen', sans-serif;
   font-size: 13px;
   color: black;
@@ -145,33 +136,26 @@ body h1 img {
   margin-top: 34px;
 }
 
-
-
-
-
-#number{
+#number {
   color: black;
   font-size: 20px;
 }
 
-#imgmais{
+#imgmais {
   margin-left: 90%;
   width: 20px;
 }
 
-
-#imgmenos{
+#imgmenos {
   background-color: #ffffff;
   border-radius: 100%;
   border-style: solid;
   border-color: red;
   width: 20px;
   float: right;
-
 }
 
-
-.total{
+.total {
 color: black;
 font-family: 'Roboto', 'Oxygen', sans-serif;
 font-size: 16px;
@@ -180,21 +164,13 @@ margin-right: -250px;
 margin-top: 34px;
 }
 
-
-
-
-
-.produtos{
+.produtos {
   margin-left: 39px;
   padding-top: 38px;
   font-family: 'Roboto', 'Oxygen', sans-serif;
   color: black;
   margin-top: 5%;
 }
-
-
-
-
 
 .linha1 {
     color: gray;
@@ -203,32 +179,20 @@ margin-top: 34px;
     margin-top: -9px;
 }
 
-
-
-
-
 .divisoria {
   color: gray;
 inline-size: 100%;
 margin-top: 10%;
-
 }
 
-
-
-
-
-.tit-frete{
+.tit-frete {
   color: black;
   font-size: 25px;
   font-family: 'Roboto', sans-serif;
   margin-left: 8%;
-  
 }
 
-
-
-#frete{
+#frete {
   background: white(196, 196, 196, 0.1);
   width: 100px;
   height: 54px;
@@ -239,7 +203,7 @@ margin-top: 10%;
   padding: 10px 80px;
 }
 
-#frete{
+#frete {
   background: white;
   width: 300px;
   height: 30px;
@@ -264,10 +228,9 @@ margin-top: 10%;
   background-color: white;
   border: none;
   border-style: none;
-  
 }
 
-#frete button:hover{ 
+#frete button:hover { 
   background-color: white;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -277,25 +240,15 @@ margin-top: 10%;
   width: 22px;
 }
 
-
-
-
-
-
-
-.tit-cupom{
+.tit-cupom {
   color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
-margin-left: 8%;
-margin-top: 5%;
-
+  margin-left: 8%;
+  margin-top: 5%;
 }
 
-
-
-
-#cupom{
+#cupom {
   background: white(196, 196, 196, 0.1);
   width: 100px;
   height: 54px;
@@ -306,7 +259,7 @@ margin-top: 5%;
   padding: 10px 80px;
 }
 
-#cupom{
+#cupom {
   background: white;
   width: 300px;
   height: 30px;
@@ -331,10 +284,9 @@ margin-top: 5%;
   background-color: white;
   border: none;
   border-style: none;
-  
 }
 
-#cupom button:hover{ 
+#cupom button:hover { 
   background-color: white;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -344,45 +296,24 @@ margin-top: 5%;
   width: 23px;
 }
 
-
-
-
-
-
-
-
-
-
-.subtotal{
+.subtotal {
   color: black;
   display: flex;
   margin-top: 5%;
   margin-left: 8%;  
 }
 
-
-
-
-
-#valorsubtotal{
+#valorsubtotal {
   color: green;
   font-size: 15px;
 }
 
-
-
-
-#ContinuarComprando{
+#ContinuarComprando {
   margin-top: 5%;
   margin-left: 8%;
-  
 }
 
-
-
-
-
-#FinalizaçaoBotao{
+#FinalizaçaoBotao {
   font-family: 'Roboto', 'Oxygen', sans-serif;
   color: #ffffff;
   font-size: 160%;
@@ -398,16 +329,11 @@ margin-top: 5%;
   margin-bottom: -30%;
 }
 
-.ajuste{
+.ajuste {
   color: #ffffff;
   display: flex;
   margin-bottom: -30%;
 }
-
-
-
-
-
 
 footer {
   background-color: #bc1823;

@@ -21,7 +21,7 @@
     margin-bottom: 15px;
   }
   
-  #imgcartao{
+  #imgcartao {
     width: 40px;
     margin-bottom: 4px;
   }
@@ -32,8 +32,6 @@
     margin: 0 10px;
   }
 
-
-  
   .caixa {
     background-color: #bc1823;
     width: 520px;
@@ -52,7 +50,7 @@
     width: 100%;
   }
 
-  .formulario-cartao{
+  .formulario-cartao {
     color: white;
     font-family: 'Roboto', 'Oxygen', sans-serif;
     width: 60%;
@@ -60,8 +58,7 @@
     margin-top: 100px;
     }
 
-
-    #digiteinfcartão{
+    #digiteinfcartão {
     font-size: 10px;
     }
   
