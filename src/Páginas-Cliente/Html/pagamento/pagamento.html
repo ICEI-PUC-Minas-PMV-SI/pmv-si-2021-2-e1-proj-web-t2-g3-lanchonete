@@ -124,12 +124,11 @@
   </form>
 </div>
 
-<div class="observaçao">
-<form class="card">
-     <label for="textareamensagem"><b>Adicionar observação:</b></label>
-     <textarea name="textareamensagem" id="textareamensagem" ></textarea>
-     <button>Confirmar</button>
-</form>
+<h1 id="TextoObservaçao" ><b>Adicionar observação:</b></h1>
+
+<div id="observaçao" >
+  <input type="text" placeholder="Adicione aqui">
+  <button type="submit"> <img src="../pagamento/imagens/send.png" alt="">  </button>
 </div>
 
 <!--Dados da entrega, endereço e alterar pedido-->
@@ -148,7 +147,8 @@
 </div>
 
 
-<div class="alterar-pedido"><b><h1>Alterar Pedido</h1></b></div>
+<button id="AlterarPedido" ><a href="../carrinho.html">Alterar pedido</a></button>
+
 
 <div class="dados-entrega"><b><h1>Dados da Entrega</h1></b></div>
 
@@ -166,31 +166,7 @@
 
 <!--Adicionar cartão-->
 
-<div class="adicionar-cartao"><b><p>Adicionar cartão</p></b></div>
-
-<div class="formulario-cartao">
- <b><p>  <h1>Digite as informações do cartão que você  deseja usar para pagamento.</h1>
- </p></b>
-  <form class="card"> 
-      <label for="NumeroCartao">Número do cartão:</label>
-      <input type="text" id="NumeroCartao">
-   <br> <br>
-      <label for="Validade">Validade:</label>
-      <input type="text" id="Validade">
-   <br> <br>
-      <label for="cvc">CVC:</label>
-      <input type="text" id="cvc">
-   <br> <br>
-      <label for="NomeNoCartao">Nome no cartão:</label>
-      <input type="text" id="NomeNoCartao">
-   <br> <br>
-      <label for="CpfCartao">CPF/CNPJ do titular do cartão:</label>
-      <input type="text" id="CpfCartao">
-   <br> <br>
-      <button>Adicionar</button>
-
-  </form>
-</div>
+<button id="AdicionarCartao"> <a href="../carrinho.html">Adicionar Cartão</a></button>
 
 <!--Pagamento na entrega-->
 
@@ -224,18 +200,19 @@
   <div class="ender-pix"><b><p>email para PIX:warmburguer@gmail.com</p></b></div>
 </div>
 
+
+<div class="tit-troco"><b><p>Precisa de troco?</p></b></div>
+
 <div class="troco">
-  <form action="">
-    <label for="SeuTroco">Se precisar de troco, digite aqui o valor:</label>
-    <textarea name="SeuTroco" id="SeuTroco"></textarea>
-  </form>
+    <input type="text" placeholder="Insira aqui o valor">
+    <button type="submit" > <img src="../pagamento/imagens/send.png" alt="Confirmar"></button>
 </div>
 
 <div class="botao-finalizar">
-  <b><h1>
-    Fazer Pedido
-  </h1></b>
+  <button id="FinalizarPagamento" ><a href="">Finalizar pedido</a></button>
 </div>
+
+<div class="ajuste"><p> . </p></div>
 
 
 </body>
