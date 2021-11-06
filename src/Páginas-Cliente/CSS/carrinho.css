@@ -102,13 +102,9 @@ ul li a:hover {
   color: #bc1823;
 }
 
-
-
 main {
   height: 521px;
 }
-
-
 
 
 
@@ -156,12 +152,12 @@ body h1 img {
 }
 
 .total {
-color: black;
-font-family: 'Roboto', 'Oxygen', sans-serif;
-font-size: 16px;
-float: right;
-margin-right: -250px;
-margin-top: 34px;
+  color: black;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 16px;
+  float: right;
+  margin-right: -250px;
+  margin-top: 34px;
 }
 
 .produtos {
@@ -173,16 +169,16 @@ margin-top: 34px;
 }
 
 .linha1 {
-    color: gray;
-    inline-size: 60%;
-    margin-left: 100px;
-    margin-top: -9px;
+  color: gray;
+  inline-size: 60%;
+  margin-left: 100px;
+  margin-top: -9px;
 }
 
 .divisoria {
   color: gray;
-inline-size: 100%;
-margin-top: 10%;
+  inline-size: 100%;
+  margin-top: 10%;
 }
 
 .tit-frete {
