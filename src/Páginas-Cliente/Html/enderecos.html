@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WarmBurguer</title>
-  </head>
+    <title>ENDEREÇOS</title>
 
-  <link rel="stylesheet" href="../../template-cliente/style.css" />
+    <link rel="stylesheet" href="../../template-cliente/style.css" />
   <link rel="stylesheet" href="../CSS/enderecos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,24 +14,32 @@
     href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
     rel="stylesheet"
   />
+
   <body>
     <div class="container">
       <header>
-        <!--Primeiro componente Cabeçalho Principal-->
-        <div class="main-header">
+        <div id="main-header">
           <div class="logo">
             <a href="#">
-              <img src="../../template-cliente/midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+              <img
+                src="../midia/cardapio/icons/logo-lanchonete.png"
+                alt="Logo da Lanchonete"
+              />
             </a>
           </div>
-
-          <!--Segundo componente Cabeçalho Principal-->
-          <div class="menu">
+          <!-- <div class="menu-section on">
+            <div class="menu-toggle">
+              <div class="one"></div>
+              <div class="two"></div>
+              <div class="three"></div>
+            </div>
+          </div> -->
+          <nav id="menu">
             <ul>
               <li>
                 <a href="#">
                   <img
-                    src="../../template-cliente/midia/home-icon.png"
+                    src="../midia/cardapio/icons/home-icon.png"
                     alt="Ícone home"
                     class="icon"
                   />
@@ -40,7 +47,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">CARDÁPIO</a>
+                <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
                 <a href="#"> FIDELIDADE </a>
@@ -49,15 +56,13 @@
                 <a href="#"> SOBRE NÓS </a>
               </li>
             </ul>
-          </div>
-
-          <!--Terceiro componente Cabeçalho-->
-          <div class="login-carrinho">
+          </nav>
+          <nav id="login-carrinho">
             <ul>
               <li id="login">
-                <a href="#">
+                <a href="acessar-como.html">
                   <img
-                    src="../../template-cliente/midia/login-icon.png"
+                    src="../midia/cardapio/icons/login-icon.png"
                     alt="Ícone login"
                     id="login-icon"
                     class="icon"
@@ -68,7 +73,7 @@
               <li id="carrinho">
                 <a href="#">
                   <img
-                    src="../../template-cliente/midia/cart-icon.png"
+                    src="../midia/cardapio/icons/cart-icon.png"
                     alt="Ícone carrinho"
                     id="cart-icon"
                     class="icon"
@@ -77,20 +82,21 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
-        <!--Encerramento Cabeçalho Principal-->
-
-        <!--Início cabeçalho inferior-->
-        <div class="sub-header">
-          <div class="horario">
-            <img src="../../template-cliente/midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+        <div id="sub-header">
+          <div id="horario">
+            <img
+              src="../midia/cardapio/icons/clock-icon.png"
+              alt="Ícone relógio"
+              class="icon"
+            />
             <span>ABERTO 18:00 às 02:00</span>
           </div>
-          <div class="enderecos">
+          <div id="enderecos">
             <a href="#">
               <img
-                src="../../template-cliente/midia/location-icon.png"
+                src="../midia/cardapio/icons/location-icon.png"
                 alt="Ícone localização"
                 class="icon"
               />
@@ -199,3 +205,5 @@
     </div>
   </body>
 </html>
+
+
