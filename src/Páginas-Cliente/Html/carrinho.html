@@ -29,7 +29,11 @@
           <div class="menu">
             <ul>
               <li>
+<<<<<<< HEAD
                 <a href="">
+=======
+                <a href="../Html/Index.html">
+>>>>>>> Vinícius-Damasceno
                   <img
                     src="../midia/home-icon.png"
                     alt="Ícone home"
@@ -104,8 +108,13 @@
 <body>
         <div class="titulo-da-pag"><h1> <img src="../midia/cart-icon.png" alt=""> Meu carrinho</h1></div>
 
-        <div class="quantidade"><h2>Quantidade <br> <br> <br> -1 1 +1
-        </h2></div>
+        <div class="quantidade"><h2>Quantidade <br> <br> <br></h2>
+          <div>
+            <a href="#"><img id="imgmais" src="../Html/pagamento/imagens/plus-icon.png" alt=""></a>
+            <p id="number">1</p>
+            <a href="#"><img id="imgmenos" src="../Html/pagamento/imagens/menos2.png" alt=""></a>
+          </div>
+        </div>
 
 <div class="total"><h3>Total <br> <br> <br> R$18,90 </h3></div>
 
@@ -116,35 +125,33 @@
         <div class="divisoria"><hr><br><br></div>
 
 <!--Frete-->
-        <div class="frete"> <b><p>Consulte o valor da entrega:</p></b> </div>
-        <div class="inserircep">
-          <form action="">
-            <label for="InsirirCep">Inserir o CEP aqui:</label>
-            <input type="text" id="InsirirCep">
-            <button>Confirmar</button>
-          </form>
+<div class="tit-frete"><b><p>Consulte o valor da entrega:</p></b></div>
+        <div id="frete">
+          <input type="text" placeholder="Insira o Cep aqui" >
+          <button type="submit"><img src="../Html/pagamento/imagens/send.png"alt="confirmar"></button>
+        
         </div>
 <!--Cupom-->
-        <div class="cupom"><b><p>Possui algum cupom de desconto?</p></b></div>
-
-        <div class="inserircupom">
-
-          <form action="">
-            <label for="InserirCupom">Inserir o Cupom aqui:</label>
-            <input type="text" id="InserirCupom">
-            <button>Confirmar</button>
-          </form>
+<div class="tit-cupom"><b><p>Possui algum cupom de desconto?</p></b></div>
+        <div id="cupom">
+          <input type="text" placeholder="Insira o cupom aqui">
+          <button type="submit"> <img src="../Html/pagamento/imagens/cupom novo.png"alt="confirmar"></button>
         </div>
 <!--Subtotal-->
-        <div class="subtotal"><P>Subtotal do pedido:</P></div>
-        <div class="subtotal-valor">R$18,90</div>
+        <div class="subtotal"><P>Subtotal do pedido:<h1 id="valorsubtotal">R$18,90</h1></P></div>
 <!--Continuar-comprando-->
+<<<<<<< HEAD
         <div class="continuarcomprando">
           <a href="../Html/cardapio.html"><button> <img src="../Html/pagamento/imagens/comprarmais.png" alt=""><b>Continuar comprando</b></button></a>
         </div>
+=======
+        <div id="ContinuarComprando"><a href="../Html/cardapio/cardapio.html"><button> <img src="../Html/pagamento/imagens/comprarmais.png" alt="carrinho"><b>Continuar comprando</b></button></a></div>
+>>>>>>> Vinícius-Damasceno
 <!--Finalização de pedido-->
-        <div class="finalizar-botao"><h1>Finalizar compra</h1></div>
-
+         <div>
+              <button id="FinalizaçaoBotao"><a href="../Html/pagamento/pagamento.html">Finalizar pagamento</a></button>
+        </div>
+<div class="ajuste"><p> . </p></div>
 </body>
 
 
