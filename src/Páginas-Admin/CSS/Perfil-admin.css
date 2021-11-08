@@ -1,6 +1,13 @@
 body{
     color: black;
 }
+header {
+    background-color: #bc1823;
+    height: 100vh;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
 #cabecalho2{
     background-color: #bc1823;
     height: 50px;
@@ -15,7 +22,7 @@ body{
 }
 .abas{
     width: 600px;
-    height: 200px;
+    height: 100px;
     margin: 20px auto;
     position: relative;
 }
@@ -48,7 +55,7 @@ body{
     background-color: white;
     display: none;
     position: absolute;
-    height: 620px;
+    height: 320px;
     width: 600px;
     left: 0;
 }

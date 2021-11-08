@@ -140,6 +140,8 @@ margin-top: 30px;
   border-width: 0px 0px 3px 0px;
   position: relative;
   bottom: 150px;
+  color: #bc1823;
+  font-size: 30px;
 }
 
 #valor2{
@@ -149,6 +151,8 @@ margin-top: 30px;
   border-width: 0px 0px 3px 0px;
   position: relative;
   bottom: 150px;
+  color: #bc1823;
+  font-size: 30px;
 }
 
 #periodo{
@@ -199,8 +203,13 @@ margin-top: 30px;
 #datas{
   border-color: black;
   border-style: solid;
-  width: 150px;
+  width: 180px;
   height: 40px;
+  text-align: right;
+  color: #bc1823;
+  font-size: 20px;
+  font-weight: bolder;
+  
 }
 #pesquisar{
   display: block;
