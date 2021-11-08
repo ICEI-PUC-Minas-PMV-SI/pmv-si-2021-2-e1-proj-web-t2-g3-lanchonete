@@ -4,7 +4,7 @@ var db = {
       categoria: 'lanches',
       codigo: 1,
       imagem: '../midia/cardapio/images/lanches/x-burguer.png',
-      titulo: 'X-Buguer',
+      titulo: 'X-Burguer',
       descricao: 'Pão, hambúrguer, queijo prato, tomate e alface',
       preco: (10.9).toFixed(2)
     },
