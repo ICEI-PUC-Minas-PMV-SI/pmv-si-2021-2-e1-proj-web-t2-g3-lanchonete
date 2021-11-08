@@ -1,184 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página do Cliente</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WarmBurguer</title>
-</head>
-
-<link rel="stylesheet" href="../../CSS/adicionarcartao.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-  rel="stylesheet" />
-
-<body>
-  <div class="container">
-    <header>
-      <!--Primeiro componente Cabeçalho Principal-->
-      <div class="main-header">
-        <div class="logo">
-          <a href="#">
-            <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
-          </a>
-        </div>
-
-        <!--Segundo componente Cabeçalho Principal-->
+    <link rel="stylesheet" href="../../CSS/adicionarcartao.css"  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
         <div class="menu">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="midia/home-icon.png" alt="Ícone home" class="icon" />
-                <span>HOME</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">CARDÁPIO</a>
-            </li>
-            <li>
-              <a href="#"> FIDELIDADE </a>
-            </li>
-            <li>
-              <a href="#"> SOBRE NÓS </a>
-            </li>
-          </ul>
+          <div class="logo">
+            <a href="#">
+              <img
+                src="midia/logo-lanchonete.png"
+                alt="Logo Lanchonete"
+                class="logo"
+              />
+            </a>
+          </div>
+          <div class="botoes">
+            <ul>
+              <li>
+                <a href="#">
+                
+                  <p>Olá, nome do usuário </p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="midia/comandas-icon.png"
+                    alt="Ícone Comandas"
+                    class="icon"
+                  />
+                <p>Pedidos</p>
+                </a>
+              </li>
+               <li>
+                <a href="#">
+                  <img
+                        src="midia/fidelidade-icon.png"
+                        alt="Ícone fidelidade"
+                        class="icon"
+                      />
+                 <p>Programas de fidelidade</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                      <img
+                        src="midia/perfil-icon.png"
+                        alt="Ícone Perfil"
+                        class="icon"
+                      />
+                      <p>Perfil</p>
+                    </a>
+               <li>
+                <a href="#">
+                  <img
+                  src="midia/cartao-salvo-icon.png"
+                  alt="Ícone cartao salvo"
+                  class="icon"
+                />
+                 <p>Cartões salvos</p>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                  src="midia/logout-icon.png"
+                  alt="Ícone Logout"
+                  class="icon"
+                />
+                 <p>Sair</p>
+                </a>
+              </li>
+              </ul>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img
+                src="../../midia/logo2-lanchonete.png"
+                alt="Logo Lanchonete"
+                class="logo logo2"
+              />
+            </a>
+          </div>
         </div>
+      </header>
+      
+      <main class="main-principal-br">
 
-        <!--Terceiro componente Cabeçalho-->
-        <div class="login-carrinho">
-          <ul>
-            <li id="login">
-              <a href="#">
-                <img src="midia/login-icon.png" alt="Ícone login" id="login-icon" class="icon" />
-                <span>LOGIN</span>
-              </a>
-            </li>
-            <li id="carrinho">
-              <a href="#">
-                <img src="midia/cart-icon.png" alt="Ícone carrinho" id="cart-icon" class="icon" />
-                <span>CARRINHO</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!--Encerramento Cabeçalho Principal-->
+        <div class="content-principal-br">
 
-      <!--Início cabeçalho inferior-->
-      <div class="sub-header">
-        <div class="horario">
-          <img src="midia/clock-icon.png" alt="Ícone relógio" class="icon" />
-          <span>ABERTO 18:00 às 02:00</span>
-        </div>
-        <div class="enderecos">
-          <a href="#">
-            <img src="midia/location-icon.png" alt="Ícone localização" class="icon" />
-            <span>ENDEREÇOS DE ENTREGA</span>
-          </a>
-        </div>
-      </div>
-    </header>
+          <div id="adc">
+            <h2> Adicionar cartão </h2>
+          </div>
+          
+          <div class="novo-cartao">
 
-    <main class="main-principal-br">
-
-      <aside class="aside-menu">
-        <ul>
-          <li> Olá, nome do usuário</li>
-          <li> <strong><a href="meuspedidos.html">PEDIDOS</strong></li></a>
-          <li> <strong><a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></strong></a>
-          <li><strong> <a href="meusdados.html">MEUS DADOS</li> </strong></a>
-          <li> <strong><a href="cartoes.html">CARTÕES SALVOS</li></strong></a>
-          <li><strong> <a href="Index.html">SAIR</li></strong></a>
-
-        </ul>
-      </aside>
-
-      <div class="content-principal-br">
-
-        <div>
-          <form div="formadc">
-            <div class="novocartao">
-              <h2> ADICIONAR NOVO CARTÃO </h2>
-            </div>
-
+            <form class="form-novo-cartao" method="get">
+              <div class="ncartao">
+                <label for="ncartao">Número do cartão:</label>
+                <input type="number"  id="numerocartao" maxlenght="16" required>
+              </div>
+              <div class="validade">
+                <label for ="validade">Validade:</label>
+                <input type="number"  id="nome" maxlenght="6" required>
+              </div>
+              <div class="cvc">
+                <label for="cvc">CVC:</label>
+                <input type="text" name="cvc" id="cvc" maxlength="3" required>
+              </div>
+              <div class="nomecartao">
+                <label for="nomecartao">Nome no cartão:</label>
+                <input type="text"  id="nomecartao" maxlength="20" required>
+              </div>
+              <div class="cpf">
+                <label for="cpf"> CPF:</label>
+                <input type="number"  id="cpf" maxlength="11" required>
+              </div>
+               <div>
+                <label for="bandeira">Bandeira do cartão:</label>
+                <label><input id="logo" type="radio" value="1"> Débito <img src="midia/logomastercard.png"
+                    class="logoms"></label>
+                <label class="logoms"><input id="logo" type="radio"  value="2"> Crédito <img
+                    src="midia/logomastercard.png" class="logoms"> </label>
+                <label><input id="logo" type="radio"  value="3"> Débito <img src="midia/logovisa.png"
+                    class="logovs"></label>
+                <label><input id="logo" type="radio"  value="4"> Crédito <img src="midia/logovisa.png"
+                    class="logovs"></label>
+              </div>
+            </form>
             <div>
-              <label class="ncartao">Número do cartão:</label>
-              <input type="number" name="numerocartao" id="numerocartao" maxlenght="16" required>
-            </div>
-            <div class="ncartao">
-              <label>Validade:</label>
-              <input type="number" name="validade" id="nome" maxlenght="6" required>
-
-            </div>
-
-            <div class="ncartao">
-              <label>CVC:</label>
-              <input type="text" name="cvc" id="cvc" maxlength="3" required>
-
-            </div>
-            <div class="ncartao">
-              <label>Nome no cartão:</label>
-              <input type="text" name="nomecartao" id="nomecartao" maxlength="20" required>
-
-            </div>
-            <div class="ncartao">
-              <label> CPF:</label>
-              <input type="number" name="cpf" id="numero" maxlength="11" required>
-
-            </div>
-            <div class="ncartao">
-              <label>Bandeira do cartão:</label>
-              <input type="text" name="complemento" id="complemento" required>
-
-            </div>
-            <div class="ncartao2">
-              <label>Bandeira do cartão:</label>
-              <label ><input id="logo" type="radio" name="bandeira" value="1"> Débito <img
-                  src="midia/logomastercard.png" class="logoms"></label>
-              <label class="logoms"><input id="logo" type="radio" name="bandeira" value="2"> Crédito <img
-                  src="midia/logomastercard.png"  class="logoms"> </label>
-              <label ><input id="logo" type="radio" name="bandeira" value="3"> Débito <img
-                  src="midia/logovisa.png" class="logovs"></label>
-              <label ><input id="logo" type="radio" name="bandeira" value="4"> Crédito <img
-                  src="midia/logovisa.png"  class="logovs"></label>
+              <button class="btncartoes2" type="submit"> ADICIONAR </button>
             </div>
 
 
-          </form>
+          </div>
+
         </div>
-
-        <div>
-          <button class="btncartoes2" type="submit"> ADICIONAR </button>
-        </div>
-
-      </div>
-    </main>
-
-
-
-    <footer>
-      <div class="box-footer">
-        <div class="social-media">
-          <a href="#">
-            <img src="midia/facebook-icon.png" alt="Ícone Facebook" />
-          </a>
-          <a href="#">
-            <img src="midia/instagram-icon.png" alt="Ícone Instagram" />
-          </a>
-          <a href="#">
-            <img src="midia/tiktok-icon.png" alt="Ícone TikTok" />
-          </a>
-        </div>
-        <div class="infos">
-          <p>
-            Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-</body>
-
+               
+      </main>
+    </div>
+  </body>
 </html>

@@ -79,7 +79,6 @@ main {
     #mf{
     background-color: #bc1823;
     color:#ffffff;
-    width: 100%;
     height: 40%;
     padding-left: 20px;
     padding-top:30px;
@@ -116,7 +115,8 @@ main {
 
   .thf {
     width: 10% 30% 15% 10% 15% 20%;
-    color: #bc1823;
+    background-color: #bc1823;
+    color:#ffffff;
     margin-left:none;
     margin-right: none;
     padding: 10px 2px;
@@ -132,7 +132,7 @@ main {
     border-spacing: 0px;
        
   }
-}
+
   
 @media (max-width: 767px) {
 
@@ -144,6 +144,18 @@ main {
   .tablecfidelidade th{
   display:none;
   }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    
+    }
+  
+    #mf{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
 
 }
 
@@ -157,5 +169,17 @@ main {
  .tablecfidelidade th{
   display:none;
  }
+
+ .container{
+  display: flex;
+  flex-direction: column;
+  
+  }
+
+  #mf{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
 }
