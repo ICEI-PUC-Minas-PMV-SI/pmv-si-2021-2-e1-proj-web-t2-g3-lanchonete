@@ -103,38 +103,46 @@
         </div>
       </header>
 
-
 <!--CARRINHO: Produtos, total, quantidade-->
 <body>
-        <div class="titulo-da-pag"><h1> <img src="../midia/cart-icon.png" alt=""> Meu carrinho</h1></div>
 
-        <div class="quantidade"><h2>Quantidade <br> <br> <br></h2>
-          <div>
-            <a href="#"><img id="imgmais" src="../Html/pagamento/imagens/plus-icon.png" alt=""></a>
-            <p id="number">1</p>
-            <a href="#"><img id="imgmenos" src="../Html/pagamento/imagens/menos2.png" alt=""></a>
-          </div>
-        </div>
+  <h1 id="titulo" >
+    <img id="img-titulo" src="../midia/carrinho/carrinho.icon.png" alt="carrinho">
+    Meu carrinho</h1>
 
-<div class="total"><h3>Total <br> <br> <br> R$18,90 </h3></div>
+  <div>
+      <h2 id="pdescrição" >Produtos</h2>
+      <h2 id="pquantidade" >Quantidade</h2>
+      <h2 id="ptotal" >Total</h2>
+      <p id="descrição" >X-Tudo <hr id="linha1" > </p>
+      
+      <div id="quantidade" >
+        <button id="bsubtração" >
+          <a href="">-1</a>
+        </button>
+        <button id="badição" >
+          <a href=""><p>+1</p></a>
+        </button>
+      </div>
 
-<div class="produtos"><p>X-Tudo</p></div>
+      <p id="qnt" >1</p>
+      <p id="total1" >R$18,90</p>
+  </div>
 
-        <div class="linha1"><hr></div>
-
-        <div class="divisoria"><hr><br><br></div>
+<div class="divisoria"><hr><br><br></div>
 
 <!--Frete-->
 <div class="tit-frete"><b><p>Consulte o valor da entrega:</p></b></div>
         <div id="frete">
-          <input type="text" placeholder="Insira o Cep aqui" >
-          <button type="submit"><img src="../Html/pagamento/imagens/send.png"alt="confirmar"></button>
-        
+          <input type="number" placeholder="Insira o Cep aqui" >
+          <button type="submit"><img src="../../Páginas-Cliente/midia/pagamento/imagens/send.png"alt="confirmar"></button>
         </div>
+
 <!--Cupom-->
 <div class="tit-cupom"><b><p>Possui algum cupom de desconto?</p></b></div>
         <div id="cupom">
           <input type="text" placeholder="Insira o cupom aqui">
+<<<<<<< HEAD
           <button type="submit"> <img src="../Html/pagamento/imagens/cupom novo.png"alt="confirmar"></button>
         </div>
 <!--Subtotal-->
@@ -150,14 +158,34 @@
 <!--Finalização de pedido-->
          <div>
               <button id="FinalizaçaoBotao"><a href="../Html/pagamento/pagamento.html">Finalizar pagamento</a></button>
+=======
+          <button type="submit"> <img src="../../Páginas-Cliente/midia/carrinho/ticket.icon.png"alt="confirmar"></button>
+>>>>>>> Vinícius-Damasceno
         </div>
-<div class="ajuste"><p> . </p></div>
+
+<!--Valores-->
+<div class="totais" >
+  <div class="subtotal"><P>Subtotal do pedido:<h1 id="valores">R$18,90</h1></P></div>
+  <div class="desconto"><P>Valor do desconto:<h1 id="valores">R$0,00</h1></P></div>
+  <div class="frete"><P>Valor do frete:<h1 id="valores">R$3,90</h1></P></div>
+  <div class="totalp"><P>Total do pedido:<h1 id="valores">R$22,80</h1></P></div>
+</div>
+
+<!--Continuar comprando-->
+<div>
+  <button id="ContinuarComprando">
+    <img id="imgcontinuar" src="../../Páginas-Cliente/midia/carrinho/compras.icon.png" alt="">
+    <a href="" id="continuar" >Continuar comprando</a>
+  </button>
+</div>
+
+<!--Finalização de pedido-->
+         <div>
+              <button id="FinalizaçaoBotao">
+                <a href="../Html/pagamento.html">Finalizar pagamento</a>
+              </button>
+         </div>
 </body>
-
-
-
-      
-      <main></main>
       
       <footer>
         <div class="box-footer">
