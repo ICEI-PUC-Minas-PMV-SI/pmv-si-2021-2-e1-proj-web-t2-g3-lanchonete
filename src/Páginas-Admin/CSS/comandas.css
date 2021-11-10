@@ -80,6 +80,14 @@ main {
   background-color: #bc1823;
 }
 
+table tr:nth-child(odd) {
+background-color:rgba(85, 79, 80, 0.25)
+}
+
+table tr:nth-child(even) {
+  background-color: white;
+}
+
 .tabela {
   color: black;
   margin-top: 5%;
