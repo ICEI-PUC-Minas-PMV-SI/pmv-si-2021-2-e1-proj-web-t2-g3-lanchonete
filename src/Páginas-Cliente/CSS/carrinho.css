@@ -198,6 +198,7 @@ footer {
 #bsubtração {
   width: 20px;
   height: 20px;
+  display: inline-block;
   background-color: #bc1823;
   border: none;
 }
@@ -210,6 +211,7 @@ footer {
 #badição {
   width: 20px;
   height: 20px;
+  display: inline-block;
   background-color: green;
   border: none;
   position: absolute;
@@ -225,6 +227,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 100%;
+  display: inline-block;
   float: right;
   position: relative;
   margin-top: -1%;
