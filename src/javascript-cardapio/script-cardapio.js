@@ -1,5 +1,3 @@
-// INSERIR PRODUTOS COM JAVASCRIPT
-
 // PEGAR ARQUIVO JSON
 const urlCardapioJSON = `http://localhost:3000/cardapio`
 
@@ -9,8 +7,10 @@ fetch(urlCardapioJSON)
     inserirProdutos(listaProdutos)
   })
 
+// INSERIR PRODUTOS COM JAVASCRIPT
+
 function inserirProdutos(produtos) {
-  // console.log(produtos)
+  console.log(produtos)
   var arrayLanches = produtos[0].lanches
   var arrayLanchesFit = produtos[1].lanchesFit
   var arrayBebidas = produtos[2].bebidas
@@ -178,38 +178,4 @@ function inserirProdutos(produtos) {
 
   document.getElementById('produtosPromocoes').innerHTML =
     listaProdutosPromocoes
-}
-
-//===================================================================
-
-// API CLIENTES
-
-const urlUsuarios = `https://randomuser.me/api/?results=12`
-
-fetch(urlUsuarios)
-  .then(response => response.json())
-  .then(dados => {
-    // console.log(dados)
-    // "dados" possui as informações da API em formato de objeto
-    inserirDados(dados)
-  })
-
-function inserirDados(data) {
-  let listaClientes = ''
-  let dados = data.results
-  // console.log(data.results)
-  // "data.results" é um array que possui o objeto de cada pessoa
-
-  for (i = 0; i < dados.length; i++) {
-    let cliente = `
-    <div class="cliente" style="width: 300px">
-      <img src="${dados[i].picture.medium}">
-      <p>Nome: ${dados[i].name.first} ${dados[i].name.last}</p>
-      <p>Telefone: ${dados[i].phone}</p>
-      <p>${dados[i].location.city} - ${dados[i].location.state}</p>
-    </div>
-    `
-    listaClientes += cliente
-  }
-  document.getElementById('box-clientes').innerHTML = listaClientes
 }
