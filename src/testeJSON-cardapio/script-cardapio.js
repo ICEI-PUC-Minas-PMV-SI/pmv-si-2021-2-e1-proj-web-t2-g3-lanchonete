@@ -44,8 +44,7 @@ function inserirProdutos(produtos) {
     listaProdutosLanches += produto
   }
 
-  document.getElementById('produtosJavaScriptLanches').innerHTML =
-    listaProdutosLanches
+  document.getElementById('produtosLanches').innerHTML = listaProdutosLanches
 
   //===================================================================
 
@@ -77,7 +76,7 @@ function inserirProdutos(produtos) {
     listaProdutosLanchesFit += produto
   }
 
-  document.getElementById('produtosJavaScriptLanchesFit').innerHTML =
+  document.getElementById('produtosLanchesFit').innerHTML =
     listaProdutosLanchesFit
 
   //===================================================================
@@ -110,8 +109,7 @@ function inserirProdutos(produtos) {
     listaProdutosBebidas += produto
   }
 
-  document.getElementById('produtosJavaScriptBebidas').innerHTML =
-    listaProdutosBebidas
+  document.getElementById('produtosBebidas').innerHTML = listaProdutosBebidas
 
   //===================================================================
 
@@ -143,7 +141,7 @@ function inserirProdutos(produtos) {
     listaProdutosSobremesas += produto
   }
 
-  document.getElementById('produtosJavaScriptSobremesas').innerHTML =
+  document.getElementById('produtosSobremesas').innerHTML =
     listaProdutosSobremesas
 }
 
