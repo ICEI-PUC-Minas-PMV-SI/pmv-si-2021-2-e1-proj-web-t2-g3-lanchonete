@@ -15,6 +15,7 @@ function inserirProdutos(produtos) {
   var arrayLanchesFit = produtos[1].lanchesFit
   var arrayBebidas = produtos[2].bebidas
   var arraySobremesas = produtos[3].sobremesas
+  var arrayPromocoes = produtos[4].promocoes
 
   // ADICIONAR LANCHES
   var listaProdutosLanches = ''
@@ -143,6 +144,40 @@ function inserirProdutos(produtos) {
 
   document.getElementById('produtosSobremesas').innerHTML =
     listaProdutosSobremesas
+
+  //===================================================================
+
+  // ADICIONAR PROMOÇÕES
+  var listaProdutosPromocoes = ''
+
+  for (i = 0; i < arrayPromocoes.length; i++) {
+    let produto = `
+    <div class="box-produto">
+      <div class="image">
+        <img src="${arrayPromocoes[i].imagem}" alt="${arrayPromocoes[i].titulo}"/>
+      </div>
+      <div class="produto">
+        <div>
+          <h3 class="nome-produto">${arrayPromocoes[i].titulo}</h3>
+          <p class="descricao-produto">${arrayPromocoes[i].descricao}
+          </p>
+        </div>
+        <div class="precos">
+          <div class="caixa-preco-antigo">
+            <img src="../midia/cardapio/icons/line-icon.png" alt="Ícone linha" class="line-icon"/>
+            <p class="preco-antigo-produto">R$ ${arrayPromocoes[i].precoAntigo}</p>
+          </div>
+          <p class="preco-novo-produto">R$ ${arrayPromocoes[i].precoNovo}</p>
+        </div>
+      </div>
+      <a href="#"><img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon"/></a>
+    </div>
+    `
+    listaProdutosPromocoes += produto
+  }
+
+  document.getElementById('produtosPromocoes').innerHTML =
+    listaProdutosPromocoes
 }
 
 //===================================================================

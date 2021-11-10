@@ -177,6 +177,7 @@ main {
   background-color: #c4c4c4;
   border: none;
   border-style: none;
+  transition: 0.3s;
 }
 
 #pesquisa button:hover {
@@ -194,6 +195,7 @@ main {
   height: 30px;
   background-color: #ff9a00;
   padding: 0 10px;
+  transition: 0.5s;
 }
 
 #irCarrinho:hover {
@@ -232,6 +234,7 @@ main {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+  transition: 0.5s;
 }
 
 .box-banner:hover {
@@ -357,6 +360,7 @@ main {
   bottom: 10px;
   right: 10px;
   width: 24px;
+  transition: 0.3s;
 }
 
 .plus-icon:hover {
@@ -386,6 +390,7 @@ footer {
 #social-media a img {
   width: 25px;
   margin: 0 6px;
+  transition: 0.5s;
 }
 
 #social-media a img:hover {
