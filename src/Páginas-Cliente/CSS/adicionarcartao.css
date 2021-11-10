@@ -9,227 +9,395 @@ a {
   color: #ffffff;
 }
 
+ul li {
+  list-style: none;
+}
+
 body {
   font-family: 'Roboto', 'Oxygen', sans-serif;
-  }
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 7fr;
-  grid-template-areas: 'header main';
+  color: #ffffff;
 }
 
 header {
   background-color: #bc1823;
-  height: 100vh;
-  grid-area: header;
+  height: 136px;
+  padding: 10px 0;
 }
 
-.menu {
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
   font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  font-weight: bolder;
 }
 
-.logo {
+.logo img {
   width: 150px;
-  margin-top: 10px;
-}
-
-.botoes {
-  width: 100%;
-  margin-top: 30px;
-}
-
-ul li a {
-  list-style: none;
-  background-color: #ff9a00;
-  margin-bottom: 17px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-}
-
-ul li a p {
-  width: 50%;
-  margin-left: 10px;
 }
 
 .icon {
   width: 20px;
 }
 
-.logo {
-  position: relative;
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
 }
 
-.logo2 {
-  position: absolute;
-  margin-left: 0px;
-  top: 50px;
+ul li a:hover {
+  color: #ff9a00;
 }
+
+.login-carrinho ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#login,
+#carrinho {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 15px;
+}
+
+#login-icon {
+  width: 28px;
+  position: absolute;
+  right: 49px;
+  top: -1px;
+}
+
+#cart-icon {
+  width: 16px;
+  position: absolute;
+  right: 93px;
+  top: -2px;
+}
+
+.sub-header {
+  background-color: #ff9a00;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.horario,
+.enderecos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0 25px;
+}
+
+.enderecos span:hover {
+  color: #bc1823;
+}
+
+
+/*edições da pagina adicionar cartao*/
 
 main {
-  grid-area: main;
+  height: 550px;
 }
 
+.main-principal-br{
+    color: #000;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+ 
+.aside-menu a{
+  color: #000;
+  font-weight: bold;
   
-#adc{
-  background-color: #bc1823;
-  color:#ffffff;
-  height: 20%;
-  padding-left:5px;
-  padding-top:30px;
-  padding-bottom: 10px;
+}
+
+.aside-menu> ul> li{
+  margin-bottom: 30px;
+}
+
+.aside-menu{
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  
+}
+
+.content-principal-br{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right:20px;
+  border-left: #000 solid 1px;
+}
+
+
+ .main-principal-br {
+  min-height: 521px;
+}
+
+.addcartao {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   margin-left: 2px;
-        
+}
+
+.formnovocartao{
+margin-top:20px;
+}
+
+.formnovocartao input{
+  border:none;
+  border-bottom: solid 1px #000;
+
+}
+
+.formnovocartao>div {
+  margin-bottom: 5px;
+  margin-left: 20px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+
+.content-principal-br label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+#numerocartao {
+  margin-left: 1px;
+  width: 20%;
+}
+
+#validade {
+  margin-left: 60px;
+  width: 10%;
+}
+
+#cvc {
+  margin-left: 87px;
+  width: 7%;
+}
+
+#nomecartao {
+  margin-left: 15px;
+  width: 35%;
+}
+
+#cpf {
+  margin-left: 90px;
+  width: 25%;
+}
+
+
+#btnnovocartao, #btnexcluircartao {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  background-color: #ff9a00;
+  border-bottom-right-radius: 2px;
+  width: 90px;
+  height: 30px;
+  font-weight: bold;
+}
+
+#btnnovocartao:hover {
+  background-color: #bc1823;
+}
+
+#btnexcluircartao:hover {
+  background-color: #bc1823;
+}
+
+.novocartao2 {
+  display: inline-block;
+  margin-left: 25%;
+}
+
+.excluircartao {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+img.mastercard{
+width: 50px;
+height:35px;
+}
+
+img.visa{
+  width: 40px;
+  height:35px;
+}
+
+
+@media (max-width: 767px) {
+
+  .main-principal-br{
+    min-height: 750px;
   }
 
-  .novo-cartao{
-    margin-top: 30px;
+  .addcartao{
+    padding-left: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
-    
-  }
-
-  .content-principal-br label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    width: 80px;
-       
     }
 
-   
-  .form-novo-cartao> div{
-    margin-bottom: 10px;
-    margin-left: 10px;
-       
+  .content-principal-br {
+    margin-left: 5px;
   }
 
-  .content-principal-br input{
-    border: none;
-    border-bottom: solid 1px #000;
-  }
-      
-  
-  .ncartao input{
-    margin-left: 6px;
-    width: 35%;
-  }
-
-  .validade input {
-    margin-left: 63px;
-    width: 35%;
-  }
-
-  .cvc input{
-    margin-left: 90px;
-    width: 20%;
-  }
-
-  .nomecartao input{
-    margin-left: 15px;
-    width: 40%;
-  }
-
-  .cpf input{
-    margin-left: 90px;
-    width: 35%;
-  }
-   
-  img.logovs {
-    height: 15px;
-    width:30px;
-  }
-  
-  img.logoms {
-    height: 25px;
-    width: 25px;
-  }
-  
-.btncartoes2{
-  margin-top: 40px;
-   margin-bottom: 10px;
-   justify-content: center;
-   color: #ffffff;
-   background-color: #ff9a00;
-   border-bottom-right-radius: 2px;
-   width: 90px;
-   height: 30px;
-   font-weight: bold;
-   margin-left: 20px;
-}
-
-
-@media (max-width: 500px) {
-
-  .container{
-    display:flex;
-    flex-direction: column;  
-   }
- 
-   #adc{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-left: 0px;
-  }
- 
-  .form-novo-cartao> div{
-    margin-right: 2px;
-    display:flex;
-    flex-direction: column; 
-   
-  }
-  
-    .content-principal-br label {
-    margin-right: 2px;
-    display:flex;
-    flex-direction: column;
-  
- }
- 
- .btncartoes2{
-   margin-left: 35%;
- }
-}
-
-@media (max-width: 500px) {
-
-  .container{
-
-    display:flex;
-    flex-direction: column;  
-   }
- 
-   #adc{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    margin-left: 0px;
-  }
- 
-  .form-novo-cartao> div{
-    margin-right: 2px;
-    display:flex;
-    flex-direction: column; 
-   
-  }
+  #validade {
+    margin-left: 5px;
     
+  }
+  
+  #cvc {
+    margin-left: 5px;
+    }
+  
+  #nomecartao {
+    margin-left: 5px;
+   }
+  
+  #cpf {
+    margin-left: 5px;
+  }
+  
+
+  .formd>div {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-principal-br h3 {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
   .content-principal-br label {
     margin-right: 2px;
-    margin-left: 5px;
-    display:flex;
+    display: flex;
     flex-direction: column;
+  }
+
+    .novocartao2 {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .addcartao{
+    margin-left: 10px;
+  }
+
+  .formnovocartao input label{
+    margin-left: 2px;
+  }
+}
   
- }
+  @media (max-width: 500px) {
+  
+    .addcartao {
+      padding-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .content-principal-br input{
+      margin-left: 5px;
+    }
+    .formd>div {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-principal-br h3 {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .addcartao{
+      padding-left: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+  
+    .content-principal-br {
+      margin-left: 5px;
+    }
+  
+    #validade {
+      margin-left: 5px;
+      
+    }
+    
+    #cvc {
+      margin-left: 5px;
+      }
+    
+    #nomecartao {
+      margin-left: 5px;
+     }
+    
+    #cpf {
+      margin-left: 5px;
+    }
+    
+    .content-principal-br label {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .novocartao2 {
+      display: inline-block;
+      margin-left: 5px;
+    }
+  }
 
   
- .btncartoes2{
-   margin-left: 35%;
- }
+  
+
+  
+     
+
+footer {
+  background-color: #bc1823;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a img {
+  width: 25px;
+  margin: 0 6px;
+}
+
+.social-media a img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }

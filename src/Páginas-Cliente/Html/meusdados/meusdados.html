@@ -4,178 +4,235 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página do Cliente</title>
-
-    <link rel="stylesheet" href="../../CSS/meusdados.css"  />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <title>WarmBurguer</title>
   </head>
+
+  <link rel="stylesheet" href="../../CSS/meusdados.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
   <body>
     <div class="container">
       <header>
-        <div class="menu">
+        <!--Primeiro componente Cabeçalho Principal-->
+        <div class="main-header">
           <div class="logo">
             <a href="#">
-              <img
-                src="midia/logo-lanchonete.png"
-                alt="Logo Lanchonete"
-                class="logo"
-              />
+              <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
             </a>
           </div>
-          <div class="botoes">
+
+          <!--Segundo componente Cabeçalho Principal-->
+          <div class="menu">
             <ul>
               <li>
                 <a href="#">
-                 
-                  <p>Olá, nome do usuário </p>
+                  <img
+                    src="midia/home-icon.png"
+                    alt="Ícone home"
+                    class="icon"
+                  />
+                  <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="#">
-                <p>Pedidos</p>
-                </a>
-              </li>
-                            <li>
-                <a href="#">
-                 <p>Programas de fidelidade</p>
-                </a>
+                <a href="#">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#">
-                 <p>Perfil</p>
-                </a>
+                <a href="#"> FIDELIDADE </a>
               </li>
               <li>
-                <a href="#">
-                 <p>Cartões salvos</p>
-                </a>
+                <a href="#"> SOBRE NÓS </a>
               </li>
-              <li>
-                <a href="#">
-                 <p>Sair</p>
-                </a>
-              </li>
-              </ul>
+            </ul>
           </div>
-          <div class="logo">
+
+          <!--Terceiro componente Cabeçalho-->
+          <div class="login-carrinho">
+            <ul>
+              <li id="login">
+                <a href="#">
+                  <img
+                    src="midia/login-icon.png"
+                    alt="Ícone login"
+                    id="login-icon"
+                    class="icon"
+                  />
+                  <span>LOGIN</span>
+                </a>
+              </li>
+              <li id="carrinho">
+                <a href="#">
+                  <img
+                    src="midia/cart-icon.png"
+                    alt="Ícone carrinho"
+                    id="cart-icon"
+                    class="icon"
+                  />
+                  <span>CARRINHO</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--Encerramento Cabeçalho Principal-->
+
+        <!--Início cabeçalho inferior-->
+        <div class="sub-header">
+          <div class="horario">
+            <img src="midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+            <span>ABERTO 18:00 às 02:00</span>
+          </div>
+          <div class="enderecos">
             <a href="#">
               <img
-                src="../../midia/logo2-lanchonete.png"
-                alt="Logo Lanchonete"
-                class="logo logo2"
+                src="midia/location-icon.png"
+                alt="Ícone localização"
+                class="icon"
               />
+              <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
         </div>
       </header>
+      <main class="main-principal-br">  
+
+        <aside class="aside-menu">
+            <ul>
+                <li> Olá, nome do usuário</li> <br> <br>
+                <li> <a href="meuspedidos.html">PEDIDOS</li></a> <br>
+                <li> <a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li><br>
+                <li> <a href="meusdados.html">MEUS DADOS</li> </a><br>
+                <li><a href="cartoes.html">CARTÕES SALVOS</li></a> <br><br>
+                <li><a href="Index.html">SAIR</li> </a>
       
-      <main class="main-principal-br">
-        
-        <div class="content-principal-br">
+            </ul>
+           </aside>
+      
+           <div class="content-principal-br">
 
-          <div class=" perfil">
-            <h2 > Perfil</h2>       
-           </div>
-
-          <form class="formd" id="formdados" method="get">
-                                 
-                     <div class="md">
-                      <h3>Meus dados</h3>
-                      <label for="name">Nome:</label>  
-                      <input type="text" name="nome" id="nome" disabled>
-                      </div>
-
-                  <div class="dtn">
-                      <label for="nascimento">Data de nascimento:</label>     
-                      <input type="number" name="nascimento" id="nome" disabled>
+            <div class=" perfil">
+              <h2 > PERFIL</h2>       
+             </div>
+  
+            <form class="formd" id="formdados" method="get">
+                                   
+                       <div class="md">
+                        <h3>Meus dados</h3>
+                        <label for="name">Nome:</label>  
+                        <input type="text" name="nome" id="nome" disabled>
+                        </div>
+  
+                    <div class="dtn">
+                        <label for="nascimento">Data de nascimento:</label>     
+                        <input type="number" name="nascimento" id="nome" disabled>
+                        
+                    </div>
+                    <div class="genero">
+                        <label for="sexo">Sexo:</label>     
+                        <label><input type="radio" name="sexo" value= "1" disabled> Feminino</label>
+                        <label><input type="radio" name="sexo" value="2" disabled> Masculino</label>
+                    </div>
+                    <div class="cpf"> 
+                        <label for="cpf">CPF:</label>     
+                        <input type="number" name="cpf" id="cpf" disabled>
+                        
+                    </div>
+                    <div class="rua2">
+                        <h3>Endereço/Contato</h3>
+                        <label for="rua" >Rua:</label>     
+                        <input type="text" name="rua" id="rua" disabled>
+                        
+                    </div>
+                    <div class="num" >
+                        <label for="numero">Número:</label>     
+                        <input type="number" name="numero" id="numero" disabled>
+                        
+                    </div>
+                    <div class="bairro">
+                      <label for="bairro">Bairro:</label>     
+                      <input type="text" name="bairro" id="bairro" disabled>
                       
                   </div>
-                  <div class="genero">
-                      <label for="sexo">Sexo:</label>     
-                      <label><input type="radio" name="sexo" value= "1" disabled> Feminino</label>
-                      <label><input type="radio" name="sexo" value="2" disabled> Masculino</label>
-                  </div>
-                  <div class="cpf"> 
-                      <label for="cpf">CPF:</label>     
-                      <input type="number" name="cpf" id="cpf" disabled>
+                    <div class="complemento">
+                        <label for="complemento">Complemento:</label>     
+                        <input type="text" name="complemento" id="complemento" disabled>
+                        
+                    </div>
+                    <div class="ptr">
+                        <label for="referencia">Ponto de referência:</label>     
+                        <input type="text" name="referencia" id="referencia" disabled>
+                        
+                    </div>
+                    <div class="cep">
+                      <label for="cep">CEP:</label>     
+                      <input type="number" name="cep" id="cep" disabled>
                       
                   </div>
-                  <div class="rua2">
-                      <h3>Endereço/Contato</h3>
-                      <label for="rua" >Rua:</label>     
-                      <input type="text" name="rua" id="rua" disabled>
-                      
-                  </div>
-                  <div class="num" >
-                      <label for="numero">Número:</label>     
-                      <input type="number" name="numero" id="numero" disabled>
-                      
-                  </div>
-                  <div class="bairro">
-                    <label for="bairro">Bairro:</label>     
-                    <input type="text" name="bairro" id="bairro" disabled>
+                  <div class="cidade">
+                    <label for="cidade">Cidade:</label>     
+                    <input type="text" name="cidade" id="cidade" disabled>
                     
                 </div>
-                  <div class="complemento">
-                      <label for="complemento">Complemento:</label>     
-                      <input type="text" name="complemento" id="complemento" disabled>
-                      
-                  </div>
-                  <div class="ptr">
-                      <label for="referencia">Ponto de referência:</label>     
-                      <input type="text" name="referencia" id="referencia" disabled>
-                      
-                  </div>
-                  <div class="cep">
-                    <label for="cep">CEP:</label>     
-                    <input type="number" name="cep" id="cep" disabled>
-                    
-                </div>
-                <div class="cidade">
-                  <label for="cidade">Cidade:</label>     
-                  <input type="text" name="cidade" id="cidade" disabled>
-                  
-              </div>
-                  <div class="telefone">
-                      <label for="telefone">Telefone:</label>     
-                      <input type="number" name="telefone" id="telefone" disabled>
-                      
-                  </div>
-                   <div>
-                       <h3>Acesso/Login</h3>
-                      <label for="email1">E-mail:</label>     
-                      <input type="email" name="email1" id="email1" disabled>
-                      
-                  </div>
-                  <div class="email2">
-                      <label for="email2">Confirmar e-mail:</label>     
-                      <input type="email" name="email2" id="email2" disabled>
-                      
-                  </div>
-                  <div class="senha">
-                      <label for="senha">Senha:</label>     
-                      <input type="password" name="nome" id="nome" disabled>
-                     
-                  </div>
-                  <div class="btnalterar">
-                  <button  id="mdalterar" type="submit"> ALTERAR</button>
-                  </div>
-                  <div class="btnexcluir">
-                  <button id="mdexcluir">EXCLUIR</button>
-                  </div>
-                  <div class="btncancelar">
-                  <button  id="mdcancelar"><a href="meusdados.html">CANCELAR</button></a>
-                  </div>
-                         
-          </form>
-      </div>
-
+                    <div class="telefone">
+                        <label for="telefone">Telefone:</label>     
+                        <input type="number" name="telefone" id="telefone" disabled>
+                        
+                    </div>
+                     <div>
+                         <h3>Acesso/Login</h3>
+                        <label for="email1">E-mail:</label>     
+                        <input type="email" name="email1" id="email1" disabled>
+                        
+                    </div>
+                    <div class="email2">
+                        <label for="email2">Confirmar e-mail:</label>     
+                        <input type="email" name="email2" id="email2" disabled>
+                        
+                    </div>
+                    <div class="senha">
+                        <label for="senha">Senha:</label>     
+                        <input type="password" name="nome" id="nome" disabled>
+                       
+                    </div>
+                    <div class="btnalterar">
+                    <button  id="mdalterar" type="submit"> ALTERAR</button>
+                    </div>
+                    <div class="btnexcluir">
+                    <button id="mdexcluir">EXCLUIR</button>
+                    </div>
+                    <div class="btncancelar">
+                    <button  id="mdcancelar"><a href="meusdados.html">CANCELAR</button></a>
+                    </div>
+                           
+            </form>
+        </div>
+      
       </main>
+
+      <footer>
+        <div class="box-footer">
+          <div class="social-media">
+            <a href="#">
+              <img src="midia/facebook-icon.png" alt="Ícone Facebook" />
+            </a>
+            <a href="#">
+              <img src="midia/instagram-icon.png" alt="Ícone Instagram" />
+            </a>
+            <a href="#">
+              <img src="midia/tiktok-icon.png" alt="Ícone TikTok" />
+            </a>
+          </div>
+          <div class="infos">
+            <p>
+              Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
