@@ -196,9 +196,9 @@ footer {
 }
 
 #bsubtração {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 20px;
   background-color: #bc1823;
   border: none;
 }
@@ -209,13 +209,10 @@ footer {
 }
 
 #badição {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
+  width: 18px;
+  height: 18px;
   background-color: green;
   border: none;
-  position: absolute;
-  right: -120%;
 }
 
 #badição:hover {
@@ -225,13 +222,18 @@ footer {
 
 #quantidade {
   font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 100%;
-  display: inline-block;
   float: right;
   position: relative;
   margin-top: -1%;
-  margin-right: 35.5%;
+  margin-right: 33%;
+}
+
+#qnt {
+  font-size: 100%;
+  color: black;
+  float: right;
+  margin-right: -4%;
+  margin-top: -1.1%;
 }
 
 
@@ -240,9 +242,9 @@ footer {
   color: black;
   font-size: 100%;
   float: right;
-  position: relative;
   margin-top: -1.1%;
-  margin-right: -30%;
+  margin-right: -31%;
+
 }
 
 .divisoria {
@@ -429,6 +431,7 @@ footer {
   position: relative;
   margin-top: 3%;
   margin-left: 35%;
+  margin-bottom: 5%;
   background-color: #ff9a00;
   border-radius: 30px 30px 30px 30px;
   width: 400px;
