@@ -153,23 +153,24 @@
  color: black;
  font-family: 'Roboto', 'Oxygen', sans-serif;
  font-size: 18px;
- margin-left: 5%;
+ margin-left: 15%;
  margin-top: 6%;
 }
 
 #linhap{
  color: black;
- inline-size: 50%;
- margin-left: 15%;
+ inline-size: 51%;
+ margin-left: 25%;
  margin-top: -10px;
 }
 
 #preçop{
  color: black;
- margin-left: 71%;
+ margin-left: 80%;
  margin-top: -10px;
  font-family: 'Roboto', 'Oxygen', sans-serif;
 }
+
 
 .linha1{
  color: black;
@@ -179,14 +180,15 @@
 }
 
 .botao{
- width: 250px;
+ font-family: 'Roboto', 'Oxygen', sans-serif;
+ text-align: center;
+ position: relative;
+ margin-top: 2%;
+ margin-left: 5%;
+ width: 200px;
  height:70px;
  color: white;
  border-radius: 10px;
- text-align: center;
- margin-left: 2%;
- margin-top: 0%;
- font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
 #TextoObservaçao{
@@ -198,53 +200,45 @@
  margin-top: 1%;
 }
 
-#observaçao{
- background: white(196, 196, 196, 0.1);
- width: 100px;
- height: 54px;
- display: flex;
- gap: 25px;
- margin-top: 1%;
- margin-left: 5%;
- margin-bottom: 1%;
- padding: 10px 80px;
-}
-
-#observaçao{
- background: white;
- width: 300px;
- height: 30px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 12px;
- border-color:#ff9a00;
- border-width: 1px;
- border-style: solid;  
+#observaçao {
+  background: white;
+  gap: 25px;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-color: #ff9a00;
+  border-width: 1px;
+  border-style: solid;  
 }
 
 #observaçao input {
- background-color: white;
- border: none;
- outline: none;
- padding: 5px;
- font-family: 'Roboto', sans-serif;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 #observaçao button {
- background-color: white;
- border: none;
- border-style: none; 
+  background-color: white;
+  border: none;
+  border-style: none;
 }
 
-#observaçao button:hover{ 
- background-color: white;
- -webkit-transform: scale(1.09);
- transform: scale(1.09);
+#observaçao button:hover { 
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 #observaçao img {
- width: 20px;
+  width: 25px;
+  background-color: #ff9a00;
 }
 
 .taxa-entrega{
@@ -294,7 +288,7 @@
  font-size: 160%;
  text-align: center;
  margin-top: 5%;
- margin-left: 36%;
+ margin-left: 37%;
  background-color: #ff9a00;
  border-radius: 30px 30px 30px 30px;
  width: 345px;
@@ -304,13 +298,25 @@
  margin-bottom: -30px;
 }
 
+#AlterarPedido:hover {
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+
 .dados-entrega{
  color: white;
  font-family: 'Roboto', 'Oxygen', sans-serif;
  font-size: 120%;
- margin-top: 5%;
+ margin-top: 7%;
  background-color:#bc1823;
  text-align: center;
+}
+
+#imgdadosentrega{
+  width: 45px;
+  height: 32px;
+  vertical-align: text-bottom;
 }
 
 .titulo-entrega{
@@ -361,7 +367,7 @@
  text-align: center;
  margin-top: 5%;
  margin-bottom: 3%;
- margin-left: 38%;
+ margin-left: 37%;
  background-color: #ff9a00;
  border-radius: 30px 30px 30px 30px;
  width: 345px;
@@ -369,6 +375,13 @@
  border: none;
  border-style: none;
 }
+
+#AdicionarCartao:hover {
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+
 
 .formulario-cartao{
  color: black;
@@ -410,9 +423,7 @@
  font-family: 'Roboto', 'Oxygen', sans-serif;
 }
 
-.tit-troco, .troco{
- box-shadow: 0 4px 8px silver;
-}
+
 
 .tit-troco{
  font-family: 'Roboto', 'Oxygen', sans-serif;
@@ -424,58 +435,47 @@
  margin-bottom: 1%;
 }
 
-.troco{
- background: white(196, 196, 196, 0.1);
- width: 100px;
- height: 54px;
- display: flex;
- gap: 25px;
- margin-top: -4%;
- margin-left: 70%;
- padding: 10px 80px;
- margin-bottom: 1%;
-}
-
-.troco{
- background: white;
- width: 300px;
- height: 30px;
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 12px;
- border-color: #ff9a00;
- border-width: 1px;
- border-style: solid;
- margin-bottom: 1%;
+.troco {
+  background: white;
+  gap: 25px;
+  float: right;
+  margin-top: -5%;
+  margin-right: 15%;
+  width: 200px;
+  height: 30px;
+  box-shadow: 0 4px 8px silver;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-color: #ff9a00;
+  border-width: 1px;
+  border-style: solid;  
 }
 
 .troco input {
- background-color: white;
- border: none;
- outline: none;
- padding: 5px;
- font-family: 'Roboto', sans-serif;
- margin-bottom: 1%;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .troco button {
- background-color: white;
- border: none;
- border-style: none;
- margin-bottom: 1%;
+  background-color: white;
+  border: none;
+  border-style: none;
 }
 
-.troco button:hover{ 
- background-color: white;
- -webkit-transform: scale(1.09);
- transform: scale(1.09);
- margin-bottom: 1%;
+.troco button:hover { 
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 .troco img {
- width: 20px;
- margin-bottom: 1%;
+  width: 25px;
+  background-color: #ff9a00;
 }
 
 #FinalizarPagamento{
@@ -484,7 +484,7 @@
  font-size: 160%;
  text-align: center;
  margin-top: 15%;
- margin-left: 38%;
+ margin-left: 37%;
  background-color: #ff9a00;
  border-radius: 30px 30px 30px 30px;
  width: 345px;
@@ -492,6 +492,11 @@
  border: none;
  border-style: none;
  margin-bottom: -40%;
+}
+
+#FinalizarPagamento:hover {
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
 }
 
 .ajuste{
