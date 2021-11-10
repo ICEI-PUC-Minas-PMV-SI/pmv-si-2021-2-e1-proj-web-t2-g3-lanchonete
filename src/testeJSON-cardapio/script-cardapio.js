@@ -1,21 +1,30 @@
 // INSERIR PRODUTOS COM JAVASCRIPT
 
+// PEGAR ARQUIVO JSON
+// const urlJSON = ``
+// fetch(url)
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data)
+//   })
+
 // LANCHES
 var listaProdutosLanches = ''
+var arrayLanches = db.cardapio[0].lanches
 
-for (i = 0; i < db.lanches.length; i++) {
+for (i = 0; i < arrayLanches.length; i++) {
   let produto = `
   <div class="box-produto">
     <div class="image">
-      <img src="${db.lanches[i].imagem}" alt="${db.lanches[i].titulo}"/>
+      <img src="${arrayLanches[i].imagem}" alt="${arrayLanches.titulo}"/>
     </div>
     <div class="produto">
       <div>
-        <h3 class="nome-produto">${db.lanches[i].titulo}</h3>
-        <p class="descricao-produto">${db.lanches[i].descricao}</p>
+        <h3 class="nome-produto">${arrayLanches[i].titulo}</h3>
+        <p class="descricao-produto">${arrayLanches[i].descricao}</p>
       </div>
       <div class="precos">
-        <p class="preco-novo-produto">R$ ${db.lanches[i].preco}</p>
+        <p class="preco-novo-produto">R$ ${arrayLanches[i].preco}</p>
       </div>
     </div>
     <div>
@@ -35,20 +44,21 @@ document.getElementById('produtosJavaScriptLanches').innerHTML =
 
 // LANCHES FIT
 var listaProdutosLanchesFit = ''
+var arrayLanchesFit = db.cardapio[1].lanchesFit
 
-for (i = 0; i < db.lanchesFit.length; i++) {
+for (i = 0; i < arrayLanchesFit.length; i++) {
   let produto = `
     <div class="box-produto">
       <div class="image">
-        <img src="${db.lanchesFit[i].imagem}" alt="${db.lanchesFit[i].titulo}"/>
+        <img src="${arrayLanchesFit[i].imagem}" alt="${arrayLanchesFit[i].titulo}"/>
       </div>
       <div class="produto">
         <div>
-          <h3 class="nome-produto">${db.lanchesFit[i].titulo}</h3>
-          <p class="descricao-produto">${db.lanchesFit[i].descricao}</p>
+          <h3 class="nome-produto">${arrayLanchesFit[i].titulo}</h3>
+          <p class="descricao-produto">${arrayLanchesFit[i].descricao}</p>
         </div>
         <div class="precos">
-          <p class="preco-novo-produto">R$ ${db.lanchesFit[i].preco}</p>
+          <p class="preco-novo-produto">R$ ${arrayLanchesFit[i].preco}</p>
         </div>
       </div>
       <div>
@@ -68,20 +78,21 @@ document.getElementById('produtosJavaScriptLanchesFit').innerHTML =
 
 // BEBIDAS
 var listaProdutosBebidas = ''
+var arrayBebidas = db.cardapio[2].bebidas
 
-for (i = 0; i < db.bebidas.length; i++) {
+for (i = 0; i < arrayBebidas.length; i++) {
   let produto = `
   <div class="box-produto">
     <div class="image-vertical">
-      <img src="${db.bebidas[i].imagem}" alt="${db.bebidas[i].titulo}"/>
+      <img src="${arrayBebidas[i].imagem}" alt="${arrayBebidas[i].titulo}"/>
     </div>
     <div class="produto">
       <div>
-        <h3 class="nome-produto">${db.bebidas[i].titulo}</h3>
-        <p class="descricao-produto">${db.bebidas[i].descricao}</p>
+        <h3 class="nome-produto">${arrayBebidas[i].titulo}</h3>
+        <p class="descricao-produto">${arrayBebidas[i].descricao}</p>
       </div>
       <div class="precos">
-        <p class="preco-novo-produto">R$ ${db.bebidas[i].preco}</p>
+        <p class="preco-novo-produto">R$ ${arrayBebidas[i].preco}</p>
       </div>
     </div>
     <div>
@@ -101,20 +112,21 @@ document.getElementById('produtosJavaScriptBebidas').innerHTML =
 
 // SOBREMESAS
 var listaProdutosSobremesas = ''
+var arraySobremesas = db.cardapio[3].sobremesas
 
-for (i = 0; i < db.sobremesas.length; i++) {
+for (i = 0; i < arraySobremesas.length; i++) {
   let produto = `
   <div class="box-produto">
     <div class="image-vertical">
-      <img src="${db.sobremesas[i].imagem}" alt="${db.sobremesas[i].titulo}"/>
+      <img src="${arraySobremesas[i].imagem}" alt="${arraySobremesas[i].titulo}"/>
     </div>
     <div class="produto">
       <div>
-        <h3 class="nome-produto">${db.sobremesas[i].titulo}</h3>
-        <p class="descricao-produto">${db.sobremesas[i].descricao}</p>
+        <h3 class="nome-produto">${arraySobremesas[i].titulo}</h3>
+        <p class="descricao-produto">${arraySobremesas[i].descricao}</p>
       </div>
       <div class="precos">
-        <p class="preco-novo-produto">R$ ${db.sobremesas[i].preco}</p>
+        <p class="preco-novo-produto">R$ ${arraySobremesas[i].preco}</p>
       </div>
     </div>
     <div>
