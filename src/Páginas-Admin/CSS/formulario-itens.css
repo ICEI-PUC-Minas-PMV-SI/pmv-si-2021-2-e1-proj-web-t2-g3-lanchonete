@@ -46,10 +46,9 @@ label{
     border: 0px solid black;
 }
 input[type="file"]{
-    padding: 20px 45px;
     width: 200px;
-    background-color: #ff9a00;
-    color: #ff9a00;
+    background-color: none;
+    color: #bc1823;
     text-transform: uppercase;
     text-align: center;
     display:flex;
@@ -81,4 +80,15 @@ input[type="submit"]{
 }
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
+}
+::-webkit-input-placeholder{
+    color: black;
+}
+::-webkit-file-upload-button{
+    color: black;
+    background-color:#ff9a00;
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    border: none;
 }

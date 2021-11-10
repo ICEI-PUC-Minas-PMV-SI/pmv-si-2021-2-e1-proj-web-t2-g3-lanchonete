@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif
+}
+
+.container {
+    grid-auto-rows: auto;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "barra-nav box1"
+        "barra-nav box2"
+        "barra-nav box3"
+        "barra-nav box4"
+        "rodape rodape"
+    ;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #bc1823;
+    text-align: center;
+}
+
+.barra-nav {
+    grid-area: barra-nav;
+    background-color: #bc1823;
+    text-align: center;
+}
+
+.barra-nav ul {
+    list-style: none;
+}
+
+.logo {
+    margin-left: 25px;
+  }
+  
+  .logo img {
+    width: 70%;
+  }
+
+.icon {
+    width: 30px;
+    float: left;
+    font-weight: 300;
+  }
+
+ul li {
+    background-color: #ff9a00;
+    padding: 20px;
+    margin: 10px;
+}
+
+ul li a {
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#menu {
+    margin-top: 20px;
+    margin: 20px;
+}
+
+.box1 {
+    font-size: 0;
+    grid-area: box1;
+    background-color:white;
+    display: block;
+}
+
+.sub-titulo {
+    background-color: #bc1823;
+    display: flex;
+    font-size: 1rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-titulo p {
+    width: 80%;
+    background-color:#bc1823 ;
+}
+
+sub-titulo a {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+aside {
+    width: 20%;
+    background-color: #ff9a00;
+    
+}
+
+.tabela {
+    font-size: 1rem;
+}
+
+
+}
+.box2 {
+    font-size: 0;
+    grid-area: box2;
+    background-color:white;
+    display: block;
+}
+
+.tit-colun {
+    font-size: 1rem;
+    display: flex;
+}
+
+.codigo {
+    background-color: #bc1823;
+    width: 10%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.item {
+    background-color: #bc1823;
+    width: 15%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.ingredientes {
+    background-color: #bc1823;
+    width: 50%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.foto {
+    background-color: #bc1823;
+    width: 15%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.disponibilidade {
+    background-color: #bc1823;
+    width: 10%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.tabela {
+    font-size: 1rem;
+    display: flex;
+}
+
+.l1-c1 {
+    background-color: #bc1823;
+    width: 10%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.box3 {
+    grid-area: box3;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.box4 {
+    grid-area: box4;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.rodape {
+    grid-area: rodape;
+    border: 2px solid black;
+    background-color: white;
+}
+

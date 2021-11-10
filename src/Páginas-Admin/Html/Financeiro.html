@@ -35,7 +35,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="Financeiro.html">
                 <img src="../midia/financeiro-icon.png" alt="Ícone Financeiro" class="icon" />
                 <p>Financeiro</p>
               </a>
@@ -47,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="comandas.html">
                 <img src="../midia/comandas-icon.png" alt="Ícone Comandas" class="icon" />
                 <p>Comandas</p>
               </a>
@@ -74,24 +74,25 @@
         </ul>
 
         <ul class="lista2">
-          <li id="valor1"></li>
-          <li id="valor2"></li>
+          <li id="valor1">R$ 0,00</li>
+          <li id="valor2">R$ 0,00</li>
         </ul>
       </div>
 
       <div>
         <h2 id="periodo">RECEITA POR PERÍODO</h2>
       </div>
+      <form name="formPesquisa" action="" method="post">
       <ul class="data">
-        <li id="datas"></li>
-        <li id="datas"></li>
+        <input type="date" id="datas" required>
+        <input type="date" id="datas" required>
       </ul>
       <ul class="inicio">
         <li id="inicio-fim1">Inicio</li>
         <li id="inicio-fim2">Final</li>
       </ul>
       <div id="pesquisar">
-        <button id="button1">PESQUISAR</button>
+        <input type="submit" for="datas" id="button1" value="PESQUISAR"></input>
       </div>
       <div>
         <table>
