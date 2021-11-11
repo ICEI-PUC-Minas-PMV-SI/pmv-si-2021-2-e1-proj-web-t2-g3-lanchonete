@@ -1,9 +1,29 @@
-function modal() {
+function modalAcessarComo() {
   let modal = document.getElementById('modal-acessar-como')
-  modal.style.opacity = '1'
+  modal.style.display = 'block'
 }
 
-function fechar() {
+function fecharAcessarComo() {
   let modal = document.getElementById('modal-acessar-como')
-  modal.style.opacity = '0'
+  modal.style.display = 'none'
+}
+
+function modalLoginAdm() {
+  let modal = document.getElementById('modal-login-adm')
+  modal.style.display = 'block'
+}
+
+function fecharLoginAdm() {
+  let modal = document.getElementById('modal-login-adm')
+  modal.style.display = 'none'
+}
+
+function modalRecuperarSenhaAdm() {
+  let modal = document.getElementById('modal-recuperar-senha-adm')
+  modal.style.display = 'block'
+}
+
+function fecharRecuperarSenhaAdm() {
+  let modal = document.getElementById('modal-recuperar-senha-adm')
+  modal.style.display = 'none'
 }

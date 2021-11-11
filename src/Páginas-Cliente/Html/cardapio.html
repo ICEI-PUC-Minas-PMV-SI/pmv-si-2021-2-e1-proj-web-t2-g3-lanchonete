@@ -52,11 +52,9 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="modal()">
+              <li id="login" onclick="modalAcessarComo()">
                 <i class="fas fa-sign-in-alt"></i>
                 <span>LOGIN</span>
-                <!-- <a href="acessar-como.html">
-                </a> -->
               </li>
               <li id="carrinho">
                 <a href="carrinho.html">
@@ -87,11 +85,9 @@
                 <a href="Index.html">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li id="login-mobile">
-                  <a href="acessar-como.html">
-                    <i class="fas fa-sign-in-alt"></i>
-                    <span>LOGIN</span>
-                  </a>
+                <li id="login-mobile" onclick="modalAcessarComo()">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
                 </li>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
@@ -130,23 +126,86 @@
       </header>
 
       <main>
-        <section id="modal-acessar-como" class="modal">
-          <div class="caixa-acessar-como">
+        <section id="modal-acessar-como">
+          <div id="caixa-acessar-como">
             <h3>ACESSAR COMO</h3>
             <div class="opcoes">
-              <a href="../Html/login-admin.html">
-                <div id="admin">ADMINISTRADOR</div>
-              </a>
-              <a href="../Html/login-cliente.html">
-                <div id="cliente">CLIENTE</div>
-              </a>
+              <div id="admin" onclick="modalLoginAdm()">ADMINISTRADOR</div>
+              <div id="cliente">CLIENTE</div>
             </div>
             <img
               src="../midia/login/x-icon.png"
               alt="Ícone X"
               id="x-icon"
-              onclick="fechar()"
+              onclick="fecharAcessarComo()"
             />
+          </div>
+        </section>
+
+        <section id="modal-login-adm">
+          <div id="caixa-login-adm">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <a onclick="modalRecuperarSenhaAdm()">
+              <p>Esqueci a minha senha</p>
+            </a>
+            <a id="x-icon" onclick="fecharLoginAdm()">
+              <img src="../midia/login/x-icon.png" alt="Ícone X" />
+            </a>
+          </div>
+        </section>
+
+        <section id="modal-recuperar-senha-adm">
+          <div id="caixa-recuperar-senha-adm">
+            <h3>RECUPERAR SENHA</h3>
+            <div class="texto">
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+
+            <a id="x-icon" onclick="fecharRecuperarSenhaAdm()">
+              <img src="../midia/login/x-icon.png" alt="Ícone X" />
+            </a>
           </div>
         </section>
 
