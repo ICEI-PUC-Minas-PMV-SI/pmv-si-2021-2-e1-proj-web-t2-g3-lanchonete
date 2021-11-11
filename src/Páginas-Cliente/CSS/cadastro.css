@@ -122,6 +122,10 @@ header {
   box-shadow: 1px 1px 4px white;
 }
 
+.show-menu {
+  opacity: 1 !important;
+}
+
 #menu-mobile ul li a {
   display: block;
   padding: 8px;
@@ -151,10 +155,6 @@ header {
 
 #sub-header-mobile #enderecos a:hover {
   color: #ff9a00;
-}
-
-.show-menu {
-  opacity: 1 !important;
 }
 
 .caixa {

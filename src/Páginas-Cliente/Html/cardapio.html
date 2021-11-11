@@ -52,11 +52,11 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="acessar-como.html">
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="modal()">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
+                <!-- <a href="acessar-como.html">
+                </a> -->
               </li>
               <li id="carrinho">
                 <a href="carrinho.html">
@@ -130,6 +130,26 @@
       </header>
 
       <main>
+        <section id="modal-acessar-como" class="modal">
+          <div class="caixa-acessar-como">
+            <h3>ACESSAR COMO</h3>
+            <div class="opcoes">
+              <a href="../Html/login-admin.html">
+                <div id="admin">ADMINISTRADOR</div>
+              </a>
+              <a href="../Html/login-cliente.html">
+                <div id="cliente">CLIENTE</div>
+              </a>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fechar()"
+            />
+          </div>
+        </section>
+
         <section>
           <div id="banner">
             <h3>CARDÁPIO</h3>
@@ -240,5 +260,6 @@
 
     <script src="../../template-cliente/script.js"></script>
     <script src="../../javascript-cardapio/script-cardapio.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

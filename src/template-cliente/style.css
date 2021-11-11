@@ -121,6 +121,10 @@ header {
   transition: 0.4s;
 }
 
+.show-menu {
+  opacity: 1 !important;
+}
+
 #menu-mobile ul li a {
   display: block;
   padding: 8px;
@@ -150,10 +154,6 @@ header {
 
 #sub-header-mobile #enderecos a:hover {
   color: #ff9a00;
-}
-
-.show-menu {
-  opacity: 1 !important;
 }
 
 main {

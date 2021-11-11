@@ -54,19 +54,28 @@ header {
   gap: 30px;
 }
 
-#menu-desktop ul li a,
-#login-carrinho ul li a {
+#menu-desktop ul li a {
   transition: 0.4s;
 }
 
-#menu-desktop ul li a:hover,
-#login-carrinho ul li a:hover {
+#menu-desktop ul li a:hover {
   color: #ff9a00;
 }
 
 #login-carrinho ul {
   display: flex;
   gap: 30px;
+}
+
+#login,
+#carrinho {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#login:hover,
+#carrinho a:hover {
+  color: #ff9a00;
 }
 
 #sub-header {
@@ -121,6 +130,10 @@ header {
   transition: 0.4s;
 }
 
+.show-menu {
+  opacity: 1 !important;
+}
+
 #menu-mobile ul li a {
   display: block;
   padding: 8px;
@@ -152,12 +165,72 @@ header {
   color: #ff9a00;
 }
 
-.show-menu {
-  opacity: 1 !important;
-}
-
 main {
   color: black;
+  position: relative;
+}
+
+.modal {
+  background-color: rgb(218, 218, 218);
+  width: 50%;
+  height: 550px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 103px;
+  margin: auto;
+  z-index: 11;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-acessar-como {
+  background-color: #bc1823;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px;
+}
+
+.caixa-acessar-como h3 {
+  color: #ffffff;
+  font: normal 500 20px 'Roboto', sans-serif;
+}
+
+.caixa-acessar-como .opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.caixa-acessar-como #admin,
+.caixa-acessar-como #cliente {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 210px;
+  text-align: center;
+  padding: 5px 10px;
+  font: normal bold 20px 'Roboto', sans-serif;
+}
+
+.caixa-acessar-como #x-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  cursor: pointer;
 }
 
 #banner {
@@ -695,6 +768,11 @@ footer {
 }
 
 @media only screen and (max-width: 320px) {
+  #caixa-acessar-como #admin,
+  #caixa-acessar-como #cliente {
+    font: normal bold 15px 'Roboto', sans-serif;
+  }
+
   .nome-produto {
     font-size: 15px;
   }
