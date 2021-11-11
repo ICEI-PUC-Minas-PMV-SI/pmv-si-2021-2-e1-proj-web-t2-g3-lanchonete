@@ -18,12 +18,18 @@ body {
   color: #f9f9f9;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   background-color: #bc1823;
   width: 100%;
-  height: 136px;
+  height: 110px;
   padding: 10px 0;
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 10;
@@ -31,57 +37,36 @@ header {
 
 #main-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: 0 25px;
+  justify-content: space-between;
   font-size: 16px;
   font-weight: bolder;
+  padding: 0 20px;
 }
 
 .logo img {
   width: 150px;
 }
 
-.icon {
-  width: 20px;
-}
-
-#menu ul {
+#menu-desktop ul {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 30px;
 }
 
-ul li a:hover {
+#menu-desktop ul li a,
+#login-carrinho ul li a {
+  transition: 0.4s;
+}
+
+#menu-desktop ul li a:hover,
+#login-carrinho ul li a:hover {
   color: #ff9a00;
 }
 
 #login-carrinho ul {
   display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-#login,
-#carrinho {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: 15px;
-}
-
-#login-icon {
-  width: 28px;
-  position: absolute;
-  right: 42px;
-  top: -1px;
-}
-
-#cart-icon {
-  width: 16px;
-  position: absolute;
-  right: 85px;
-  top: -2px;
+  gap: 30px;
 }
 
 #sub-header {
@@ -94,17 +79,82 @@ ul li a:hover {
   font-weight: 600;
 }
 
-#horario,
-#enderecos a {
+#sub-header #horario,
+#sub-header #enderecos a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
   margin: 0 25px;
+  transition: 0.4s;
 }
 
-#enderecos span:hover {
+#sub-header #enderecos a:hover {
   color: #bc1823;
+}
+
+#menu-mobile {
+  display: none;
+}
+
+#menu-mobile .icon-menu {
+  color: #ffffff;
+  font-size: 32px;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#menu-mobile .icon-menu:hover {
+  color: #ff9a00;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#menu-mobile ul {
+  background-color: #bc1823;
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 112px;
+  text-align: center;
+  transition: 0.4s;
+  box-shadow: 1px 1px 4px white;
+}
+
+#menu-mobile ul li a {
+  display: block;
+  padding: 8px;
+  transition: 0.4s;
+}
+
+#menu-mobile ul li a:hover {
+  color: #ff9a00;
+}
+
+#sub-header-mobile {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+#sub-header-mobile #horario,
+#sub-header-mobile #enderecos a {
+  color: #ffffffb6;
+  transition: 0.4s;
+}
+
+#sub-header-mobile #enderecos a:hover {
+  color: #ff9a00;
+}
+
+.show-menu {
+  opacity: 1 !important;
 }
 
 .caixa {
@@ -114,6 +164,7 @@ ul li a:hover {
   align-items: center;
   justify-content: center;
   margin: 10px 0;
+  margin-top: 150px;
   padding: 40px 10px;
 }
 
@@ -223,6 +274,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .box-footer {
@@ -233,14 +285,20 @@ footer {
   gap: 10px;
 }
 
-.social-media a img {
-  width: 25px;
-  margin: 0 6px;
+#social-media a i {
+  font-size: 26px;
+  margin: 0 10px;
+  transition: 0.5s;
 }
 
-.social-media a img:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+#social-media a i:hover {
+  color: #ff9a00;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#infos {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1561px) {
@@ -265,6 +323,25 @@ footer {
   .input-pequeno,
   .sexo {
     width: 325px;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  #menu-mobile {
+    display: block;
+  }
+
+  #menu-desktop,
+  #login-carrinho {
+    display: none;
+  }
+
+  #sub-header {
+    display: none;
+  }
+
+  .caixa {
+    margin-top: 120px;
   }
 }
 
@@ -304,6 +381,12 @@ footer {
   }
 }
 
+@media only screen and (max-width: 430px) {
+  #menu-mobile {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   .input-grande,
   .input-medio,
@@ -312,61 +395,3 @@ footer {
     width: 200px;
   }
 }
-
-/* Transformar em menu em hamburguer */
-/* Para saber mais, ver o vídeo "Responsividade na prática" da Rocketseat
-- minuto 42:40 */
-/* @media only screen and (max-width: 890px) {
-  nav {
-    display: none;
-  }
-
-  .one,
-  .two,
-  .three {
-    background-color: #ff9a00;
-    height: 5px;
-    width: 100%;
-    margin: 6px auto;
-
-    transition-duration: 0.3s;
-  }
-
-  .menu-toggle {
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-  }
-
-  .menu-section.on {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40vw;
-    height: 66vh;
-    background-color: rgba(0, 0, 0, 0.445);
-    z-index: 1;
-  }
-
-  .menu-section.on nav {
-    display: block;
-  }
-
-  .menu-section.on .menu-toggle {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-  }
-
-  .menu-section.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-  }
-
-  .menu-section.on .menu-toggle .two {
-    opacity: 0;
-  }
-
-  .menu-section.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(8px, -9px);
-  }
-} */

@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -27,15 +31,11 @@
               />
             </a>
           </div>
-          <nav id="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
@@ -43,56 +43,86 @@
                 <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html">SOBRE NÓS</a>
               </li>
             </ul>
           </nav>
-          <nav id="login-carrinho">
+          <div id="login-carrinho">
             <ul>
               <li id="login">
                 <a href="acessar-como.html">
-                  <img
-                    src="../midia/cardapio/icons/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
+                  <i class="fas fa-sign-in-alt"></i>
                   <span>LOGIN</span>
                 </a>
               </li>
               <li id="carrinho">
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
+                <a href="carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="Index.html">SOBRE NÓS</a>
+              </li>
+              <div id="login-carrinho-mobile">
+                <li id="login-mobile">
+                  <a href="acessar-como.html">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </a>
+                </li>
+                <li id="carrinho-mobile">
+                  <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
         <div id="sub-header">
           <div id="horario">
-            <img
-              src="../midia/cardapio/icons/clock-icon.png"
-              alt="Ícone relógio"
-              class="icon"
-            />
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
             <a href="#">
-              <img
-                src="../midia/cardapio/icons/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
@@ -190,22 +220,13 @@
         <div class="box-footer">
           <div id="social-media">
             <a href="https://pt-br.facebook.com/">
-              <img
-                src="../midia/cardapio/icons/facebook-icon.png"
-                alt="Ícone Facebook"
-              />
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://www.instagram.com">
-              <img
-                src="../midia/cardapio/icons/instagram-icon.png"
-                alt="Ícone Instagram"
-              />
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.tiktok.com/pt-BR/">
-              <img
-                src="../midia/cardapio/icons/tiktok-icon.png"
-                alt="Ícone TikTok"
-              />
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
           <div id="infos">
@@ -217,6 +238,7 @@
       </footer>
     </div>
 
+    <script src="../../template-cliente/script.js"></script>
     <script src="../../javascript-cardapio/script-cardapio.js"></script>
   </body>
 </html>
