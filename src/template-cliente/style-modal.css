@@ -119,7 +119,7 @@
 }
 
 .modal {
-  animation: modal 0.3s;
+  animation: modal 0.4s;
 }
 
 /* ==================== MODAL ACESSAR COMO ==================== */
@@ -167,8 +167,8 @@
 
 #modal-login-cliente .caixa {
   width: 520px;
-  height: 510px;
-  top: 50px;
+  height: 450px;
+  top: 20px;
 }
 
 #modal-login-cliente #button-cadastro {
@@ -183,4 +183,7 @@
   height: 300px;
 }
 
+form {
+  width: 100%;
+}
 /* ============================================================================ */

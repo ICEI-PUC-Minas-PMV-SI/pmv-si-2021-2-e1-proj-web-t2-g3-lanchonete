@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: #ffffff;
@@ -170,6 +174,7 @@ header {
 
 #caixa-cadastro {
   background-color: #bc1823;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,6 +274,7 @@ header {
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 
 #caixa-cadastro button:hover {
@@ -349,23 +355,6 @@ footer {
 
   #caixa-cadastro {
     margin-top: 120px;
-  }
-}
-
-@media only screen and (max-width: 645px) {
-  #pesquisa-carrinho {
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #pesquisa {
-    margin: 0 auto;
-  }
-
-  #irCarrinho {
-    margin: 10px auto;
-    padding: 0;
   }
 }
 

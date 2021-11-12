@@ -47,7 +47,7 @@
                 <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="Index.html">SOBRE NÓS</a>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
             </ul>
           </nav>
@@ -83,7 +83,7 @@
                 <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="Index.html">SOBRE NÓS</a>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
                 <li
@@ -216,6 +216,12 @@
         </section>
       </main>
 
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
       <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
@@ -269,121 +275,128 @@
     </section>
 
     <section id="modal-login-adm" class="modal">
-      <div class="modal-box">
-        <div class="caixa">
-          <div class="header">
-            <i class="fas fa-user-circle" id="user-icon"></i>
-            <h3>LOGIN ADMINISTRADOR</h3>
-          </div>
-          <div class="inputs">
-            <div id="cpf">
-              <input
-                type="text"
-                placeholder="CPF"
-                required
-                minlength="11"
-                maxlength="11"
-              />
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
             </div>
-            <div id="senha">
-              <input
-                type="password"
-                placeholder="Senha"
-                required
-                minlength="8"
-              />
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
             </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
+            />
           </div>
-          <div class="button">
-            <button type="submit">ENTRAR</button>
-          </div>
-          <p
-            onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
-          >
-            Esqueci a minha senha
-          </p>
-          <img
-            src="../midia/login/x-icon.png"
-            alt="Ícone X"
-            id="x-icon"
-            onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
-          />
         </div>
-      </div>
+      </form>
     </section>
 
     <section id="modal-recuperar-senha-adm" class="modal">
-      <div class="modal-box">
-        <div class="caixa">
-          <h3>RECUPERAR SENHA</h3>
-          <div>
-            <p>Insira o endereço de e-mail associado à sua conta.</p>
-            <p>
-              Nós lhe enviaremos um e-mail com link para recadastrar sua senha.
-            </p>
-          </div>
-          <div class="inputs">
-            <div id="email">
-              <input
-                type="email"
-                placeholder="E-mail"
-                required
-                minlength="10"
-              />
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
             </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            />
           </div>
-          <div class="button">
-            <button type="submit">ENVIAR</button>
-          </div>
-          <img
-            src="../midia/login/x-icon.png"
-            alt="Ícone X"
-            id="x-icon"
-            onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
-          />
         </div>
-      </div>
+      </form>
     </section>
 
     <section id="modal-login-cliente" class="modal">
       <div class="modal-box">
         <div class="caixa">
-          <div class="header">
-            <i class="fas fa-user-circle" id="user-icon"></i>
-            <h3>LOGIN CLIENTE</h3>
-          </div>
-          <div class="inputs">
-            <div id="email">
-              <input
-                type="email"
-                placeholder="E-mail"
-                required
-                minlength="10"
-              />
+          <form action="">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
             </div>
-            <div id="senha">
-              <input
-                type="password"
-                placeholder="Senha"
-                required
-                minlength="8"
-              />
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
             </div>
-          </div>
-          <div class="button">
-            <button type="submit">ENTRAR</button>
-          </div>
-          <p
-            onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
-          >
-            Esqueci a minha senha
-          </p>
-          <img
-            src="../midia/login/x-icon.png"
-            alt="Ícone X"
-            id="x-icon"
-            onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
-          />
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
+            />
+          </form>
           <div class="button">
             <a href="../Html/cadastro.html" class="button">
               <button type="submit" id="button-cadastro">
@@ -396,36 +409,39 @@
     </section>
 
     <section id="modal-recuperar-senha-cliente" class="modal">
-      <div class="modal-box">
-        <div class="caixa">
-          <h3>RECUPERAR SENHA</h3>
-          <div>
-            <p>Insira o endereço de e-mail associado à sua conta.</p>
-            <p>
-              Nós lhe enviaremos um e-mail com link para recadastrar sua senha.
-            </p>
-          </div>
-          <div class="inputs">
-            <div id="email">
-              <input
-                type="email"
-                placeholder="E-mail"
-                required
-                minlength="10"
-              />
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
             </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            />
           </div>
-          <div class="button">
-            <button type="submit">ENVIAR</button>
-          </div>
-          <img
-            src="../midia/login/x-icon.png"
-            alt="Ícone X"
-            id="x-icon"
-            onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
-          />
         </div>
-      </div>
+      </form>
     </section>
 
     <!-- ============================================================================== -->
