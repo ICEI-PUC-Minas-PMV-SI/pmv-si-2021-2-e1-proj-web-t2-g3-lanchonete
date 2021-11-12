@@ -6,7 +6,7 @@ function modalAcessarComo() {
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)
-    elemento.style.filter = 'blur(4px)'
+    elemento.style.filter = 'blur(3px) brightness(75%)'
   }
 }
 
@@ -18,7 +18,7 @@ function fecharAcessarComo() {
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)
-    elemento.style.filter = 'blur(0)'
+    elemento.style.filter = 'none'
   }
 }
 

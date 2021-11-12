@@ -173,6 +173,42 @@ main {
   color: black;
 }
 
+footer {
+  background-color: #bc1823;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#social-media a i {
+  font-size: 26px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+#social-media a i:hover {
+  color: #ff9a00;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#infos {
+  text-align: center;
+}
+
 /* =============================== ADICIONAR MODAIS =============================== */
 
 /* ==================== ESTILOS GERAIS ==================== */
@@ -337,44 +373,6 @@ main {
 }
 
 /* ============================================================================ */
-
-/* ==================== CONTINUAÇÃO DA PÁGINA ==================== */
-
-footer {
-  background-color: #bc1823;
-  height: 100px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.box-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-#social-media a i {
-  font-size: 26px;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-#social-media a i:hover {
-  color: #ff9a00;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-#infos {
-  text-align: center;
-}
 
 @media only screen and (max-width: 979px) {
   #menu-mobile {

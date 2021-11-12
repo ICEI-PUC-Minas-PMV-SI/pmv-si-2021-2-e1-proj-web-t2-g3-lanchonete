@@ -167,6 +167,151 @@ header {
 #sub-header-mobile #enderecos a:hover {
   color: #bc1823;
 }
+
+#caixa-cadastro {
+  background-color: #bc1823;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  margin-top: 150px;
+  padding: 40px 10px;
+}
+
+#caixa-cadastro h3 {
+  color: #ffffff;
+  font: normal bold 35px 'Roboto Slab', sans-serif;
+  margin-bottom: 10px;
+}
+
+#caixa-cadastro .caixa-inputs {
+  width: 65%;
+}
+
+#caixa-cadastro .inputs {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#caixa-cadastro label {
+  font: normal bold 18px 'Nunito', sans-serif;
+}
+
+#caixa-cadastro input {
+  background-color: #efefef;
+  height: 35px;
+  margin-top: 5px;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-cadastro .input-grande {
+  width: 50%;
+}
+
+#caixa-cadastro .input-medio {
+  width: 33%;
+}
+
+#caixa-cadastro .input-pequeno {
+  width: 25%;
+}
+
+#caixa-cadastro #sexo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#caixa-cadastro .masculino,
+#caixa-cadastro .feminino {
+  display: flex;
+  align-items: center;
+}
+
+#caixa-cadastro #masculino,
+#caixa-cadastro #feminino {
+  margin-right: 5px;
+}
+
+#caixa-cadastro .rua-numero {
+  display: flex;
+  gap: 4px;
+}
+
+#caixa-cadastro #rua {
+  width: 78%;
+}
+
+#caixa-cadastro #numero {
+  width: 22%;
+}
+
+#caixa-cadastro .input-grande input,
+#caixa-cadastro .input-medio input,
+#caixa-cadastro .input-pequeno input,
+#caixa-cadastro #rua input,
+#caixa-cadastro #numero input {
+  width: 100%;
+}
+
+#caixa-cadastro button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 170px;
+  height: 50px;
+  font: normal 700 20px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#caixa-cadastro button:hover {
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+footer {
+  background-color: #bc1823;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#social-media a i {
+  font-size: 26px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+#social-media a i:hover {
+  color: #ff9a00;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#infos {
+  text-align: center;
+}
+
 /* =============================== ADICIONAR MODAIS =============================== */
 
 /* ==================== ESTILOS GERAIS ==================== */
@@ -331,152 +476,6 @@ header {
 }
 
 /* ============================================================================ */
-
-/* ==================== CONTINUAÇÃO DA PÁGINA ==================== */
-
-#caixa-cadastro {
-  background-color: #bc1823;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px 0;
-  margin-top: 150px;
-  padding: 40px 10px;
-}
-
-#caixa-cadastro h3 {
-  color: #ffffff;
-  font: normal bold 35px 'Roboto Slab', sans-serif;
-  margin-bottom: 10px;
-}
-
-#caixa-cadastro .caixa-inputs {
-  width: 65%;
-}
-
-#caixa-cadastro .inputs {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-#caixa-cadastro label {
-  font: normal bold 18px 'Nunito', sans-serif;
-}
-
-#caixa-cadastro input {
-  background-color: #efefef;
-  height: 35px;
-  margin-top: 5px;
-  padding: 15px;
-  border: none;
-  outline: none;
-}
-
-#caixa-cadastro .input-grande {
-  width: 50%;
-}
-
-#caixa-cadastro .input-medio {
-  width: 33%;
-}
-
-#caixa-cadastro .input-pequeno {
-  width: 25%;
-}
-
-#caixa-cadastro #sexo {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-#caixa-cadastro .masculino,
-#caixa-cadastro .feminino {
-  display: flex;
-  align-items: center;
-}
-
-#caixa-cadastro #masculino,
-#caixa-cadastro #feminino {
-  margin-right: 5px;
-}
-
-#caixa-cadastro .rua-numero {
-  display: flex;
-  gap: 4px;
-}
-
-#caixa-cadastro #rua {
-  width: 78%;
-}
-
-#caixa-cadastro #numero {
-  width: 22%;
-}
-
-#caixa-cadastro .input-grande input,
-#caixa-cadastro .input-medio input,
-#caixa-cadastro .input-pequeno input,
-#caixa-cadastro #rua input,
-#caixa-cadastro #numero input {
-  width: 100%;
-}
-
-#caixa-cadastro button {
-  background-color: #ff9a00;
-  color: #ffffff;
-  width: 170px;
-  height: 50px;
-  font: normal 700 20px 'Roboto', sans-serif;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-#caixa-cadastro button:hover {
-  -webkit-transform: scale(1.06);
-  transform: scale(1.06);
-}
-
-footer {
-  background-color: #bc1823;
-  height: 100px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.box-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-#social-media a i {
-  font-size: 26px;
-  margin: 0 10px;
-  transition: 0.5s;
-}
-
-#social-media a i:hover {
-  color: #ff9a00;
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-#infos {
-  text-align: center;
-}
 
 @media only screen and (min-width: 1561px) {
   #caixa-cadastro .caixa-inputs {
