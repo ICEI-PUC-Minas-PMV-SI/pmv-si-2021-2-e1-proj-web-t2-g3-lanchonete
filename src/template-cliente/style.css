@@ -214,7 +214,9 @@ footer {
 /* ==================== ESTILOS GERAIS ==================== */
 
 .modal {
-  background-color: rgb(218, 218, 218);
+  background-color: rgba(218, 218, 218, 0);
+  width: 95vw;
+  height: 100vh;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -224,7 +226,13 @@ footer {
   z-index: 11;
   display: none;
   border-radius: 10px;
-  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+.modal .modal-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal .caixa,
@@ -233,8 +241,6 @@ footer {
 .modal .caixa,
 .modal .caixa {
   background-color: #bc1823;
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,6 +248,7 @@ footer {
   gap: 15px;
   border-radius: 10px;
   position: relative;
+  border: 2px solid #ff9a00;
 }
 
 .modal h3 {
@@ -311,9 +318,24 @@ footer {
   justify-content: center;
 }
 
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal {
+  animation: modal 0.3s;
+}
+
 /* ==================== MODAL ACESSAR COMO ==================== */
 
-#modal-acessar-como {
+#modal-acessar-como .caixa {
   width: 500px;
   height: 200px;
 }
@@ -340,24 +362,24 @@ footer {
 
 /* ==================== MODAL LOGIN ADM ==================== */
 
-#modal-login-adm {
+#modal-login-adm .caixa {
   width: 520px;
   height: 400px;
 }
 
 /* ==================== MODAL RECUPERAR SENHA ADM ==================== */
 
-#modal-recuperar-senha-adm {
+#modal-recuperar-senha-adm .caixa {
   width: 520px;
   height: 300px;
 }
 
 /* ==================== MODAL LOGIN CLIENTE ==================== */
 
-#modal-login-cliente {
+#modal-login-cliente .caixa {
   width: 520px;
   height: 510px;
-  top: 100px;
+  top: 50px;
 }
 
 #modal-login-cliente #button-cadastro {
@@ -367,7 +389,7 @@ footer {
 
 /* ==================== MODAL RECUPERAR SENHA CLIENTE ==================== */
 
-#modal-recuperar-senha-cliente {
+#modal-recuperar-senha-cliente .caixa {
   width: 520px;
   height: 300px;
 }
@@ -386,16 +408,6 @@ footer {
 
   #sub-header {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  #modal-acessar-como,
-  #modal-login-adm,
-  #modal-recuperar-senha-adm,
-  #modal-login-cliente,
-  #modal-recuperar-senha-cliente {
-    width: 95%;
   }
 }
 

@@ -1,5 +1,5 @@
-function modalAcessarComo() {
-  let modal = document.getElementById('modal-acessar-como')
+function abrirModalLogin(modalID1) {
+  let modal = document.getElementById(modalID1)
   modal.style.display = 'block'
 
   // DESFOCAR FUNDO QUANDO ABRE OS MODAIS
@@ -10,11 +10,11 @@ function modalAcessarComo() {
   }
 }
 
-function fecharAcessarComo() {
-  let modal = document.getElementById('modal-acessar-como')
+function fecharModalLogin(modalID) {
+  let modal = document.getElementById(modalID)
   modal.style.display = 'none'
 
-  // TIRAR DESFOQUE DO FUNDO QUANDO FECHAR OS MODAIS
+  // TIRAR DESFOQUE DO FUNDO QUANDO FECHA OS MODAIS
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)
@@ -22,54 +22,18 @@ function fecharAcessarComo() {
   }
 }
 
-function modalLoginAdm() {
-  let modal = document.getElementById('modal-login-adm')
-  modal.style.display = 'block'
-}
-
-function fecharLoginAdm() {
-  let modal = document.getElementById('modal-login-adm')
-  modal.style.display = 'none'
-}
-
-function modalRecuperarSenhaAdm() {
-  let modal = document.getElementById('modal-recuperar-senha-adm')
+function abrirModal(modalID1, modalID2) {
+  let modal = document.getElementById(modalID1)
   modal.style.display = 'block'
 
-  let modal2 = document.getElementById('modal-login-adm')
+  let modal2 = document.getElementById(modalID2)
   modal2.style.display = 'none'
 }
 
-function fecharRecuperarSenhaAdm() {
-  let modal = document.getElementById('modal-recuperar-senha-adm')
+function fecharModal(modalID, modalID2) {
+  let modal = document.getElementById(modalID)
   modal.style.display = 'none'
 
-  let modal2 = document.getElementById('modal-login-adm')
-  modal2.style.display = 'block'
-}
-
-function modalLoginCliente() {
-  let modal = document.getElementById('modal-login-cliente')
-  modal.style.display = 'block'
-}
-
-function fecharLoginCliente() {
-  let modal = document.getElementById('modal-login-cliente')
-  modal.style.display = 'none'
-}
-
-function modalRecuperarSenhaCliente() {
-  let modal = document.getElementById('modal-recuperar-senha-cliente')
-  modal.style.display = 'block'
-
-  let modal2 = document.getElementById('modal-login-cliente')
-  modal2.style.display = 'none'
-}
-
-function fecharRecuperarSenhaCliente() {
-  let modal = document.getElementById('modal-recuperar-senha-cliente')
-  modal.style.display = 'none'
-
-  let modal2 = document.getElementById('modal-login-cliente')
+  let modal2 = document.getElementById(modalID2)
   modal2.style.display = 'block'
 }
