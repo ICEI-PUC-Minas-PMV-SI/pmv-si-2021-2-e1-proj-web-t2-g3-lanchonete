@@ -14,7 +14,7 @@ function fecharAcessarComo() {
   let modal = document.getElementById('modal-acessar-como')
   modal.style.display = 'none'
 
-  // TIRAR DESFOQUE DO FUNDO QUANDO ABRE OS MODAIS
+  // TIRAR DESFOQUE DO FUNDO QUANDO FECHAR OS MODAIS
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)

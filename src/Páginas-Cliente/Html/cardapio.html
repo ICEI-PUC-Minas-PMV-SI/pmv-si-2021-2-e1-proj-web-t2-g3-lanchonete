@@ -128,8 +128,8 @@
       <main>
         <!-- =============================== ADICIONAR MODAIS =============================== -->
 
-        <section id="modal-acessar-como">
-          <div id="caixa-acessar-como">
+        <section id="modal-acessar-como" class="modal">
+          <div class="caixa">
             <h3>ACESSAR COMO</h3>
             <div class="opcoes">
               <div id="admin" onclick="modalLoginAdm()">ADMINISTRADOR</div>
@@ -144,8 +144,8 @@
           </div>
         </section>
 
-        <section id="modal-login-adm">
-          <div id="caixa-login-adm">
+        <section id="modal-login-adm" class="modal">
+          <div class="caixa">
             <div class="header">
               <i class="fas fa-user-circle" id="user-icon"></i>
               <h3>LOGIN ADMINISTRADOR</h3>
@@ -182,10 +182,10 @@
           </div>
         </section>
 
-        <section id="modal-recuperar-senha-adm">
-          <div id="caixa-recuperar-senha-adm">
+        <section id="modal-recuperar-senha-adm" class="modal">
+          <div class="caixa">
             <h3>RECUPERAR SENHA</h3>
-            <div class="texto">
+            <div>
               <p>Insira o endereço de e-mail associado à sua conta.</p>
               <p>
                 Nós lhe enviaremos um e-mail com link para recadastrar sua
@@ -214,8 +214,8 @@
           </div>
         </section>
 
-        <section id="modal-login-cliente">
-          <div id="caixa-login-cliente">
+        <section id="modal-login-cliente" class="modal">
+          <div class="caixa">
             <div class="header">
               <i class="fas fa-user-circle" id="user-icon"></i>
               <h3>LOGIN CLIENTE</h3>
@@ -249,7 +249,7 @@
               onclick="fecharLoginCliente()"
             />
             <div class="button">
-              <a href="../Html/cadastro.html">
+              <a href="../Html/cadastro.html" class="button">
                 <button type="submit" id="button-cadastro">
                   Quero me cadastrar
                 </button>
@@ -258,10 +258,10 @@
           </div>
         </section>
 
-        <section id="modal-recuperar-senha-cliente">
-          <div id="caixa-recuperar-senha-cliente">
+        <section id="modal-recuperar-senha-cliente" class="modal">
+          <div class="caixa">
             <h3>RECUPERAR SENHA</h3>
-            <div class="texto">
+            <div>
               <p>Insira o endereço de e-mail associado à sua conta.</p>
               <p>
                 Nós lhe enviaremos um e-mail com link para recadastrar sua
@@ -400,8 +400,8 @@
       </footer>
     </div>
 
-    <script src="../../template-cliente/script.js"></script>
     <script src="../../javascript-cardapio/script-cardapio.js"></script>
-    <script src="script.js"></script>
+    <script src="../../template-cliente/script-menu-mobile.js"></script>
+    <script src="script-modal.js"></script>
   </body>
 </html>

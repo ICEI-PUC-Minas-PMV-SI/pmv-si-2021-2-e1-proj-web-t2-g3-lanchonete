@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página do Cliente</title>
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/01d2899e28.js"
       crossorigin="anonymous"
@@ -26,19 +33,21 @@
           <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="Index.html">
+                <a href="../Páginas-Cliente/Html/Index.html">
                   <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="fidelidade.html">FIDELIDADE</a>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="Index.html">SOBRE NÓS</a>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
               </li>
             </ul>
           </nav>
@@ -49,7 +58,7 @@
                 <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="carrinho.html">
+                <a href="../Páginas-Cliente/Html/carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
@@ -63,18 +72,20 @@
             </a>
             <ul>
               <li>
-                <a href="Index.html">
+                <a href="../Páginas-Cliente/Html/Index.html">
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="fidelidade.html">FIDELIDADE</a>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="Index.html">SOBRE NÓS</a>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
               </li>
               <div id="login-carrinho-mobile">
                 <li id="login-mobile" onclick="modalAcessarComo()">
@@ -82,7 +93,7 @@
                   <span>LOGIN</span>
                 </li>
                 <li id="carrinho-mobile">
-                  <a href="carrinho.html">
+                  <a href="../Páginas-Cliente/Html/carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
                     <span>CARRINHO</span>
                   </a>
@@ -120,8 +131,8 @@
       <main>
         <!-- =============================== ADICIONAR MODAIS =============================== -->
 
-        <section id="modal-acessar-como">
-          <div id="caixa-acessar-como">
+        <section id="modal-acessar-como" class="modal">
+          <div class="caixa">
             <h3>ACESSAR COMO</h3>
             <div class="opcoes">
               <div id="admin" onclick="modalLoginAdm()">ADMINISTRADOR</div>
@@ -136,8 +147,8 @@
           </div>
         </section>
 
-        <section id="modal-login-adm">
-          <div id="caixa-login-adm">
+        <section id="modal-login-adm" class="modal">
+          <div class="caixa">
             <div class="header">
               <i class="fas fa-user-circle" id="user-icon"></i>
               <h3>LOGIN ADMINISTRADOR</h3>
@@ -174,10 +185,10 @@
           </div>
         </section>
 
-        <section id="modal-recuperar-senha-adm">
-          <div id="caixa-recuperar-senha-adm">
+        <section id="modal-recuperar-senha-adm" class="modal">
+          <div class="caixa">
             <h3>RECUPERAR SENHA</h3>
-            <div class="texto">
+            <div>
               <p>Insira o endereço de e-mail associado à sua conta.</p>
               <p>
                 Nós lhe enviaremos um e-mail com link para recadastrar sua
@@ -206,8 +217,8 @@
           </div>
         </section>
 
-        <section id="modal-login-cliente">
-          <div id="caixa-login-cliente">
+        <section id="modal-login-cliente" class="modal">
+          <div class="caixa">
             <div class="header">
               <i class="fas fa-user-circle" id="user-icon"></i>
               <h3>LOGIN CLIENTE</h3>
@@ -241,7 +252,7 @@
               onclick="fecharLoginCliente()"
             />
             <div class="button">
-              <a href="../Html/cadastro.html">
+              <a href="../Html/cadastro.html" class="button">
                 <button type="submit" id="button-cadastro">
                   Quero me cadastrar
                 </button>
@@ -250,10 +261,10 @@
           </div>
         </section>
 
-        <section id="modal-recuperar-senha-cliente">
-          <div id="caixa-recuperar-senha-cliente">
+        <section id="modal-recuperar-senha-cliente" class="modal">
+          <div class="caixa">
             <h3>RECUPERAR SENHA</h3>
-            <div class="texto">
+            <div>
               <p>Insira o endereço de e-mail associado à sua conta.</p>
               <p>
                 Nós lhe enviaremos um e-mail com link para recadastrar sua
@@ -307,7 +318,7 @@
       </footer>
     </div>
 
-    <script src="script.js"></script>
-    <script src="../Páginas-Cliente/Html/script.js"></script>
+    <script src="script-menu-mobile.js"></script>
+    <script src="../Páginas-Cliente/Html/script-modal.js"></script>
   </body>
 </html>
