@@ -209,6 +209,23 @@ footer {
   text-align: center;
 }
 
+.button-up i {
+  background-color: #ff9a00;
+  font-size: 35px;
+  color: #bc1823;
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  padding: 0 7px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.button-up i:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 @media only screen and (max-width: 979px) {
   #menu-mobile {
     display: block;
