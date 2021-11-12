@@ -27,3 +27,29 @@ function fecharRecuperarSenhaAdm() {
   let modal = document.getElementById('modal-recuperar-senha-adm')
   modal.style.display = 'none'
 }
+
+function modalLoginCliente() {
+  let modal = document.getElementById('modal-login-cliente')
+  modal.style.display = 'block'
+}
+
+function fecharLoginCliente() {
+  let modal = document.getElementById('modal-login-cliente')
+  modal.style.display = 'none'
+}
+
+function modalRecuperarSenhaCliente() {
+  let modal = document.getElementById('modal-recuperar-senha-cliente')
+  modal.style.display = 'block'
+
+  let modal2 = document.getElementById('modal-login-cliente')
+  modal2.style.display = 'none'
+}
+
+function fecharRecuperarSenhaCliente() {
+  let modal = document.getElementById('modal-recuperar-senha-cliente')
+  modal.style.display = 'none'
+
+  let modal2 = document.getElementById('modal-login-cliente')
+  modal2.style.display = 'block'
+}
