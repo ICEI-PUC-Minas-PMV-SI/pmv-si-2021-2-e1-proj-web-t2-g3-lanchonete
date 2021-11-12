@@ -1,11 +1,25 @@
 function modalAcessarComo() {
   let modal = document.getElementById('modal-acessar-como')
   modal.style.display = 'block'
+
+  // DESFOCAR FUNDO QUANDO ABRE OS MODAIS
+  let filterBlur = document.getElementsByClassName('filter-blur')
+  for (elemento of filterBlur) {
+    // console.log(elemento)
+    elemento.style.filter = 'blur(4px)'
+  }
 }
 
 function fecharAcessarComo() {
   let modal = document.getElementById('modal-acessar-como')
   modal.style.display = 'none'
+
+  // TIRAR DESFOQUE DO FUNDO QUANDO ABRE OS MODAIS
+  let filterBlur = document.getElementsByClassName('filter-blur')
+  for (elemento of filterBlur) {
+    // console.log(elemento)
+    elemento.style.filter = 'blur(0)'
+  }
 }
 
 function modalLoginAdm() {
@@ -21,11 +35,17 @@ function fecharLoginAdm() {
 function modalRecuperarSenhaAdm() {
   let modal = document.getElementById('modal-recuperar-senha-adm')
   modal.style.display = 'block'
+
+  let modal2 = document.getElementById('modal-login-adm')
+  modal2.style.display = 'none'
 }
 
 function fecharRecuperarSenhaAdm() {
   let modal = document.getElementById('modal-recuperar-senha-adm')
   modal.style.display = 'none'
+
+  let modal2 = document.getElementById('modal-login-adm')
+  modal2.style.display = 'block'
 }
 
 function modalLoginCliente() {

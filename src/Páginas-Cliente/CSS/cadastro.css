@@ -54,19 +54,28 @@ header {
   gap: 30px;
 }
 
-#menu-desktop ul li a,
-#login-carrinho ul li a {
+#menu-desktop ul li a {
   transition: 0.4s;
 }
 
-#menu-desktop ul li a:hover,
-#login-carrinho ul li a:hover {
+#menu-desktop ul li a:hover {
   color: #ff9a00;
 }
 
 #login-carrinho ul {
   display: flex;
   gap: 30px;
+}
+
+#login,
+#carrinho {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#login:hover,
+#carrinho a:hover {
+  color: #ff9a00;
 }
 
 #sub-header {
@@ -113,25 +122,27 @@ header {
 #menu-mobile ul {
   background-color: #bc1823;
   width: 100%;
-  opacity: 0;
+  display: none;
   position: absolute;
   right: 0;
   top: 112px;
   text-align: center;
   transition: 0.4s;
-  box-shadow: 1px 1px 4px white;
+  cursor: pointer;
 }
 
 .show-menu {
-  opacity: 1 !important;
+  display: block !important;
 }
 
+#menu-mobile ul li,
 #menu-mobile ul li a {
   display: block;
   padding: 8px;
   transition: 0.4s;
 }
 
+#menu-mobile ul li:hover,
 #menu-mobile ul li a:hover {
   color: #ff9a00;
 }
@@ -157,39 +168,482 @@ header {
   color: #ff9a00;
 }
 
-.caixa {
+/* =============================== ADICIONAR MODAIS =============================== */
+
+/* ==================== MODAL ACESSAR COMO ==================== */
+
+#modal-acessar-como {
+  background-color: rgb(218, 218, 218);
+  width: 500px;
+  height: 200px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+#caixa-acessar-como {
+  background-color: #bc1823;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#caixa-acessar-como h3 {
+  color: #ffffff;
+  font: normal 500 20px 'Roboto', sans-serif;
+}
+
+#caixa-acessar-como .opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#caixa-acessar-como #admin,
+#caixa-acessar-como #cliente {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 210px;
+  text-align: center;
+  padding: 5px 10px;
+  font: normal bold 20px 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+#caixa-acessar-como #x-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* ==================== MODAL LOGIN ADM ==================== */
+
+#modal-login-adm {
+  background-color: rgb(218, 218, 218);
+  width: 520px;
+  height: 420px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+#caixa-login-adm .header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#caixa-login-adm #user-icon {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#caixa-login-adm h3 {
+  color: #ffffff;
+  font: normal bold 23px 'Nunito', sans-serif;
+  margin: 0 10px;
+}
+
+#caixa-login-adm {
+  background-color: #bc1823;
+  width: 100%;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#caixa-login-adm .inputs {
+  width: 100%;
+}
+
+#caixa-login-adm #cpf,
+#caixa-login-adm #senha,
+#caixa-login-adm .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-login-adm input {
+  background-color: #efefef;
+  width: 90%;
+  height: 48px;
+  font: normal normal 16px 'Roboto', sans-serif;
+  margin: 0 20px 20px 20px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-login-adm button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 90%;
+  height: 48px;
+  font: normal 700 16px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px 10px 20px;
+}
+
+#caixa-login-adm p {
+  color: rgba(238, 238, 238, 0.9);
+  font: normal normal 14px 'Roboto', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+#caixa-login-adm #x-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* ==================== MODAL RECUPERAR SENHA ADM ==================== */
+
+#modal-recuperar-senha-adm {
+  background-color: rgb(218, 218, 218);
+  width: 520px;
+  height: 410px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+#caixa-recuperar-senha-adm h3 {
+  color: #ffffff;
+  font: normal bold 23px 'Nunito', sans-serif;
+  margin: 0px 10px;
+}
+
+#caixa-recuperar-senha-adm .texto {
+  color: #ffffff;
+  font: normal 700 16px 'Roboto', sans-serif;
+  text-align: center;
+  margin: 20px 10px 35px 10px;
+}
+
+#caixa-recuperar-senha-adm {
+  background-color: #bc1823;
+  width: 100%;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#caixa-recuperar-senha-adm .inputs {
+  width: 100%;
+}
+
+#caixa-recuperar-senha-adm #email,
+#caixa-recuperar-senha-adm .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-recuperar-senha-adm input {
+  background-color: #efefef;
+  width: 90%;
+  height: 48px;
+  font: normal normal 16px 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-recuperar-senha-adm button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 90%;
+  height: 48px;
+  font: normal 700 16px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#caixa-recuperar-senha-adm #x-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* ==================== MODAL LOGIN CLIENTE ==================== */
+
+#modal-login-cliente {
+  background-color: rgb(218, 218, 218);
+  width: 520px;
+  height: 540px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 100px;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+#caixa-login-cliente .header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#caixa-login-cliente #user-icon {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#caixa-login-cliente h3 {
+  color: #ffffff;
+  font: normal bold 23px 'Nunito', sans-serif;
+  margin: 0 10px;
+}
+
+#caixa-login-cliente {
+  background-color: #bc1823;
+  width: 100%;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#caixa-login-cliente .inputs {
+  width: 100%;
+}
+
+#caixa-login-cliente #email,
+#caixa-login-cliente #senha,
+#caixa-login-cliente .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-login-cliente input {
+  background-color: #efefef;
+  width: 90%;
+  height: 48px;
+  font: normal normal 16px 'Roboto', sans-serif;
+  margin: 0 20px 20px 20px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-login-cliente button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 90%;
+  height: 48px;
+  font: normal 700 16px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#caixa-login-cliente p {
+  color: rgba(238, 238, 238, 0.9);
+  font: normal normal 14px 'Roboto', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+#caixa-login-cliente .button a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-login-cliente #button-cadastro {
+  width: 90%;
+  margin-top: 60px;
+}
+
+#caixa-login-cliente #x-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+/* ==================== MODAL RECUPERAR SENHA CLIENTE ==================== */
+
+#modal-recuperar-senha-cliente {
+  background-color: rgb(218, 218, 218);
+  width: 520px;
+  height: 410px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #ff9a00;
+}
+
+#caixa-recuperar-senha-cliente h3 {
+  color: #ffffff;
+  font: normal bold 23px 'Nunito', sans-serif;
+  margin: 0px 10px;
+}
+
+#caixa-recuperar-senha-cliente .texto {
+  color: #ffffff;
+  font: normal 700 16px 'Roboto', sans-serif;
+  text-align: center;
+  margin: 20px 10px 35px 10px;
+}
+
+#caixa-recuperar-senha-cliente {
+  background-color: #bc1823;
+  width: 100%;
+  height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#caixa-recuperar-senha-cliente .inputs {
+  width: 100%;
+}
+
+#caixa-recuperar-senha-cliente #email,
+#caixa-recuperar-senha-cliente .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#caixa-recuperar-senha-cliente input {
+  background-color: #efefef;
+  width: 90%;
+  height: 48px;
+  font: normal normal 16px 'Roboto', sans-serif;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-recuperar-senha-cliente button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 90%;
+  height: 48px;
+  font: normal 700 16px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#caixa-recuperar-senha-cliente #x-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  cursor: pointer;
+}
+
+/* ==================== CONTINUAÇÃO DA PÁGINA ==================== */
+
+#caixa-cadastro {
   background-color: #bc1823;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
-  margin-top: 150px;
+  margin-top: 130px;
   padding: 40px 10px;
 }
 
-h3 {
+#caixa-cadastro h3 {
   color: #ffffff;
   font: normal bold 35px 'Roboto Slab', sans-serif;
   margin-bottom: 10px;
 }
 
-.caixa-inputs {
+#caixa-cadastro .caixa-inputs {
   width: 65%;
 }
 
-.inputs {
+#caixa-cadastro .inputs {
   display: flex;
   gap: 30px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-label {
+#caixa-cadastro label {
   font: normal bold 18px 'Nunito', sans-serif;
 }
 
-input {
+#caixa-cadastro input {
   background-color: #efefef;
   height: 35px;
   margin-top: 5px;
@@ -198,57 +652,57 @@ input {
   outline: none;
 }
 
-.input-grande {
+#caixa-cadastro .input-grande {
   width: 50%;
 }
 
-.input-medio {
+#caixa-cadastro .input-medio {
   width: 33%;
 }
 
-.input-pequeno {
+#caixa-cadastro .input-pequeno {
   width: 25%;
 }
 
-#sexo {
+#caixa-cadastro #sexo {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.masculino,
-.feminino {
+#caixa-cadastro .masculino,
+#caixa-cadastro .feminino {
   display: flex;
   align-items: center;
 }
 
-#masculino,
-#feminino {
+#caixa-cadastro #masculino,
+#caixa-cadastro #feminino {
   margin-right: 5px;
 }
 
-.rua-numero {
+#caixa-cadastro .rua-numero {
   display: flex;
   gap: 4px;
 }
 
-#rua {
+#caixa-cadastro #rua {
   width: 78%;
 }
 
-#numero {
+#caixa-cadastro #numero {
   width: 22%;
 }
 
-.input-grande input,
-.input-medio input,
-.input-pequeno input,
-#rua input,
-#numero input {
+#caixa-cadastro .input-grande input,
+#caixa-cadastro .input-medio input,
+#caixa-cadastro .input-pequeno input,
+#caixa-cadastro #rua input,
+#caixa-cadastro #numero input {
   width: 100%;
 }
 
-button {
+#caixa-cadastro button {
   background-color: #ff9a00;
   color: #ffffff;
   width: 170px;
@@ -260,7 +714,7 @@ button {
   margin-bottom: 10px;
 }
 
-button:hover {
+#caixa-cadastro button:hover {
   -webkit-transform: scale(1.06);
   transform: scale(1.06);
 }
@@ -302,26 +756,22 @@ footer {
 }
 
 @media only screen and (min-width: 1561px) {
-  .caixa-inputs {
+  #caixa-cadastro .caixa-inputs {
     width: 1001px;
   }
 }
 
 @media only screen and (max-width: 1026px) {
-  nav {
-    display: none;
-  }
-
-  .inputs {
+  #caixa-cadastro .inputs {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .input-grande,
-  .input-medio,
-  .input-pequeno,
-  .sexo {
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
     width: 325px;
   }
 }
@@ -338,10 +788,6 @@ footer {
 
   #sub-header {
     display: none;
-  }
-
-  .caixa {
-    margin-top: 120px;
   }
 }
 
@@ -362,6 +808,16 @@ footer {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  #modal-acessar-como,
+  #modal-login-adm,
+  #modal-recuperar-senha-adm,
+  #modal-login-cliente,
+  #modal-recuperar-senha-cliente {
+    width: 95%;
+  }
+}
+
 @media only screen and (max-width: 470px) {
   #sub-header {
     height: 55px;
@@ -376,7 +832,7 @@ footer {
     margin-top: 5px;
   }
 
-  .caixa {
+  #caixa-cadastro {
     margin-top: 30px;
   }
 }
@@ -388,10 +844,10 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
-  .input-grande,
-  .input-medio,
-  .input-pequeno,
-  .sexo {
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
     width: 200px;
   }
 }

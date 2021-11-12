@@ -13,42 +13,43 @@
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="filter-blur">
         <div id="main-header">
           <div class="logo">
             <a href="#">
-              <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+              <img
+                src="../Páginas-Cliente/midia/logo-lanchonete.png"
+                alt="Logo da Lanchonete"
+              />
             </a>
           </div>
           <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
+                <a href="Index.html">
                   <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="#">CARDÁPIO</a>
+                <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html">SOBRE NÓS</a>
               </li>
             </ul>
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="#">
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="modalAcessarComo()">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="#">
+                <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
@@ -62,28 +63,26 @@
             </a>
             <ul>
               <li>
-                <a href="#">
+                <a href="Index.html">
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="#">CARDÁPIO</a>
+                <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li id="login-mobile">
-                  <a href="#">
-                    <i class="fas fa-sign-in-alt"></i>
-                    <span>LOGIN</span>
-                  </a>
+                <li id="login-mobile" onclick="modalAcessarComo()">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
                 </li>
                 <li id="carrinho-mobile">
-                  <a href="#">
+                  <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
                     <span>CARRINHO</span>
                   </a>
@@ -118,9 +117,175 @@
         </div>
       </header>
 
-      <main></main>
+      <main>
+        <!-- =============================== ADICIONAR MODAIS =============================== -->
 
-      <footer>
+        <section id="modal-acessar-como">
+          <div id="caixa-acessar-como">
+            <h3>ACESSAR COMO</h3>
+            <div class="opcoes">
+              <div id="admin" onclick="modalLoginAdm()">ADMINISTRADOR</div>
+              <div id="cliente" onclick="modalLoginCliente()">CLIENTE</div>
+            </div>
+            <img
+              src="../Páginas-Cliente/midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharAcessarComo()"
+            />
+          </div>
+        </section>
+
+        <section id="modal-login-adm">
+          <div id="caixa-login-adm">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p onclick="modalRecuperarSenhaAdm()">Esqueci a minha senha</p>
+            <img
+              src="../Páginas-Cliente/midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharLoginAdm()"
+            />
+          </div>
+        </section>
+
+        <section id="modal-recuperar-senha-adm">
+          <div id="caixa-recuperar-senha-adm">
+            <h3>RECUPERAR SENHA</h3>
+            <div class="texto">
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../Páginas-Cliente/midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharRecuperarSenhaAdm()"
+            />
+          </div>
+        </section>
+
+        <section id="modal-login-cliente">
+          <div id="caixa-login-cliente">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p onclick="modalRecuperarSenhaCliente()">Esqueci a minha senha</p>
+            <img
+              src="../Páginas-Cliente/midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharLoginCliente()"
+            />
+            <div class="button">
+              <a href="../Html/cadastro.html">
+                <button type="submit" id="button-cadastro">
+                  Quero me cadastrar
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="modal-recuperar-senha-cliente">
+          <div id="caixa-recuperar-senha-cliente">
+            <h3>RECUPERAR SENHA</h3>
+            <div class="texto">
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../Páginas-Cliente/midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharRecuperarSenhaCliente()"
+            />
+          </div>
+        </section>
+
+        <!-- ============================================================================== -->
+      </main>
+
+      <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
             <a href="https://pt-br.facebook.com/">
@@ -143,5 +308,6 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="../Páginas-Cliente/Html/script.js"></script>
   </body>
 </html>
