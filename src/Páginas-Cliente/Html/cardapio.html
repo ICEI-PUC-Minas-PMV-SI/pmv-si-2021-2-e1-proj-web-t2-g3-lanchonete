@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio</title>
 
+    <link
+      rel="stylesheet"
+      href="../../arquivos-uso-geral/style-header-footer.css"
+    />
     <link rel="stylesheet" href="../CSS/cardapio.css" />
-    <link rel="stylesheet" href="../../template-cliente/style-modal.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -106,7 +110,7 @@
                   <span>ABERTO 18:00 às 02:00</span>
                 </div>
                 <div id="enderecos">
-                  <a href="#">
+                  <a href="enderecos.html">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>ENDEREÇOS DE ENTREGA</span>
                   </a>
@@ -121,7 +125,7 @@
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
-            <a href="#">
+            <a href="enderecos.html">
               <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
@@ -129,19 +133,16 @@
         </div>
       </header>
 
-      <main>
-        <section class="filter-blur">
+      <main class="filter-blur">
+        <section>
           <div id="banner">
             <h3>CARDÁPIO</h3>
           </div>
           <div id="pesquisa-carrinho">
             <div id="pesquisa">
               <input type="text" placeholder="Pesquise por um produto" />
-              <button type="submit">
-                <img
-                  src="../midia/cardapio/icons/search-icon.png"
-                  alt="Ícone pesquisa"
-                />
+              <button type="submit" id="btn-pesquisar-produto">
+                <i class="fas fa-search"></i>
               </button>
             </div>
             <a href="carrinho.html">
@@ -174,7 +175,7 @@
           </div>
         </section>
 
-        <section id="promocoes" class="box-produtos filter-blur">
+        <section id="promocoes" class="box-produtos">
           <h1>PROMOÇÃO</h1>
           <div class="linha-produtos" id="produtosPromocoes"></div>
           <p id="scroll-lanches" class="scroll-banner">
@@ -183,7 +184,7 @@
           </p>
         </section>
 
-        <section id="lanches" class="box-produtos filter-blur">
+        <section id="lanches" class="box-produtos">
           <h1>LANCHES</h1>
           <div class="linha-produtos" id="produtosLanches"></div>
           <p id="scroll-lanches-fit" class="scroll-banner">
@@ -192,7 +193,7 @@
           </p>
         </section>
 
-        <section id="lanches-fit" class="box-produtos filter-blur">
+        <section id="lanches-fit" class="box-produtos">
           <h1>LANCHES FIT</h1>
           <div class="linha-produtos" id="produtosLanchesFit"></div>
           <p id="scroll-bebidas" class="scroll-banner">
@@ -201,7 +202,7 @@
           </p>
         </section>
 
-        <section id="bebidas" class="box-produtos filter-blur">
+        <section id="bebidas" class="box-produtos">
           <h1>BEBIDAS</h1>
           <div class="linha-produtos" id="produtosBebidas"></div>
           <p id="scroll-sobremesas" class="scroll-banner">
@@ -210,7 +211,7 @@
           </p>
         </section>
 
-        <section id="sobremesas" class="box-produtos-sobremesas filter-blur">
+        <section id="sobremesas" class="box-produtos-sobremesas">
           <h1>SOBREMESAS</h1>
           <div class="linha-produtos" id="produtosSobremesas"></div>
         </section>
@@ -453,7 +454,7 @@
     <!-- ============================================================================== -->
 
     <script src="../../javascript-cardapio/script-cardapio.js"></script>
-    <script src="../../template-cliente/script-menu-mobile.js"></script>
-    <script src="script-modal.js"></script>
+    <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
+    <script src="../../arquivos-uso-geral/script-modal.js"></script>
   </body>
 </html>
