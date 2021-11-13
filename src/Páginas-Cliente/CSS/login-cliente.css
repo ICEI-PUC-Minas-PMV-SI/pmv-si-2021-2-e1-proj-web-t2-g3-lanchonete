@@ -22,7 +22,8 @@ a {
 }
 
 #user-icon {
-  width: 40px;
+  color: white;
+  font-size: 32px;
   margin-bottom: 10px;
 }
 

@@ -6,18 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio</title>
 
+    <link
+      rel="stylesheet"
+      href="../../arquivos-uso-geral/style-header-footer.css"
+    />
     <link rel="stylesheet" href="../CSS/cardapio.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <div class="container">
-      <header>
+      <header class="filter-blur">
         <div id="main-header">
           <div class="logo">
             <a href="#">
@@ -27,22 +36,11 @@
               />
             </a>
           </div>
-          <!-- <div class="menu-section on">
-            <div class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </div> -->
-          <nav id="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
@@ -50,63 +48,92 @@
                 <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
             </ul>
           </nav>
-          <nav id="login-carrinho">
+          <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="acessar-como.html">
-                  <img
-                    src="../midia/cardapio/icons/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
+                <a href="carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
+              </li>
+              <div id="login-carrinho-mobile">
+                <li
+                  id="login-mobile"
+                  onclick="abrirModalLogin('modal-acessar-como')"
+                >
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+                <li id="carrinho-mobile">
+                  <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="enderecos.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
         <div id="sub-header">
           <div id="horario">
-            <img
-              src="../midia/cardapio/icons/clock-icon.png"
-              alt="Ícone relógio"
-              class="icon"
-            />
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
-            <a href="#">
-              <img
-                src="../midia/cardapio/icons/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+            <a href="enderecos.html">
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
         </div>
       </header>
 
-      <main>
+      <main class="filter-blur">
         <section>
           <div id="banner">
             <h3>CARDÁPIO</h3>
@@ -114,14 +141,11 @@
           <div id="pesquisa-carrinho">
             <div id="pesquisa">
               <input type="text" placeholder="Pesquise por um produto" />
-              <button type="submit">
-                <img
-                  src="../midia/cardapio/icons/search-icon.png"
-                  alt="Ícone pesquisa"
-                />
+              <button type="submit" id="btn-pesquisar-produto">
+                <i class="fas fa-search"></i>
               </button>
             </div>
-            <a href="#">
+            <a href="carrinho.html">
               <div id="irCarrinho">
                 <p>Ir para o carrinho</p>
               </div>
@@ -153,202 +177,7 @@
 
         <section id="promocoes" class="box-produtos">
           <h1>PROMOÇÃO</h1>
-          <div class="linha-produtos">
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/x-tudo.png"
-                  alt="Hambúrguer X-Tudo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">X-Tudo</h3>
-                  <p class="descricao-produto">
-                    Pão, 2 hambúrgueres, bacon, queijo prato, presunto,
-                    muçarela, cebola caramelizada, tomate, alface e milho verde
-                  </p>
-                </div>
-                <div class="precos">
-                  <div class="caixa-preco-antigo">
-                    <img
-                      src="../midia/cardapio/icons/line-icon.png"
-                      alt="Ícone linha"
-                      class="line-icon"
-                    />
-                    <p class="preco-antigo-produto">R$ 23,90</p>
-                  </div>
-                  <p class="preco-novo-produto">R$ 18,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/sanduiche-peito-peru.png"
-                  alt="Sanduíche Natural de Peito de Peru"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">
-                    Sanduíche Natural de Peito de Peru
-                  </h3>
-                  <p class="descricao-produto">
-                    Pão integral, peito de peru, cream cheese, brotos germinados
-                    e tomate cereja
-                  </p>
-                </div>
-                <div class="precos">
-                  <div class="caixa-preco-antigo">
-                    <img
-                      src="../midia/cardapio/icons/line-icon.png"
-                      alt="Ícone linha"
-                      class="line-icon"
-                    />
-                    <p class="preco-antigo-produto">R$ 20,90</p>
-                  </div>
-                  <p class="preco-novo-produto">R$ 18,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/pão-de-queijo.png"
-                  alt="Pão de Queijo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Pão de Queijo</h3>
-                  <p class="descricao-produto">
-                    Pão de queijo fresquinho que só em Minas tem
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 14,00 (5 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/frango-frito.png"
-                  alt="Frango Frito"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Balde de Frango Frito (5 un)</h3>
-                  <p class="descricao-produto">
-                    Delicioso frango frito americano crocante. Acompanha molho
-                    de alho
-                  </p>
-                </div>
-                <div class="precos">
-                  <div class="caixa-preco-antigo">
-                    <img
-                      src="../midia/cardapio/icons/line-icon.png"
-                      alt="Ícone linha"
-                      class="line-icon"
-                    />
-                    <p class="preco-antigo-produto">R$ 14,90</p>
-                  </div>
-                  <p class="preco-novo-produto">R$ 10,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/pastel-carne-suco-natural.png"
-                  alt="Pastel de carne + Suco natural"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">
-                    Pastel de Carne + Suco Natural (500 mL)
-                  </h3>
-                  <p class="descricao-produto">
-                    Pastel de carne frito na hora + um refrescante suco natural
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 8,00</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/promocao/coxinha-fit.png"
-                  alt="Coxinha Fit"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Coxinha de Frango Fit</h3>
-                  <p class="descricao-produto">
-                    Frango desfiado, batata doce e linhaça
-                  </p>
-                </div>
-                <div class="precos">
-                  <div class="caixa-preco-antigo">
-                    <img
-                      src="../midia/cardapio/icons/line-icon.png"
-                      alt="Ícone linha"
-                      class="line-icon2"
-                    />
-                    <p class="preco-antigo-produto">R$ 7,90</p>
-                  </div>
-                  <p class="preco-novo-produto">R$ 5,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-          </div>
+          <div class="linha-produtos" id="produtosPromocoes"></div>
           <p id="scroll-lanches" class="scroll-banner">
             Tag usada apenas para o scroll dar certo, ao clicar no banner
             "Lanches"
@@ -357,310 +186,7 @@
 
         <section id="lanches" class="box-produtos">
           <h1>LANCHES</h1>
-          <div class="linha-produtos">
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/x-burguer.png"
-                  alt="Hambúrguer X-Burguer"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">X-Burguer</h3>
-                  <p class="descricao-produto">
-                    Pão, hambúrguer, queijo prato, tomate e alface
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 10,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/x-cheese.png"
-                  alt="Hambúrguer X-Cheese"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">X-Cheese</h3>
-                  <p class="descricao-produto">
-                    Pão, hambúrguer, queijo prato, queijo cheddar, muçarela
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 12,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/x-picanha-duplo.png"
-                  alt="Hambúrguer X-Picanha Duplo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">X-Picanha Duplo</h3>
-                  <p class="descricao-produto">
-                    Pão, 2 hambúrgueres de picanha, queijo cheddar, tomate,
-                    alface e milho verde
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 16,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/x-tudo.png"
-                  alt="Hambúrguer X-Tudo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">X-Tudo</h3>
-                  <p class="descricao-produto">
-                    Pão, 2 hambúrgueres, bacon, queijo prato, presunto,
-                    muçarela, cebola caramelizada, tomate, alface e milho verde
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 18,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/frango-frito.png"
-                  alt="Frango Frito"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Balde de Frango Frito (5 un)</h3>
-                  <p class="descricao-produto">
-                    Delicioso frango frito americano crocante. Acompanha molho
-                    de alho
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 14,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/cachorro-quente.png"
-                  alt="Cachorro Quente"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Cachorro Quente</h3>
-                  <p class="descricao-produto">
-                    Pão, salsicha, queijo, bacon e mostarda
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 7,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/mini-pizza.png"
-                  alt="Mini Pizza"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Mini Pizza</h3>
-                  <p class="descricao-produto">
-                    Calabresa, queijo muçarela, cebola, tomate e orégano
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 6,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/coxinha.png"
-                  alt="Coxinha"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Coxinha de Frango</h3>
-                  <p class="descricao-produto">
-                    Deliciosa coxinha de frango caseira
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,50 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/pão-de-queijo.png"
-                  alt="Pão de Queijo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Pão de Queijo</h3>
-                  <p class="descricao-produto">
-                    Pão de queijo fresquinho que só em Minas tem
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,50 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/pastel-carne.png"
-                  alt="Pastel de Carne"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Pastel de Carne</h3>
-                  <p class="descricao-produto">Pastel de Carne frito na hora</p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/pastel-queijo.png"
-                  alt="Pastel de Queijo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Pastel de Queijo</h3>
-                  <p class="descricao-produto">
-                    Pastel de Queijo frito na hora
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches/batata-frita.png"
-                  alt="Batata Frita"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Batata Frita</h3>
-                  <p class="descricao-produto">
-                    Batata frita crocante <br />
-                    Acompanha ketchup
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 2,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-          </div>
+          <div class="linha-produtos" id="produtosLanches"></div>
           <p id="scroll-lanches-fit" class="scroll-banner">
             Tag usada apenas para o scroll dar certo, ao clicar no banner
             "Lanches Fit"
@@ -669,162 +195,7 @@
 
         <section id="lanches-fit" class="box-produtos">
           <h1>LANCHES FIT</h1>
-          <div class="linha-produtos">
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/sanduiche-peito-peru.png"
-                  alt="Sanduíche Natural de Peito de Peru"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">
-                    Sanduíche Natural de Peito de Peru
-                  </h3>
-                  <p class="descricao-produto">
-                    Pão integral, peito de peru, cream cheese, brotos germinados
-                    e tomate cereja
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 20,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/sanduiche-frango.png"
-                  alt="Sanduíche Natural de Frango"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Sanduíche Natural de Frango</h3>
-                  <p class="descricao-produto">
-                    Pão integral, frango desfiado, cebola, tomate, cenoura,
-                    milho, maionese light
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 18,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/bolo-banana.png"
-                  alt="Bolo de Banana"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Bolo de Banana Fit</h3>
-                  <p class="descricao-produto">
-                    Banana, óleo de coco, farinha de aveia, cacau e iorgurte
-                    natural
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 12,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/crepioca.png"
-                  alt="Crepioca"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Crepioca</h3>
-                  <p class="descricao-produto">Excelente opção de lanche fit</p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 8,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/coxinha-fit.png"
-                  alt="Coxinha de Frango Fit"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Coxinha de Frango Fit</h3>
-                  <p class="descricao-produto">
-                    Frango desfiado, batata doce e linhaça
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 7,90</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image">
-                <img
-                  src="../midia/cardapio/images/lanches-fit/biscoito-aveia.png"
-                  alt="Biscoito de Aveia"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Biscoito de Aveia Fit</h3>
-                  <p class="descricao-produto">
-                    Farelo de aveia, óleo de coco, fruta desidratada, cacau em
-                    pó e whey
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,90 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-          </div>
+          <div class="linha-produtos" id="produtosLanchesFit"></div>
           <p id="scroll-bebidas" class="scroll-banner">
             Tag usada apenas para o scroll dar certo, ao clicar no banner
             "Bebidas"
@@ -833,155 +204,7 @@
 
         <section id="bebidas" class="box-produtos">
           <h1>BEBIDAS</h1>
-          <div class="linha-produtos">
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/suco-natural.png"
-                  alt="Suco Natural (500 ml)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Suco Natural (500 mL)</h3>
-                  <p class="descricao-produto">Sucos naturais e refrescantes</p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 6,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/refrigerante.png"
-                  alt="Refrigerante (350 ml)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Refrigerante (350 mL)</h3>
-                  <p class="descricao-produto">
-                    Coca-Cola, Guaraná Antárctica, Pepsi, Fanta e Mate Couro
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 5,00</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/suco-detox.png"
-                  alt="Suco Detox (300 ml)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Suco Detox (300 mL)</h3>
-                  <p class="descricao-produto">
-                    Sucos verdes para manter sua dieta
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/agua.png"
-                  alt="Água Mineral (500 ml)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Água Mineral (500 mL)</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,00</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/cafe-leite.png"
-                  alt="Café c/ Leite (200 ml)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Café c/ Leite (200 mL)</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 2,00</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/bebidas/cafe.png"
-                  alt="Café (xícara)"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Café (xícara)</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 1,50</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-          </div>
+          <div class="linha-produtos" id="produtosBebidas"></div>
           <p id="scroll-sobremesas" class="scroll-banner">
             Tag usada apenas para o scroll dar certo, ao clicar no banner
             "Sobremesas"
@@ -990,176 +213,27 @@
 
         <section id="sobremesas" class="box-produtos-sobremesas">
           <h1>SOBREMESAS</h1>
-          <div class="linha-produtos">
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/trufas.png"
-                  alt="Trufas"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Trufas</h3>
-                  <p class="descricao-produto">
-                    Casca de chocolate com recheio variado
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 5,00 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/mini-bolo.png"
-                  alt="Mini Bolo"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Mini Bolo</h3>
-                  <p class="descricao-produto">
-                    Mini bolo de cenoura com cobertura de chocolate
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,50 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/palha-italiana.png"
-                  alt="Palha Italiana"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Palha Italiana</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,00 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/pudim.png"
-                  alt="Pudim"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Pudim</h3>
-                  <p class="descricao-produto">
-                    Ovo, leite condensado, creme de leite. leite integral e
-                    açúcar
-                  </p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,00 (100g)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/brownie.png"
-                  alt="Brownie"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Brownie</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 4,00 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-            <div class="box-produto">
-              <div class="image-vertical">
-                <img
-                  src="../midia/cardapio/images/sobremesas/brigadeiro.png"
-                  alt="Brigadeiro"
-                />
-              </div>
-              <div class="produto">
-                <div>
-                  <h3 class="nome-produto">Brigadeiro</h3>
-                  <p class="descricao-produto"></p>
-                </div>
-                <div class="precos">
-                  <p class="preco-novo-produto">R$ 3,50 (1 un)</p>
-                </div>
-              </div>
-              <a href="#"
-                ><img
-                  src="../midia/cardapio/icons/plus-icon.png"
-                  alt="Ícone adicionar"
-                  class="plus-icon"
-              /></a>
-            </div>
-          </div>
+          <div class="linha-produtos" id="produtosSobremesas"></div>
         </section>
       </main>
 
-      <footer>
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
+      <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
             <a href="https://pt-br.facebook.com/">
-              <img
-                src="../midia/cardapio/icons/facebook-icon.png"
-                alt="Ícone Facebook"
-              />
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://www.instagram.com">
-              <img
-                src="../midia/cardapio/icons/instagram-icon.png"
-                alt="Ícone Instagram"
-              />
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.tiktok.com/pt-BR/">
-              <img
-                src="../midia/cardapio/icons/tiktok-icon.png"
-                alt="Ícone TikTok"
-              />
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
           <div id="infos">
@@ -1170,5 +244,217 @@
         </div>
       </footer>
     </div>
+
+    <!-- =============================== ADICIONAR MODAIS =============================== -->
+
+    <section id="modal-acessar-como" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <h3>ACESSAR COMO</h3>
+          <div class="opcoes">
+            <div
+              id="admin"
+              onclick="abrirModal('modal-login-adm', 'modal-acessar-como')"
+            >
+              ADMINISTRADOR
+            </div>
+            <div
+              id="cliente"
+              onclick="abrirModal('modal-login-cliente', 'modal-acessar-como')"
+            >
+              CLIENTE
+            </div>
+          </div>
+          <img
+            src="../midia/login/x-icon.png"
+            alt="Ícone X"
+            id="x-icon"
+            onclick="fecharModalLogin('modal-acessar-como')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-login-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  id="input-cpf-adm"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-adm"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-recuperar-senha-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-adm"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-login-cliente" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <form action="">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-cliente"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
+            />
+          </form>
+          <div class="button">
+            <a href="../Html/cadastro.html" class="button">
+              <button type="submit" id="button-cadastro">
+                Quero me cadastrar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-recuperar-senha-cliente" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============================================================================== -->
+
+    <script src="../../javascript-cardapio/script-cardapio.js"></script>
+    <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
+    <script src="../../arquivos-uso-geral/script-modal.js"></script>
   </body>
 </html>

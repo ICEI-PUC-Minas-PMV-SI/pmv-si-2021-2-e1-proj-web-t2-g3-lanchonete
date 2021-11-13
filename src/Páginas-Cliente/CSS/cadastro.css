@@ -1,144 +1,47 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-ul li {
-  list-style: none;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #f9f9f9;
-}
-
-header {
-  background-color: #bc1823;
-  width: 100%;
-  height: 136px;
-  padding: 10px 0;
-  position: sticky;
-  left: 0;
-  top: 0;
-  z-index: 10;
-}
-
-#main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 25px;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.logo img {
-  width: 150px;
-}
-
-.icon {
-  width: 20px;
-}
-
-#menu ul {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-ul li a:hover {
-  color: #ff9a00;
-}
-
-#login-carrinho ul {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-#login,
-#carrinho {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: 15px;
-}
-
-#login-icon {
-  width: 28px;
-  position: absolute;
-  right: 42px;
-  top: -1px;
-}
-
-#cart-icon {
-  width: 16px;
-  position: absolute;
-  right: 85px;
-  top: -2px;
-}
-
-#sub-header {
+#menu-mobile ul {
   background-color: #ff9a00;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 14px;
-  font-weight: 600;
 }
 
-#horario,
-#enderecos a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin: 0 25px;
-}
-
-#enderecos span:hover {
+#menu-mobile ul li:hover,
+#menu-mobile ul li a:hover,
+#sub-header-mobile #enderecos a:hover {
   color: #bc1823;
 }
 
-.caixa {
+#caixa-cadastro {
   background-color: #bc1823;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 0;
+  margin-top: 150px;
   padding: 40px 10px;
 }
 
-h3 {
+#caixa-cadastro h3 {
   color: #ffffff;
   font: normal bold 35px 'Roboto Slab', sans-serif;
   margin-bottom: 10px;
 }
 
-.caixa-inputs {
+#caixa-cadastro .caixa-inputs {
   width: 65%;
 }
 
-.inputs {
+#caixa-cadastro .inputs {
   display: flex;
   gap: 30px;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-label {
+#caixa-cadastro label {
   font: normal bold 18px 'Nunito', sans-serif;
 }
 
-input {
+#caixa-cadastro input {
   background-color: #efefef;
   height: 35px;
   margin-top: 5px;
@@ -147,57 +50,57 @@ input {
   outline: none;
 }
 
-.input-grande {
+#caixa-cadastro .input-grande {
   width: 50%;
 }
 
-.input-medio {
+#caixa-cadastro .input-medio {
   width: 33%;
 }
 
-.input-pequeno {
+#caixa-cadastro .input-pequeno {
   width: 25%;
 }
 
-#sexo {
+#caixa-cadastro #sexo {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.masculino,
-.feminino {
+#caixa-cadastro .masculino,
+#caixa-cadastro .feminino {
   display: flex;
   align-items: center;
 }
 
-#masculino,
-#feminino {
+#caixa-cadastro #masculino,
+#caixa-cadastro #feminino {
   margin-right: 5px;
 }
 
-.rua-numero {
+#caixa-cadastro .rua-numero {
   display: flex;
   gap: 4px;
 }
 
-#rua {
+#caixa-cadastro #rua {
   width: 78%;
 }
 
-#numero {
+#caixa-cadastro #numero {
   width: 22%;
 }
 
-.input-grande input,
-.input-medio input,
-.input-pequeno input,
-#rua input,
-#numero input {
+#caixa-cadastro .input-grande input,
+#caixa-cadastro .input-medio input,
+#caixa-cadastro .input-pequeno input,
+#caixa-cadastro #rua input,
+#caixa-cadastro #numero input {
   width: 100%;
 }
 
-button {
+#caixa-cadastro button {
   background-color: #ff9a00;
   color: #ffffff;
   width: 170px;
@@ -207,166 +110,46 @@ button {
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 
-button:hover {
+#caixa-cadastro button:hover {
   -webkit-transform: scale(1.06);
   transform: scale(1.06);
 }
 
-footer {
-  background-color: #bc1823;
-  height: 100px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-media a img {
-  width: 25px;
-  margin: 0 6px;
-}
-
-.social-media a img:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
 @media only screen and (min-width: 1561px) {
-  .caixa-inputs {
+  #caixa-cadastro .caixa-inputs {
     width: 1001px;
   }
 }
 
 @media only screen and (max-width: 1026px) {
-  nav {
-    display: none;
-  }
-
-  .inputs {
+  #caixa-cadastro .inputs {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  .input-grande,
-  .input-medio,
-  .input-pequeno,
-  .sexo {
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
     width: 325px;
   }
 }
 
-@media only screen and (max-width: 645px) {
-  #pesquisa-carrinho {
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  #pesquisa {
-    margin: 0 auto;
-  }
-
-  #irCarrinho {
-    margin: 10px auto;
-    padding: 0;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  #sub-header {
-    height: 55px;
-    display: block;
-  }
-
-  #horario {
-    padding-top: 5px;
-  }
-
-  #enderecos {
-    margin-top: 5px;
-  }
-
-  .caixa {
-    margin-top: 30px;
+@media only screen and (max-width: 979px) {
+  #caixa-cadastro {
+    margin-top: 120px;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .input-grande,
-  .input-medio,
-  .input-pequeno,
-  .sexo {
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
     width: 200px;
   }
 }
-
-/* Transformar em menu em hamburguer */
-/* Para saber mais, ver o vídeo "Responsividade na prática" da Rocketseat
-- minuto 42:40 */
-/* @media only screen and (max-width: 890px) {
-  nav {
-    display: none;
-  }
-
-  .one,
-  .two,
-  .three {
-    background-color: #ff9a00;
-    height: 5px;
-    width: 100%;
-    margin: 6px auto;
-
-    transition-duration: 0.3s;
-  }
-
-  .menu-toggle {
-    width: 40px;
-    height: 30px;
-    margin-right: 20px;
-  }
-
-  .menu-section.on {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40vw;
-    height: 66vh;
-    background-color: rgba(0, 0, 0, 0.445);
-    z-index: 1;
-  }
-
-  .menu-section.on nav {
-    display: block;
-  }
-
-  .menu-section.on .menu-toggle {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-  }
-
-  .menu-section.on .menu-toggle .one {
-    transform: rotate(45deg) translate(7px, 7px);
-  }
-
-  .menu-section.on .menu-toggle .two {
-    opacity: 0;
-  }
-
-  .menu-section.on .menu-toggle .three {
-    transform: rotate(-45deg) translate(8px, -9px);
-  }
-} */

@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
 
+    <link
+      rel="stylesheet"
+      href="../../arquivos-uso-geral/style-header-footer.css"
+    />
     <link rel="stylesheet" href="../CSS/cadastro.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="filter-blur">
         <div id="main-header">
           <div class="logo">
             <a href="#">
@@ -26,22 +35,11 @@
               />
             </a>
           </div>
-          <!-- <div class="menu-section on">
-            <div class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </div> -->
-          <nav id="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
@@ -49,56 +47,85 @@
                 <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
             </ul>
           </nav>
-          <nav id="login-carrinho">
+          <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="acessar-como.html">
-                  <img
-                    src="../midia/cardapio/icons/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
+                <a href="carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
+              </li>
+              <div id="login-carrinho-mobile">
+                <li
+                  id="login-mobile"
+                  onclick="abrirModalLogin('modal-acessar-como')"
+                >
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+                <li id="carrinho-mobile">
+                  <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="enderecos.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
         <div id="sub-header">
           <div id="horario">
-            <img
-              src="../midia/cardapio/icons/clock-icon.png"
-              alt="Ícone relógio"
-              class="icon"
-            />
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
-            <a href="#">
-              <img
-                src="../midia/cardapio/icons/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+            <a href="enderecos.html">
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
@@ -106,129 +133,122 @@
       </header>
 
       <main>
-        <div class="caixa">
-          <h3>CADASTRO</h3>
-          <div class="caixa-inputs">
-            <div class="inputs">
-              <div class="input-grande">
-                <label for="email">E-mail</label> <br />
-                <input type="email" id="email" minlength="10" required />
+        <form action="">
+          <div id="caixa-cadastro" class="filter-blur">
+            <h3>CADASTRO</h3>
+            <div class="caixa-inputs">
+              <div class="inputs">
+                <div class="input-grande">
+                  <label for="email">E-mail</label> <br />
+                  <input type="email" id="email" minlength="10" required />
+                </div>
+                <div class="input-grande">
+                  <label for="email-confirmar">Confirmar e-mail</label> <br />
+                  <input
+                    type="email"
+                    id="email-confirmar"
+                    minlength="10"
+                    required
+                  />
+                </div>
               </div>
-              <div class="input-grande">
-                <label for="email-confirmar">Confirmar e-mail</label> <br />
-                <input
-                  type="email"
-                  id="email-confirmar"
-                  minlength="10"
-                  required
-                />
+              <div class="inputs">
+                <div class="input-grande gap">
+                  <label for="nome">Nome</label> <br />
+                  <input type="text" id="nome" required />
+                </div>
+                <div class="input-grande">
+                  <label for="senha">Senha</label> <br />
+                  <input type="password" id="senha" minlength="8" required />
+                </div>
               </div>
-            </div>
-            <div class="inputs">
-              <div class="input-grande gap">
-                <label for="nome">Nome</label> <br />
-                <input type="text" id="nome" required />
-              </div>
-              <div class="input-grande">
-                <label for="senha">Senha</label> <br />
-                <input type="password" id="senha" minlength="8" required />
-              </div>
-            </div>
-            <div class="inputs">
-              <div class="input-pequeno">
-                <label for="cpf">CPF</label> <br />
-                <input
-                  type="text"
-                  id="cpf"
-                  required
-                  minlength="11"
-                  maxlength="11"
-                />
-              </div>
-              <div class="input-pequeno">
-                <label for="telefone">Telefone</label> <br />
-                <input type="text" id="senha" minlength="10" required />
-              </div>
-              <div class="input-pequeno">
-                <label for="nascimento">Data de Nascimento</label> <br />
-                <input type="date" id="nascimento" required />
-              </div>
-              <div class="sexo">
-                <label for="sexo">Sexo</label>
-                <div id="sexo">
-                  <div class="masculino">
-                    <input type="radio" id="masculino" required />
-                    <label for="masculino">Masc.</label>
+              <div class="inputs">
+                <div class="input-pequeno">
+                  <label for="cpf">CPF</label> <br />
+                  <input
+                    type="text"
+                    id="cpf"
+                    required
+                    minlength="11"
+                    maxlength="11"
+                  />
+                </div>
+                <div class="input-pequeno">
+                  <label for="telefone">Telefone</label> <br />
+                  <input type="text" id="telefone" minlength="10" required />
+                </div>
+                <div class="input-pequeno">
+                  <label for="nascimento">Data de Nascimento</label> <br />
+                  <input type="date" id="nascimento" required />
+                </div>
+                <div class="sexo">
+                  <label for="sexo">Sexo</label>
+                  <div id="sexo">
+                    <div class="masculino">
+                      <input type="radio" id="masculino" name="sexo" required />
+                      <label for="masculino">Masc.</label>
+                    </div>
+                    <div class="feminino">
+                      <input type="radio" id="feminino" name="sexo" required />
+                      <label for="feminino">Fem.</label>
+                    </div>
                   </div>
-                  <div class="feminino">
-                    <input type="radio" id="feminino" required />
-                    <label for="feminino">Fem.</label>
+                </div>
+              </div>
+              <div class="inputs">
+                <div class="input-medio">
+                  <label for="cep">CEP</label> <br />
+                  <input type="number" id="cep" required />
+                </div>
+                <div class="input-medio">
+                  <label for="cidade">Cidade</label> <br />
+                  <input type="text" id="cidade" required />
+                </div>
+                <div class="rua-numero input-medio">
+                  <div id="rua">
+                    <label for="rua">Rua</label> <br />
+                    <input type="text" id="rua" required />
+                  </div>
+                  <div id="numero">
+                    <label for="numero">Nº</label> <br />
+                    <input type="number" id="numero" required />
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="inputs">
-              <div class="input-medio">
-                <label for="cep">CEP</label> <br />
-                <input type="number" id="cep" required />
-              </div>
-              <div class="input-medio">
-                <label for="cidade">Cidade</label> <br />
-                <input type="text" id="cidade" required />
-              </div>
-              <div class="rua-numero input-medio">
-                <div id="rua">
-                  <label for="rua">Rua</label> <br />
-                  <input type="text" id="rua" required />
+              <div class="inputs">
+                <div class="input-medio">
+                  <label for="bairro">Bairro</label> <br />
+                  <input type="text" id="bairro" required />
                 </div>
-                <div id="numero">
-                  <label for="numero">Nº</label> <br />
-                  <input type="number" id="numero" required />
+                <div class="input-medio">
+                  <label for="complemeto">Complemento</label> <br />
+                  <input type="text" id="complemento" required />
+                </div>
+                <div class="input-medio">
+                  <label for="referencia">Ponto de Referência</label> <br />
+                  <input type="text" id="referencia" required />
                 </div>
               </div>
             </div>
-            <div class="inputs">
-              <div class="input-medio">
-                <label for="bairro">Bairro</label> <br />
-                <input type="text" id="bairro" required />
-              </div>
-              <div class="input-medio">
-                <label for="complemeto">Complemento</label> <br />
-                <input type="text" id="complemento" required />
-              </div>
-              <div class="input-medio">
-                <label for="referencia">Ponto de Referência</label> <br />
-                <input type="text" id="referencia" required />
-              </div>
-            </div>
+            <button type="submit">CADASTRAR</button>
           </div>
-          <button type="submit">CADASTRAR</button>
-        </div>
+        </form>
       </main>
 
-      <footer>
+      <footer class="filter-blur">
         <div class="box-footer">
-          <div class="social-media">
+          <div id="social-media">
             <a href="https://pt-br.facebook.com/">
-              <img
-                src="../midia/cardapio/icons/facebook-icon.png"
-                alt="Ícone Facebook"
-              />
+              <i class="fab fa-facebook-square"></i>
             </a>
             <a href="https://www.instagram.com">
-              <img
-                src="../midia/cardapio/icons/instagram-icon.png"
-                alt="Ícone Instagram"
-              />
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="https://www.tiktok.com/pt-BR/">
-              <img
-                src="../midia/cardapio/icons/tiktok-icon.png"
-                alt="Ícone TikTok"
-              />
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
-          <div class="infos">
+          <div id="infos">
             <p>
               Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
             </p>
@@ -236,5 +256,216 @@
         </div>
       </footer>
     </div>
+
+    <!-- =============================== ADICIONAR MODAIS =============================== -->
+
+    <section id="modal-acessar-como" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <h3>ACESSAR COMO</h3>
+          <div class="opcoes">
+            <div
+              id="admin"
+              onclick="abrirModal('modal-login-adm', 'modal-acessar-como')"
+            >
+              ADMINISTRADOR
+            </div>
+            <div
+              id="cliente"
+              onclick="abrirModal('modal-login-cliente', 'modal-acessar-como')"
+            >
+              CLIENTE
+            </div>
+          </div>
+          <img
+            src="../midia/login/x-icon.png"
+            alt="Ícone X"
+            id="x-icon"
+            onclick="fecharModalLogin('modal-acessar-como')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-login-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  id="input-cpf-adm"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-adm"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-recuperar-senha-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-adm"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-login-cliente" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <form action="">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-cliente"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
+            />
+          </form>
+          <div class="button">
+            <a href="../Html/cadastro.html" class="button">
+              <button type="submit" id="button-cadastro">
+                Quero me cadastrar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-recuperar-senha-cliente" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../midia/login/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============================================================================== -->
+
+    <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
+    <script src="../../arquivos-uso-geral/script-modal.js"></script>
   </body>
 </html>
