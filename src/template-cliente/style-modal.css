@@ -107,6 +107,8 @@
   justify-content: center;
 }
 
+/* =========== ADICIONAR ANIMAÇÃO AO ABRIR MODAL ============= */
+
 @keyframes modal {
   from {
     opacity: 0;

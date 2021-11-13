@@ -2,7 +2,7 @@ function abrirModalLogin(modalID1) {
   let modal = document.getElementById(modalID1)
   modal.style.display = 'block'
 
-  // DESFOCAR FUNDO QUANDO ABRE OS MODAIS
+  // DESFOCAR E ESCURECER FUNDO QUANDO ABRE O MODAL
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)
@@ -14,7 +14,7 @@ function fecharModalLogin(modalID) {
   let modal = document.getElementById(modalID)
   modal.style.display = 'none'
 
-  // TIRAR DESFOQUE DO FUNDO QUANDO FECHA OS MODAIS
+  // TIRAR DESFOQUE DO FUNDO QUANDO FECHA O MODAL
   let filterBlur = document.getElementsByClassName('filter-blur')
   for (elemento of filterBlur) {
     // console.log(elemento)
