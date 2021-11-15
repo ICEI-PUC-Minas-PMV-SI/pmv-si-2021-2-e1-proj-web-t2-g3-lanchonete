@@ -21,15 +21,15 @@ function inserirProdutos(produtos) {
   for (i = 0; i < produtos.length; i++) {
     // ADICIONAR LANCHES
 
-    if (produtos[i].categoria == 'Lanches') {
+    if (produtos[i].categoria.toUpperCase() == 'LANCHES') {
       let produto = `
       <div class="box-produto">
         <div class="image">
-          <img src="${produtos[i].imagem}" alt="${produtos[i].titulo}"/>
+          <img src="${produtos[i].imagem}" alt="${produtos[i].nome}"/>
         </div>
         <div class="produto">
           <div>
-            <h3 class="nome-produto">${produtos[i].titulo}</h3>
+            <h3 class="nome-produto">${produtos[i].nome}</h3>
             <p class="descricao-produto">${produtos[i].descricao}</p>
           </div>
           <div class="precos">
@@ -48,15 +48,15 @@ function inserirProdutos(produtos) {
 
     // ADICIONAR LANCHES FIT
 
-    if (produtos[i].categoria == 'Lanches Fit') {
+    if (produtos[i].categoria.toUpperCase() == 'LANCHES FIT') {
       let produto = `
       <div class="box-produto">
         <div class="image">
-          <img src="${produtos[i].imagem}" alt="${produtos[i].titulo}"/>
+          <img src="${produtos[i].imagem}" alt="${produtos[i].nome}"/>
         </div>
         <div class="produto">
           <div>
-            <h3 class="nome-produto">${produtos[i].titulo}</h3>
+            <h3 class="nome-produto">${produtos[i].nome}</h3>
             <p class="descricao-produto">${produtos[i].descricao}</p>
           </div>
           <div class="precos">
@@ -75,15 +75,15 @@ function inserirProdutos(produtos) {
 
     // ADICIONAR BEBIDAS
 
-    if (produtos[i].categoria == 'Bebidas') {
+    if (produtos[i].categoria.toUpperCase() == 'BEBIDAS') {
       let produto = `
       <div class="box-produto">
         <div class="image-vertical">
-          <img src="${produtos[i].imagem}" alt="${produtos[i].titulo}"/>
+          <img src="${produtos[i].imagem}" alt="${produtos[i].nome}"/>
         </div>
         <div class="produto">
           <div>
-            <h3 class="nome-produto">${produtos[i].titulo}</h3>
+            <h3 class="nome-produto">${produtos[i].nome}</h3>
             <p class="descricao-produto">${produtos[i].descricao}</p>
           </div>
           <div class="precos">
@@ -102,15 +102,15 @@ function inserirProdutos(produtos) {
 
     // ADICIONAR SOBREMESAS
 
-    if (produtos[i].categoria == 'Sobremesas') {
+    if (produtos[i].categoria.toUpperCase() == 'SOBREMESAS') {
       let produto = `
       <div class="box-produto">
         <div class="image-vertical">
-          <img src="${produtos[i].imagem}" alt="${produtos[i].titulo}"/>
+          <img src="${produtos[i].imagem}" alt="${produtos[i].nome}"/>
         </div>
         <div class="produto">
           <div>
-            <h3 class="nome-produto">${produtos[i].titulo}</h3>
+            <h3 class="nome-produto">${produtos[i].nome}</h3>
             <p class="descricao-produto">${produtos[i].descricao}</p>
           </div>
           <div class="precos">
@@ -129,15 +129,15 @@ function inserirProdutos(produtos) {
 
     // ADICIONAR PROMOÇÕES
 
-    if (produtos[i].categoria == 'Promoções') {
+    if (produtos[i].categoria.toUpperCase() == 'PROMOÇÕES') {
       let produto = `
       <div class="box-produto">
       <div class="image">
-        <img src="${produtos[i].imagem}" alt="${produtos[i].titulo}"/>
+        <img src="${produtos[i].imagem}" alt="${produtos[i].nome}"/>
       </div>
       <div class="produto">
         <div>
-          <h3 class="nome-produto">${produtos[i].titulo}</h3>
+          <h3 class="nome-produto">${produtos[i].nome}</h3>
           <p class="descricao-produto">${produtos[i].descricao}
           </p>
         </div>

@@ -1,4 +1,4 @@
-URL = 'http://localhost:3008/cardapio'
+URL = 'http://localhost:3004/cardapio'
 //=================================================================================================
 
 // GET - Recupera todos os produtos e adiciona na tabela
@@ -16,7 +16,7 @@ fetch(URL)
               <tr>
                   <th>${produtos[i].categoria}</th>
                   <th>${produtos[i].id}</th>
-                  <td>${produtos[i].titulo}</td>
+                  <td>${produtos[i].nome}</td>
                   <td>${produtos[i].descricao}</td>
                   <td>${produtos[i].imagem}</td>
                   <td>R$${parseFloat(produtos[i].precoAntigo).toFixed(2)}</td>
@@ -80,7 +80,7 @@ function getProduto(id) {
         $('#produto-categoria').prop('disabled', true)
         $('#produto-categoria').val(data.categoria)
         $('#produto-id').val(data.id)
-        $('#produto-nome').val(data.titulo)
+        $('#produto-nome').val(data.nome)
         $('#produto-descricao').val(data.descricao)
         $('#produto-imagem').val(data.imagem)
         $('#produto-precoAntigo').val(parseFloat(data.precoAntigo).toFixed(2))

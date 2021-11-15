@@ -3,7 +3,7 @@
     {
       "categoria": "Lanches",
       "id": 1,
-      "titulo": "X-Burguer",
+      "nome": "X-Burguer",
       "descricao": "Pão, hambúrguer, queijo prato, tomate e alface",
       "imagem": "../midia/cardapio/images/lanches/x-burguer.png",
       "preco": "10,90",
@@ -12,7 +12,7 @@
     {
       "categoria": "Lanches",
       "id": 2,
-      "titulo": "X-Cheese",
+      "nome": "X-Cheese",
       "descricao": "Pão, hambúrguer, queijo prato, queijo cheddar, muçarela",
       "imagem": "../midia/cardapio/images/lanches/x-cheese.png",
       "preco": "12,90",
@@ -21,7 +21,7 @@
     {
       "categoria": "Lanches",
       "id": 3,
-      "titulo": "X-Picanha Duplo",
+      "nome": "X-Picanha Duplo",
       "descricao": "Pão, 2 hambúrgueres de picanha, queijo cheddar, tomate, alface e milho verde",
       "imagem": "../midia/cardapio/images/lanches/x-picanha-duplo.png",
       "preco": "16,90",
@@ -30,7 +30,7 @@
     {
       "categoria": "Lanches",
       "id": 4,
-      "titulo": "X-Tudo",
+      "nome": "X-Tudo",
       "descricao": "Pão, 2 hambúrgueres, bacon, queijo prato, presunto, muçarela, cebola caramelizada, tomate, alface e milho verde",
       "imagem": "../midia/cardapio/images/lanches/x-tudo.png",
       "preco": "10,90",
@@ -39,7 +39,7 @@
     {
       "categoria": "Lanches",
       "id": 5,
-      "titulo": "Balde de Frango Frito (5 un)",
+      "nome": "Balde de Frango Frito (5 un)",
       "descricao": "Delicioso frango frito americano crocante. Acompanha molho de alho",
       "imagem": "../midia/cardapio/images/lanches/frango-frito.png",
       "preco": "14,90",
@@ -48,7 +48,7 @@
     {
       "categoria": "Lanches",
       "id": 6,
-      "titulo": "Cachorro Quente",
+      "nome": "Cachorro Quente",
       "descricao": "Pão, salsicha, queijo, bacon e mostarda",
       "imagem": "../midia/cardapio/images/lanches/cachorro-quente.png",
       "preco": "7,90",
@@ -57,7 +57,7 @@
     {
       "categoria": "Lanches",
       "id": 7,
-      "titulo": "Mini Pizza",
+      "nome": "Mini Pizza",
       "descricao": "Calabresa, queijo muçarela, cebola, tomate e orégano",
       "imagem": "../midia/cardapio/images/lanches/mini-pizza.png",
       "preco": "6,50",
@@ -66,7 +66,7 @@
     {
       "categoria": "Lanches",
       "id": 8,
-      "titulo": "Coxinha de Frango",
+      "nome": "Coxinha de Frango",
       "descricao": "Deliciosa coxinha de frango caseira",
       "imagem": "../midia/cardapio/images/lanches/coxinha.png",
       "preco": "4,50 (1 un)",
@@ -75,7 +75,7 @@
     {
       "categoria": "Lanches",
       "id": 9,
-      "titulo": "Pão de Queijo",
+      "nome": "Pão de Queijo",
       "descricao": "Pão de queijo fresquinho que só em Minas tem",
       "imagem": "../midia/cardapio/images/lanches/pão-de-queijo.png",
       "preco": "3,50 (1 un)",
@@ -84,7 +84,7 @@
     {
       "categoria": "Lanches",
       "id": 10,
-      "titulo": "Pastel de Carne",
+      "nome": "Pastel de Carne",
       "descricao": "Pastel de Carne frito na hora",
       "imagem": "../midia/cardapio/images/lanches/pastel-carne.png",
       "preco": "3,50",
@@ -93,7 +93,7 @@
     {
       "categoria": "Lanches",
       "id": 11,
-      "titulo": "Pastel de Queijo",
+      "nome": "Pastel de Queijo",
       "descricao": "Pastel de Queijo frito na hora",
       "imagem": "../midia/cardapio/images/lanches/pastel-queijo.png",
       "preco": "3,50",
@@ -102,7 +102,7 @@
     {
       "categoria": "Lanches",
       "id": 12,
-      "titulo": "Batata Frita",
+      "nome": "Batata Frita",
       "descricao": "Batata frita crocante. Acompanha ketchup",
       "imagem": "../midia/cardapio/images/lanches/batata-frita.png",
       "preco": "2,50",
@@ -111,7 +111,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 13,
-      "titulo": "Sanduíche Natural de Peito de Peru",
+      "nome": "Sanduíche Natural de Peito de Peru",
       "descricao": "Pão integral, peito de peru, cream cheese, brotos germinados e tomate cereja",
       "imagem": "../midia/cardapio/images/lanches-fit/sanduiche-peito-peru.png",
       "preco": "20,90",
@@ -120,7 +120,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 14,
-      "titulo": "Sanduíche Natural de Frango",
+      "nome": "Sanduíche Natural de Frango",
       "descricao": "Pão integral, frango desfiado, cebola, tomate, cenoura, milho, maionese light",
       "imagem": "../midia/cardapio/images/lanches-fit/sanduiche-frango.png",
       "preco": "18,90",
@@ -129,7 +129,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 15,
-      "titulo": "Bolo de Banana Fit",
+      "nome": "Bolo de Banana Fit",
       "descricao": "Banana, óleo de coco, farinha de aveia, cacau e iorgurte natural",
       "imagem": "../midia/cardapio/images/lanches-fit/bolo-banana.png",
       "preco": "12,90",
@@ -138,7 +138,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 16,
-      "titulo": "Crepioca",
+      "nome": "Crepioca",
       "descricao": "Excelente opção de lanche fit",
       "imagem": "../midia/cardapio/images/lanches-fit/crepioca.png",
       "preco": "8,90",
@@ -147,7 +147,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 17,
-      "titulo": "Coxinha de Frango Fit",
+      "nome": "Coxinha de Frango Fit",
       "descricao": "Frango desfiado, batata doce e linhaça",
       "imagem": "../midia/cardapio/images/lanches-fit/coxinha-fit.png",
       "preco": "7,90",
@@ -156,7 +156,7 @@
     {
       "categoria": "Lanches Fit",
       "id": 18,
-      "titulo": "Biscoito de Aveia Fit",
+      "nome": "Biscoito de Aveia Fit",
       "descricao": "Farelo de aveia, óleo de coco, fruta desidratada, cacau em pó e whey",
       "imagem": "../midia/cardapio/images/lanches-fit/biscoito-aveia.png",
       "preco": "3,90 (1 un)",
@@ -165,7 +165,7 @@
     {
       "categoria": "Bebidas",
       "id": 19,
-      "titulo": "Suco Natural (500 mL)",
+      "nome": "Suco Natural (500 mL)",
       "descricao": "Sucos naturais e refrescantes",
       "imagem": "../midia/cardapio/images/bebidas/suco-natural.png",
       "preco": "6,50",
@@ -174,7 +174,7 @@
     {
       "categoria": "Bebidas",
       "id": 20,
-      "titulo": "Refrigerante (350 mL)",
+      "nome": "Refrigerante (350 mL)",
       "descricao": "Coca-Cola, Guaraná Antárctica, Pepsi, Fanta e Mate Couro",
       "imagem": "../midia/cardapio/images/bebidas/refrigerante.png",
       "preco": "5,00",
@@ -183,7 +183,7 @@
     {
       "categoria": "Bebidas",
       "id": 21,
-      "titulo": "Suco Detox (300 mL)",
+      "nome": "Suco Detox (300 mL)",
       "descricao": "Sucos verdes para manter sua dieta",
       "imagem": "../midia/cardapio/images/bebidas/suco-detox.png",
       "preco": "4,50",
@@ -192,7 +192,7 @@
     {
       "categoria": "Bebidas",
       "id": 22,
-      "titulo": "Água Mineral (500 mL)",
+      "nome": "Água Mineral (500 mL)",
       "descricao": "",
       "imagem": "../midia/cardapio/images/bebidas/agua.png",
       "preco": "3,00",
@@ -201,7 +201,7 @@
     {
       "categoria": "Bebidas",
       "id": 23,
-      "titulo": "Café c/ Leite (200 mL)",
+      "nome": "Café c/ Leite (200 mL)",
       "descricao": "",
       "imagem": "../midia/cardapio/images/bebidas/cafe-leite.png",
       "preco": "2,00",
@@ -210,7 +210,7 @@
     {
       "categoria": "Bebidas",
       "id": 24,
-      "titulo": "Café (xícara)",
+      "nome": "Café (xícara)",
       "descricao": "",
       "imagem": "../midia/cardapio/images/bebidas/cafe.png",
       "preco": "1,50",
@@ -219,7 +219,7 @@
     {
       "categoria": "Sobremesas",
       "id": 25,
-      "titulo": "Trufas",
+      "nome": "Trufas",
       "descricao": "Casca de chocolate com recheio variado",
       "imagem": "../midia/cardapio/images/sobremesas/trufas.png",
       "preco": "5,00 (1 un)",
@@ -228,7 +228,7 @@
     {
       "categoria": "Sobremesas",
       "id": 26,
-      "titulo": "Mini Bolo",
+      "nome": "Mini Bolo",
       "descricao": "Mini bolo de cenoura com cobertura de chocolate",
       "imagem": "../midia/cardapio/images/sobremesas/mini-bolo.png",
       "preco": "4,50 (1 un)",
@@ -237,7 +237,7 @@
     {
       "categoria": "Sobremesas",
       "id": 27,
-      "titulo": "Palha Italiana",
+      "nome": "Palha Italiana",
       "descricao": "",
       "imagem": "../midia/cardapio/images/sobremesas/palha-italiana.png",
       "preco": "4,00 (1 un)",
@@ -246,7 +246,7 @@
     {
       "categoria": "Sobremesas",
       "id": 28,
-      "titulo": "Pudim",
+      "nome": "Pudim",
       "descricao": "Ovo, leite condensado, creme de leite. leite integral e açúcar",
       "imagem": "../midia/cardapio/images/sobremesas/pudim.png",
       "preco": "4,00 (100g)",
@@ -255,7 +255,7 @@
     {
       "categoria": "Sobremesas",
       "id": 29,
-      "titulo": "Brownie",
+      "nome": "Brownie",
       "descricao": "",
       "imagem": "../midia/cardapio/images/sobremesas/brownie.png",
       "preco": "4,00 (1 un)",
@@ -264,7 +264,7 @@
     {
       "categoria": "Sobremesas",
       "id": 30,
-      "titulo": "Brigadeiro",
+      "nome": "Brigadeiro",
       "descricao": "",
       "imagem": "../midia/cardapio/images/sobremesas/brigadeiro.png",
       "preco": "3,50 (1 un)",
@@ -273,7 +273,7 @@
     {
       "categoria": "Promoções",
       "id": 31,
-      "titulo": "X-Tudo",
+      "nome": "X-Tudo",
       "descricao": "Pão, 2 hambúrgueres, bacon, queijo prato, presunto, muçarela, cebola caramelizada, tomate, alface e milho verde",
       "imagem": "../midia/cardapio/images/promocao/x-tudo.png",
       "precoAntigo": "23,90",
@@ -282,7 +282,7 @@
     {
       "categoria": "Promoções",
       "id": 32,
-      "titulo": "Sanduíche Natural de Peito de Peru",
+      "nome": "Sanduíche Natural de Peito de Peru",
       "descricao": "Pão integral, peito de peru, cream cheese, brotos germinados e tomate cereja",
       "imagem": "../midia/cardapio/images/promocao/sanduiche-peito-peru.png",
       "precoAntigo": "20,90",
@@ -291,7 +291,7 @@
     {
       "categoria": "Promoções",
       "id": 33,
-      "titulo": "Pão de Queijo (5 un)",
+      "nome": "Pão de Queijo (5 un)",
       "descricao": "Pão de queijo fresquinho que só em Minas tem",
       "imagem": "../midia/cardapio/images/promocao/pão-de-queijo.png",
       "precoAntigo": "17,50",
@@ -300,7 +300,7 @@
     {
       "categoria": "Promoções",
       "id": 34,
-      "titulo": "Balde de Frango Frito (5 un)",
+      "nome": "Balde de Frango Frito (5 un)",
       "descricao": "Delicioso frango frito americano crocante. Acompanha molho de alho",
       "imagem": "../midia/cardapio/images/promocao/frango-frito.png",
       "precoAntigo": "14,90",
@@ -309,7 +309,7 @@
     {
       "categoria": "Promoções",
       "id": 35,
-      "titulo": "Pastel de Carne + Suco Natural (500 mL)",
+      "nome": "Pastel de Carne + Suco Natural (500 mL)",
       "descricao": "Pastel de carne frito na hora + um refrescante suco natural",
       "imagem": "../midia/cardapio/images/promocao/pastel-carne-suco-natural.png",
       "precoAntigo": "10,00",
@@ -318,7 +318,7 @@
     {
       "categoria": "Promoções",
       "id": 36,
-      "titulo": "Coxinha de Frango Fit",
+      "nome": "Coxinha de Frango Fit",
       "descricao": "Frango desfiado, batata doce e linhaça",
       "imagem": "../midia/cardapio/images/promocao/coxinha-fit.png",
       "precoAntigo": "7,90",
