@@ -218,6 +218,7 @@ main {
   color: #989797;
   font: normal bold 18px 'Nunito', sans-serif;
   width: 75px;
+  text-align: center;
 }
 
 .preco-novo-produto {
@@ -227,13 +228,6 @@ main {
 .line-icon {
   position: absolute;
   width: 75px;
-  top: 10px;
-  height: 3.5px;
-}
-
-.line-icon2 {
-  position: absolute;
-  width: 64px;
   top: 10px;
   height: 3.5px;
 }

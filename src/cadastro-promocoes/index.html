@@ -17,20 +17,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>Cadastro de Produtos</title>
+    <title>Cadastro de Promoções</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cadastro de Produtos</a>
+        <a class="navbar-brand" href="#">Cadastro de Promoções</a>
       </div>
     </nav>
 
     <div class="container">
       <br />
       <h2>
-        Cadastro de Produtos
+        Cadastro de Promoções
         <a
           onclick="getProduto(0)"
           class="btn btn-success btn-sm"
@@ -52,12 +52,12 @@
                 <th width="12.5%">Produto</th>
                 <th width="20%">Descrição</th>
                 <th width="12.5%">Imagem</th>
-                <th width="12.5%">Preço</th>
-                <th width="12.5%">Quantidade</th>
+                <th width="12.5%">Preço antigo</th>
+                <th width="12.5%">Preço novo</th>
                 <th width="20%"></th>
               </tr>
             </thead>
-            <tbody id="produto-list"></tbody>
+            <tbody id="promocao-list"></tbody>
           </table>
         </div>
       </div>
@@ -185,26 +185,30 @@
                 />
               </div>
               <div class="form-group">
-                <label for="produto-preco" class="col-form-label">Preço:</label>
+                <label for="produto-precoAntigo" class="col-form-label"
+                  >Preço antigo:</label
+                >
                 <input
                   type="number"
                   step="0.01"
                   class="form-control"
-                  id="produto-preco"
+                  id="produto-precoAntigo"
                   required
                 />
               </div>
               <div class="form-group">
-                <label for="produto-quantidade" class="col-form-label"
-                  >Quantidade:</label
+                <label for="produto-precoNovo" class="col-form-label"
+                  >Preço novo:</label
                 >
                 <input
                   type="number"
+                  step="0.01"
                   class="form-control"
-                  id="produto-quantidade"
+                  id="produto-precoNovo"
                   required
                 />
               </div>
+
               <div class="modal-footer">
                 <button
                   type="button"
