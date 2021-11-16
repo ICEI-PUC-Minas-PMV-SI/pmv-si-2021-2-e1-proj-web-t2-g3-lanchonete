@@ -12,7 +12,22 @@ function processaFormLogin(event) {
   // Valida login e se estiver ok, redireciona para tela inicial da aplicação
   resultadoLogin = loginUser(email, senha)
   if (resultadoLogin) {
-    window.location.href = 'cardapio.html'
+    // let trocarLogin = document.getElementById('login')
+    // trocarLogin.innerHTML = `
+    //   <li id="perfil">
+    //     <a href="meusdados/meusdados.html">
+    //       <i class="far fa-user"></i>
+    //       <span>MEU PERFIL</span>
+    //     </a>
+    //   </li>
+    //   <li id="carrinho">
+    //     <a href="carrinho.html">
+    //       <i class="fas fa-shopping-cart"></i>
+    //       <span>CARRINHO</span>
+    //     </a>
+    //   </li>
+    // `
+    window.location.href = 'meusdados/meusdados.html'
   } else {
     // Se login falhou, avisa ao usuário
     alert('Usuário ou senha incorretos')
