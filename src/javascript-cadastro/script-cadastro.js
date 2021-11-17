@@ -1,5 +1,5 @@
 let btnCadastrar = document.getElementById('btn-cadastrar')
-btnCadastrar.addEventListener('click', cadastrar())
+btnCadastrar.addEventListener('click', cadastrar)
 
 function cadastrar(event) {
   // Cancela a submissão do formulário para tratar sem fazer refresh da tela
@@ -13,7 +13,7 @@ function cadastrar(event) {
   let cpf = document.getElementById('cpf').value
   let telefone = document.getElementById('telefone').value
   let nascimento = document.getElementById('nascimento').value
-  let sexo = document.getElementById('sexo').value
+  let sexo = document.querySelector('input[name=sexo]:checked').id
   let cep = document.getElementById('cep').value
   let cidade = document.getElementById('cidade').value
   let rua = document.getElementById('rua').value
@@ -24,27 +24,41 @@ function cadastrar(event) {
   if (email != confirmarEmail) {
     alert('Os emails informados não conferem.')
     return
+  } else if (
+    email == '' ||
+    confirmarEmail == '' ||
+    nome == '' ||
+    senha == '' ||
+    cpf == '' ||
+    telefone == '' ||
+    cep == '' ||
+    cidade == '' ||
+    rua == '' ||
+    numero == '' ||
+    bairro == ''
+  ) {
+    alert('Preencha os campos')
+  } else {
+    // Adiciona o usuário no banco de dados
+    addUser(
+      email,
+      confirmarEmail,
+      nome,
+      senha,
+      cpf,
+      telefone,
+      nascimento,
+      sexo,
+      cep,
+      cidade,
+      rua,
+      numero,
+      bairro,
+      complemento,
+      referencia
+    )
+    alert('Usuário salvo com sucesso. Proceda com o login para ')
   }
-
-  // Adiciona o usuário no banco de dados
-  addUser(
-    email,
-    confirmarEmail,
-    nome,
-    senha,
-    cpf,
-    telefone,
-    nascimento,
-    sexo,
-    cep,
-    cidade,
-    rua,
-    numero,
-    bairro,
-    complemento,
-    referencia
-  )
-  alert('Usuário salvo com sucesso. Proceda com o login para ')
 }
 
 function addUser(
@@ -90,4 +104,6 @@ function addUser(
 
   // Salva o novo banco de dados com o novo usuário no localStorage
   localStorage.setItem('db_usuarios', JSON.stringify(db_usuarios))
+
+  window.location.href = '../../Páginas-Cliente/Html/Index.html'
 }
