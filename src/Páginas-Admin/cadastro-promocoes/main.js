@@ -1,4 +1,4 @@
-URL = 'http://localhost:3004/cardapio'
+URL = 'http://localhost:3000/cardapio'
 //=================================================================================================
 
 // GET - Recupera todos os produtos e adiciona na tabela
