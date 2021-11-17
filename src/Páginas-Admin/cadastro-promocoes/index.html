@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOSTRAP e JQUERY -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Cadastro de Promoções</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cadastro de Promoções</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <br />
+      <h2>
+        Cadastro de Promoções
+        <a
+          onclick="getProduto(0)"
+          class="btn btn-success btn-sm"
+          style="float: right"
+          data-toggle="modal"
+          data-target="#produto-modal"
+        >
+          <i class="fa fa-plus"></i> Adicionar
+        </a>
+      </h2>
+      <hr />
+      <div class="row">
+        <div class="col-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th width="5%">Categoria</th>
+                <th width="5%">ID</th>
+                <th width="12.5%">Produto</th>
+                <th width="20%">Descrição</th>
+                <th width="12.5%">Imagem</th>
+                <th width="12.5%">Preço antigo</th>
+                <th width="12.5%">Preço novo</th>
+                <th width="20%"></th>
+              </tr>
+            </thead>
+            <tbody id="promocao-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--
+            Modal apresentada para solicitar confirmação do usuário quanto à remoção dos dados
+        -->
+    <div
+      class="modal fade"
+      id="modal-delete"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Confirmação de remoção</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Você realmente deseja remover o produto <span id="id-prod"></span>?
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Não
+            </button>
+            <button type="button" class="btn btn-primary" id="btn-delete">
+              Sim
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  Modal apresentada para solicitar os dados para preenchimento do formulário -->
+
+    <div
+      class="modal fade"
+      id="produto-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Produto <span id="edit-prod-id"></span></h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="produto-form" method="post" action="">
+              <div class="form-group">
+                <label for="produto-categoria" class="col-form-label"
+                  >Categoria:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="produto-categoria"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-id" class="col-form-label">ID:</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="produto-id"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-nome" class="col-form-label"
+                  >Produto:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="produto-nome"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-descricao" class="col-form-label"
+                  >Descrição:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="produto-descricao"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-imagem" class="col-form-label"
+                  >Imagem:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="produto-imagem"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-precoAntigo" class="col-form-label"
+                  >Preço antigo:</label
+                >
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  id="produto-precoAntigo"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="produto-precoNovo" class="col-form-label"
+                  >Preço novo:</label
+                >
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  id="produto-precoNovo"
+                  required
+                />
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,13 +1,14 @@
 *{
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif
 }
 
 .container {
     grid-auto-rows: auto;
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 15% 85%;
     grid-template-areas: 
         "cabecalho cabecalho"
         "barra-nav box1"
@@ -20,27 +21,57 @@
 
 .cabecalho {
     grid-area: cabecalho;
-    font-size: 3rem;
-    color: #ffffff;
-    font-weight: 400;
     background-color: #bc1823;
-    text-align: center;
-    height: 80px;
-    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: #ffffff;
 }
+
 
 .barra-nav {
     grid-area: barra-nav;
     background-color: #bc1823;
-    text-align: center;
-    font-size: 0;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.barra-nav ul {
+.botoes {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  ul {
+      list-style: none;
+  }
+  
+  ul li a {
     list-style: none;
-}
+    background-color: #ff9a00;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  ul li a p {
+    width: 50%;
+    margin-left: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+  }
 
 .logo {
+    width: 100%;
     margin-left: 25px;
   }
   
@@ -48,29 +79,6 @@
     width: 70%;
   }
 
-.icon {
-    width: 30px;
-    float: left;
-    font-weight: 300;
-  }
-
-ul li {
-    background-color: #ff9a00;
-    padding: 20px;
-    margin: 10px;
-}
-
-ul li a {
-    color:#ffffff;
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-
-#menu {
-    margin-top: 20px;
-    margin: 20px;
-}
 
 .box1 {
     font-size: 0;
@@ -939,7 +947,7 @@ aside {
 }
 
 .logo2 img {
-    width: 25%;
+    width: 15%;
   }
 
   @media (max-width: 1100px){

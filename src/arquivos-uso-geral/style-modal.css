@@ -1,0 +1,191 @@
+/* =============================== ADICIONAR MODAIS =============================== */
+
+/* ==================== ESTILOS GERAIS ==================== */
+
+.modal {
+  background-color: rgba(218, 218, 218, 0);
+  width: 95vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  z-index: 11;
+  display: none;
+  border-radius: 10px;
+}
+
+.modal .modal-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .caixa,
+.modal .caixa,
+.modal .caixa,
+.modal .caixa,
+.modal .caixa {
+  background-color: #bc1823;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  border-radius: 10px;
+  position: relative;
+  border: 2px solid #ff9a00;
+}
+
+.modal h3 {
+  color: #ffffff;
+  font: normal bold 20px 'Nunito', sans-serif;
+  margin: 0 10px;
+}
+
+.modal #x-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.modal .header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.modal #user-icon {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.modal .inputs {
+  width: 100%;
+}
+
+.modal input {
+  background-color: #efefef;
+  width: 90%;
+  height: 48px;
+  font: normal normal 16px 'Roboto', sans-serif;
+  margin: 0 20px 20px 20px;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+}
+
+.modal button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 90%;
+  height: 48px;
+  font: normal 700 16px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin: 0 20px 10px 20px;
+}
+
+.modal p {
+  color: rgba(238, 238, 238, 0.9);
+  font: normal normal 15px 'Roboto', sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal #cpf,
+.modal #email,
+.modal #senha,
+.modal .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========== ADICIONAR ANIMAÇÃO AO ABRIR MODAL ============= */
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal {
+  animation: modal 0.4s;
+}
+
+/* ==================== MODAL ACESSAR COMO ==================== */
+
+#modal-acessar-como .caixa {
+  width: 500px;
+  height: 200px;
+}
+
+#modal-acessar-como .opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+#modal-acessar-como #admin,
+#modal-acessar-como #cliente {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 210px;
+  text-align: center;
+  padding: 5px 10px;
+  font: normal bold 20px 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+/* ==================== MODAL LOGIN ADM ==================== */
+
+#modal-login-adm .caixa {
+  width: 520px;
+  height: 400px;
+}
+
+/* ==================== MODAL RECUPERAR SENHA ADM ==================== */
+
+#modal-recuperar-senha-adm .caixa {
+  width: 520px;
+  height: 300px;
+}
+
+/* ==================== MODAL LOGIN CLIENTE ==================== */
+
+#modal-login-cliente .caixa {
+  width: 520px;
+  height: 450px;
+  top: 20px;
+}
+
+#modal-login-cliente #button-cadastro {
+  width: 90%;
+  margin-top: 35px;
+}
+
+/* ==================== MODAL RECUPERAR SENHA CLIENTE ==================== */
+
+#modal-recuperar-senha-cliente .caixa {
+  width: 520px;
+  height: 300px;
+}
+
+form {
+  width: 100%;
+}
+/* ============================================================================ */

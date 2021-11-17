@@ -172,11 +172,6 @@ header {
   color: #ff9a00;
 }
 
-main {
-  flex-grow: 1;
-  color: black;
-}
-
 footer {
   background-color: #bc1823;
   height: 100px;
