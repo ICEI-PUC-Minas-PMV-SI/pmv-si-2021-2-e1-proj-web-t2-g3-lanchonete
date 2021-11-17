@@ -1,3 +1,12 @@
+#perfil a {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#perfil a:hover {
+  color: #ff9a00;
+}
+
 main {
   color: black;
   position: relative;
