@@ -7,92 +7,119 @@
     <title>Finalizar Pedido</title>
   </head>
 
+  <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css">
   <link rel="stylesheet" href="../CSS/pagamento.css" />
+  <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+
+  rel="stylesheet"
   />
   <body>
     <div class="container">
-      <header>
-        <!--Primeiro componente Cabeçalho Principal-->
-        <div class="main-header">
+      <header class="filter-blur">
+        <div id="main-header">
           <div class="logo">
-            <a href="../Index.html">
-              <img src="../midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
-            
+            <a href="#">
+              <img
+                src="../midia/logo-lanchonete.png"
+                alt="Logo da Lanchonete"
+              />
+            </a>
           </div>
-
-          <!--Segundo componente Cabeçalho Principal-->
-          <div class="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="../midia/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="../cardapio.html">CARDÁPIO</a>
+                <a href="cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="../Html/fidelidade.html"> FIDELIDADE </a>
+                <a href="fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
             </ul>
-          </div>
-
-          <!--Terceiro componente Cabeçalho-->
-          <div class="login-carrinho">
+          </nav>
+          <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="../login-cliente.html">
-                  <img
-                    src="../midia/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="../Html/carrinho.html">
-                  <img
-                    src="../midia/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
+                <a href="carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <!--Encerramento Cabeçalho Principal-->
 
-        <!--Início cabeçalho inferior-->
-        <div class="sub-header">
-          <div class="horario">
-            <img src="../midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
+              </li>
+              <div id="login-carrinho-mobile">
+                <li
+                  id="login-mobile"
+                  onclick="abrirModalLogin('modal-acessar-como')"
+                >
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+                <li id="carrinho-mobile">
+                  <a href="carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="enderecos.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div id="sub-header">
+          <div id="horario">
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
-          <div class="enderecos">
-            <a href="#">
-              <img
-                src="../midia/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+          <div id="enderecos">
+            <a href="enderecos.html">
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
@@ -217,20 +244,20 @@
 
       <main></main>
 
-      <footer>
+      <footer class="filter-blur">
         <div class="box-footer">
-          <div class="social-media">
-            <a href="#">
-              <img src="../midia/facebook-icon.png" alt="Ícone Facebook" />
+          <div id="social-media">
+            <a href="https://pt-br.facebook.com/">
+              <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#">
-              <img src="../midia/instagram-icon.png" alt="Ícone Instagram" />
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
             </a>
-            <a href="#">
-              <img src="../midia/tiktok-icon.png" alt="Ícone TikTok" />
+            <a href="https://www.tiktok.com/pt-BR/">
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
-          <div class="infos">
+          <div id="infos">
             <p>
               Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
             </p>

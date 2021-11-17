@@ -138,14 +138,12 @@
 
 
 
-
-
-
 #titulo1{
   background-color: #bc1823;
   height: 64px;
   font-size: 300%;
   color: #ffffff;
+  margin-top: 10%;
   text-align: center;
 }
 
@@ -197,7 +195,7 @@
  font-size: 20px;
  margin-left: 5%;
  margin-bottom: 0%;
- margin-top: 1%;
+ margin-top: 3%;
 }
 
 #observaçao {
@@ -205,7 +203,7 @@
   gap: 25px;
   margin-top: 1%;
   margin-left: 5%;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
   width: 200px;
   height: 30px;
   display: flex;
@@ -268,6 +266,7 @@
  font-size: 25px;
  color: black;
  margin-left: 5%;
+ margin-top: 2%;
 }
 
 #linha{
@@ -309,7 +308,7 @@
  color: white;
  font-family: 'Roboto', 'Oxygen', sans-serif;
  font-size: 120%;
- margin-top: 7%;
+ margin-top: 6%;
  background-color:#bc1823;
  text-align: center;
 }
@@ -317,7 +316,8 @@
 #imgdadosentrega{
   width: 45px;
   height: 32px;
-  vertical-align: text-bottom;
+  margin-top: -65px;
+  vertical-align: text-top;
 }
 
 .titulo-entrega{
@@ -327,14 +327,14 @@
  text-align: center;
  width: 0%;
  margin-left: 34%;
- margin-top: -12mm;
+ margin-top: 2%;
 }
 
 .endereçodeentrega{
  color: black;
  font-family: 'Roboto', 'Oxygen', sans-serif;
  font-size: 120%;
- margin-top: 5mm;
+ margin-top: 2%;
  margin-left: 4%;
 }
 
@@ -367,7 +367,7 @@
  font-size: 160%;
  text-align: center;
  margin-top: 5%;
- margin-bottom: 3%;
+ margin-bottom: 2%;
  margin-left: 37%;
  background-color: #ff9a00;
  border-radius: 30px 30px 30px 30px;
@@ -383,17 +383,6 @@
 }
 
 
-
-.formulario-cartao{
- color: black;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- width: 80%;
- margin: 0 auto;
- box-shadow: 0 4px 8px #999;
- background-color: #C4C4C4;
- margin-top: 100px;
-}
-
 .PagarEntrega{
  color: white;
  background-color:#bc1823;
@@ -401,6 +390,7 @@
  font-size: 20px;
  text-align: center;
  margin-top: 2%;
+ margin-bottom: 10%;
 }
 
 .escolher-cartao{
@@ -408,12 +398,13 @@
  font-family: 'Roboto', 'Oxygen', sans-serif;
  box-shadow: 0 4px 8px silver;
  width: 10%;
- margin-top: 7%;
+ margin-top: -70px;
+ margin-bottom: 20%;
 }
 
 .dinheiro{
  margin-left: 30%;
- margin-top: -13%;
+ margin-top: -33%;
  font-family: 'Roboto', 'Oxygen', sans-serif;
  box-shadow: 0 4px 8px silver;
  width: 17%;
@@ -430,20 +421,17 @@
  font-family: 'Roboto', 'Oxygen', sans-serif;
  font-size: 30px;
  color: black;
- float: right;
- margin-top: -9%;
- margin-right: 13%;
- margin-bottom: 1%;
+ margin-left: 70%;
+ margin-top: -120px;
 }
 
 .troco {
   background: white;
   gap: 25px;
-  float: right;
-  margin-top: -5%;
-  margin-right: 15%;
   width: 200px;
   height: 30px;
+  margin-left: 70%;
+  margin-top: 1%;
   box-shadow: 0 4px 8px silver;
   display: flex;
   align-items: center;
@@ -484,7 +472,7 @@
  color: #ffffff;
  font-size: 160%;
  text-align: center;
- margin-top: 15%;
+ margin-top: 10%;
  margin-left: 37%;
  background-color: #ff9a00;
  border-radius: 30px 30px 30px 30px;
@@ -492,7 +480,7 @@
  height: 50px;
  border: none;
  border-style: none;
- margin-bottom: -40%;
+ margin-bottom: 30%;
 }
 
 #FinalizarPagamento:hover {
