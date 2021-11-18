@@ -164,6 +164,7 @@ function inserirProdutos(produtos) {
 // Código para selecionar produtos e salvar os produtos selecionados no localStorage, além de exibir a quantidade de produtos selecionados
 
 let numeroCarrinho = document.getElementById('numero-carrinho')
+let numeroCarrinhoMoble = document.getElementById('numero-carrinho-mobile')
 let qtdProdutosSelecionados = localStorage.getItem('numero_display_carrinho')
 
 if (qtdProdutosSelecionados) {
@@ -175,6 +176,7 @@ if (qtdProdutosSelecionados) {
 
 function exibirNumeroCarrinho() {
   numeroCarrinho.style.display = 'block'
+  numeroCarrinhoMoble.style.display = 'block'
 }
 
 function selecionarProduto(nome, preco) {
@@ -189,6 +191,7 @@ function selecionarProduto(nome, preco) {
     // qtdProdutosSelecionados recebe o número de produtos armazenados no localStorage
 
     numeroCarrinho.innerHTML = qtdProdutosSelecionados
+    numeroCarrinhoMoble.innerHTML = qtdProdutosSelecionados
     exibirNumeroCarrinho()
     // Exibe o número de produtos do array lá no carrinho
 
@@ -238,6 +241,7 @@ function selecionarProduto(nome, preco) {
     // Como é o primeiro item selecionado, a quantidade é 1
 
     numeroCarrinho.innerHTML = qtdProdutosSelecionados
+    numeroCarrinhoMoble.innerHTML = qtdProdutosSelecionados
     exibirNumeroCarrinho()
     // Exibe o número 1 lá no carrinho
 
@@ -251,5 +255,7 @@ function limparCarrinho() {
   localStorage.removeItem('numero_display_carrinho')
 
   numeroCarrinho.innerHTML = 0
+  numeroCarrinhoMoble.innerHTML = 0
+
   exibirNumeroCarrinho()
 }

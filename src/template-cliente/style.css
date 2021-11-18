@@ -82,6 +82,15 @@ header {
   color: #ff9a00;
 }
 
+#meu-perfil a {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#meu-perfil a:hover {
+  color: #ff9a00;
+}
+
 #sub-header {
   background-color: #ff9a00;
   height: 35px;

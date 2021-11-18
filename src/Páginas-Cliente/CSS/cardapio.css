@@ -19,6 +19,22 @@
   display: none;
 }
 
+#carrinho-mobile {
+  position: relative;
+}
+
+#numero-carrinho-mobile {
+  background-color: #ff9a00;
+  color: black;
+  font-size: 11px;
+  position: absolute;
+  top: -8%;
+  right: 43%;
+  border-radius: 50%;
+  padding: 5px 8px;
+  display: none;
+}
+
 main {
   color: black;
   position: relative;
@@ -311,13 +327,10 @@ main {
   }
 
   #pesquisa-carrinho {
-    padding: 10px 0;
-  }
-
-  #pesquisa-carrinho {
     height: 100px;
     display: block;
-    margin: 10px auto;
+    margin: 30px auto;
+    padding: 10px 0;
   }
 
   #pesquisa {
