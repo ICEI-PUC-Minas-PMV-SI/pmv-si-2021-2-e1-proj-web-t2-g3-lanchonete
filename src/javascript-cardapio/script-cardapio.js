@@ -156,38 +156,43 @@ function inserirProdutos(produtos) {
     listaProdutosSobremesas
   document.getElementById('produtosPromocoes').innerHTML =
     listaProdutosPromocoes
-
-  // pegarPlusIcon()
 }
 
-// function pegarPlusIcon() {
-//   let btnSelecionarProduto = document.getElementsByClassName('plus-icon')
-//   for (element of btnSelecionarProduto) {
-//     element.addEventListener('click', selecionarProduto)
-//   }
-// }
+let numeroCarrinho = document.getElementById('numero-carrinho')
 
 function selecionarProduto(nome, preco) {
   if (localStorage.getItem('db_produtosSelecionados')) {
     let array_produtosSelecionados = JSON.parse(
       localStorage.getItem('db_produtosSelecionados')
     )
+
+    numeroCarrinho.innerHTML = array_produtosSelecionados.length + 1
+    numeroCarrinho.style.display = 'block'
+
     let produtosSelecionados = {
       nomeProduto: nome,
       precoProduto: preco
     }
+
     array_produtosSelecionados.push(produtosSelecionados)
+
     localStorage.setItem(
       'db_produtosSelecionados',
       JSON.stringify(array_produtosSelecionados)
     )
   } else {
     let array_produtosSelecionados = []
+
+    numeroCarrinho.innerHTML = 1
+    numeroCarrinho.style.display = 'block'
+
     let produtosSelecionados = {
       nomeProduto: nome,
       precoProduto: preco
     }
+
     array_produtosSelecionados.push(produtosSelecionados)
+
     localStorage.setItem(
       'db_produtosSelecionados',
       JSON.stringify(array_produtosSelecionados)
@@ -197,4 +202,7 @@ function selecionarProduto(nome, preco) {
 
 function limparCarrinho() {
   localStorage.removeItem('db_produtosSelecionados')
+
+  numeroCarrinho.innerHTML = 0
+  numeroCarrinho.style.display = 'block'
 }
