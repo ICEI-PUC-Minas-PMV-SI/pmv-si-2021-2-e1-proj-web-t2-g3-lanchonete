@@ -37,9 +37,7 @@ function inserirProdutos(produtos) {
           </div>
         </div>
         <div>
-          <a href="#">
-            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" />
-          </a>
+          <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${produtos[i].nome}', '${produtos[i].preco}')" />
         </div>
       </div>
       `
@@ -64,9 +62,7 @@ function inserirProdutos(produtos) {
           </div>
         </div>
         <div>
-          <a href="#">
-            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" />
-          </a>
+          <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${produtos[i].nome}', '${produtos[i].preco}')" />
         </div>
       </div>
       `
@@ -91,9 +87,7 @@ function inserirProdutos(produtos) {
           </div>
         </div>
         <div>
-          <a href="#">
-            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" />
-          </a>
+          <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${produtos[i].nome}', '${produtos[i].preco}')" />
         </div>
       </div>
       `
@@ -118,9 +112,7 @@ function inserirProdutos(produtos) {
           </div>
         </div>
         <div>
-          <a href="#">
-            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" />
-          </a>
+          <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${produtos[i].nome}', '${produtos[i].preco}')" />
         </div>
       </div>
       `
@@ -149,7 +141,7 @@ function inserirProdutos(produtos) {
           <p class="preco-novo-produto">R$ ${produtos[i].precoNovo}</p>
         </div>
       </div>
-      <a href="#"><img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon"/></a>
+        <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${produtos[i].nome}', '${produtos[i].precoNovo}')" />
     </div>
       `
       listaProdutosPromocoes += produto
@@ -164,4 +156,45 @@ function inserirProdutos(produtos) {
     listaProdutosSobremesas
   document.getElementById('produtosPromocoes').innerHTML =
     listaProdutosPromocoes
+
+  // pegarPlusIcon()
+}
+
+// function pegarPlusIcon() {
+//   let btnSelecionarProduto = document.getElementsByClassName('plus-icon')
+//   for (element of btnSelecionarProduto) {
+//     element.addEventListener('click', selecionarProduto)
+//   }
+// }
+
+function selecionarProduto(nome, preco) {
+  if (localStorage.getItem('db_produtosSelecionados')) {
+    let array_produtosSelecionados = JSON.parse(
+      localStorage.getItem('db_produtosSelecionados')
+    )
+    let produtosSelecionados = {
+      nomeProduto: nome,
+      precoProduto: preco
+    }
+    array_produtosSelecionados.push(produtosSelecionados)
+    localStorage.setItem(
+      'db_produtosSelecionados',
+      JSON.stringify(array_produtosSelecionados)
+    )
+  } else {
+    let array_produtosSelecionados = []
+    let produtosSelecionados = {
+      nomeProduto: nome,
+      precoProduto: preco
+    }
+    array_produtosSelecionados.push(produtosSelecionados)
+    localStorage.setItem(
+      'db_produtosSelecionados',
+      JSON.stringify(array_produtosSelecionados)
+    )
+  }
+}
+
+function limparCarrinho() {
+  localStorage.removeItem('db_produtosSelecionados')
 }

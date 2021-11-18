@@ -250,8 +250,8 @@ main {
 }
 
 .plus-icon:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 @media only screen and (max-width: 1294px) {
