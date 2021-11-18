@@ -57,7 +57,7 @@ function cadastrar(event) {
       complemento,
       referencia
     )
-    alert('Usuário salvo com sucesso. Proceda com o login para ')
+    alert('Usuário cadastrado com sucesso. Proceda com o login. ')
   }
 }
 

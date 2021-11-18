@@ -57,14 +57,16 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -90,17 +92,20 @@
                 <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -140,16 +145,18 @@
           </div>
           <div id="pesquisa-carrinho">
             <div id="pesquisa">
-              <input type="text" placeholder="Pesquise por um produto" />
+              <input
+                type="text"
+                id="input-pesquisar-produto"
+                placeholder="Pesquise por um produto"
+              />
               <button type="submit" id="btn-pesquisar-produto">
                 <i class="fas fa-search"></i>
               </button>
             </div>
-            <a href="carrinho.html">
-              <div id="irCarrinho">
-                <p>Ir para o carrinho</p>
-              </div>
-            </a>
+            <div id="limparCarrinho" onclick="limparCarrinho()">
+              <p>Limpar o carrinho</p>
+            </div>
           </div>
           <div class="boxes">
             <a href="#scroll-lanches">

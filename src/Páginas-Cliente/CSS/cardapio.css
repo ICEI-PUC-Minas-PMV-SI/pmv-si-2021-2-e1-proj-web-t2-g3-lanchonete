@@ -1,12 +1,3 @@
-#perfil a {
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-#perfil a:hover {
-  color: #ff9a00;
-}
-
 main {
   color: black;
   position: relative;
@@ -60,7 +51,7 @@ main {
   padding: 12px;
 }
 
-#pesquisa input {
+#pesquisa #input-pesquisar-produto {
   background-color: #c4c4c4;
   width: 100%;
   border: none;
@@ -83,20 +74,21 @@ main {
   font-size: 16px;
 }
 
-#irCarrinho {
+#limparCarrinho {
   width: 150px;
   height: 30px;
   background-color: #ff9a00;
   padding: 0 10px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-#irCarrinho:hover {
+#limparCarrinho:hover {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
 }
 
-#irCarrinho p {
+#limparCarrinho p {
   font: bold 14px 'Roboto', sans-serif;
   text-align: center;
   line-height: 32px;
@@ -250,8 +242,8 @@ main {
 }
 
 .plus-icon:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -webkit-transform: scale(1.06);
+  transform: scale(1.06);
 }
 
 @media only screen and (max-width: 1294px) {
@@ -298,20 +290,17 @@ main {
   }
 
   #pesquisa-carrinho {
-    padding: 10px 0;
-  }
-
-  #pesquisa-carrinho {
     height: 100px;
     display: block;
-    margin: 10px auto;
+    margin: 30px auto;
+    padding: 10px 0;
   }
 
   #pesquisa {
     margin: 0 auto;
   }
 
-  #irCarrinho {
+  #limparCarrinho {
     margin: 10px auto;
     padding: 0;
   }
@@ -398,7 +387,7 @@ main {
     margin-right: 5px;
   }
 
-  #irCarrinho {
+  #limparCarrinho {
     width: 120px;
     padding: 0;
   }
