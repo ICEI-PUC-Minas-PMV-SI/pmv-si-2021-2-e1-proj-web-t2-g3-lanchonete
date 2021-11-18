@@ -58,50 +58,61 @@ const dadosIniciais = {
     {
       id: generateUUID(),
       email: 'admin@gmail.com',
+      confirmarEmail: 'admin@gmail.com',
+      nome: 'Administrador do Sistema',
       senha: '12345678',
-      nome: 'Administrador do Sistema'
+      cpf: 00000000000,
+      telefone: 00000000000,
+      nascimento: 02 - 02 - 1970,
+      sexo: 'feminino',
+      cep: 00000000,
+      cidade: 'Belo Horizonte',
+      rua: 'Qualquer',
+      numero: 10,
+      bairro: 'Qualquer',
+      complemento: 'Qualquer',
+      referencia: 'Qualquer'
     },
     {
       id: generateUUID(),
       email: 'user@gmail.com',
+      confirmarEmail: 'user@gmail.com',
+      nome: 'Usuario Comum',
       senha: '12345678',
-      nome: 'Usuario Comum'
+      cpf: 00000000000,
+      telefone: 00000000000,
+      nascimento: 01 - 01 - 2000,
+      sexo: 'masculino',
+      cep: 00000000,
+      cidade: 'Belo Horizonte',
+      rua: 'Qualquer',
+      numero: 01,
+      bairro: 'Qualquer',
+      complemento: 'Qualquer',
+      referencia: 'Qualquer'
     }
   ]
 }
 
 // Troca o menu de "Login" para "Meu perfil"
 function trocarLogin() {
-  let trocarLogin = document.getElementById('login-carrinho')
-  let trocarLoginMobile = document.getElementById('login-carrinho-mobile')
+  let trocarLogin = document.getElementById('trocar-login')
+  let trocarLoginMobile = document.getElementById('trocar-login-mobile')
 
   trocarLogin.innerHTML = `
-  <ul>
     <li id="meu-perfil">
       <a href="meusdados/meusdados.html">
         <i class="far fa-user"></i>
         <span>MEU PERFIL</span>
       </a>
     </li>
-    <li id="carrinho">
-      <a href="carrinho.html">
-        <i class="fas fa-shopping-cart"></i>
-        <span>CARRINHO</span><span id="numero-carrinho"></span>
-      </a>
-    </li>
-  </ul>
+  
   `
   trocarLoginMobile.innerHTML = `
     <li id="meu-perfil">
       <a href="meusdados/meusdados.html">
         <i class="far fa-user"></i>
         <span>MEU PERFIL</span>
-      </a>
-    </li>
-    <li id="carrinho-mobile">
-      <a href="carrinho.html">
-        <i class="fas fa-shopping-cart"></i>
-        <span>CARRINHO</span><span id="numero-carrinho"></span>
       </a>
     </li>
   `
@@ -114,7 +125,7 @@ function initLoginApp() {
   }
 
   // PARTE 1 - INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
-  usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente')
+  usuarioCorrenteJSON = localStorage.getItem('usuarioCorrente')
   if (usuarioCorrenteJSON) {
     usuarioCorrente = JSON.parse(usuarioCorrenteJSON)
   }
@@ -152,14 +163,27 @@ function loginUser(email, senha) {
   for (var i = 0; i < db_usuarios.usuarios.length; i++) {
     var usuario = db_usuarios.usuarios[i]
 
-    // Se encontrou login, carrega usuário corrente e salva no Session Storage
+    // Se encontrou login, carrega usuário corrente e salva no Local Storage
     if (email == usuario.email && senha == usuario.senha) {
       usuarioCorrente.id = usuario.id
       usuarioCorrente.email = usuario.email
+      usuarioCorrente.confirmarEmail = usuario.confirmarEmail
       usuarioCorrente.nome = usuario.nome
+      usuarioCorrente.senha = usuario.senha
+      usuarioCorrente.cpf = usuario.cpf
+      usuarioCorrente.telefone = usuario.telefone
+      usuarioCorrente.nascimento = usuario.nascimento
+      usuarioCorrente.sexo = usuario.sexo
+      usuarioCorrente.cep = usuario.cep
+      usuarioCorrente.cidade = usuario.cidade
+      usuarioCorrente.rua = usuario.rua
+      usuarioCorrente.numero = usuario.numero
+      usuarioCorrente.bairro = usuario.bairro
+      usuarioCorrente.complemento = usuario.complemento
+      usuarioCorrente.referencia = usuario.referencia
 
-      // Salva os dados do usuário corrente no Session Storage, mas antes converte para string
-      sessionStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente))
+      // Salva os dados do usuário corrente no Local Storage, mas antes converte para string
+      localStorage.setItem('usuarioCorrente', JSON.stringify(usuarioCorrente))
 
       // Retorna true para usuário encontrado
       return true

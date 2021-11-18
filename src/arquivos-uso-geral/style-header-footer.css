@@ -82,6 +82,34 @@ header {
   color: #ff9a00;
 }
 
+#numero-carrinho {
+  background-color: #ff9a00;
+  color: black;
+  font-size: 12px;
+  position: absolute;
+  top: 25px;
+  right: 7px;
+  border-radius: 50%;
+  padding: 5px 8px;
+  display: none;
+}
+
+#carrinho-mobile {
+  position: relative;
+}
+
+#numero-carrinho-mobile {
+  background-color: #ff9a00;
+  color: black;
+  font-size: 11px;
+  position: absolute;
+  top: -12%;
+  right: 43%;
+  border-radius: 50%;
+  padding: 5px 8px;
+  display: none;
+}
+
 #meu-perfil a {
   cursor: pointer;
   transition: 0.4s;
