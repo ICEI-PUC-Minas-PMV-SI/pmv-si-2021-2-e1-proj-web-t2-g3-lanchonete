@@ -1,11 +1,11 @@
-/* #perfil a {
+#meu-perfil a {
   cursor: pointer;
   transition: 0.4s;
 }
 
-#perfil a:hover {
+#meu-perfil a:hover {
   color: #ff9a00;
-} */
+}
 
 #numero-carrinho {
   background-color: #ff9a00;
@@ -72,7 +72,7 @@ main {
   padding: 12px;
 }
 
-#pesquisa input {
+#pesquisa #input-pesquisar-produto {
   background-color: #c4c4c4;
   width: 100%;
   border: none;

@@ -12,22 +12,11 @@ function processaFormLogin(event) {
   // Valida login e se estiver ok, redireciona para tela inicial da aplicação
   resultadoLogin = loginUser(email, senha)
   if (resultadoLogin) {
-    // let trocarLogin = document.getElementById('login')
-    // trocarLogin.innerHTML = `
-    //   <li id="perfil">
-    //     <a href="meusdados/meusdados.html">
-    //       <i class="far fa-user"></i>
-    //       <span>MEU PERFIL</span>
-    //     </a>
-    //   </li>
-    //   <li id="carrinho">
-    //     <a href="carrinho.html">
-    //       <i class="fas fa-shopping-cart"></i>
-    //       <span>CARRINHO</span>
-    //     </a>
-    //   </li>
-    // `
-    window.location.href = 'meusdados/meusdados.html'
+    trocarLogin()
+    localStorage.setItem('db_trocarLogin', true)
+
+    // window.location.href = 'meusdados/meusdados.html'
+    window.location.href = '../../Páginas-Cliente/Html/cardapio.html'
   } else {
     // Se login falhou, avisa ao usuário
     alert('Usuário ou senha incorretos')
@@ -81,8 +70,49 @@ const dadosIniciais = {
   ]
 }
 
+// Troca o menu de "Login" para "Meu perfil"
+function trocarLogin() {
+  let trocarLogin = document.getElementById('login-carrinho')
+  let trocarLoginMobile = document.getElementById('login-carrinho-mobile')
+
+  trocarLogin.innerHTML = `
+  <ul>
+    <li id="meu-perfil">
+      <a href="meusdados/meusdados.html">
+        <i class="far fa-user"></i>
+        <span>MEU PERFIL</span>
+      </a>
+    </li>
+    <li id="carrinho">
+      <a href="carrinho.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span>CARRINHO</span><span id="numero-carrinho"></span>
+      </a>
+    </li>
+  </ul>
+  `
+  trocarLoginMobile.innerHTML = `
+    <li id="meu-perfil">
+      <a href="meusdados/meusdados.html">
+        <i class="far fa-user"></i>
+        <span>MEU PERFIL</span>
+      </a>
+    </li>
+    <li id="carrinho-mobile">
+      <a href="carrinho.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span>CARRINHO</span><span id="numero-carrinho"></span>
+      </a>
+    </li>
+  `
+}
+
 // Inicializa o usuarioCorrente e banco de dados de usuários da aplicação de Login
 function initLoginApp() {
+  if (localStorage.getItem('db_trocarLogin')) {
+    trocarLogin()
+  }
+
   // PARTE 1 - INICIALIZA USUARIOCORRENTE A PARTIR DE DADOS NO LOCAL STORAGE, CASO EXISTA
   usuarioCorrenteJSON = sessionStorage.getItem('usuarioCorrente')
   if (usuarioCorrenteJSON) {
@@ -98,9 +128,9 @@ function initLoginApp() {
     // Se NÃO há dados no localStorage
 
     // Informa sobre localStorage vazio e e que serão carregados os dados iniciais
-    alert(
-      'Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.'
-    )
+    // alert(
+    //   'Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.'
+    // )
 
     // Copia os dados iniciais para o banco de dados
     db_usuarios = dadosIniciais
