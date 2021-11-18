@@ -282,6 +282,18 @@ footer {
   }
 }
 
+@media only screen and (max-width: 645px) {
+  #numero-carrinho-mobile {
+    right: 40%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #numero-carrinho-mobile {
+    right: 36%;
+  }
+}
+
 @media only screen and (max-width: 430px) {
   #menu-mobile {
     font-size: 14px;
