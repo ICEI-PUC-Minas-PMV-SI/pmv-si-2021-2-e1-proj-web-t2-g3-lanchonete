@@ -15,8 +15,7 @@ function processaFormLogin(event) {
     trocarLogin()
     localStorage.setItem('db_trocarLogin', true)
 
-    // window.location.href = 'meusdados/meusdados.html'
-    window.location.href = '../../Páginas-Cliente/Html/cardapio.html'
+    window.location.href = 'meusdados/meusdados.html'
   } else {
     // Se login falhou, avisa ao usuário
     alert('Usuário ou senha incorretos')
@@ -55,24 +54,6 @@ function generateUUID() {
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
   usuarios: [
-    {
-      id: generateUUID(),
-      email: 'admin@gmail.com',
-      confirmarEmail: 'admin@gmail.com',
-      nome: 'Administrador do Sistema',
-      senha: '12345678',
-      cpf: 00000000000,
-      telefone: 00000000000,
-      nascimento: 02 - 02 - 1970,
-      sexo: 'feminino',
-      cep: 00000000,
-      cidade: 'Belo Horizonte',
-      rua: 'Qualquer',
-      numero: 10,
-      bairro: 'Qualquer',
-      complemento: 'Qualquer',
-      referencia: 'Qualquer'
-    },
     {
       id: generateUUID(),
       email: 'user@gmail.com',
