@@ -1,10 +1,15 @@
 // PEGAR ARQUIVO JSON
 const urlCardapioJSON = `http://localhost:3000/cardapio`
 
+var produtos = []
+
 fetch(urlCardapioJSON)
   .then(response => response.json())
   .then(listaProdutos => {
     inserirProdutos(listaProdutos)
+    for (element of listaProdutos) {
+      produtos.push(element)
+    }
   })
 
 // INSERIR PRODUTOS COM JAVASCRIPT
@@ -258,4 +263,111 @@ function limparCarrinho() {
   numeroCarrinhoMobile.innerHTML = 0
 
   exibirNumeroCarrinho()
+}
+
+// ========================================================================================================
+
+// Código para filtrar e mostrar os produtos quando o usuário pesquisar algum produto
+
+let btnPesquisarProduto = document.getElementById('btn-pesquisar-produto')
+btnPesquisarProduto.addEventListener('click', filtrarProdutos)
+
+function filtrarProdutos() {
+  document.getElementById('result').innerHTML = ''
+
+  let resultado = []
+  let listaProdutosFiltrados = []
+
+  let filtrar = document.getElementById('input-pesquisar-produto').value
+
+  for (element of produtos) {
+    if (
+      element.nome.toUpperCase().includes(filtrar.toUpperCase()) &&
+      filtrar != ''
+    ) {
+      resultado.push(element)
+    }
+  }
+
+  for (result of resultado) {
+    // console.log(result)
+
+    let categoria = result.categoria.toUpperCase()
+
+    if (categoria == 'LANCHES' || categoria == 'LANCHES FIT') {
+      let produto = `
+        <div class="box-produto">
+          <div class="image">
+            <img src="${result.imagem}" alt="${result.nome}"/>
+          </div>
+          <div class="produto">
+            <div>
+              <h3 class="nome-produto">${result.nome}</h3>
+              <p class="descricao-produto">${result.descricao}</p>
+            </div>
+            <div class="precos">
+              <p class="preco-novo-produto">R$ ${result.preco}</p>
+            </div>
+          </div>
+          <div>
+            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${result.nome}', '${result.preco}')" />
+          </div>
+        </div>
+        `
+      listaProdutosFiltrados.push(produto)
+    }
+
+    if (categoria == 'BEBIDAS' || categoria == 'SOBREMESAS') {
+      let produto = `
+        <div class="box-produto">
+          <div class="image-vertical">
+            <img src="${result.imagem}" alt="${result.nome}"/>
+          </div>
+          <div class="produto">
+            <div>
+              <h3 class="nome-produto">${result.nome}</h3>
+              <p class="descricao-produto">${result.descricao}</p>
+            </div>
+            <div class="precos">
+              <p class="preco-novo-produto">R$ ${result.preco}</p>
+            </div>
+          </div>
+          <div>
+            <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${result.nome}', '${result.preco}')" />
+          </div>
+        </div>
+        `
+      listaProdutosFiltrados.push(produto)
+    }
+
+    if (categoria == 'PROMOÇÕES') {
+      let produto = `
+      <div class="box-produto">
+      <div class="image">
+        <img src="${result.imagem}" alt="${result.nome}"/>
+      </div>
+      <div class="produto">
+        <div>
+          <h3 class="nome-produto">${result.nome}</h3>
+          <p class="descricao-produto">${result.descricao}
+          </p>
+        </div>
+        <div class="precos">
+          <div class="caixa-preco-antigo">
+            <img src="../midia/cardapio/icons/line-icon.png" alt="Ícone linha" class="line-icon"/>
+            <p class="preco-antigo-produto">R$ ${result.precoAntigo}</p>
+          </div>
+          <p class="preco-novo-produto">R$ ${result.precoNovo}</p>
+        </div>
+      </div>
+        <img src="../midia/cardapio/icons/plus-icon.png" alt="Ícone adicionar" class="plus-icon" onclick="selecionarProduto('${result.nome}', '${result.precoNovo}')" />
+    </div>
+      `
+      listaProdutosFiltrados.push(produto)
+    }
+  }
+
+  for (produto of listaProdutosFiltrados) {
+    document.getElementById('result').innerHTML += produto
+  }
 }
