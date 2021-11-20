@@ -110,12 +110,6 @@
   cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
-  transition: 0.5s;
-}
-
-#caixa-cadastro button:hover {
-  -webkit-transform: scale(1.06);
-  transform: scale(1.06);
 }
 
 @media only screen and (min-width: 1561px) {

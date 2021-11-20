@@ -57,14 +57,16 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -90,17 +92,20 @@
                 <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -140,17 +145,28 @@
           </div>
           <div id="pesquisa-carrinho">
             <div id="pesquisa">
-              <input type="text" placeholder="Pesquise por um produto" />
+              <input
+                type="text"
+                id="input-pesquisar-produto"
+                placeholder="Pesquise por um produto"
+              />
               <button type="submit" id="btn-pesquisar-produto">
                 <i class="fas fa-search"></i>
               </button>
             </div>
-            <a href="carrinho.html">
-              <div id="irCarrinho">
-                <p>Ir para o carrinho</p>
-              </div>
-            </a>
+            <div id="limparCarrinho" onclick="limparCarrinho()">
+              <p>Limpar o carrinho</p>
+            </div>
           </div>
+          <div
+            id="result"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              margin: 10px 20px 60px;
+              gap: 10px;
+            "
+          ></div>
           <div class="boxes">
             <a href="#scroll-lanches">
               <div class="box-banner" id="box1">
@@ -305,7 +321,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -389,7 +405,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -404,7 +420,7 @@
             />
           </form>
           <div class="button">
-            <a href="../Html/cadastro.html" class="button">
+            <a href="cadastro.html" class="button">
               <button type="submit" id="button-cadastro">
                 Quero me cadastrar
               </button>
@@ -456,5 +472,7 @@
     <script src="../../javascript-cardapio/script-cardapio.js"></script>
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
   </body>
 </html>

@@ -133,13 +133,25 @@
                 <label for="produto-categoria" class="col-form-label"
                   >Categoria:</label
                 >
-                <input
+                <select
+                  name="categorias"
+                  id="produto-categoria"
+                  class="form-control"
+                  min="1"
+                  required
+                >
+                  <option value="Lanches">Lanches</option>
+                  <option value="Lanches Fit">Lanches Fit</option>
+                  <option value="Bebidas">Bebidas</option>
+                  <option value="Sobremesas">Sobremesas</option>
+                </select>
+                <!-- <input
                   type="text"
                   class="form-control"
                   id="produto-categoria"
                   min="1"
                   required
-                />
+                /> -->
               </div>
               <div class="form-group">
                 <label for="produto-id" class="col-form-label">ID:</label>
