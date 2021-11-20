@@ -1,4 +1,4 @@
-URL = 'http://localhost:3004/cardapio'
+URL = 'http://localhost:3000/cardapio'
 //=================================================================================================
 
 // GET - Recupera todos os produtos e adiciona na tabela
@@ -83,8 +83,8 @@ function getProduto(id) {
         $('#produto-nome').val(data.nome)
         $('#produto-descricao').val(data.descricao)
         $('#produto-imagem').val(data.imagem)
-        $('#produto-precoAntigo').val(parseFloat(data.precoAntigo).toFixed(2))
-        $('#produto-precoNovo').val(parseFloat(data.precoNovo).toFixed(2))
+        $('#produto-precoAntigo').val(data.precoAntigo)
+        $('#produto-precoNovo').val(data.precoNovo)
       })
   }
 }
