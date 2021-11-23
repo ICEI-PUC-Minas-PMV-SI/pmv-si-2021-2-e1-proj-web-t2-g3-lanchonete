@@ -12,7 +12,7 @@ Está sendo desenvolvido um sistema e-commerce com ênfase nos comerciantes loca
 
 ## Integrantes
 
-- Bruna Lourenço Duarte
+-  Bruna Lourenço Duarte
 -  Fernanda Alves Cordeiro
 -  Gabriele Fernanda Lima
 -  João Pedro Pinto Matozinhos
