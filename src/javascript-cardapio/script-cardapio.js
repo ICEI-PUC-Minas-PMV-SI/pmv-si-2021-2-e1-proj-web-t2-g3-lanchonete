@@ -265,7 +265,7 @@ function limparCarrinho() {
   exibirNumeroCarrinho()
 }
 
-// ========================================================================================================
+// ==========================================================================================================================
 
 // Código para filtrar e mostrar os produtos quando o usuário pesquisar algum produto
 
@@ -281,6 +281,7 @@ function filtrarProdutos() {
   let filtrar = document.getElementById('input-pesquisar-produto').value
 
   for (element of produtos) {
+    // produtos é um array com todos os produtos do cardápio (olhar lá em cima no fetch)
     if (
       element.nome.toUpperCase().includes(filtrar.toUpperCase()) &&
       filtrar != ''
