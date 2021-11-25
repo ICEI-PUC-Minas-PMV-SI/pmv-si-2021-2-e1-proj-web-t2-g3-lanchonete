@@ -9,7 +9,7 @@ function processaFormLogin(event) {
   var email = document.getElementById('input-email-cliente').value
   var senha = document.getElementById('input-senha-cliente').value
 
-  // Valida login e se estiver ok, redireciona para tela inicial da aplicação
+  // Valida login e se estiver ok, redireciona para tela de dados do cliente
   resultadoLogin = loginUser(email, senha)
   if (resultadoLogin) {
     trocarLogin()

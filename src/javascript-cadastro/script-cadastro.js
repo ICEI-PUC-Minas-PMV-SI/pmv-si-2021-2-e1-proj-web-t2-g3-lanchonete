@@ -21,6 +21,7 @@ function cadastrar(event) {
   let bairro = document.getElementById('bairro').value
   let complemento = document.getElementById('complemento').value
   let referencia = document.getElementById('referencia').value
+
   if (email != confirmarEmail) {
     alert('Os emails informados não conferem.')
     return
@@ -37,7 +38,7 @@ function cadastrar(event) {
     numero == '' ||
     bairro == ''
   ) {
-    alert('Preencha os campos')
+    alert('Preencha todos os campos obrigatórios')
   } else {
     // Adiciona o usuário no banco de dados
     addUser(
