@@ -304,9 +304,9 @@
   transform: scale(1.09);
 }
 
-@media only screen and (max-width: 1440) {
+@media only screen and (max-width:1440px) {
   #titulo{
-   margin-top: 10%;
+    margin-top: 137px;
   }
 }
 
@@ -315,6 +315,7 @@
     width: 38px;
 }
 }
+
 @media only screen and (max-width: 1024px) {
   #titulo{
     margin-top: 137px;
@@ -322,7 +323,11 @@
   #qnt{
     margin-right: -5%;
   }
+#FinalizaçaoBotao{
+  margin-top: 7%;
+}  
 }
+
 
 
 @media only screen and (max-width:768px) {
@@ -348,6 +353,10 @@
   #total1{
     margin-right: -36%;
   }
+  #FinalizaçaoBotao{
+    margin-top: 7%;
+    margin-left: 27%;
+  }  
 }
 @media only screen and (max-width:414px) {
   #titulo{
@@ -361,6 +370,7 @@
   }
   #ptotal{
     font-size: 100%;
+    margin-right: 1%;
   }
   #total1{
     font-size: 80%;
