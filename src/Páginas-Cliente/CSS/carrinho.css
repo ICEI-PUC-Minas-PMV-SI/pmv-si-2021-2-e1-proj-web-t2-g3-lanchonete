@@ -304,6 +304,8 @@
   transform: scale(1.09);
 }
 
+
+
 @media only screen and (max-width:1440px) {
   #titulo{
     margin-top: 137px;
