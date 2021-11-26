@@ -385,7 +385,7 @@
   height: 50px;
 }
 
-@media only screen and (max-width 414px) {
+@media only screen and (max-width: 414px) {
   #titulo01{
     margin-top: 30%;
     font-size: 100%;
