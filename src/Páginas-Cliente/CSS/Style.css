@@ -384,3 +384,22 @@
   width: 100%;
   height: 50px;
 }
+
+@media only screen and (max-width 414px) {
+  #titulo01{
+    margin-top: 30%;
+    font-size: 100%;
+  }
+  #p01, #titulo02, #p02, #botao02, #titulo03, #p03, #titulo04{
+    font-size: 100%;
+  }
+  #botao01{
+    font-size: 100%;
+    align-items: center;
+  }
+  #clique{
+    font-size: 70%;
+  }
+  
+  }
+  /*#comentario01, #comentario02, #comentario03{
