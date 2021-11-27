@@ -1,0 +1,134 @@
+body{
+    color: black;
+}
+header {
+    background-color: #bc1823;
+    height: 100vh;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+}
+#cabecalho2{
+    background-color: #bc1823;
+    height: 50px;
+    display: flex;
+}
+#cabecalhoPerfil{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+}
+.abas{
+    width: 600px;
+    height: 100px;
+    margin: 20px auto;
+    position: relative;
+}
+#lista{
+    list-style: none;
+}
+#elementos{
+    float: left;
+}
+#cabecalhoTabela{
+    width: 150px;
+    padding: 25px;
+    background-color:#bc1823;
+    display: block;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+#cabecalhoTabela:hover{
+    background-color: #ff9a00;
+}
+.dados:checked ~ #cabecalhoTabela{
+    background-color: #ff9a00;
+}
+.dados{
+    display: none;
+}
+.content{
+    margin-top: 25px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 600px;
+    left: 0;
+}
+.dados:checked ~ .content{
+    display: block;
+}
+#inicio{
+    padding-left: 80px;
+    padding-top: 80px;
+    color: #ff9a00;
+}
+#labelForm{
+    margin-top: 50px;
+    margin-left: 40px;
+    appearance: none;
+    font-weight: bold;
+}
+#inputForm{
+    border:none;
+    background-color:white;
+}
+
+#rua{
+    width: 250px;
+    background-color:white;
+    border: none;
+    
+}
+#number{
+    width: 100px;
+    background-color:white;
+    border: none;
+}
+#referencia{
+    width: 200px;
+    background-color:white;
+    border: none;
+}
+#cep{
+    width: 130px;
+    background-color:white;
+    border: none;
+}
+#salvar{
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #ff9a00;
+    padding: 10px;
+    margin-top: -10px;
+}
+#complemento{
+    width: 178px;
+    background-color:white;
+    border: none;
+}
+#email{
+    width: 250px;
+    background-color:white;
+    border: none;
+
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+#senha{
+    width: 250px;
+    border:none;
+    background-color:white;
+}
+#text{
+    background-color:white;
+    border: none;
+
+}

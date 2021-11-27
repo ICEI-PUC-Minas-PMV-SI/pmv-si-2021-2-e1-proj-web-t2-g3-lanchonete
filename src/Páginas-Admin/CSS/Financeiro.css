@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  body {
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+    /*color: white;*/
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: 'header main';
+  }
+  
+  header {
+    background-color:#bc1823;
+    height: 100vh;
+    grid-area: header;
+    position: sticky;
+    top: 0;
+  }
+  
+  .menu {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 150px;
+    margin-top: 10px;
+  }
+  
+  .botoes {
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  ul li a {
+    list-style: none;
+    background-color: #ff9a00;
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  ul li a p {
+    width: 50%;
+    margin-left: 10px;
+  }
+  
+  .icon {
+    width: 20px;
+  }
+  
+  .logo {
+    position: relative;
+  }
+  
+  .logo2 {
+    position: absolute;
+    top: 345px;
+  }
+  
+  main {
+    grid-area: main;
+  }
+/*Final Template Padrão*/
+
+#cabecalho2{
+    background-color: #bc1823;
+    height: 50px;
+    display: flex;
+}
+#cabecalhoFinanceiro{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #ffffff;
+
+}
+
+#bloco1{
+    color: #ff9a00;
+    height: 250px;
+    margin: 15px;
+    border-color: black;
+    border: 2px solid black;
+
+}
+
+#visaoGeral{
+  align-items: center;
+  text-align: center;
+}
+
+#icone2{
+position: relative;
+bottom: 30px;
+}
+
+#iconeFinanceiro{
+height: 100px;
+margin-top: 30px;
+}
+
+.lista1{
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.lista2{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#valor1{
+  width: 130px;
+  height: 40px;
+  border: 3px solid #bc1823;
+  border-width: 0px 0px 3px 0px;
+  position: relative;
+  bottom: 150px;
+  color: #bc1823;
+  font-size: 30px;
+}
+
+#valor2{
+  width: 130px;
+  height: 40px;
+  border: 3px solid #bc1823;
+  border-width: 0px 0px 3px 0px;
+  position: relative;
+  bottom: 150px;
+  color: #bc1823;
+  font-size: 30px;
+}
+
+#periodo{
+  color: #ff9a00;
+  text-align: center;
+}
+.inicio{
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  
+}
+#inicio-fim1{
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  position: relative;
+  left: 6px;
+  bottom: 25px;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
+}
+#inicio-fim2{
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  position: relative;
+  right: 6px;
+  bottom: 25px;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
+}
+.data{
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#datas{
+  border-color: black;
+  border-style: solid;
+  width: 180px;
+  height: 40px;
+  text-align: right;
+  color: #bc1823;
+  font-size: 20px;
+  font-weight: bolder;
+  
+}
+#pesquisar{
+  display: block;
+  text-align: center;
+  
+}
+#button1{
+  font-size: 20px;
+  background-color: #ff9a00;
+  border: 0px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+table, th, td {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+th{
+  width: 200px;
+}
+table{
+  position: relative;
+  top: 45px;
+  
+}
+#botaoImprimir{
+  text-align: center;
+  text-decoration:underline;
+  margin-top: 60px;
+}
+#ranking{
+  text-align: center;
+  color: #ff9a00;
+  margin-top: 40px;
+}
+#fidelidade{
+  text-align: center;
+  margin-top: 100px;
+  color: #ff9a00;
+  position: relative;
+  top: 10px;
+
+}

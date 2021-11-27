@@ -24,6 +24,8 @@ header {
   background-color: #bc1823;
   height: 100vh;
   grid-area: header;
+  position: sticky;
+  top: 0;
 }
 
 .menu {
@@ -63,15 +65,7 @@ ul li a p {
   width: 20px;
 }
 
-.logo {
-  position: relative;
-}
-
-.logo2 {
-  position: absolute;
-  top: 345px;
-}
-
 main {
   grid-area: main;
+  color: black;
 }

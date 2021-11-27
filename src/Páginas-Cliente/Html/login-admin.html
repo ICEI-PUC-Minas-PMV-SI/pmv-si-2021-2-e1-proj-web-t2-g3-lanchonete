@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Administrador</title>
+
+    <link rel="stylesheet" href="../CSS/login-admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="caixa">
+        <div class="header">
+          <i class="fas fa-user-circle" id="user-icon"></i>
+          <h3>LOGIN ADMINISTRADOR</h3>
+        </div>
+        <div class="inputs">
+          <div id="cpf">
+            <input
+              type="text"
+              placeholder="CPF"
+              required
+              minlength="11"
+              maxlength="11"
+            />
+          </div>
+          <div id="senha">
+            <input type="password" placeholder="Senha" required minlength="8" />
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit">ENTRAR</button>
+        </div>
+        <a href="../Html/recuperar-senha-admin.html">
+          <p>Esqueci a minha senha</p>
+        </a>
+        <a href="../Html/acessar-como.html" id="x-icon">
+          <img src="../midia/login/x-icon.png" alt="Ícone X" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

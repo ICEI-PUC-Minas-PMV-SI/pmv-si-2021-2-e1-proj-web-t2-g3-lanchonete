@@ -1,0 +1,149 @@
+#menu-mobile ul {
+  background-color: #ff9a00;
+}
+
+#menu-mobile ul li:hover,
+#menu-mobile ul li a:hover,
+#sub-header-mobile #enderecos a:hover {
+  color: #bc1823;
+}
+
+#caixa-cadastro {
+  background-color: #bc1823;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  margin-top: 150px;
+  padding: 40px 10px;
+}
+
+#caixa-cadastro h3 {
+  color: #ffffff;
+  font: normal bold 35px 'Roboto Slab', sans-serif;
+  margin-bottom: 10px;
+}
+
+#caixa-cadastro .caixa-inputs {
+  width: 65%;
+}
+
+#caixa-cadastro .inputs {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#caixa-cadastro label {
+  font: normal bold 18px 'Nunito', sans-serif;
+}
+
+#caixa-cadastro input {
+  background-color: #efefef;
+  height: 35px;
+  margin-top: 5px;
+  padding: 15px;
+  border: none;
+  outline: none;
+}
+
+#caixa-cadastro .input-grande {
+  width: 50%;
+}
+
+#caixa-cadastro .input-medio {
+  width: 33%;
+}
+
+#caixa-cadastro .input-pequeno {
+  width: 25%;
+}
+
+#caixa-cadastro #sexo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#caixa-cadastro .masculino,
+#caixa-cadastro .feminino {
+  display: flex;
+  align-items: center;
+}
+
+#caixa-cadastro #masculino,
+#caixa-cadastro #feminino {
+  margin-right: 5px;
+}
+
+#caixa-cadastro .rua-numero {
+  display: flex;
+  gap: 4px;
+}
+
+#caixa-cadastro #rua {
+  width: 78%;
+}
+
+#caixa-cadastro #numero {
+  width: 22%;
+}
+
+#caixa-cadastro .input-grande input,
+#caixa-cadastro .input-medio input,
+#caixa-cadastro .input-pequeno input,
+#caixa-cadastro #rua input,
+#caixa-cadastro #numero input {
+  width: 100%;
+}
+
+#caixa-cadastro button {
+  background-color: #ff9a00;
+  color: #ffffff;
+  width: 170px;
+  height: 50px;
+  font: normal 700 20px 'Roboto', sans-serif;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1561px) {
+  #caixa-cadastro .caixa-inputs {
+    width: 1001px;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  #caixa-cadastro .inputs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
+    width: 325px;
+  }
+}
+
+@media only screen and (max-width: 979px) {
+  #caixa-cadastro {
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #caixa-cadastro .input-grande,
+  #caixa-cadastro .input-medio,
+  #caixa-cadastro .input-pequeno,
+  #caixa-cadastro .sexo {
+    width: 200px;
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página do Administrador</title>
+
+  <link rel="stylesheet" href="../CSS/Financeiro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <!--Início Template Padrão-->
+
+  <div class="container">
+    <header>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">
+            <img src="../midia/logo-lanchonete.png" alt="Logo Lanchonete" class="logo" />
+          </a>
+        </div>
+        <div class="botoes">
+          <ul>
+            <li>
+              <a href="../Html/Perfil-admin.html">
+                <img src="../midia/perfil-icon.png" alt="Ícone Perfil" class="icon" />
+                <p>Perfil</p>
+              </a>
+            </li>
+            <li>
+              <a href="Financeiro.html">
+                <img src="../midia/financeiro-icon.png" alt="Ícone Financeiro" class="icon" />
+                <p>Financeiro</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../midia/cardapio-icon.png" alt="Ícone Cardápio" class="icon" />
+                <p>Cardápio</p>
+              </a>
+            </li>
+            <li>
+              <a href="comandas.html">
+                <img src="../midia/comandas-icon.png" alt="Ícone Comandas" class="icon" />
+                <p>Comandas</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--Final Template Padrão-->
+
+    <main>
+      <div id="cabecalho2">
+        <h1 id="cabecalhoFinanceiro">Financeiro</h1>
+      </div>
+
+      <div id="bloco1">
+        <h2 id="visaoGeral"> Visão Geral</h2>
+        <ul class="lista1">
+          <li id="vendasMes"> Vendas Mês</li>
+          <li id="icone2">
+            <img id="iconeFinanceiro" src="../midia/ícone-financeiro.png" alt="icone Financeiro">
+          </li>
+          <li id="vendasHoje"> Vendas Hoje</li>
+        </ul>
+
+        <ul class="lista2">
+          <li id="valor1">R$ 0,00</li>
+          <li id="valor2">R$ 0,00</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 id="periodo">RECEITA POR PERÍODO</h2>
+      </div>
+      <form name="formPesquisa" action="" method="post">
+      <ul class="data">
+        <input type="date" id="datas" required>
+        <input type="date" id="datas" required>
+      </ul>
+      <ul class="inicio">
+        <li id="inicio-fim1">Inicio</li>
+        <li id="inicio-fim2">Final</li>
+      </ul>
+      <div id="pesquisar">
+        <input type="submit" for="datas" id="button1" value="PESQUISAR"></input>
+      </div>
+      <div>
+        <table>
+          <tr>
+            <th>DATA</th>
+            <th>VALOR</th>
+            <th>PAGAMENTO</th>
+            <th>NOME</th>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>CARTÃO</td>
+            <td>PEDRO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>CARTÃO</td>
+            <td>PEDRO PAULO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>CARTÃO</td>
+            <td>PEDRO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>CARTÃO</td>
+            <td>PEDRO</td>
+          </tr>
+        </table>
+      </div>
+
+        <div>
+          <h4 id="botaoImprimir">IMPRIMIR LISTA</h4>
+        </div>
+
+        <div>
+          <h2 id="ranking">RANKING MENSAL</h2>
+        </div>
+        
+        <div>
+          <table>
+            <tr>
+              <th>LANCHE</th>
+              <th>VALOR</th>
+            </tr>
+            <tr>
+              <td>FRANGO CATUPIRY ARTESANAL</td>
+              <td>R$ 25,90</td>
+            </tr>
+            <tr>
+              <td>FRANGO COM CHEDDAR E BACON</td>
+              <td>R$ 25,90</td>
+            </tr>
+            <tr>
+              <td>COXINHA FIT</td>
+              <td>R$ 25,90</td>
+            </tr>
+            <tr>
+              <td>25/10/2021</td>
+              <td>R$ 25,90</td>
+            </tr>
+          </table>
+        </div>
+
+        <div>
+          <h2 id="fidelidade">CLIENTES FIDELIDADE</h2>
+        </div>
+
+        <div>
+          <table>
+            <tr>
+              <th>INICIO</th>
+              <th>NOME</th>
+              <th>CATEGORIA</th>
+              <th>STATUS</th>
+            </tr>
+            <tr>
+              <td>25/10/2021</td>
+              <td>JOÃO LUCAS</td>
+              <td>3</td>
+              <td>(R$ 175/R$ 200)EM ANDAMENTO</td>
+            </tr>
+            <tr>
+              <td>25/10/2021</td>
+              <td>JOÃO LUCAS</td>
+              <td>3</td>
+              <td>(R$ 100/R$ 100)CONCLUÍDO</td>
+            </tr>
+            <tr>
+              <td>25/10/2021</td>
+              <td>R$ 25,90</td>
+              <td>2</td>
+              <td>(R$ 100/R$ 100)CONCLUÍDO</td>
+            </tr>
+            <tr>
+              <td>25/10/2021</td>
+              <td>R$ 25,90</td>
+              <td>1</td>
+              <td>(R$ 20/R$ 50)EM ANDAMENTO</td>
+            </tr>
+          </table>
+        </div>
+        <br><br><br>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
