@@ -161,82 +161,82 @@
       
             <div class="dtn1">
               <label for="nascimento">Data de nascimento:</label>
-              <input type="number" name="nascimento" id="nome" disabled>
+              <input type="number" id="nascimento required>
       
             </div>
             <div class="genero1">
               <label for="sexo">Sexo:</label>
-              <label><input type="radio" name="sexo" value="1" disabled> Feminino</label>
-              <label><input type="radio" name="sexo" value="2" disabled> Masculino</label>
+              <label><input type="radio" id="sexo" disabled> Feminino</label>
+              <label><input type="radio" id="sexo" disabled> Masculino</label>
             </div>
             <div class="cpf1">
               <label for="cpf">CPF:</label>
-              <input type="number" name="cpf" id="cpf" disabled>
+              <input type="number"  id="cpf" required>
       
             </div>
             <div class="rua21">
               <h3>Endereço/Contato</h3>
               <label for="rua">Rua:</label>
-              <input type="text" name="rua" id="rua" required>
+              <input type="text" id="rua" required>
       
             </div>
             <div class="num1">
               <label for="numero">Número:</label>
-              <input type="number" name="numero" id="numero" required>
+              <input type="number"  id="numero" required>
       
             </div>
             <div class="bairro1">
               <label for="bairro">Bairro:</label>
-              <input type="text" name="bairro" id="bairro" required>
+              <input type="text" id="bairro" required>
       
             </div>
             <div>
               <label for="complemento1">Complemento:</label>
-              <input type="text" name="complemento" id="complemento" required>
+              <input type="text"  id="complemento" required>
       
             </div>
             <div class="ptr1">
               <label for="referencia">Ponto de referência:</label>
-              <input type="text" name="referencia" id="referencia" required>
+              <input type="text" id="referencia" required>
       
             </div>
             <div class="cep1">
               <label for="cidade">CEP:</label>
-              <input type="number" name="cep" id="cep" required>
+              <input type="number" id="cep" required>
       
             </div>
             <div class="cidade1">
               <label for="cidade">Cidade:</label>
-              <input type="text" name="cidade" id="cidade" required>
+              <input type="text" id="cidade" required>
       
             </div>
             <div>
               <label for="telefone1">Telefone:</label>
-              <input type="number" name="telefone" id="telefone" required>
+              <input type="number"  id="telefone" required>
       
             </div>
             <div class="email12">
               <h3>Acesso/Login</h3>
               <label label for="email1">E-mail:</label>
-              <input type="email" name="email1" id="email1" required>
+              <input type="email"  id="email" required>
       
             </div>
             <div class="email21">
-              <label for="email2">Confirmar e-mail:</label>
-              <input type="email" name="email2" id="email2" required>
+              <label for="email">Confirmar e-mail:</label>
+              <input type="email" id="confirmarEmail" required>
       
             </div>
             <div class="senha1">
               <label for="senha">Senha:</label>
-              <input type="password" name="nome" id="nome" required>
+              <input type="password"id="senha" required>
       
             </div>
             <div class="btnalterar2">
-              <button id="mdalterar2" type="submit"> ALTERAR</button>
+              <button id="mdalterar2" onclick="alterarUsuario();" type="submit"> ALTERAR</button>
             </div>
       
             <div class="btncancelar2">
-              <button id="mdcancelar2">CANCELAR</button></a>
+              <button id="mdcancelar2"><a href="../Html/meusdados.html">CANCELAR</button></a>
             </div>
       
           </form>
@@ -481,5 +481,6 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../JS/alterardados.js"></script>
   </body>
 </html>

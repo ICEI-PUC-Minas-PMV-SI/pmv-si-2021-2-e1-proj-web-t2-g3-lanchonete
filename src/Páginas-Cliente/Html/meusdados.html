@@ -134,12 +134,12 @@
 
         <div class="aside-menu">
           <ul>
-            <li id="nomeUsuario"> </li> <br> <br>
+            <li id="nomeUsuario"> Olá, <p id="nomeUsuario"> </p> </li> <br> <br>
             <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a> <br>
             <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li><br>
             <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a><br>
             <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> <br><br>
-            <li>SAIR</li>
+            <li onclick="logout();">SAIR</li>
       
           </ul>
       </div>
@@ -191,7 +191,7 @@
                 </div>
                   <div class="complemento">
                       <label for="complemento">Complemento:</label>     
-                      <input type="text" name="complemento" id="complemento" disabled>
+                      <input type="text" id="complemento" disabled>
                       
                   </div>
                   <div class="ptr">
@@ -217,12 +217,12 @@
                    <div>
                        <h3>Acesso/Login</h3>
                       <label for="email1">E-mail:</label>     
-                      <input type="email" name="email1" id="email1" disabled>
+                      <input type="email"  id="email" disabled>
                       
                   </div>
                   <div class="email2">
                       <label for="email2">Confirmar e-mail:</label>     
-                      <input type="email" name="email2" id="email2" disabled>
+                      <input type="email"  id="confirmarEmail" disabled>
                       
                   </div>
                   <div class="senha">
@@ -234,10 +234,10 @@
                   <button  id="mdalterar"><a href="../Html/alterardados.html"> ALTERAR</button></a>
                   </div>
                   <div class="btnexcluir">
-                  <button id="mdexcluir" onclick="excluirUsuario">EXCLUIR</button>
+                  <button id="mdexcluir" onclick="excluirUsuario();">EXCLUIR</button>
                   </div>
                   <div class="btncancelar">
-                  <button  id="mdcancelar" <a href="../Html/meusdados.html">CANCELAR</button></a>
+                  <button  id="mdcancelar"> <a href="../Html/meusdados.html">CANCELAR</button></a>
                   </div>
                          
           </form>
@@ -483,6 +483,6 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
-    <script src="../JS/meusdados.js"></script>
+    <script src="../JS/meusdados.js">
   </body>
 </html>
