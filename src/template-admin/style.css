@@ -1,4 +1,4 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,8 +22,8 @@ body {
 
 header {
   background-color: #bc1823;
-  height: 100vh;
   grid-area: header;
+  height: 50px;
   position: sticky;
   top: 0;
 }
@@ -68,4 +68,102 @@ ul li a p {
 main {
   grid-area: main;
   color: black;
+}
+*/
+*{
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #bc1823;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+
+#cabecalho{
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+}
+#menuLateral{
+  height: 100%;
+  width: 0px;
+  background-color: #bc1823;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  z-index: 1;
+  overflow:hidden;
+  transition: width 0.5s;
+
+}
+#iconMenu{
+  font-size: 30px;
+  padding: 20px;
+  background-color: #bc1823;
+  color: white;
+}
+#iconMenu2{
+  visibility: hidden;
+}
+#btn-menu{
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  height: 30px;
+}
+#menuLateral a {
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 25.8px;
+  text-decoration: none;
+  transition: width 0.2s;
+  background-color: #bc1823;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+}
+#menuLateral a:hover{
+  background-color: #ff9a00;
+  color: #bc1823;
+}
+#btn-fechar{
+  border: none;
+  background: none;
+  font-size: 30px;
+  float: right;
+  background-color: none;
+}
+#btn-fechar:hover{
+  color: #ff9a00;
+}
+main{
+  transition: margin-left 0.5s;
+}
+#logoPrincipal{
+  width: 160px;
+  height: 90px;
+  
+}
+#div_imagem{
+  text-align: center;
+}
+.icon {
+  width: 20px;
+}
+#cabecalho{
+  transition: margin-left 0.5s;
 }
