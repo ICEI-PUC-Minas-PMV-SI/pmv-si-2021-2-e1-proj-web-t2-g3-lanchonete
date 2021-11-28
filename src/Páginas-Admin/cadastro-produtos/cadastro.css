@@ -1,0 +1,96 @@
+#titulo{
+    color: #bc1823;
+}
+header{
+    background-color: #bc1823;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+  }
+  
+  #cabecalho{
+    padding: 16px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    width: 100vw;
+  }
+  #menuLateral{
+    height: 100%;
+    width: 0px;
+    background-color: #bc1823;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    overflow:hidden;
+    transition: width 0.5s;
+  
+  }
+  #iconMenu{
+    font-size: 30px;
+    background-color: #bc1823;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  #iconMenu2{
+    visibility: hidden;
+  }
+  #btn-menu{
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    height: 30px;
+    background: none;
+  }
+  #menuLateral a {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 25.8px;
+    text-decoration: none;
+    transition: width 0.2s;
+    background-color: #bc1823;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', 'Oxygen', sans-serif;
+  }
+  #menuLateral a:hover{
+    background-color: #ff9a00;
+    color: #bc1823;
+  }
+  #btn-fechar{
+    border: none;
+    background: none;
+    font-size: 30px;
+    float: right;
+    background-color: none;
+  }
+  #btn-fechar:hover{
+    color: #ff9a00;
+  }
+  main{
+    transition: margin-left 0.5s;
+  }
+  #logoPrincipal{
+    width: 160px;
+    height: 90px;
+    
+  }
+  #div_imagem{
+    text-align: center;
+  }
+  .icon {
+    width: 20px;
+  }
+  #cabecalho{
+    transition: margin-left 0.5s;
+  }
+  #navCab{
+      display: none;
+  }
