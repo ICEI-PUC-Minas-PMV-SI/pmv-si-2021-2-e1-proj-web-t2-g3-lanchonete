@@ -330,21 +330,20 @@
 }  
 }
 
-
-
 @media only screen and (max-width:768px) {
   #titulo{
     margin-top: 14%;
   }
   #qnt{
-    margin-right: -7%;
+    margin-right: -8%;
   }
   #linha1{
     inline-size: 30%;
     margin-left: 21%
   }
   #pquantidade{
-    margin-top: -4%;
+    margin-left: 55%;
+    margin-top: -5%;
   }
   #pdescrição{
     margin-top: 4%;
@@ -353,13 +352,17 @@
     margin-top: -4%;
   }
   #total1{
-    margin-right: -36%;
+    margin-right: -37%;
   }
   #FinalizaçaoBotao{
     margin-top: 7%;
-    margin-left: 27%;
+    margin-left: 23%;
   }  
 }
+
+
+
+
 @media only screen and (max-width:414px) {
   #titulo{
     margin-top: 25%;
