@@ -222,6 +222,7 @@ main {
   grid-template-columns: 200px 1fr;
   grid-gap: 16px;
   padding-top:120px;
+ 
 }
 
 .aside-menu {
@@ -235,7 +236,7 @@ font-weight: bold;
 }
 
 .aside-menu> ul> li{
-margin-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 .aside-menu{
@@ -286,11 +287,18 @@ min-height: 850px;
 }
 
 .content-principal-br label {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
   margin-right: 10px;
+  
 }
 
+.content-principal-br input {
+  font-size: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  
+}
 
 .num{
   display: inline-block;
@@ -535,6 +543,7 @@ footer {
 
   .aside-menu> ul> li{
     text-align: center;
+    padding-top:20px;
   }
 
   .content-principal-br input{
@@ -950,10 +959,19 @@ footer {
       padding-top: 120px;
     }
     
-    
-    .content-principal-br input{
+    .content-principal-br label{
       margin-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
     }
+
+    .content-principal-br input{
+    font-size: 18px;
+    margin-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    }
+
     .formd>div {
       margin-right: 2px;
       display: flex;
