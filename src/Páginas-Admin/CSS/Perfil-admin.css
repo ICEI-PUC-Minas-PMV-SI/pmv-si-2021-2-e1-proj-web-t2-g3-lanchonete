@@ -1,27 +1,6 @@
-body{
-    color: black;
-}
-header {
-    background-color: #bc1823;
-    height: 100vh;
-    grid-area: header;
-    position: sticky;
-    top: 0;
-}
-#cabecalho2{
-    background-color: #bc1823;
-    height: 50px;
-    display: flex;
-}
-#cabecalhoPerfil{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    color: #ffffff;
-}
+
 .abas{
-    width: 600px;
+    width: 800px;
     height: 100px;
     margin: 20px auto;
     position: relative;
@@ -32,6 +11,7 @@ header {
 #elementos{
     float: left;
 }
+
 #cabecalhoTabela{
     width: 150px;
     padding: 25px;
@@ -40,6 +20,7 @@ header {
     color: white;
     cursor: pointer;
     text-align: center;
+    word-wrap: break-word;
 }
 #cabecalhoTabela:hover{
     background-color: #ff9a00;
@@ -130,5 +111,33 @@ input[type=number]::-webkit-inner-spin-button {
 #text{
     background-color:white;
     border: none;
+
+}
+@media only screen and (max-width: 990px) {
+    
+    #lista{
+        width: 50%;
+        margin: 0 auto;
+        
+    }
+    #elementos{
+        display: block;
+    }
+    #cabecalhoTabela{
+        font-size: 15px;
+        position: relative;
+    }
+    .content{
+        width: 50%;
+        left: 100px;
+        top: 130px;
+        left: 160px;
+    }
+    .abas{
+        left: 2%;
+    }
+    #senha, #email{
+        width: 100px;
+    }
 
 }

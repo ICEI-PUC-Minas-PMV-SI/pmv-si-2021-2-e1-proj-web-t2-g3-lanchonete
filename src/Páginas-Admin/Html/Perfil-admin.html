@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página do Administrador</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página do Administrador</title>
+    <link rel="stylesheet" href="../../template-admin/style.css" />
+    <link rel="stylesheet" href="../CSS/Perfil-admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
 
-  <link rel="stylesheet" href="../../template-admin/style.css" />
-  <link rel="stylesheet" href="../CSS/Perfil-admin.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container">
+  </head>
+  <body>
     <header>
-      <div class="menu">
-        <div class="logo">
-          <a href="#">
-            <img src="../../template-admin/midia/logo-lanchonete.png" alt="Logo Lanchonete" class="logo" />
-          </a>
-        </div>
-        <div class="botoes">
-          <ul>
-            <li>
-              <a href="../Html/Perfil-admin.html">
-                <img src="../../template-admin/midia/perfil-icon.png" alt="Ícone Perfil" class="icon" />
-                <p>Perfil</p>
-              </a>
-            </li>
-            <li>
-              <a href="../Html/Financeiro.html">
-                <img src="../../template-admin/midia/financeiro-icon.png" alt="Ícone Financeiro" class="icon" />
-                <p>Financeiro</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="../../template-admin/midia/cardapio-icon.png" alt="Ícone Cardápio" class="icon" />
-                <p>Cardápio</p>
-              </a>
-            </li>
-            <li>
-              <a href="comandas.html">
-                <img src="../../template-admin/midia/comandas-icon.png" alt="Ícone Comandas" class="icon" />
-                <p>Comandas</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+        <button onclick="mostrarMenu()" id="btn-menu"><i id="iconMenu" class="fas fa-bars"></i></button>
+        <div id="cabecalho">Perfil Administrador</div>
+        <i id="iconMenu2" class="fas fa-bars"></i>
     </header>
-    <main>
-      <div id="cabecalho2">
-        <h1 id="cabecalhoPerfil">Perfil</h1>
-      </div>
+    <nav id="menuLateral">
+        <button onclick="fecharMenu()" id="btn-fechar" ><i class="fas fa-times"></i></button><br><br>
+        <div id="div_imagem"><img id="logoPrincipal" src="../../template-admin/midia/logo-lanchonete.png"></div>
+        <a href="Perfil-admin.html">
+          <i class="far fa-user-circle"></i>
+          Perfil</a>
+        <a href="Financeiro.html">
+          <i class="fas fa-coins"></i>
+          Financeiro</a>
+        <a href="c">
+          <i class="fas fa-utensils"></i>
+          Cardápio</a>
+        <a href="">
+          <i class="far fa-sticky-note"></i>
+          Comandas</a>
+        <a href="">
+          <i class="fas fa-sign-out-alt"></i>
+          Sair</a>
+    </nav>
+  
+    <main id="teste">
 
       <nav class="abas">
         <ul id="lista">
@@ -166,7 +154,7 @@
             </li>
             <li id="elementos">
                 <input type="radio" name="tabs" class="dados" id="tab3">
-                <label id="cabecalhoTabela" for="tab3">Dados de Acesso/Login</label>
+                <label id="cabecalhoTabela" for="tab3">Dados de Login</label>
                 <div class="content">
                     <form name="dados_acesso" action="." method="post">
                         <div>
@@ -233,6 +221,7 @@
 
     </main>
   </div>
+  <script src="../../template-admin/admin.js"></script>
 </body>
 
 </html>
