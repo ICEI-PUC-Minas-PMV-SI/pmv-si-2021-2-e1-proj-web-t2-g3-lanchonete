@@ -146,7 +146,7 @@
     display: flex;
     gap: 25px;
     justify-content: flex-end;
-    margin-top: 6%;
+    margin-top: -2.5%;
     margin-left: 22%;
     padding: 10px 80px;
   }
@@ -196,7 +196,7 @@
     gap: 25px;
     justify-content: flex-end;
     position: relative;
-    margin-top: -2.5%;
+    margin-top: 5%;
     margin-left: 2%;
     padding: 10px 80px;
   }
@@ -236,4 +236,50 @@
   
   #data img {
     width: 25px;
+  }
+
+  @media (max-width: 1280px) {
+    #titulo {
+        font-size: 300%;
+    }  
+
+    #nome-colunas {
+        font-size: 150%;
+    }
+
+    #data {
+        position: relative;
+        margin-top: 5%;
+    }
+
+      #pesquisa-cliente {
+          position: relative;
+          margin-top: -2.8%;
+          margin-left: 24%;
+      }
+  }
+
+  @media (max-width: 1024px) {
+    #titulo {
+        font-size: 280%;
+    }  
+
+    #nome-colunas {
+        font-size: 140%;
+    }
+
+    #data {
+        position: relative;
+        margin-top: 5%;
+    }
+
+    #pesquisa-cliente {
+        position: relative;
+        margin-top: -3.4%;
+        margin-left: 29%;
+    }
+
+    #l1, #l2, #l3, #l4 {
+        font-size: 100%;
+    }
   }
