@@ -210,8 +210,24 @@
           </div>
 
           <div id="adcomentario">
-            <input type="text" placeholder="Deixe aqui seu comentário..." size="25"/>
-            <button type="submit">
+            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." size="25"/>
+            <div id="av">
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="../midia/home/icons/star01.png" id="s1"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="../midia/home/icons/star01.png" id="s2"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="../midia/home/icons/star01.png" id="s3"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="../midia/home/icons/star01.png" id="s4"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="../midia/home/icons/star01.png" id="s5"></a>
+            </div>
+            <button type="submit" onclick="enviarDados()">
               <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
             </button>
           </div>
