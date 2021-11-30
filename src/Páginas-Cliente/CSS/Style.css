@@ -402,8 +402,35 @@
   height: 50px;
 }
 
-@media (max-width: 480px) {
-  
+@media (max-width: 1280px) {
+  #x-cheese, #x-tudo {
+    width: 270px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #titulo {
+      font-size: 280%;
+  }  
+
+  #nome-colunas {
+      font-size: 140%;
+  }
+
+  #data {
+      position: relative;
+      margin-top: 5%;
+  }
+
+  #pesquisa-cliente {
+      position: relative;
+      margin-top: -3.4%;
+      margin-left: 29%;
+  }
+
+  #l1, #l2, #l3, #l4 {
+      font-size: 100%;
+  }
 }
 
 /*@media only screen and (max-width: 414px) {
