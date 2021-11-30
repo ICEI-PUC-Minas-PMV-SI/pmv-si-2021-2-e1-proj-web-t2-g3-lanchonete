@@ -330,6 +330,15 @@
 }  
 }
 
+@media only screen and (max-width: 900px) {
+  #titulo{
+    margin-top: 12%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 29%;
+  }
+}
+
 @media only screen and (max-width:768px) {
   #titulo{
     margin-top: 14%;
@@ -391,9 +400,10 @@
   }
 }
 
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:400px) {
   #titulo{
-    margin-top: 25%;
+    margin-top: 27%;
+    align-items: center;
   }
   #pquantidade{
     font-size: 100%;
@@ -415,4 +425,27 @@
   #linha1{
     margin-top: -1%;
   }
+  
+  #ContinuarComprando {
+    font-size: 100%;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 220px;
+    height: 35px;
+  }
+  
+  #ContinuarComprando:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  #continuar {
+    color: black;
+  }
+  
+  #imgcontinuar {
+    width: 30px;
+    vertical-align: text-bottom;
+  }
+
 }
