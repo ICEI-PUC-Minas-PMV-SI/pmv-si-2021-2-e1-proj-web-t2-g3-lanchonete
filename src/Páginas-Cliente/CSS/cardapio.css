@@ -24,12 +24,6 @@ main {
   -webkit-text-stroke-color: #000;
 }
 
-.scroll-banner {
-  height: 135px;
-  opacity: 0;
-  font-size: 1%;
-}
-
 #pesquisa-carrinho {
   background: rgba(196, 196, 196, 0.1);
   width: 100%;
@@ -245,6 +239,13 @@ main {
 .plus-icon:hover {
   -webkit-transform: scale(1.06);
   transform: scale(1.06);
+}
+
+#lanches,
+#lanches-fit,
+#bebidas,
+#sobremesas {
+  padding-top: 140px;
 }
 
 @media only screen and (max-width: 1294px) {
