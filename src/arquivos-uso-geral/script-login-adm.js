@@ -8,9 +8,7 @@ function autenticarADM(event) {
   const senhaADM = document.getElementById('input-senha-adm').value
 
   if (cpfADM == '00000000000' && senhaADM == '12345678') {
-    window.location.href = 'Páginas-Admin/Html/Perfil-admin.html'
-
-    console.log('oi')
+    window.location.pathname = "src/Páginas-Admin/Html/Perfil-admin.html"
   } else {
     alert('Acesso negado!')
   }
