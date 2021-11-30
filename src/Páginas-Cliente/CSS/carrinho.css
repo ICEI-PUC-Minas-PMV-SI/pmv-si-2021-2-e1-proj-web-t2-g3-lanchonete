@@ -360,8 +360,36 @@
   }  
 }
 
+@media only screen and (max-width:600px) {
+  #titulo{
+    margin-top: 18%;
+  }
+}
 
+@media only screen and (max-width:650px) {
+  #titulo{
+    margin-top: 16%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 21%;
+  }
+}
 
+@media only screen and (max-width:550px) {
+  #titulo{
+    margin-top: 20%;
+  }
+  #ptotal, #pdescrição, #pquantidade{
+    font-size: 18px;
+  }
+  #total1{
+    margin-right: -42%;
+    margin-top: -2%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 14%;
+  }
+}
 
 @media only screen and (max-width:414px) {
   #titulo{
