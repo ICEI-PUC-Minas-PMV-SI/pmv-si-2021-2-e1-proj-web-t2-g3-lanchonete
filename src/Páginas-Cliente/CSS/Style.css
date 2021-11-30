@@ -402,6 +402,10 @@
   height: 50px;
 }
 
+@media (max-width: 480px) {
+  
+}
+
 /*@media only screen and (max-width: 414px) {
   #titulo01{
     margin-top: 30%;
