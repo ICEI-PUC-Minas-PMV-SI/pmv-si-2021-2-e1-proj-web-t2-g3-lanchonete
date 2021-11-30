@@ -265,6 +265,7 @@
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #comentario01:hover {
@@ -293,6 +294,7 @@
   position: absolute;
   margin-left: 40%;
   top: 306.5%;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #paulo {
@@ -325,6 +327,7 @@
   position: absolute;
   margin-left: 70%;
   top: 306.5%;
+  border-radius: 10px 10px 10px 10px;
 }
 
 #comentario03:hover {
@@ -353,6 +356,7 @@
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;  
+  border-radius: 10px 10px 10px 10px;
 }
 
 #adcomentario input {
