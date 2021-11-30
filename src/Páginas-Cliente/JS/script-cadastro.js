@@ -39,6 +39,8 @@ function cadastrar(event) {
     bairro == ''
   ) {
     alert('Preencha todos os campos obrigatórios')
+  } else if (senha.length < 8) {
+    alert('A senha deve conter no mínimo 8 caracteres')
   } else {
     // Adiciona o usuário no banco de dados
     addUser(
