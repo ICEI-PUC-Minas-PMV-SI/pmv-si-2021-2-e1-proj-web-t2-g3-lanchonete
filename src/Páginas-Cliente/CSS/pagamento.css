@@ -354,3 +354,57 @@
  display: flex;
  margin-bottom: -30%;
 }
+
+
+@media only screen and (max-width:1200px) {
+#titulo1{
+  margin-top: 11%;
+}
+}
+
+
+@media only screen and (max-width:800px) {
+  #titulo1{
+    margin-top: 13%;
+  }
+  #imgdadosentrega{
+    width: 0px;
+    height: 0px;
+  }
+  #linhap{
+    inline-size: 50%;
+    margin-left: 25%
+  }
+  #descriçãop{
+    margin-left: 10%;
+   }
+   #primeiro{
+     font-size: 22px ;
+     margin-left: 1%;
+     margin-top: 3%;
+   }
+   #linha{
+     display: flex;
+     margin-top: 3%;
+   }
+   #valor{
+     font-size: 22px;
+     margin-top: 3%;
+   }
+   #AlterarPedido{
+     margin-left: 29%;
+   }
+   .endereçodeentrega{
+     margin-top: -3%;
+   }
+   #AdicionarCartao{
+    margin-left: 29%;
+   }
+}
+
+@media only screen and (max-width:700px) {
+  #titulo1{
+    margin-top: 15%;
+  }
+   
+}
