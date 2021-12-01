@@ -1,3 +1,79 @@
+#data {
+  background: white;
+  width: 190px;
+  height: 20px;
+  margin-top: 3%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#data input {
+  background-color:white;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#data button {
+  background-color: white;
+  border: none;
+  border-style: none;
+}
+
+#data button:hover {
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+#data img {
+  width: 25px;
+}
+
+#pesquisa-cliente {
+  background: white;
+  width: 300px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;  
+}
+
+#pesquisa-cliente input {
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#pesquisa-cliente button {
+  background-color: white;
+  border: none;
+  border-style: none;
+}
+
+#pesquisa-cliente button:hover {
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+#pesquisa-cliente img {
+  width: 25px;
+}
+
 table tr:nth-child(odd) {
 background-color:rgba(85, 79, 80, 0.25)
 }
@@ -8,7 +84,7 @@ table tr:nth-child(even) {
 
 .tabela {
   margin-top: 5%;
-  line-height: 150%;
+  line-height: 160%;
 }
 
 #nome-colunas {
@@ -16,7 +92,7 @@ table tr:nth-child(even) {
   color: white;
   text-align: center;
   margin-top: 5%;
-  font-size: 150%;
+  font-size: 140%;
   background-color: #bc1823;
 }
   
