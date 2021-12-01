@@ -244,110 +244,125 @@
 }
 
 
+
+
+
+
+
 .PagarEntrega{
- color: white;
- background-color:#bc1823;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- font-size: 20px;
- text-align: center;
- margin-top: 2%;
- margin-bottom: 10%;
+  color: white;
+  background-color:#bc1823;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2%;
+ }
+
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.escolher-cartao{
- margin-left: 5%;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- box-shadow: 0 4px 8px silver;
- width: 10%;
- margin-top: -70px;
- margin-bottom: 20%;
+body {
+  font-family: roboto;
 }
 
-.dinheiro{
- margin-left: 30%;
- margin-top: -33%;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- box-shadow: 0 4px 8px silver;
- width: 17%;
+.wrapper {
+  padding: 30px;
+  margin-top: 30%;
+  margin-bottom: -10%;
 }
 
-.ender-pix{
- color: black;
- font-family: 'Roboto', 'Oxygen', sans-serif;
+#letras{
+  color: black;
+  margin-left: 8%;
 }
 
-
-
-.tit-troco{
- font-family: 'Roboto', 'Oxygen', sans-serif;
- font-size: 30px;
- color: black;
- margin-left: 70%;
- margin-top: -120px;
-}
-
-.troco {
-  background: white;
-  gap: 25px;
-  width: 200px;
-  height: 30px;
-  margin-left: 70%;
-  margin-top: 1%;
-  box-shadow: 0 4px 8px silver;
+.form-group {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-color: #ff9a00;
-  border-width: 1px;
-  border-style: solid;  
+  margin-bottom: 15px;
 }
 
-.troco input {
-  background-color: white;
-  border: none;
+.form-group label {
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.radio, .checkbox {
+  cursor: pointer;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   outline: none;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
 }
 
-.troco button {
-  background-color: white;
-  border: none;
-  border-style: none;
+.checkbox {
+  border-radius: 0;
 }
 
-.troco button:hover { 
-  background-color: white;
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
+.radio:before, .checkbox:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  position: absolute;
 }
 
-.troco img {
-  width: 25px;
-  background-color: #ff9a00;
+.checkbox:before {
+  border-radius: 0;
+  background: transparent;
+  border: 4px solid black;
+  border-left: 0;
+  border-top: 0;
+  width: 7px;
+  height: 12px;
+  transform: rotate(45deg);
+  top: 2px;
+}
+
+.radio:checked:before, .checkbox:checked:before {
+  opacity: 1;
+}
+
+.radio:focus, .checkbox:focus {
+  box-shadow: 0 0 5px black;
 }
 
 #FinalizarPagamento{
- font-family: 'Roboto', 'Oxygen', sans-serif;
- color: #ffffff;
- font-size: 160%;
- text-align: center;
- margin-top: 10%;
- margin-left: 37%;
- background-color: #ff9a00;
- border-radius: 30px 30px 30px 30px;
- width: 345px;
- height: 50px;
- border: none;
- border-style: none;
- margin-bottom: 10%;
-}
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  color: #ffffff;
+  font-size: 160%;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 37%;
+  background-color: #ff9a00;
+  border-radius: 30px 30px 30px 30px;
+  width: 345px;
+  height: 50px;
+  border: none;
+  border-style: none;
+  margin-bottom: 8%;
+ }
+ 
+ #FinalizarPagamento:hover {
+   -webkit-transform: scale(1.09);
+   transform: scale(1.09);
+ }
 
-#FinalizarPagamento:hover {
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
-}
 
 .ajuste{
  color: #ffffff;
@@ -361,6 +376,13 @@
   margin-top: 11%;
 }
 }
+
+@media only screen and (max-width:100px) {
+  #titulo1{
+    margin-top: 20%;
+  }
+}
+
 
 
 @media only screen and (max-width:800px) {
@@ -398,7 +420,7 @@
      margin-top: -3%;
    }
    #AdicionarCartao{
-    margin-left: 29%;
+    margin-left: 29%                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
    }
 }
 
