@@ -2,8 +2,6 @@
   background: white;
   width: 190px;
   height: 20px;
-  margin-top: 4%;
-  margin-left: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,9 +39,7 @@
   background: white;
   width: 300px;
   height: 20px;
-  float: right;
-  margin-right: 58%;
-  margin-top: -2.7%;
+  margin-left: 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,6 +71,15 @@
 
 #pesquisa-cliente img {
   width: 25px;
+}
+
+#pesquisa {
+  width:100%;
+  height: 60%;
+  margin-top: 5%;
+  margin-left: 2%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 table tr:nth-child(odd) {
