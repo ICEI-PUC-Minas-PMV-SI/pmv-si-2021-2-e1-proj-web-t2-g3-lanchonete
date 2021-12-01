@@ -433,7 +433,23 @@ justify-content: space-around;
 #AdicionarCartao{
   margin-left: 35%;
 }
+.form-group1{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: -21%;
+  padding-bottom: 115px;
 }
+}
+.form-group2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: -17%;
+}
+
+
 
 @media only screen and (max-width:1050px) {
 #titulo1{
@@ -445,7 +461,14 @@ justify-content: space-around;
   #titulo1{
     margin-top: 13%;
   }
+  .form-group1{
+    margin-top: -25%;
+  }
+  .form-group2{
+    margin-top: -21%;
+  }
 }
+
 @media only screen and (max-width:970px){
 #titulo1{
   margin-top: 11%;
@@ -455,6 +478,12 @@ justify-content: space-around;
 @media only screen and (max-width:900px) {
   #titulo{
     margin-top: 30%;
+  }
+  .resumop{
+    margin-left: 1%;
+  }
+  #total{
+    margin-left: 8%;
   }
 }
 
