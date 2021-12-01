@@ -196,12 +196,6 @@
 <button id="AdicionarCartao"> <a href="../Html/addcartao.html">Adicionar Cartão</a></button>
 
 
-<ul>
-  <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-    <i class="fas fa-sign-in-alt"></i>
-    <span>LOGIN</span>
-  </li>
-</ul>
 
 
 <!--Pagamento na entrega-->
@@ -211,22 +205,36 @@
 </div>
 
 <div class="ajuste"><p> . </p></div>
+
+
 <div class="wrapper">
   <div class="form-group">
-    <input class="radio" name="theradio" id="radio1" type='radio' checked/>
-    <label for="radio1"><p id="letras">mastercard crédito</p></label>
-  </div>
+    <input class="radio" name="theradio" id="radio1" type='radio'  checked/>
+    <label for="radio1"><p id="letras">Mastercard crédito <img src="../midia/pagamento/imagens/master.png" alt="" id="imgmastercre"></p></label>
+  </div> <br><br>
   <div class="form-group">
     <input class="radio" name="theradio" id="radio1" type='radio'  />
-    <label for="radio2"><p id="letras">mastercard débito</p></label>
+    <label for="radio1"><p id="letras">Mastercard débito <img src="../midia/pagamento/imagens/master.png" alt="" id="imgmasterdeb"></p></label>
   </div>
-  <div class="form-group">
-    <input class="radio" name="theradio" id="theradio" type='radio' />
-    <label for="radio1"><p id="letras">visa débito</p></label>
+
+
+  <div class="form-group1">
+    <input class="radio" name="theradio" id="radio1" type='radio' />
+    <label for="radio1"><p id="letras">Visa débito <img src="../midia/pagamento/imagens/visa.png" alt="" id="imgvisadeb"></p></label>
+  </div> <br><br><br><br><br><br><br><br><br>
+  <div class="form-group1">
+    <input class="radio" name="theradio" id="radio1" type='radio'  />
+    <label for="radio1"><p id="letras">Visa crédito <img src="../midia/pagamento/imagens/visa.png" alt="" id="imgvisacre"></p></label>
   </div>
-  <div class="form-group">
-    <input class="radio" name="theradio" id="theradio" type='radio'  />
-    <label for="radio2"><p id="letras">visa crédito</p></label>
+
+
+  <div class="form-group2">
+    <input class="radio" name="theradio" id="radio1" type='radio'  />
+    <label for="radio2"><p id="letras">Dinheiro <img src="../midia/pagamento/imagens/dinheiro.png" alt="" id="imgdinheiro"></p></label>
+  </div> 
+  <div class="form-group2" >
+    <input class="radio" name="theradio" id="radio1" type='radio' />
+    <label id="dinheiro01" for="radio2"><p id="letras">Pix <img src="../midia/pagamento/imagens/pix.png" alt="" id="imgpix"></p></label>
   </div>
 </div>
 
@@ -456,55 +464,6 @@
         </div>
       </form>
     </section>
-
-
-
-    <!--modal-cartao-->
-    <div class="modal" tabindex="-1" role="dialog">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Título do modal</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <p>Texto do corpo do modal, é aqui.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Salvar mudanças</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Botão para acionar modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
-  Abrir modal de demonstração
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Título do modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar mudanças</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <!--JS-->

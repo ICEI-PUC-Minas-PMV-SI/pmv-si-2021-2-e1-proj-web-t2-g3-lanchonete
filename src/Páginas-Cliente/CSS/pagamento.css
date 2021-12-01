@@ -273,6 +273,8 @@ body {
   padding: 30px;
   margin-top: 30%;
   margin-bottom: -10%;
+  list-style: none;
+justify-content: space-around;  
 }
 
 #letras{
@@ -280,9 +282,10 @@ body {
   margin-left: 8%;
 }
 
+
+
 .form-group {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -291,6 +294,49 @@ body {
   padding-left: 0px;
   cursor: pointer;
 }
+
+.form-group1{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: -18%;
+  padding-bottom: 115px;
+}
+
+.form-group2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: -15%;
+  margin-left: 80%;
+
+}
+
+#dinheiro01{
+  margin-top: -8%;
+}
+
+
+
+#imgvisadeb{
+  margin-left: -8%;
+}
+
+#imgvisacre{
+  margin-left: -8%;
+}
+
+#imgdinheiro{
+  width: 80px;
+  height: 40px;
+}
+
+
+
+
+
+
 
 .radio, .checkbox {
   cursor: pointer;
@@ -347,7 +393,7 @@ body {
   color: #ffffff;
   font-size: 160%;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 23%;
   margin-left: 37%;
   background-color: #ff9a00;
   border-radius: 30px 30px 30px 30px;
@@ -375,20 +421,60 @@ body {
 #titulo1{
   margin-top: 11%;
 }
+.resumop{
+  margin-left: -10%;
+}
+#total{
+  margin-left: 11%;
+}
+#AlterarPedido{
+  margin-left: 35%;
+}
+#AdicionarCartao{
+  margin-left: 35%;
+}
 }
 
-@media only screen and (max-width:100px) {
+@media only screen and (max-width:1050px) {
+#titulo1{
+  margin-top: 13%;
+}
+}
+
+@media only screen and (max-width:1000px) {
   #titulo1{
-    margin-top: 20%;
+    margin-top: 13%;
+  }
+}
+@media only screen and (max-width:970px){
+#titulo1{
+  margin-top: 11%;
+}
+}
+
+@media only screen and (max-width:900px) {
+  #titulo{
+    margin-top: 30%;
   }
 }
 
 
+@media only screen and (max-width:850px) {
+  #titulo1{
+    margin-top: 12%;
+  }
+}
 
 @media only screen and (max-width:800px) {
   #titulo1{
     margin-top: 13%;
+    margin-left: -9%;
   }
+  
+   #descriçãop #linhap #preçop{
+  margin-right: -10%;
+  }
+
   #imgdadosentrega{
     width: 0px;
     height: 0px;
@@ -427,6 +513,11 @@ body {
 @media only screen and (max-width:700px) {
   #titulo1{
     margin-top: 15%;
+  } 
+}
+
+@media only screen and (max-width:400px) {
+  #titulo1{
+    margin-top: 40%;
   }
-   
 }
