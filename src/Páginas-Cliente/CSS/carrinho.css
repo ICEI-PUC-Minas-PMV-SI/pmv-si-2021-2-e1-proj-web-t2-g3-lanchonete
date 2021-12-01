@@ -330,6 +330,20 @@
 }  
 }
 
+@media only screen and (max-width: 970px) {
+  #titulo{
+    margin-top: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  #titulo{
+    margin-top: 11%;
+  }
+}
+
+
 @media only screen and (max-width: 900px) {
   #titulo{
     margin-top: 12%;
@@ -400,9 +414,9 @@
   }
 }
 
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:450px) {
   #titulo{
-    margin-top: 27%;
+    margin-top: 24%;
     align-items: center;
   }
   #pquantidade{

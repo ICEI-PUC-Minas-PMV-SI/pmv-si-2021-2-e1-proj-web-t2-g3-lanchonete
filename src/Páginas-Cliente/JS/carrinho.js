@@ -1,0 +1,330 @@
+let modelsJson = [
+    {
+        "cardapio": [
+          {
+            "categoria": "Lanches",
+            "id": 1,
+            "nome": "X-Burguer",
+            "descricao": "Pão, hambúrguer, queijo prato, tomate e alface",
+            "imagem": "../midia/cardapio/images/lanches/x-burguer.png",
+            "preco": "10.90",
+            "quantidade": "1"
+          },
+          {
+            "categoria": "Lanches",
+            "id": 2,
+            "nome": "X-Cheese",
+            "descricao": "Pão, hambúrguer, queijo prato, queijo cheddar, muçarela",
+            "imagem": "../midia/cardapio/images/lanches/x-cheese.png",
+            "preco": "12.90",
+            "quantidade": "1"
+          },
+          {
+            "categoria": "Lanches",
+            "id": 3,
+            "nome": "X-Picanha Duplo",
+            "descricao": "Pão, 2 hambúrgueres de picanha, queijo cheddar, tomate, alface e milho verde",
+            "imagem": "../midia/cardapio/images/lanches/x-picanha-duplo.png",
+            "preco": "16.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 4,
+            "nome": "X-Tudo",
+            "descricao": "Pão, 2 hambúrgueres, bacon, queijo prato, presunto, muçarela, cebola caramelizada, tomate, alface e milho verde",
+            "imagem": "../midia/cardapio/images/lanches/x-tudo.png",
+            "preco": "23.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 5,
+            "nome": "Balde de Frango Frito (5 un)",
+            "descricao": "Delicioso frango frito americano crocante. Acompanha molho de alho",
+            "imagem": "../midia/cardapio/images/lanches/frango-frito.png",
+            "preco": "14.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 6,
+            "nome": "Cachorro Quente",
+            "descricao": "Pão, salsicha, queijo, bacon e mostarda",
+            "imagem": "../midia/cardapio/images/lanches/cachorro-quente.png",
+            "preco": "7.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 7,
+            "nome": "Mini Pizza",
+            "descricao": "Calabresa, queijo muçarela, cebola, tomate e orégano",
+            "imagem": "../midia/cardapio/images/lanches/mini-pizza.png",
+            "preco": "6.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 8,
+            "nome": "Coxinha de Frango",
+            "descricao": "Deliciosa coxinha de frango caseira",
+            "imagem": "../midia/cardapio/images/lanches/coxinha.png",
+            "preco": "4.50 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 9,
+            "nome": "Pão de Queijo",
+            "descricao": "Pão de queijo fresquinho que só em Minas tem",
+            "imagem": "../midia/cardapio/images/lanches/pão-de-queijo.png",
+            "preco": "3.50 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 10,
+            "nome": "Pastel de Carne",
+            "descricao": "Pastel de Carne frito na hora",
+            "imagem": "../midia/cardapio/images/lanches/pastel-carne.png",
+            "preco": "3.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 11,
+            "nome": "Pastel de Queijo",
+            "descricao": "Pastel de Queijo frito na hora",
+            "imagem": "../midia/cardapio/images/lanches/pastel-queijo.png",
+            "preco": "3.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches",
+            "id": 12,
+            "nome": "Batata Frita",
+            "descricao": "Batata frita crocante. Acompanha ketchup",
+            "imagem": "../midia/cardapio/images/lanches/batata-frita.png",
+            "preco": "2.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 13,
+            "nome": "Sanduíche Natural de Peito de Peru",
+            "descricao": "Pão integral, peito de peru, cream cheese, brotos germinados e tomate cereja",
+            "imagem": "../midia/cardapio/images/lanches-fit/sanduiche-peito-peru.png",
+            "preco": "20.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 14,
+            "nome": "Sanduíche Natural de Frango",
+            "descricao": "Pão integral, frango desfiado, cebola, tomate, cenoura, milho, maionese light",
+            "imagem": "../midia/cardapio/images/lanches-fit/sanduiche-frango.png",
+            "preco": "18.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 15,
+            "nome": "Bolo de Banana Fit",
+            "descricao": "Banana, óleo de coco, farinha de aveia, cacau e iorgurte natural",
+            "imagem": "../midia/cardapio/images/lanches-fit/bolo-banana.png",
+            "preco": "12.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 16,
+            "nome": "Crepioca",
+            "descricao": "Excelente opção de lanche fit",
+            "imagem": "../midia/cardapio/images/lanches-fit/crepioca.png",
+            "preco": "8.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 17,
+            "nome": "Coxinha de Frango Fit",
+            "descricao": "Frango desfiado, batata doce e linhaça",
+            "imagem": "../midia/cardapio/images/lanches-fit/coxinha-fit.png",
+            "preco": "7.90",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Lanches Fit",
+            "id": 18,
+            "nome": "Biscoito de Aveia Fit",
+            "descricao": "Farelo de aveia, óleo de coco, fruta desidratada, cacau em pó e whey",
+            "imagem": "../midia/cardapio/images/lanches-fit/biscoito-aveia.png",
+            "preco": "3.90 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 19,
+            "nome": "Suco Natural (500 mL)",
+            "descricao": "Sucos naturais e refrescantes",
+            "imagem": "../midia/cardapio/images/bebidas/suco-natural.png",
+            "preco": "6.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 20,
+            "nome": "Refrigerante (350 mL)",
+            "descricao": "Coca-Cola, Guaraná Antárctica, Pepsi, Fanta e Mate Couro",
+            "imagem": "../midia/cardapio/images/bebidas/refrigerante.png",
+            "preco": "5.00",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 21,
+            "nome": "Suco Detox (300 mL)",
+            "descricao": "Sucos verdes para manter sua dieta",
+            "imagem": "../midia/cardapio/images/bebidas/suco-detox.png",
+            "preco": "4.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 22,
+            "nome": "Água Mineral (500 mL)",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/bebidas/agua.png",
+            "preco": "3.00",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 23,
+            "nome": "Café c/ Leite (200 mL)",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/bebidas/cafe-leite.png",
+            "preco": "2.00",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Bebidas",
+            "id": 24,
+            "nome": "Café (xícara)",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/bebidas/cafe.png",
+            "preco": "1.50",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 25,
+            "nome": "Trufas",
+            "descricao": "Casca de chocolate com recheio variado",
+            "imagem": "../midia/cardapio/images/sobremesas/trufas.png",
+            "preco": "5.00 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 26,
+            "nome": "Mini Bolo",
+            "descricao": "Mini bolo de cenoura com cobertura de chocolate",
+            "imagem": "../midia/cardapio/images/sobremesas/mini-bolo.png",
+            "preco": "4.50 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 27,
+            "nome": "Palha Italiana",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/sobremesas/palha-italiana.png",
+            "preco": "4.00 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 28,
+            "nome": "Pudim",
+            "descricao": "Ovo, leite condensado, creme de leite. leite integral e açúcar",
+            "imagem": "../midia/cardapio/images/sobremesas/pudim.png",
+            "preco": "4.00 (100g)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 29,
+            "nome": "Brownie",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/sobremesas/brownie.png",
+            "preco": "4.00 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Sobremesas",
+            "id": 30,
+            "nome": "Brigadeiro",
+            "descricao": "",
+            "imagem": "../midia/cardapio/images/sobremesas/brigadeiro.png",
+            "preco": "3.50 (1 un)",
+            "quantidade": 1
+          },
+          {
+            "categoria": "Promoções",
+            "id": 31,
+            "nome": "X-Tudo",
+            "descricao": "Pão, 2 hambúrgueres, bacon, queijo prato, presunto, muçarela, cebola caramelizada, tomate, alface e milho verde",
+            "imagem": "../midia/cardapio/images/promocao/x-tudo.png",
+            "precoAntigo": "23.90",
+            "precoNovo": "18.90"
+          },
+          {
+            "categoria": "Promoções",
+            "id": 32,
+            "nome": "Sanduíche Natural de Peito de Peru",
+            "descricao": "Pão integral, peito de peru, cream cheese, brotos germinados e tomate cereja",
+            "imagem": "../midia/cardapio/images/promocao/sanduiche-peito-peru.png",
+            "precoAntigo": "20.90",
+            "precoNovo": "18.90"
+          },
+          {
+            "categoria": "Promoções",
+            "id": 33,
+            "nome": "Pão de Queijo (5 un)",
+            "descricao": "Pão de queijo fresquinho que só em Minas tem",
+            "imagem": "../midia/cardapio/images/promocao/pão-de-queijo.png",
+            "precoAntigo": "17.50",
+            "precoNovo": "14.00"
+          },
+          {
+            "categoria": "Promoções",
+            "id": 34,
+            "nome": "Balde de Frango Frito (5 un)",
+            "descricao": "Delicioso frango frito americano crocante. Acompanha molho de alho",
+            "imagem": "../midia/cardapio/images/promocao/frango-frito.png",
+            "precoAntigo": "14.90",
+            "precoNovo": "10.90"
+          },
+          {
+            "categoria": "Promoções",
+            "id": 35,
+            "nome": "Pastel de Carne + Suco Natural (500 mL)",
+            "descricao": "Pastel de carne frito na hora + um refrescante suco natural",
+            "imagem": "../midia/cardapio/images/promocao/pastel-carne-suco-natural.png",
+            "precoAntigo": "10.00",
+            "precoNovo": "8.00"
+          },
+          {
+            "categoria": "Promoções",
+            "id": 36,
+            "nome": "Coxinha de Frango Fit",
+            "descricao": "Frango desfiado, batata doce e linhaça",
+            "imagem": "../midia/cardapio/images/promocao/coxinha-fit.png",
+            "precoAntigo": "7.90",
+            "precoNovo": "5.90"
+          }
+        ]
+      }
+];
