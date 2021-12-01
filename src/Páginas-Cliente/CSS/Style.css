@@ -259,7 +259,7 @@
   font-size: 110%;
   text-align: center;
   margin-top: 2%;
-  margin-left: 10%;
+  margin-left: 2%;
   width: 300px;
   height: 310px;
   border-color: #ff9a00;
@@ -284,16 +284,12 @@
   color: black;
   font-size: 110%;
   text-align: center;
-  margin-top: -0.1%;
-  margin-left: 20%;
+  margin-left: 2%;
   width: 300px;
   height: 310px;
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
-  position: absolute;
-  margin-left: 40%;
-  top: 306.5%;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -317,16 +313,12 @@
   color: black;
   font-size: 110%;
   text-align: center;
-  margin-top: -0.1%;
-  margin-left: 20%;
+  margin-left: 2%;
   width: 300px;
   height: 310px;
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
-  position: absolute;
-  margin-left: 70%;
-  top: 306.5%;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -339,6 +331,10 @@
   margin-top: 10%;
   width: 90%;
   height: 18%;
+}
+
+#caixa-cmt {
+  flex-wrap: wrap;
 }
 
 #adcomentario {
@@ -436,49 +432,96 @@
 
 @media (max-width: 1024px) {
   #x-cheese, #x-tudo {
-    width: 180px;
+    width: 220px;
   }
   #x-cheese {
     float: right;
     margin-right: 28%;
-    margin-top: -20%;
+    margin-top: -23%;
   }
   #x-tudo {
     float: right;
     margin-right: 4%;
     margin-top: -7%;
   }
-  #titulo01, #titulo02 {
+  #titulo01 {
+    font-size: 300%;
+    margin-top: 17%;
+  }
+  #p01 {
+    font-size: 140%;
+  }
+  #star {
+    width: 80px;
+  }
+  #titulo02, #titulo03, #titulo04 {
     font-size: 300%;
   }
-  #botao01, #botao02 {
+  #p02 {
+    font-size: 200%;
+  }
+  #botao01 {
     margin-top: 7%;
     margin-bottom: 3%;
   }
+  #botao02 {
+    margin-left: 30%;
+  }
+  #smile, #heart, #like, #shopping, #smile2, #clap {
+    width: 80px;
+  }
   #smile {
     float: right;
-    margin-right: -2%;
+    margin-right: -15%;
     margin-top: -20%;
   }
-  #clap {
-    position: relative;
+  #heart {
+    float: right;
+    margin-right: 2%;
+    margin-top: -5%;
+  }
+  #like {
+    float: right;
+    margin-right: 1%;
+  }
+  #shopping {
+    float: left;
+    margin-left: 4%;
+    margin-top: -20%;
+  }
+  #smile2 {
+    float: left;
     margin-left: 2%;
+  }
+  #clap {
+    float: left;
+    margin-left: -12%;
     margin-top: -7%;
   }
-  #titulo04 {
-    margin-top: 10%;
+  #p03 {
+    font-size: 160%;
+  }
+  #contato{
+    font-size:  120%;
+    margin-top: 1%;
+  }
+  #email, #localization, #call {
+    width: 40px;
+  }
+  #logo {
+    width: 200px;
+    float: right;
+    margin-right: 15%;
+    margin-top: -20%;
   }
   #comentario01 {
     margin-top: 3.3%;
+    margin-left: 3%;
   }
   #comentario02 {
-    margin-top: -37%;
+    margin-top: 1.5%;
   }
   #comentario03 {
-    margin-top: -37%;
-  }
-  #adcomentario {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1.5%;
   }
 }
