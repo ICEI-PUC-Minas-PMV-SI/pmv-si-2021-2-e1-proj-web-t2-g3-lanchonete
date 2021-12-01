@@ -258,10 +258,9 @@
   color: black;
   font-size: 110%;
   text-align: center;
-  margin-top: 2%;
   margin-left: 2%;
   width: 300px;
-  height: 310px;
+  height: 280px;
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
@@ -274,7 +273,6 @@
 }
 
 #cmt01 {
-  margin-top: 13%;
   width: 90%;
   height: 18%;
 }
@@ -286,7 +284,7 @@
   text-align: center;
   margin-left: 2%;
   width: 300px;
-  height: 310px;
+  height: 280px;
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
@@ -303,7 +301,6 @@
 }
 
 #cmt02 {
-  margin-top: 9%;
   width: 90%;
   height: 18%;
 }
@@ -315,7 +312,7 @@
   text-align: center;
   margin-left: 2%;
   width: 300px;
-  height: 310px;
+  height: 280px;
   border-color: #ff9a00;
   border-width: 2px;
   border-style: solid;
@@ -328,12 +325,14 @@
 }
 
 #cmt03 {
-  margin-top: 10%;
   width: 90%;
   height: 18%;
 }
 
 #caixa-cmt {
+  width:100%;
+  height: 60%;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -415,14 +414,8 @@
   #titulo04 {
     margin-top: 10%;
   }
-  #comentario01 {
-    margin-top: 3.3%;
-  }
-  #comentario02 {
-    margin-top: -37%;
-  }
-  #comentario03 {
-    margin-top: -37%;
+  #caixa-cmt {
+    flex-wrap: nowrap;
   }
   #adcomentario {
     margin-top: 5%;
