@@ -4,198 +4,285 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ENDEREÇOS</title>
+    <title>Página do Cliente</title>
 
     <link rel="stylesheet" href="../../template-cliente/style.css" />
-  <link rel="stylesheet" href="../CSS/enderecos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet"
-  />
-
+    <link rel="stylesheet" href="../arquivos-uso-geral/style-modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css">
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css">
+    <link rel="stylesheet" href="../../Páginas-Cliente/CSS/enderecos.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
     <div class="container">
-      <header>
+      <header class="filter-blur">
         <div id="main-header">
           <div class="logo">
             <a href="#">
-              <img
-                src="../midia/cardapio/icons/logo-lanchonete.png"
-                alt="Logo da Lanchonete"
-              />
+              <img src="../../template-admin/midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
             </a>
           </div>
-          <!-- <div class="menu-section on">
-            <div class="menu-toggle">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </div> -->
-          <nav id="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="../Páginas-Cliente/Html/Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="#"> FIDELIDADE </a>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#"> SOBRE NÓS </a>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
               </li>
             </ul>
           </nav>
-          <nav id="login-carrinho">
+          <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="acessar-como.html">
-                  <img
-                    src="../midia/cardapio/icons/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
                   <span>LOGIN</span>
-                </a>
-              </li>
+                </li>
+              </span>
               <li id="carrinho">
-                <a href="#">
-                  <img
-                    src="../midia/cardapio/icons/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
-                  <span>CARRINHO</span>
+                <a href="../Páginas-Cliente/Html/carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="../Páginas-Cliente/Html/Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
+              </li>
+              <div id="login-carrinho-mobile">
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
+                <li id="carrinho-mobile">
+                  <a href="../Páginas-Cliente/Html/carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="../Páginas-Cliente/Html/enderecos.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
             </ul>
           </nav>
         </div>
         <div id="sub-header">
           <div id="horario">
-            <img
-              src="../midia/cardapio/icons/clock-icon.png"
-              alt="Ícone relógio"
-              class="icon"
-            />
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
-            <a href="#">
-              <img
-                src="../midia/cardapio/icons/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+            <a href="../Páginas-Cliente/Html/enderecos.html">
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
         </div>
       </header>
 
-      <main>
-          <div id="pesquisar">
-            <form name="pesquisar_endereco" action="../Html/enderecos.html" method="post">
-                <input id="cep" type="search" name="cep"  placeholder="Buscar CEP" >
-                <input id="endereco" type="search" name="cep"  placeholder="Buscar Bairro"><br>
-                <input type="submit" name="Pesquisar" value="Pesquisar">
-            </form>
-          </div>
-          <br><br>
-
-
-          <div id="tabela">
-            <table>
-                <tr>
-                    <th id="cep">CEP</th>
-                    <th id="bairro">BAIRRO</th>
-                </tr>
-                <tr>
-                    <td>30830-740</td>
-                    <td>Alípio de Melo</td>
-                </tr>
-                <tr>
-                    <td>30421-660</td>
-                    <td>Ventosa</td>
-                </tr>
-
-                <tr>
-                    <td>31080-030</td>
-                    <td>Santa Inês</td>
-                </tr>
-                <tr>
-                    <td>30380-475</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-
-                <tr>
-                    <td>30380-438</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-                <tr>
-                    <td>30380-474</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-
-                <tr>
-                    <td>30380-476</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-                <tr>
-                    <td>30380-473</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-
-                <tr>
-                    <td>30380-471</td>
-                    <td>Conjunto Santa Maria</td>
-                </tr>
-                <tr>
-                    <td>30692-515</td>
-                    <td>Itaipu (Barreiro)</td>
-                </tr>
-
-                <tr>
-                    <td>30250-222</td>
-                    <td>Santana do Cafezal</td>
-                </tr>
-
-                <tr>
-                    <td>30250-141</td>
-                    <td>Santana do Cafezal</td>
-                </tr>
-
-            </table>
-         </div>
+      <main class="filter-blur">
+        <h1>Pesquisar endereços de entrega:</h1><br>
+        <table id="tabela">
+          <tr>
+              <th><input type="text" placeholder="Digite o cep" id="cep"></th>
+              <th><input type="text" placeholder="Digite o bairro" id="bairro"></th>
+          </tr>
+          
+          <tr>
+              <td>30250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          
+          <tr>
+              <td>30270-000</td>
+              <td>PENHA</td>
+          </tr>
+          <tr>
+              <td>30750-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>30290-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>37250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          
+          <tr>
+              <td>30270-000</td>
+              <td>PENHA</td>
+          </tr>
+          <tr>
+              <td>30750-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>30290-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>37250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+              <td>37250-000</td>
+              <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          <tr>
+            <td>30250-000</td>
+            <td>BAIRRO 1</td>
+          </tr>
+          
+      </table>
       </main>
 
-      <footer>
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
+      <footer class="filter-blur">
         <div class="box-footer">
-          <div class="social-media">
-            <a href="#">
-              <img src="../../template-cliente/midia/facebook-icon.png" alt="Ícone Facebook" />
+          <div id="social-media">
+            <a href="https://pt-br.facebook.com/">
+              <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#">
-              <img src="../../template-cliente/midia/instagram-icon.png" alt="Ícone Instagram" />
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
             </a>
-            <a href="#">
-              <img src="../../template-cliente/midia/tiktok-icon.png" alt="Ícone TikTok" />
+            <a href="https://www.tiktok.com/pt-BR/">
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
-          <div class="infos">
+          <div id="infos">
             <p>
               Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
             </p>
@@ -203,8 +290,216 @@
         </div>
       </footer>
     </div>
-    <script src="../Javascriptre/enderecos.js"></script>
+    <section id="modal-acessar-como" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <h3>ACESSAR COMO</h3>
+          <div class="opcoes">
+            <div
+              id="admin"
+              onclick="abrirModal('modal-login-adm', 'modal-acessar-como')"
+            >
+              ADMINISTRADOR
+            </div>
+            <div
+              id="cliente"
+              onclick="abrirModal('modal-login-cliente', 'modal-acessar-como')"
+            >
+              CLIENTE
+            </div>
+          </div>
+          <img
+            src="../../template-cliente/midia/x-icon.png"
+            alt="Ícone X"
+            id="x-icon"
+            onclick="fecharModalLogin('modal-acessar-como')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-login-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  id="input-cpf-adm"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-adm"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../../template-cliente/midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-recuperar-senha-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-adm"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../../template-cliente/midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-login-cliente" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <form action="">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-cliente"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="../../template-cliente/midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
+            />
+          </form>
+          <div class="button">
+            <a href="../Páginas-Cliente/Html/cadastro.html" class="button">
+              <button type="submit" id="button-cadastro">
+                Quero me cadastrar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-recuperar-senha-cliente" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="../../template-cliente/midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============================================================================== -->
+
+    <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
+    <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
+    <script src="../../Páginas-Cliente/Javascriptre/enderecos.js"></script>
   </body>
 </html>
-
-

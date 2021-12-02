@@ -1,6 +1,3 @@
-body{
-    font-size: 25px;
-}
 #pesquisar{
     margin:0 auto;
     color: black;
@@ -9,24 +6,14 @@ body{
     margin-top: 30px;
     border: 0px;
 }
-input[type="submit"]{
-    border: 0px;
-    background-color: #ffa900;
-    padding: 10px;
-    margin-top: 8px;
-    font-weight: bold;
-}
-input{
-    margin: 0;
-    display: inline;
+input[type="text"]{
     text-align: center;
-    text-align: center;
-    margin: -4px;
-    font-size: 18px;
+    font-size: 20px;
+    color: #ffa900;
+    border: none;
 }
 #cep{
     width: 150px;
-
 }
 #endereco{
     width: 320px;
@@ -46,9 +33,19 @@ th{
     padding-right: 20px;
     padding-left: 20px;
 }
-#bairro{
-    width: 320px;
+main{
+    margin-top: 200px;
 }
-#cep{
-    width: 150px;
+table{
+    justify-content: center;
+    position: relative;
+    top: -30px;
+    
+}
+h1{
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -30px;
+    color: #bc1823;
 }
