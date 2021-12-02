@@ -18,16 +18,7 @@
   font-size: 150%;
   position: relative;
   margin-top: 2%;
-  margin-left: 25%;
-}
-
-#pquantidade {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 150%;
-  position: relative;
-  margin-top: -2%;
-  margin-left: 60%;
+  margin-left: 14%;
 }
 
 #ptotal {
@@ -36,88 +27,41 @@
   font-size: 150%;
   float: right;
   margin-top: -2%;
-  margin-right: 8%;
+  margin-right: 10%;
 }
 
-#linha1 {
-  color: gray;
-  inline-size: 45%;
-  margin-left: 12%;
-  margin-top: -10px;
+#lista-produtos {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #descrição {
   font-family: 'Roboto', sans-serif;
   color: black;
-  font-size: 150%;
+  font-size: 100%;
   margin-left: 5%;
   margin-top: 2%;
   font-size: 120%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
 }
-
-#bsubtração {
-  width: 18px;
-  height: 18px;
-  margin: 0 20px;
-  background-color: #bc1823;
-  border: none;
-}
-
-#bsubtração:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#badição {
-  width: 18px;
-  height: 18px;
-  background-color: green;
-  border: none;
-}
-
-#badição:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#quantidade {
-  font-family: 'Roboto', sans-serif;
-  float: right;
-  position: relative;
-  margin-top: -1%;
-  margin-right: 33%;
-}
-
-#qnt {
-  font-size: 100%;
-  color: black;
-  float: right;
-  margin-right: -4%;
-  margin-top: -1.1%;
-}
-
 
 #total1 {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 100%;
   float: right;
-  margin-top: -1.1%;
-  margin-right: -31%;
+  margin-top: -1.7%;
 }
 
-.divisoria {
-  color: gray;
-  inline-size: 100%;
-  margin-top: 7%;
-}
-
-.tit-cupom {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 130%;
-  margin-left: 5%;
-  margin-top: 2%;
+#valor-total {
+  width: 150px;
+  margin: 0 auto;
+  background-color: #bc1823;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ff9a00;
+  padding: 10px 20px;
 }
 
 .tit-frete {
