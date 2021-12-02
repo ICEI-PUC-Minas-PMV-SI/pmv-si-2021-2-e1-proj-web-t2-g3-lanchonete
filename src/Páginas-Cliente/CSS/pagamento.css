@@ -393,7 +393,7 @@ justify-content: space-around;
   color: #ffffff;
   font-size: 160%;
   text-align: center;
-  margin-top: 23%;
+  margin-top: 27%;
   margin-left: 37%;
   background-color: #ff9a00;
   border-radius: 30px 30px 30px 30px;
@@ -441,25 +441,31 @@ justify-content: space-around;
   margin-top: -21%;
   padding-bottom: 115px;
 }
-}
 .form-group2{
   display: flex;
   align-items: center;
   text-align: center;
   margin-top: -17%;
 }
+}
 
 
-
-@media only screen and (max-width:1050px) {
+@media only screen and (max-width: 1070px) {
 #titulo1{
-  margin-top: 13%;
+  margin-top: 12%;
 }
 }
+
+@media only screen and (max-width:1020px) {
+#titulo{
+  margin-top: 19%;
+}
+}
+
 
 @media only screen and (max-width:1000px) {
   #titulo1{
-    margin-top: 13%;
+    margin-top: 11%;
   }
   .form-group1{
     margin-top: -25%;
@@ -484,6 +490,15 @@ justify-content: space-around;
   }
   #total{
     margin-left: 8%;
+  }
+  .form-group{
+    margin-top: 1%;
+  }
+  .form-group1{
+    margin-top: -29%;
+  }
+  .form-group2{
+    margin-top: -23%;
   }
 }
 
@@ -532,21 +547,71 @@ justify-content: space-around;
      margin-left: 29%;
    }
    .endereçodeentrega{
-     margin-top: -3%;
+     margin-top: 2%;
    }
    #AdicionarCartao{
     margin-left: 29%                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+   }
+
+   .form-group1{
+     margin-top: -35%;
+     padding-top: 22px;
+   }
+   .form-group2{
+     margin-top: -27%;
+   }
+   #FinalizarPagamento{
+     margin-left: 29%;
    }
 }
 
 @media only screen and (max-width:700px) {
   #titulo1{
+    margin-left: -1%;
     margin-top: 15%;
-  } 
-}
+  }
+  #FinalizarPagamento{
+    margin-left: 27%;
+  }
 
-@media only screen and (max-width:400px) {
-  #titulo1{
-    margin-top: 40%;
+  #AlterarPedido{
+    margin-left: 26%;
+  }
+  #total{
+    font-size: 10px;
+    inline-size: 80%;
+  }
+  #valor{
+    margin-top: 5%;
+    font-size: 17px;
+  }
+  #primeiro{
+    font-size: 17px;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .form-group1{
+    margin-top: -41%;
+  }
+  .form-group2{
+    margin-top: -31%;
+    padding-top: -40px;
+  }
+  .wrapper{
+    margin-bottom: 3%;
   }
 }
+
+@media only screen and (max-width:600px) {
+  #titulo1{
+    margin-top: 18%;
+  }
+  #AlterarPedido{
+    margin-left: 21%;
+    margin-bottom: 1%;
+  }
+  #AdicionarCartao{
+    margin-left: 20%;
+  }
+
+  }
