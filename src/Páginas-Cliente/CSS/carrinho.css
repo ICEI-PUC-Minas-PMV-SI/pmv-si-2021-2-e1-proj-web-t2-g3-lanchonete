@@ -1,150 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-ul li {
-  list-style: none;
-}
-
-body {
-  font-family: 'Roboto', 'Oxygen', sans-serif;
-  color: #ffffff;
-}
-
-header {
-  background-color: #bc1823;
-  height: 136px;
-  padding: 10px 0;
-}
-
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 25px;
-  font-size: 16px;
-  font-weight: bolder;
-}
-
-.logo img {
-  width: 150px;
-}
-
-.icon {
-  width: 20px;
-}
-
-.menu ul {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-ul li a:hover {
-  color: #ff9a00;
-}
-
-.login-carrinho ul {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-#login,
-#carrinho {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin-left: 15px;
-}
-
-#login-icon {
-  width: 28px;
-  position: absolute;
-  right: 49px;
-  top: -1px;
-}
-
-#cart-icon {
-  width: 16px;
-  position: absolute;
-  right: 93px;
-  top: -2px;
-}
-
-.sub-header {
-  background-color: #ff9a00;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.horario,
-.enderecos a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  margin: 0 25px;
-}
-
-.enderecos span:hover {
-  color: #bc1823;
-}
-
-main {
-  height: 521px;
-}
-
-footer {
-  background-color: #bc1823;
-  height: 100px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-media a img {
-  width: 25px;
-  margin: 0 6px;
-}
-
-.social-media a img:hover {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-
-
-
-
 
 #titulo {
   background-color: #bc1823;
   height: 64px;
   margin-top: 10%;
-  font-size: 300%;
+  font-size: 50px;
   color: #ffffff;
   text-align: center;
  }
@@ -159,16 +18,7 @@ footer {
   font-size: 150%;
   position: relative;
   margin-top: 2%;
-  margin-left: 25%;
-}
-
-#pquantidade {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 150%;
-  position: relative;
-  margin-top: -2%;
-  margin-left: 60%;
+  margin-left: 14%;
 }
 
 #ptotal {
@@ -177,14 +27,12 @@ footer {
   font-size: 150%;
   float: right;
   margin-top: -2%;
-  margin-right: 8%;
+  margin-right: 10%;
 }
 
-#linha1 {
-  color: gray;
-  inline-size: 45%;
-  margin-left: 12%;
-  margin-top: -10px;
+#lista-produtos {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #descrição {
@@ -194,71 +42,26 @@ footer {
   margin-left: 5%;
   margin-top: 2%;
   font-size: 120%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
 }
-
-#bsubtração {
-  width: 18px;
-  height: 18px;
-  margin: 0 20px;
-  background-color: #bc1823;
-  border: none;
-}
-
-#bsubtração:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#badição {
-  width: 18px;
-  height: 18px;
-  background-color: green;
-  border: none;
-}
-
-#badição:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#quantidade {
-  font-family: 'Roboto', sans-serif;
-  float: right;
-  position: relative;
-  margin-top: -1%;
-  margin-right: 33%;
-}
-
-#qnt {
-  font-size: 100%;
-  color: black;
-  float: right;
-  margin-right: -4%;
-  margin-top: -1.1%;
-}
-
 
 #total1 {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 100%;
   float: right;
-  margin-top: -1.1%;
-  margin-right: -31%;
+  margin-top: -1.7%;
 }
 
-.divisoria {
-  color: gray;
-  inline-size: 100%;
-  margin-top: 7%;
-}
-
-.tit-cupom {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 130%;
-  margin-left: 5%;
-  margin-top: 2%;
+#valor-total {
+  width: 150px;
+  margin: 0 auto;
+  background-color: #bc1823;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ff9a00;
+  padding: 10px 20px;
 }
 
 .tit-frete {
@@ -443,4 +246,164 @@ footer {
 #FinalizaçaoBotao:hover {
   -webkit-transform: scale(1.09);
   transform: scale(1.09);
+}
+
+
+
+@media only screen and (max-width:1440px) {
+  #titulo{
+    margin-top: 137px;
+  }
+}
+
+@media only screen and (max-width: 1294px) {
+  #img-titulo {
+    width: 38px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+  #titulo{
+    margin-top: 137px;
+  }
+  #qnt{
+    margin-right: -5%;
+  }
+#FinalizaçaoBotao{
+  margin-top: 7%;
+}  
+}
+
+@media only screen and (max-width: 970px) {
+  #titulo{
+    margin-top: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 950px) {
+  #titulo{
+    margin-top: 11%;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  #titulo{
+    margin-top: 12%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 29%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  #titulo{
+    margin-top: 14%;
+  }
+  #qnt{
+    margin-right: -8%;
+  }
+  #linha1{
+    inline-size: 30%;
+    margin-left: 21%
+  }
+  #pquantidade{
+    margin-left: 55%;
+    margin-top: -5%;
+  }
+  #pdescrição{
+    margin-top: 4%;
+  }
+  #ptotal{
+    margin-top: -4%;
+  }
+  #total1{
+    margin-right: -37%;
+  }
+  #FinalizaçaoBotao{
+    margin-top: 7%;
+    margin-left: 23%;
+  }  
+}
+
+@media only screen and (max-width:600px) {
+  #titulo{
+    margin-top: 18%;
+  }
+}
+
+@media only screen and (max-width:650px) {
+  #titulo{
+    margin-top: 16%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 21%;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  #titulo{
+    margin-top: 20%;
+  }
+  #ptotal, #pdescrição, #pquantidade{
+    font-size: 18px;
+  }
+  #total1{
+    margin-right: -42%;
+    margin-top: -2%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 14%;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  #titulo{
+    margin-top: 24%;
+    align-items: center;
+  }
+  #pquantidade{
+    font-size: 100%;
+  }
+  #pdescrição{
+    font-size: 100%;
+  }
+  #ptotal{
+    font-size: 100%;
+    margin-right: 1%;
+  }
+  #total1{
+    font-size: 80%;
+  }
+  #descrição{
+    font-size: 80%;
+    margin-top: 1%;
+  }
+  #linha1{
+    margin-top: -1%;
+  }
+  
+  #ContinuarComprando {
+    font-size: 100%;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 220px;
+    height: 35px;
+  }
+  
+  #ContinuarComprando:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+  
+  #continuar {
+    color: black;
+  }
+  
+  #imgcontinuar {
+    width: 30px;
+    vertical-align: text-bottom;
+  }
+
 }

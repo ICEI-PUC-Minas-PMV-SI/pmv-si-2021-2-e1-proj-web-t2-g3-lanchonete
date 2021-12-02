@@ -244,113 +244,374 @@
 }
 
 
+
+
+
+
+
 .PagarEntrega{
- color: white;
- background-color:#bc1823;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- font-size: 20px;
- text-align: center;
- margin-top: 2%;
- margin-bottom: 10%;
+  color: white;
+  background-color:#bc1823;
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2%;
+ }
+
+
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.escolher-cartao{
- margin-left: 5%;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- box-shadow: 0 4px 8px silver;
- width: 10%;
- margin-top: -70px;
- margin-bottom: 20%;
+body {
+  font-family: roboto;
 }
 
-.dinheiro{
- margin-left: 30%;
- margin-top: -33%;
- font-family: 'Roboto', 'Oxygen', sans-serif;
- box-shadow: 0 4px 8px silver;
- width: 17%;
+.wrapper {
+  padding: 30px;
+  margin-top: 30%;
+  margin-bottom: -10%;
+  list-style: none;
+justify-content: space-around;  
 }
 
-.ender-pix{
- color: black;
- font-family: 'Roboto', 'Oxygen', sans-serif;
+#letras{
+  color: black;
+  margin-left: 8%;
 }
 
 
 
-.tit-troco{
- font-family: 'Roboto', 'Oxygen', sans-serif;
- font-size: 30px;
- color: black;
- margin-left: 70%;
- margin-top: -120px;
-}
-
-.troco {
-  background: white;
-  gap: 25px;
-  width: 200px;
-  height: 30px;
-  margin-left: 70%;
-  margin-top: 1%;
-  box-shadow: 0 4px 8px silver;
+.form-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-color: #ff9a00;
-  border-width: 1px;
-  border-style: solid;  
+  margin-bottom: 15px;
 }
 
-.troco input {
-  background-color: white;
-  border: none;
+.form-group label {
+  padding-left: 0px;
+  cursor: pointer;
+}
+
+.form-group1{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: -18%;
+  padding-bottom: 115px;
+}
+
+.form-group2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: -15%;
+  margin-left: 80%;
+
+}
+
+#dinheiro01{
+  margin-top: -8%;
+}
+
+
+
+#imgvisadeb{
+  margin-left: -8%;
+}
+
+#imgvisacre{
+  margin-left: -8%;
+}
+
+#imgdinheiro{
+  width: 80px;
+  height: 40px;
+}
+
+
+
+
+
+
+
+.radio, .checkbox {
+  cursor: pointer;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   outline: none;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
 }
 
-.troco button {
-  background-color: white;
-  border: none;
-  border-style: none;
+.checkbox {
+  border-radius: 0;
 }
 
-.troco button:hover { 
-  background-color: white;
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
+.radio:before, .checkbox:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  position: absolute;
 }
 
-.troco img {
-  width: 25px;
-  background-color: #ff9a00;
+.checkbox:before {
+  border-radius: 0;
+  background: transparent;
+  border: 4px solid black;
+  border-left: 0;
+  border-top: 0;
+  width: 7px;
+  height: 12px;
+  transform: rotate(45deg);
+  top: 2px;
+}
+
+.radio:checked:before, .checkbox:checked:before {
+  opacity: 1;
+}
+
+.radio:focus, .checkbox:focus {
+  box-shadow: 0 0 5px black;
 }
 
 #FinalizarPagamento{
- font-family: 'Roboto', 'Oxygen', sans-serif;
- color: #ffffff;
- font-size: 160%;
- text-align: center;
- margin-top: 10%;
- margin-left: 37%;
- background-color: #ff9a00;
- border-radius: 30px 30px 30px 30px;
- width: 345px;
- height: 50px;
- border: none;
- border-style: none;
- margin-bottom: 10%;
-}
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  color: #ffffff;
+  font-size: 160%;
+  text-align: center;
+  margin-top: 27%;
+  margin-left: 37%;
+  background-color: #ff9a00;
+  border-radius: 30px 30px 30px 30px;
+  width: 345px;
+  height: 50px;
+  border: none;
+  border-style: none;
+  margin-bottom: 8%;
+ }
+ 
+ #FinalizarPagamento:hover {
+   -webkit-transform: scale(1.09);
+   transform: scale(1.09);
+ }
 
-#FinalizarPagamento:hover {
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
-}
 
 .ajuste{
  color: #ffffff;
  display: flex;
  margin-bottom: -30%;
 }
+
+
+@media only screen and (max-width:1200px) {
+#titulo1{
+  margin-top: 11%;
+}
+.resumop{
+  margin-left: -10%;
+}
+#total{
+  margin-left: 11%;
+}
+#AlterarPedido{
+  margin-left: 35%;
+}
+#AdicionarCartao{
+  margin-left: 35%;
+}
+.form-group1{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-top: -21%;
+  padding-bottom: 115px;
+}
+.form-group2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: -17%;
+}
+}
+
+
+@media only screen and (max-width: 1070px) {
+#titulo1{
+  margin-top: 12%;
+}
+}
+
+@media only screen and (max-width:1020px) {
+#titulo{
+  margin-top: 19%;
+}
+}
+
+
+@media only screen and (max-width:1000px) {
+  #titulo1{
+    margin-top: 11%;
+  }
+  .form-group1{
+    margin-top: -25%;
+  }
+  .form-group2{
+    margin-top: -21%;
+  }
+}
+
+@media only screen and (max-width:970px){
+#titulo1{
+  margin-top: 11%;
+}
+}
+
+@media only screen and (max-width:900px) {
+  #titulo{
+    margin-top: 30%;
+  }
+  .resumop{
+    margin-left: 1%;
+  }
+  #total{
+    margin-left: 8%;
+  }
+  .form-group{
+    margin-top: 1%;
+  }
+  .form-group1{
+    margin-top: -29%;
+  }
+  .form-group2{
+    margin-top: -23%;
+  }
+}
+
+
+@media only screen and (max-width:850px) {
+  #titulo1{
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  #titulo1{
+    margin-top: 13%;
+    margin-left: -9%;
+  }
+  
+   #descriçãop #linhap #preçop{
+  margin-right: -10%;
+  }
+
+  #imgdadosentrega{
+    width: 0px;
+    height: 0px;
+  }
+  #linhap{
+    inline-size: 50%;
+    margin-left: 25%
+  }
+  #descriçãop{
+    margin-left: 10%;
+   }
+   #primeiro{
+     font-size: 22px ;
+     margin-left: 1%;
+     margin-top: 3%;
+   }
+   #linha{
+     display: flex;
+     margin-top: 3%;
+   }
+   #valor{
+     font-size: 22px;
+     margin-top: 3%;
+   }
+   #AlterarPedido{
+     margin-left: 29%;
+   }
+   .endereçodeentrega{
+     margin-top: 2%;
+   }
+   #AdicionarCartao{
+    margin-left: 29%                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
+   }
+
+   .form-group1{
+     margin-top: -35%;
+     padding-top: 22px;
+   }
+   .form-group2{
+     margin-top: -27%;
+   }
+   #FinalizarPagamento{
+     margin-left: 29%;
+   }
+}
+
+@media only screen and (max-width:700px) {
+  #titulo1{
+    margin-left: -1%;
+    margin-top: 15%;
+  }
+  #FinalizarPagamento{
+    margin-left: 27%;
+  }
+
+  #AlterarPedido{
+    margin-left: 26%;
+  }
+  #total{
+    font-size: 10px;
+    inline-size: 80%;
+  }
+  #valor{
+    margin-top: 5%;
+    font-size: 17px;
+  }
+  #primeiro{
+    font-size: 17px;
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  .form-group1{
+    margin-top: -41%;
+  }
+  .form-group2{
+    margin-top: -31%;
+    padding-top: -40px;
+  }
+  .wrapper{
+    margin-bottom: 3%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #titulo1{
+    margin-top: 18%;
+  }
+  #AlterarPedido{
+    margin-left: 21%;
+    margin-bottom: 1%;
+  }
+  #AdicionarCartao{
+    margin-left: 20%;
+  }
+
+  }
