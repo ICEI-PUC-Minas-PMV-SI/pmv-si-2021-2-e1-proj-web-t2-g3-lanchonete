@@ -297,6 +297,15 @@
   }
 }
 
+@media only screen and (max-width:800px) {
+  #titulo{
+    margin-top: 13%;
+  }
+  #FinalizaçaoBotao{
+   margin-left: 28%;
+  }
+}
+
 @media only screen and (max-width:768px) {
   #titulo{
     margin-top: 14%;
@@ -327,11 +336,12 @@
   }  
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:700px) {
   #titulo{
-    margin-top: 18%;
+    margin-top: 15%;
   }
 }
+
 
 @media only screen and (max-width:650px) {
   #titulo{
@@ -339,6 +349,26 @@
   }
   #FinalizaçaoBotao{
     margin-left: 21%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  #titulo{
+    margin-top: 18%;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 18%;
+  }
+  #ContinuarComprando{
+    width: 250px;
+    height: 35px;
+  }
+  #imgcontinuar{
+    width: 30px;
+    height: 30px;
+  }
+  #continuar{
+    font-size: 18px;
   }
 }
 
@@ -358,13 +388,17 @@
   }
 }
 
+@media only screen and (max-width:500px) {
+#FinalizaçaoBotao{
+  margin-left: 11%;
+}
+}
+
+
 @media only screen and (max-width:450px) {
   #titulo{
     margin-top: 24%;
-    align-items: center;
-  }
-  #pquantidade{
-    font-size: 100%;
+    
   }
   #pdescrição{
     font-size: 100%;
@@ -405,5 +439,55 @@
     width: 30px;
     vertical-align: text-bottom;
   }
+  #FinalizaçaoBotao{
+    margin-left: 6%;
+  }
+
+  #conjuntoDescriçao{
+    margin-right: 11%;
+  }
 
 }
+
+@media only screen and (max-width:400px) {
+  #titulo{
+  size: 140%;
+  margin-top: 25%;
+  margin-left: 0%;
+  }
+  #FinalizaçaoBotao{
+    width: 300px;
+    margin-left: 13%;
+  }
+}
+
+@media only screen and (max-width:350px) {
+  #titulo{
+  margin-top: 30%;
+  font-size: 40px;
+  }
+  #img-titulo{
+    width: 30px;
+    height: 39px;
+  }
+  #FinalizaçaoBotao{
+    margin-left: 7%;
+  }
+}
+
+@media only screen and (max-width:300px) {
+  #titulo{
+    margin-top: 36%;
+    size: 400px
+    }
+    #img-titulo{
+      width: 30px;
+      height: 39px;
+    }
+    #FinalizaçaoBotao{
+      width: 200px;
+      height: 30px;
+      font-size: 17px;
+      margin-left: 16%;
+    }
+  }
