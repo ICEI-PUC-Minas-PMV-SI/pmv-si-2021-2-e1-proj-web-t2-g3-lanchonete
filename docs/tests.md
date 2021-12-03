@@ -31,16 +31,11 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 # Testes de Software
 
-| Página | Requisito | Funcionalidade | Cenário de Teste
-
-| Cardápio | - | Exibir produtos disponíveis | Ao carregar a página, é esperado que todos os produtos de cada categoria (lanches, lanches fit, bebidas e sobremesas) sejam mostrados para o usuário. |
-
-| Cardápio | Pesquisar lanches | Pesquisar lanches | Ao digitar algo no campo "Pesquisar por um produto" e clicar no botão da lupa, os produtos que contém a palavra digitada serão mostrados. |
-
-| Cardápio | - | Adicionar produtos ao carrinho | Ao clicar no botão de adicionar, presente em cada produto do cardápio, tal produto é enviado para o carrinho. |
-
-| Cardápio | - | Rolar a página para melhor navegação | Ao clicar no banner de uma categoria, é esperado que a página role até tal categoria. |
-
-| Cardápio | - | Limpar o carrinho | Ao clicar em "Limpar o carrinho", é esperado que os produtos selecionados pelo usuário sejam desconsiderados. |
-
-| Cardápio | Registrar cliente | Fazer cadastro de novo usuário | Ao preencher os campos da página e clicar no botão "Cadastrar", é esperado que os dados do usuário sejam armazenados no localStorage e, dessa forma, ele consiga fazer o login. |
+| Página   | Requisito         | Funcionalidade                       | Cenário de Teste                                                                                                                                                                |
+| -------- | ----------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cardápio | -                 | Exibir produtos disponíveis          | Ao carregar a página, é esperado que todos os produtos de cada categoria (lanches, lanches fit, bebidas e sobremesas) sejam mostrados para o usuário.                           |
+| Cardápio | Pesquisar lanches | Pesquisar lanches                    | Ao digitar algo no campo "Pesquisar por um produto" e clicar no botão da lupa, os produtos que contém a palavra digitada serão mostrados.                                       |
+| Cardápio | -                 | Adicionar produtos ao carrinho       | Ao clicar no botão de adicionar, presente em cada produto do cardápio, tal produto é enviado para o carrinho.                                                                   |
+| Cardápio | -                 | Rolar a página para melhor navegação | Ao clicar no banner de uma categoria, é esperado que a página role até tal categoria.                                                                                           |
+| Cardápio | -                 | Limpar o carrinho                    | Ao clicar em "Limpar o carrinho", é esperado que os produtos selecionados pelo usuário sejam desconsiderados.                                                                   |
+| Cardápio | Registrar cliente | Fazer cadastro de novo usuário       | Ao preencher os campos da página e clicar no botão "Cadastrar", é esperado que os dados do usuário sejam armazenados no localStorage e, dessa forma, ele consiga fazer o login. |
