@@ -558,8 +558,12 @@ justify-content: space-around;
 
 @media only screen and (max-width:800px) {
   #titulo1{
+    margin-left:-1%;
     margin-top: 13%;
-    margin-left: -9%;
+  }
+
+  #total{
+    margin-left: 5%;
   }
   
    #descriçãop #linhap #preçop{
@@ -600,15 +604,18 @@ justify-content: space-around;
     margin-left: 29%                                                                                                                                                                                                                                                                                                                                                                                                                                                           ;
    }
 
-   .form-group1{
-     margin-top: -35%;
-     padding-top: 22px;
+   #espaçamento{
+     margin-top: -33%;
    }
-   .form-group2{
-     margin-top: -27%;
+   #espaçamento1{
+     margin-top: -49%;
    }
    #FinalizarPagamento{
      margin-left: 29%;
+     margin-top: 208px;
+   }
+   .wrapper{
+     margin-bottom: -52%;
    }
 }
 
@@ -637,12 +644,13 @@ justify-content: space-around;
     margin-top: 2%;
     margin-left: 5%;
   }
-  .form-group1{
-    margin-top: -41%;
+  #espaçamento{
+    margin-top: -38%;
+    padding-bottom: 22%;
   }
-  .form-group2{
-    margin-top: -31%;
-    padding-top: -40px;
+  #espaçamento1{
+    margin-top: -57%;
+    padding-bottom: 50%;
   }
   .wrapper{
     margin-bottom: 3%;
