@@ -124,7 +124,7 @@ Página para o cliente alterar dados e/ou excluir seu cadastro.
 
 Página para o cliente acompanhar seus pedidos.
 
-![Pedidos 2](https://user-images.githubusercontent.com/89786617/144591364-1017df75-b1de-43df-86c5-4a8b9dadeae1.png)
+![Pedidos 2](https://user-images.githubusercontent.com/89786617/144591364-1017df75-b1de-43df-86c5-4a8b9dadeae1.png) 
 
 ---
 
