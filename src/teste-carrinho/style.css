@@ -1,18 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', 'Oxygen', sans-serif;
+  color: #ffffff;
+}
+
+header {
+  background-color: #bc1823;
+  height: 136px;
+  padding: 10px 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.icon {
+  width: 20px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+ul li a:hover {
+  color: #ff9a00;
+}
+
+.login-carrinho ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+#login,
+#carrinho {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 15px;
+}
+
+#login-icon {
+  width: 28px;
+  position: absolute;
+  right: 49px;
+  top: -1px;
+}
+
+#cart-icon {
+  width: 16px;
+  position: absolute;
+  right: 93px;
+  top: -2px;
+}
+
+.sub-header {
+  background-color: #ff9a00;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.horario,
+.enderecos a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0 25px;
+}
+
+.enderecos span:hover {
+  color: #bc1823;
+}
+
+main {
+  height: 521px;
+}
+
+footer {
+  background-color: #bc1823;
+  height: 100px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media a img {
+  width: 25px;
+  margin: 0 6px;
+}
+
+.social-media a img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
 
 #titulo {
   background-color: #bc1823;
   height: 64px;
   margin-top: 10%;
-  font-size: 50px;
+  font-size: 300%;
   color: #ffffff;
   text-align: center;
- }
+}
 
- #img-titulo {
+#img-titulo {
   vertical-align: text-bottom;
- }
+}
 
- #pdescrição {
+#pdescrição {
   font-family: 'Roboto', sans-serif;
   color: black;
   font-size: 150%;
@@ -64,6 +200,20 @@
   padding: 10px 20px;
 }
 
+.divisoria {
+  color: gray;
+  inline-size: 100%;
+  margin-top: 7%;
+}
+
+.tit-cupom {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 130%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
 .tit-frete {
   font-family: 'Roboto', sans-serif;
   color: black;
@@ -90,7 +240,7 @@
   padding: 12px;
   border-color: #ff9a00;
   border-width: 1px;
-  border-style: solid;  
+  border-style: solid;
 }
 
 #cupom input {
@@ -107,7 +257,7 @@
   border-style: none;
 }
 
-#cupom button:hover { 
+#cupom button:hover {
   background-color: white;
   -webkit-transform: scale(1.09);
   transform: scale(1.09);
@@ -129,9 +279,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px;
-  border-color:#ff9a00;
+  border-color: #ff9a00;
   border-width: 1px;
-  border-style: solid;  
+  border-style: solid;
 }
 
 #frete input {
@@ -148,7 +298,7 @@
   border-style: none;
 }
 
-#frete button:hover { 
+#frete button:hover {
   background-color: white;
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -164,7 +314,7 @@
   position: relative;
   display: flex;
   margin-top: 3%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 .frete {
@@ -172,7 +322,7 @@
   position: relative;
   display: flex;
   margin-top: 1%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 .desconto {
@@ -180,7 +330,7 @@
   position: relative;
   display: flex;
   margin-top: 1%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 .totalp {
@@ -188,7 +338,7 @@
   position: relative;
   display: flex;
   margin-top: 1%;
-  margin-left: 5%;  
+  margin-left: 5%;
 }
 
 #valores {
@@ -246,164 +396,4 @@
 #FinalizaçaoBotao:hover {
   -webkit-transform: scale(1.09);
   transform: scale(1.09);
-}
-
-
-
-@media only screen and (max-width:1440px) {
-  #titulo{
-    margin-top: 137px;
-  }
-}
-
-@media only screen and (max-width: 1294px) {
-  #img-titulo {
-    width: 38px;
-}
-}
-
-@media only screen and (max-width: 1024px) {
-  #titulo{
-    margin-top: 137px;
-  }
-  #qnt{
-    margin-right: -5%;
-  }
-#FinalizaçaoBotao{
-  margin-top: 7%;
-}  
-}
-
-@media only screen and (max-width: 970px) {
-  #titulo{
-    margin-top: 10%;
-  }
-}
-
-
-@media only screen and (max-width: 950px) {
-  #titulo{
-    margin-top: 11%;
-  }
-}
-
-
-@media only screen and (max-width: 900px) {
-  #titulo{
-    margin-top: 12%;
-  }
-  #FinalizaçaoBotao{
-    margin-left: 29%;
-  }
-}
-
-@media only screen and (max-width:768px) {
-  #titulo{
-    margin-top: 14%;
-  }
-  #qnt{
-    margin-right: -8%;
-  }
-  #linha1{
-    inline-size: 30%;
-    margin-left: 21%
-  }
-  #pquantidade{
-    margin-left: 55%;
-    margin-top: -5%;
-  }
-  #pdescrição{
-    margin-top: 4%;
-  }
-  #ptotal{
-    margin-top: -4%;
-  }
-  #total1{
-    margin-right: -37%;
-  }
-  #FinalizaçaoBotao{
-    margin-top: 7%;
-    margin-left: 23%;
-  }  
-}
-
-@media only screen and (max-width:600px) {
-  #titulo{
-    margin-top: 18%;
-  }
-}
-
-@media only screen and (max-width:650px) {
-  #titulo{
-    margin-top: 16%;
-  }
-  #FinalizaçaoBotao{
-    margin-left: 21%;
-  }
-}
-
-@media only screen and (max-width:550px) {
-  #titulo{
-    margin-top: 20%;
-  }
-  #ptotal, #pdescrição, #pquantidade{
-    font-size: 18px;
-  }
-  #total1{
-    margin-right: -42%;
-    margin-top: -2%;
-  }
-  #FinalizaçaoBotao{
-    margin-left: 14%;
-  }
-}
-
-@media only screen and (max-width:450px) {
-  #titulo{
-    margin-top: 24%;
-    align-items: center;
-  }
-  #pquantidade{
-    font-size: 100%;
-  }
-  #pdescrição{
-    font-size: 100%;
-  }
-  #ptotal{
-    font-size: 100%;
-    margin-right: 1%;
-  }
-  #total1{
-    font-size: 80%;
-  }
-  #descrição{
-    font-size: 80%;
-    margin-top: 1%;
-  }
-  #linha1{
-    margin-top: -1%;
-  }
-  
-  #ContinuarComprando {
-    font-size: 100%;
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 220px;
-    height: 35px;
-  }
-  
-  #ContinuarComprando:hover {
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-  }
-  
-  #continuar {
-    color: black;
-  }
-  
-  #imgcontinuar {
-    width: 30px;
-    vertical-align: text-bottom;
-  }
-
 }

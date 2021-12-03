@@ -13,76 +13,38 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="menu">
-          <div class="logo">
-            <a href="#">
-              <img
-                src="midia/logo-lanchonete.png"
-                alt="Logo Lanchonete"
-                class="logo"
-              />
-            </a>
-          </div>
-          <div class="botoes">
-            <ul>
-              <li>
-                <a href="#">
-                  <img
-                    src="midia/perfil-icon.png"
-                    alt="Ícone Perfil"
-                    class="icon"
-                  />
-                  <p>Perfil</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="midia/financeiro-icon.png"
-                    alt="Ícone Financeiro"
-                    class="icon"
-                  />
-                  <p>Financeiro</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="midia/cardapio-icon.png"
-                    alt="Ícone Cardápio"
-                    class="icon"
-                  />
-                  <p>Cardápio</p>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="midia/comandas-icon.png"
-                    alt="Ícone Comandas"
-                    class="icon"
-                  />
-                  <p>Comandas</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- <div class="logo">
-            <a href="#">
-              <img
-                src="midia/logo2-lanchonete.png"
-                alt="Logo Lanchonete"
-                class="logo logo2"
-              />
-            </a>
-          </div> -->
-        </div>
-      </header>
-      <main>
+    <header>
+        <button onclick="mostrarMenu()" id="btn-menu"><i id="iconMenu" class="fas fa-bars"></i></button>
+        <div id="cabecalho">Perfil Administrador</div>
+        <i id="iconMenu2" class="fas fa-bars"></i>
+    </header>
+    <nav id="menuLateral">
+        <button onclick="fecharMenu()" id="btn-fechar" ><i class="fas fa-times"></i></button><br><br>
+        <div id="div_imagem"><img id="logoPrincipal" src="../template-admin/midia/logo-lanchonete.png"></div>
+        <a href="">
+          <i class="far fa-user-circle"></i>
+          Perfil</a>
+        <a href="">
+          <i class="fas fa-coins"></i>
+          Financeiro</a>
+        <a href="">
+          <i class="fas fa-utensils"></i>
+          Cardápio</a>
+        <a href="">
+          <i class="far fa-sticky-note"></i>
+          Comandas</a>
+        <a href="" onclick="sair()">
+          <i class="fas fa-sign-out-alt"></i>
+          Sair</a>
+    </nav>
+  
+      <main id="teste">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
           quibusdam soluta repellat doloribus fugit at libero minima laborum
@@ -254,5 +216,6 @@
         </p>
       </main>
     </div>
+    <script src="admin.js"></script>
   </body>
 </html>

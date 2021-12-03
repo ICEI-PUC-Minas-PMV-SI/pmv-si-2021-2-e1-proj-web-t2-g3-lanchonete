@@ -7,9 +7,9 @@
     <title>Meu carrinho</title>
   </head>
 
-  <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css">
-  <link rel="stylesheet" href="../CSS/carrinho.css" />
-  <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css">
+  <link rel="stylesheet" href="../arquivos-uso-geral/style-header-footer.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../arquivos-uso-geral/style-modal.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -29,7 +29,7 @@
           <div class="logo">
             <a href="#">
               <img
-                src="../midia/logo-lanchonete.png"
+                src="../Páginas-Cliente/midia/logo-lanchonete.png"
                 alt="Logo da Lanchonete"
               />
             </a>
@@ -43,7 +43,7 @@
                 </a>
               </li>
               <li>
-                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
                 <a href="fidelidade.html">FIDELIDADE</a>
@@ -135,10 +135,10 @@
 <body>
 
   <h1 id="titulo" >
-    <img id="img-titulo" src="../midia/carrinho/carrinho.icon.png" alt="carrinho">
+    <img id="img-titulo" src="../Páginas-Cliente/midia/carrinho/carrinho.icon.png" alt="carrinho">
     Meu carrinho</h1>
 
-    <div>
+  <div>
       <h2 id="pdescrição" >Produtos</h2>
       <h2 id="ptotal" >Total</h2>
 
@@ -207,210 +207,11 @@
   </div>
 </footer>
 </div>
-
-<section id="modal-acessar-como" class="modal">
-  <div class="modal-box">
-    <div class="caixa">
-      <h3>ACESSAR COMO</h3>
-      <div class="opcoes">
-        <div
-          id="admin"
-          onclick="abrirModal('modal-login-adm', 'modal-acessar-como')"
-        >
-          ADMINISTRADOR
-        </div>
-        <div
-          id="cliente"
-          onclick="abrirModal('modal-login-cliente', 'modal-acessar-como')"
-        >
-          CLIENTE
-        </div>
-      </div>
-      <img
-        src="../midia/login/x-icon.png"
-        alt="Ícone X"
-        id="x-icon"
-        onclick="fecharModalLogin('modal-acessar-como')"
-      />
     </div>
-  </div>
-</section>
-
-<section id="modal-login-adm" class="modal">
-  <form action="">
-    <div class="modal-box">
-      <div class="caixa">
-        <div class="header">
-          <i class="fas fa-user-circle" id="user-icon"></i>
-          <h3>LOGIN ADMINISTRADOR</h3>
-        </div>
-        <div class="inputs">
-          <div id="cpf">
-            <input
-              type="text"
-              id="input-cpf-adm"
-              placeholder="CPF"
-              required
-              minlength="11"
-              maxlength="11"
-            />
-          </div>
-          <div id="senha">
-            <input
-              type="password"
-              id="input-senha-adm"
-              placeholder="Senha"
-              required
-              minlength="8"
-            />
-          </div>
-        </div>
-        <div class="button">
-          <button type="submit" id="btn-entrar-adm">ENTRAR</button>
-        </div>
-        <p onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')">
-          Esqueci a minha senha
-        </p>
-        <img
-          src="../midia/login/x-icon.png"
-          alt="Ícone X"
-          id="x-icon"
-          onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
-        />
-      </div>
-    </div>
-  </form>
-</section>
-
-<section id="modal-recuperar-senha-adm" class="modal">
-  <form action="">
-    <div class="modal-box">
-      <div class="caixa">
-        <h3>RECUPERAR SENHA</h3>
-        <div>
-          <p>Insira o endereço de e-mail associado à sua conta.</p>
-          <p>
-            Nós lhe enviaremos um e-mail com link para recadastrar sua senha.
-          </p>
-        </div>
-        <div class="inputs">
-          <div id="email">
-            <input
-              type="email"
-              id="input-email-recuperar-adm"
-              placeholder="E-mail"
-              required
-              minlength="10"
-            />
-          </div>
-        </div>
-        <div class="button">
-          <button type="submit">ENVIAR</button>
-        </div>
-        <img
-          src="../midia/login/x-icon.png"
-          alt="Ícone X"
-          id="x-icon"
-          onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
-        />
-      </div>
-    </div>
-  </form>
-</section>
-
-<section id="modal-login-cliente" class="modal">
-  <div class="modal-box">
-    <div class="caixa">
-      <form action="">
-        <div class="header">
-          <i class="fas fa-user-circle" id="user-icon"></i>
-          <h3>LOGIN CLIENTE</h3>
-        </div>
-        <div class="inputs">
-          <div id="email">
-            <input
-              type="email"
-              id="input-email-cliente"
-              placeholder="E-mail"
-              required
-              minlength="10"
-            />
-          </div>
-          <div id="senha">
-            <input
-              type="password"
-              id="input-senha-cliente"
-              placeholder="Senha"
-              required
-              minlength="8"
-            />
-          </div>
-        </div>
-        <div class="button">
-          <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
-        </div>
-        <p
-          onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
-        >
-          Esqueci a minha senha
-        </p>
-        <img
-          src="../midia/login/x-icon.png"
-          alt="Ícone X"
-          id="x-icon"
-          onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
-        />
-      </form>
-      <div class="button">
-        <a href="../Páginas-Cliente/Html/cadastro.html" class="button">
-          <button type="submit" id="button-cadastro">Quero me cadastrar</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="modal-recuperar-senha-cliente" class="modal">
-  <form action="">
-    <div class="modal-box">
-      <div class="caixa">
-        <h3>RECUPERAR SENHA</h3>
-        <div>
-          <p>Insira o endereço de e-mail associado à sua conta.</p>
-          <p>
-            Nós lhe enviaremos um e-mail com link para recadastrar sua senha.
-          </p>
-        </div>
-        <div class="inputs">
-          <div id="email">
-            <input
-              type="email"
-              id="input-email-recuperar-cliente"
-              placeholder="E-mail"
-              required
-              minlength="10"
-            />
-          </div>
-        </div>
-        <div class="button">
-          <button type="submit">ENVIAR</button>
-        </div>
-        <img
-          src="../midia/login/x-icon.png"
-          alt="Ícone X"
-          id="x-icon"
-          onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
-        />
-      </div>
-    </div>
-  </form>
-</section>
-
     <!--js-->
-<script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
-<script src="../../arquivos-uso-geral/script-modal.js"></script>  
-<script src="../JS/carrinho.js" ></script>
-<script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
-<script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+<script src="../arquivos-uso-geral/script-menu-mobile.js"></script>
+<script src="../arquivos-uso-geral/script-modal.js"></script>  
+<script src="script.js"></script>
 </body>
 </html>
+

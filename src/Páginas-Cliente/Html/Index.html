@@ -133,7 +133,8 @@
         </div>
       </header>
 
-      <!--Início Home-->
+      <main>
+        <!--Início Home-->
       <body>
         <div class="propaganda">
           <h1 id="titulo01">Experimente os <br> melhores lanches <br> sem sair de casa</h1>
@@ -151,7 +152,11 @@
             </h1>
             <p id="p02">Compartilhe nossa página no Facebook <br> <b> e ganhe 5% de desconto </b> na próxima compra.</p>
             <button id="botao02"><a href="cadastro.html">CADASTRE-SE PARA PARTICIPAR</a></button>
-            <p id="clique">Já faz parte do programa? <br> <b><a id="aqui" href="../Html/acessar-como.html"> Clique aqui </a></b> para entrar</p>
+            <p id="clique">Já faz parte do programa? <br>
+              <button>
+                <b><a id="aqui" onclick="abrirModalLogin('modal-login-cliente')" > Clique aqui </a></b>
+              </button>
+            para entrar</p>
 
 
             <img id="smile" src="../midia/home/icons//smile.icon.png" alt="smile">
@@ -183,36 +188,55 @@
 
         <div class="avaliações">
           <h1 id="titulo04" >O que os nossos clientes dizem</h1>
-          <div id="comentario01" >
-            <h2>Jéssica Soares</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p>Os melhores sanduíches da região, atendimento nota 10.</p>
-            <img id="cmt01" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
-          </div>
 
-          <div id="comentario02">
-            <h2>Paulo Augusto</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p  id="paulo">Boa apresentação e entrega dentro do prazo estimado. Realmente cumprem o que prometem.</p>
-            <img id="cmt02" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
-          </div>
+          <di id="caixa-cmt">
+            <div id="comentario01" >
+              <h2>Jéssica Soares</h2>
+              <img src="../midia/home/icons/user.icon.png" alt="user">
+              <p>Os melhores sanduíches da região, atendimento nota 10.</p>
+              <img id="cmt01" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
+            </div>
 
-          <div id="comentario03">
-            <h2>Mariana Lima</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p>Variedade impressionante no cardápio e lanches deliciosos.</p>
-            <img id="cmt03" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
+            <div id="comentario02">
+              <h2>Paulo Augusto</h2>
+              <img src="../midia/home/icons/user.icon.png" alt="user">
+              <p  id="paulo">Boa apresentação e entrega dentro do prazo estimado. Realmente cumprem o que prometem.</p>
+              <img id="cmt02" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
+            </div>
+  
+            <div id="comentario03">
+              <h2>Mariana Lima</h2>
+              <img src="../midia/home/icons/user.icon.png" alt="user">
+              <p>Variedade impressionante no cardápio e lanches deliciosos.</p>
+              <img id="cmt03" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
+            </div>
           </div>
 
           <div id="adcomentario">
-            <input type="text" placeholder="Deixe aqui seu comentário..." size="25"/>
-            <button type="submit">
+            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." size="25"/>
+            <div id="av">
+              <a href="javascript:void(0)" onclick="Avaliar(1)">
+              <img src="../midia/home/icons/star01.png" id="s1"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(2)">
+              <img src="../midia/home/icons/star01.png" id="s2"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(3)">
+              <img src="../midia/home/icons/star01.png" id="s3"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(4)">
+              <img src="../midia/home/icons/star01.png" id="s4"></a>
+              
+              <a href="javascript:void(0)" onclick="Avaliar(5)">
+              <img src="../midia/home/icons/star01.png" id="s5"></a>
+            </div>
+            <button type="submit" onclick="enviarDados()">
               <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
             </button>
           </div>
-          <img id="avaliacao" src="../midia/home/icons/avaliacao02.png" alt="avaliacao">
       </body>
-
+      </main>
+      
       <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
@@ -444,5 +468,6 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src= "../JS/Index.js"></script>
   </body>
 </html>
