@@ -97,6 +97,9 @@ if (localStorage.getItem('db_produtosSelecionados')) {
   }
 
 
+
+
+//cep
   if (localStorage.getItem('db_produtosSelecionados')) {
     let produtosSelecionados = JSON.parse(
       localStorage.getItem('db_produtosSelecionados')
@@ -118,7 +121,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
       precos.push(parseFloat(produto.precoProduto).toFixed(2))
     }
   
-    let soma = 2
+    let soma = 4
     for (preco of precos) {
       soma += parseFloat(preco)
     }

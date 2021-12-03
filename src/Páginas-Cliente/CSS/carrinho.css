@@ -64,100 +64,6 @@
   padding: 10px 20px;
 }
 
-.tit-frete {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  font-size: 130%;
-  margin-left: 5%;
-  margin-top: 2%;
-}
-
-.linha1 {
-  color: gray;
-  inline-size: 60%;
-}
-
-#cupom {
-  background: white;
-  gap: 25px;
-  margin-top: 1%;
-  margin-left: 5%;
-  width: 200px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-color: #ff9a00;
-  border-width: 1px;
-  border-style: solid;  
-}
-
-#cupom input {
-  background-color: white;
-  border: none;
-  outline: none;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
-}
-
-#cupom button {
-  background-color: white;
-  border: none;
-  border-style: none;
-}
-
-#cupom button:hover { 
-  background-color: white;
-  -webkit-transform: scale(1.09);
-  transform: scale(1.09);
-}
-
-#cupom img {
-  width: 25px;
-  background-color: #ff9a00;
-}
-
-#frete {
-  background: white;
-  gap: 25px;
-  margin-top: 1%;
-  margin-left: 5%;
-  width: 200px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px;
-  border-color:#ff9a00;
-  border-width: 1px;
-  border-style: solid;  
-}
-
-#frete input {
-  background-color: white;
-  border: none;
-  outline: none;
-  padding: 5px;
-  font-family: 'Roboto', sans-serif;
-}
-
-#frete button {
-  background-color: white;
-  border: none;
-  border-style: none;
-}
-
-#frete button:hover { 
-  background-color: white;
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-#frete img {
-  width: 25px;
-  background-color: #ff9a00;
-}
 
 #subtotal {
   color: black;
@@ -410,6 +316,9 @@
 #FinalizaçaoBotao{
   margin-left: 11%;
 }
+#valor-total{
+  margin-left: 39%;
+}
 }
 
 
@@ -473,6 +382,10 @@
   margin-top: 25%;
   margin-left: 0%;
   }
+  #valor-total{
+    margin-left: 39%;
+  }
+
   #FinalizaçaoBotao{
     width: 300px;
     margin-left: 13%;
@@ -491,6 +404,15 @@
   #FinalizaçaoBotao{
     margin-left: 7%;
   }
+  #pdescrição{
+    margin-top: 4%;
+  }
+  #ptotal{
+    margin-top: -6%;
+  }
+  #valor-total{
+    margin-left: 32%;
+  }
 }
 
 @media only screen and (max-width:300px) {
@@ -507,5 +429,8 @@
       height: 30px;
       font-size: 17px;
       margin-left: 16%;
+    }
+    #valor-total{
+      margin-left: 28%;
     }
   }

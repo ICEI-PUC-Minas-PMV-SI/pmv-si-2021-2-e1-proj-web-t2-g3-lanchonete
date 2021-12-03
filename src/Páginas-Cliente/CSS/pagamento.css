@@ -126,7 +126,7 @@
  display: flex;
  font-size: 25px;
  color: black;
- margin-left: 5%;
+ margin-left: 17%;
  margin-top: 2%;
 }
 
@@ -242,11 +242,6 @@
   -webkit-transform: scale(1.09);
   transform: scale(1.09);
 }
-
-
-
-
-
 
 
 .PagarEntrega{
