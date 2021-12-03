@@ -272,9 +272,15 @@ border-left: #000 solid 1px;
 margin-top:20px;
 }
 
+.content-principal-br label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
 .formnovocartao input{
   border:none;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 1px #bcbcbc;
   font-size: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -439,6 +445,8 @@ footer {
     font-size: 12px;
   }
 }
+/* Medias queries pagina adicionar cartoes */
+
 @media (max-width: 767px) {
 
   .content-principal-br{

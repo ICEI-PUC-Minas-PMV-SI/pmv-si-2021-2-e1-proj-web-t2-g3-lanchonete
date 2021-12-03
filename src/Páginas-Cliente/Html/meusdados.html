@@ -134,115 +134,115 @@
 
         <div class="aside-menu">
           <ul>
-            <li id="nomeUsuario"> Olá, <p id="nomeUsuario"> </p> </li> 
+            <li> Olá, <p id="nomeUsuario">  </p></li>
             <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
-            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
+            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></a>
             <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
-            <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
+            <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a>
             <li onclick="logout();">SAIR</li>
-      
+    
           </ul>
-      </div>
-      
-         <div class="content-principal-br">
-      
+        </div>
+    
+        <div class="content-principal-br">
+    
           <div class=" perfil">
-            <h2 > PERFIL</h2>       
-           </div>
-      
+            <h2> PERFIL</h2>
+          </div>
+    
           <form class="formd" id="formdados" method="get">
-                                 
-                     <div class="md">
-                      <h3>Meus dados</h3>
-                      <label for="name">Nome:</label>  
-                      <input type="text"  id="nome" disabled>
-                      </div>
-      
-                  <div class="dtn">
-                      <label for="nascimento">Data de nascimento:</label>     
-                      <input type="number"  id="nascimento" disabled>
-                      
-                  </div>
-                  <div class="genero">
-                      <label for="sexo">Sexo:</label>     
-                      <label><input type="radio"  disabled> Feminino</label>
-                      <label><input type="radio"  disabled> Masculino</label>
-                  </div>
-                  <div class="cpf"> 
-                      <label for="cpf">CPF:</label>     
-                      <input type="number"  id="cpf" disabled>
-                      
-                  </div>
-                  <div class="rua2">
-                      <h3>Endereço/Contato</h3>
-                      <label for="rua" >Rua:</label>     
-                      <input type="text" id="rua" disabled>
-                      
-                  </div>
-                  <div class="num" >
-                      <label for="numero">Número:</label>     
-                      <input type="number" id="numero" disabled>
-                      
-                  </div>
-                  <div class="bairro">
-                    <label for="bairro">Bairro:</label>     
-                    <input type="text"  id="bairro" disabled>
-                    
-                </div>
-                  <div class="complemento">
-                      <label for="complemento">Complemento:</label>     
-                      <input type="text" id="complemento" disabled>
-                      
-                  </div>
-                  <div class="ptr">
-                      <label for="referencia">Ponto de referência:</label>     
-                      <input type="text" id="referencia" disabled>
-                      
-                  </div>
-                  <div class="cep">
-                    <label for="cep">CEP:</label>     
-                    <input type="number" id="cep" disabled>
-                    
-                </div>
-                <div class="cidade">
-                  <label for="cidade">Cidade:</label>     
-                  <input type="text" id="cidade" disabled>
-                  
-              </div>
-                  <div class="telefone">
-                      <label for="telefone">Telefone:</label>     
-                      <input type="number"  id="telefone" disabled>
-                      
-                  </div>
-                   <div>
-                       <h3>Acesso/Login</h3>
-                      <label for="email1">E-mail:</label>     
-                      <input type="email"  id="email" disabled>
-                      
-                  </div>
-                  <div class="email2">
-                      <label for="email2">Confirmar e-mail:</label>     
-                      <input type="email"  id="confirmarEmail" disabled>
-                      
-                  </div>
-                  <div class="senha">
-                      <label for="senha">Senha:</label>     
-                      <input type="password" id="senha" disabled>
-                     
-                  </div>
-                  <div class="btnalterar">
-                  <button  id="mdalterar"><a href="../Html/alterardados.html"> ALTERAR</button></a>
-                  </div>
-                  <div class="btnexcluir">
-                  <button id="mdexcluir" onclick="excluirUsuario();">EXCLUIR</button>
-                  </div>
-                  <div class="btncancelar">
-                  <button  id="mdcancelar"> <a href="../Html/meusdados.html">CANCELAR</button></a>
-                  </div>
-                         
+    
+            <div class="md">
+              <h3>Meus dados</h3>
+              <label for="name">Nome:</label>
+              <input type="text" id="nome" value = "nome" disabled>
+            </div>
+    
+            <div class="dtn">
+              <label for="nascimento">Data de nascimento:</label>
+              <input type="number" id="nascimento" disabled>
+    
+            </div>
+            <div class="genero">
+              <label for="sexo">Sexo:</label>
+              <input type="text" name="sexo" id="sexo" value="" disabled> 
+              
+            </div>
+
+            <div class="cpf">
+              <label for="cpf">CPF:</label>
+              <input type="number" id="cpf" disabled>
+    
+            </div>
+            <div class="rua">
+              <h3>Endereço/Contato</h3>
+              <label for="rua">Rua:</label>
+              <input type="text" id="rua" disabled>
+    
+            </div>
+            <div class="num">
+              <label for="numero">Número:</label>
+              <input type="number" id="numero" disabled>
+    
+            </div>
+            <div class="bairro">
+              <label for="bairro">Bairro:</label>
+              <input type="text" id="bairro" disabled>
+    
+            </div>
+            <div class="complemento">
+              <label for="complemento">Complemento:</label>
+              <input type="text" id="complemento" disabled>
+    
+            </div>
+            <div class="referencia">
+              <label for="referencia">Ponto de referência:</label>
+              <input type="text" id="referencia" disabled>
+    
+            </div>
+            <div class="cep">
+              <label for="cep">CEP:</label>
+              <input type="number" id="cep" disabled>
+    
+            </div>
+            <div class="cidade">
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" disabled>
+    
+            </div>
+            <div class="telefone">
+              <label for="telefone">Telefone:</label>
+              <input type="number" id="telefone" disabled>
+    
+            </div>
+            <div>
+              <h3>Acesso/Login</h3>
+              <label for="email1">E-mail:</label>
+              <input type="email" id="email" disabled>
+    
+            </div>
+            <div class="email2">
+              <label for="email2">Confirmar e-mail:</label>
+              <input type="email" id="confirmarEmail" disabled>
+    
+            </div>
+            <div class="senha">
+              <label for="senha">Senha:</label>
+              <input type="number" id="senha" disabled>
+    
+            </div>
+            <div class="btnalterar">
+              <button id="mdalterar"><a href="../Html/alterardados.html"> ALTERAR</button></a>
+            </div>
+            <div class="btnexcluir">
+              <button id="mdexcluir" onclick="excluirUsuario();">EXCLUIR</button>
+            </div>
+            <div class="btncancelar">
+              <button id="mdcancelar"> <a href="../Html/meusdados.html">CANCELAR</button></a>
+            </div>
           </form>
-      </div>
-      </main>
+        </div>
+    </main>
 
       <div class="button-up">
         <a href="#">
@@ -483,6 +483,6 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
-    <script src="../JS/meusdados.js">
+    <script src="../JS/meusdados.js"></script>
   </body>
 </html>

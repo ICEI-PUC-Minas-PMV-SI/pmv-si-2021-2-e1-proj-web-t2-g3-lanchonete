@@ -297,6 +297,7 @@ main {
 }
 
 .tdf {
+  background-color: #ffffff;
   width: 10% 30% 15% 10% 15% 20%;
   margin-left: none;
   margin-right: none;
@@ -395,8 +396,7 @@ footer {
   }
 }
 
-
-
+/* Medias queries pagina minha fidelidade */
 
 @media (max-width: 767px) {
 

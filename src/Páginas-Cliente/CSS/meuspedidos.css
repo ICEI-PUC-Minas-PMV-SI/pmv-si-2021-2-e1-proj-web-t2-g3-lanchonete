@@ -309,6 +309,14 @@ main {
   
 }
 
+.tdp {
+  background-color: #ffffff;
+  width:  10% 20% 30% 20% 20%;
+  margin-left: none;
+  margin-right: none;
+  padding: 8px 2px;
+  border-spacing: 0px;
+}
 
 #pcomanda,#pvalortotal,
 #cdescricao, #cvalortotal
@@ -407,6 +415,8 @@ footer {
     font-size: 12px;
   }
 }
+
+/* Medias queries pagina meus pedidos */
 
 @media only screen and (max-width: 767px) {
 

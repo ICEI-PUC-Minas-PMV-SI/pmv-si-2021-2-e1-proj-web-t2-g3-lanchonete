@@ -221,7 +221,7 @@ main {
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-gap: 16px;
-  min-height: 800px;
+  min-height: 1100px;
   padding-top:140px;
 }
 
@@ -241,6 +241,7 @@ font-weight: bold;
 }
 
 .content-principal-br label{
+  font-size: 18px;
   margin-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -249,21 +250,19 @@ font-weight: bold;
 .content-principal-br input{
   font-size: 18px;
   margin-left: 5px;
+  margin-top: 5px;
   padding-top: 8px;
   padding-bottom: 5px;
 }
 
-.aside-menu> ul> li{
-margin-bottom: 30px;
-}
 
 .aside-menu> ul> li a:hover{
   color: #ff9a00;
   }
 
-  .aside-menu> ul> li:hover{
-    color: #ff9a00;
-    }
+.aside-menu> ul> li:hover{
+color: #ff9a00;
+}
 
 .aside-menu{
 padding-left: 20px;
@@ -275,7 +274,9 @@ margin-top: 20px;
 padding-left: 20px;
 padding-right:20px;
 border-left: #000 solid 1px;
+margin-bottom: 30px;
 }
+
 
 .alterardados2 {
   padding-left: 20px;
@@ -302,6 +303,11 @@ border-left: #000 solid 1px;
   margin-right: 10px;
 }
 
+.content-principal-br input{
+  border: none;
+  border-bottom: solid 1px #bcbcbc;
+}
+
 
 .num1{
   display: inline-block;
@@ -310,15 +316,15 @@ border-left: #000 solid 1px;
 
 .bairro1 {
  display: inline-block;
-
+ 
 }
 
-.cep1{
+.cep1 {
   display: inline-block;
   
 }
 
-.cidade1{
+.cidade1 {
   display: inline-block;
   
 }
@@ -338,19 +344,13 @@ border-left: #000 solid 1px;
 }
 
 
-.content-principal-br input{
-  border: none;
-  border-bottom: solid 1px #000;
-}
-
-
 .md21 input {
   margin-left: 89px;
   width: 50%;
 }
 
-.genero1 input {
-  margin-left: 96px;
+#sexo {
+  margin-left: 100px;
   }
 
 .cpf1 input {
@@ -362,8 +362,8 @@ border-left: #000 solid 1px;
   display: inline-block;
 }
 
-.rua1 input {
-  margin-left: 104px;
+#rua{
+  margin-left: 100px;
   width: 50%;
 }
 
@@ -371,54 +371,54 @@ border-left: #000 solid 1px;
   display: inline-block;
 }
 
-.num1 input {
-  margin-left: 79px;
+#numero {
+  margin-left: 78px;
   width: 30%;
 }
 
-.bairro1 input {
-  margin-left: 91px;
+#bairro {
+  margin-left: 10px;
+  width: 60%;
+}
+
+#complemento {
+  margin-left: 39px;
   width: 25%;
 }
 
-.complemento1 input {
-  margin-left: 39px;
+#telefone{
+  margin-left: 76px;
+  width: 20%;
+}
+
+#referencia{
+  margin-left: 10px;
   width: 35%;
 }
 
-.ptr1 input {
-  margin-left: 6px;
-  width: 50%;
+#cep {
+  margin-left: 105px;
+  width: 40%;
 }
 
-.cep1 input {
-  margin-left: 98px;
-  width: 25%;
+#cidade {
+  margin-left: 10px;
+  width: 70%;
 }
 
-.cidade1 input {
-  margin-left: 82px;
-  width: 25%;
-}
-
-.telefone1 input {
-  margin-left: 75px;
-  width: 25%;
-}
-
-#email1 {
+#email {
   margin-left: 85px;
   width: 25%;
 }
 
-.email21 input {
+#confirmarEmail {
   margin-left: 20px;
   width: 25%;
 }
 
-.senha1 input {
-  margin-left: 84px;
-  width: 25%;
+#senha {
+  margin-left: 85px;
+  width: 10%;
 }
 
 #mdalterar2, #mdcancelar2 {
@@ -431,6 +431,7 @@ border-left: #000 solid 1px;
   width: 90px;
   height: 30px;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
 #mdalterar2:hover {
@@ -451,7 +452,7 @@ border-left: #000 solid 1px;
 .btncancelar2 {
   display: inline-block;
   margin-left: 5%;
-}
+ }
 
 
 
@@ -528,7 +529,7 @@ footer {
   #numero-carrinho-mobile {
     right: 40%;
   }
-}
+  }
 
 @media only screen and (max-width: 470px) {
   #numero-carrinho-mobile {
@@ -545,15 +546,13 @@ footer {
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 767px) {
 
-  .alterardados2 {
-    padding-left: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    background-color: #ff9a00;
-      color:#ffffff;
+/* Medias queries pagina meus dados */
+
+@media only screen and (max-width: 980px){
+  #main-br{
+    display: inline-block;
+    min-height: 2500px;
   }
 
   .content-principal-br{
@@ -564,7 +563,7 @@ footer {
 
   #main-br{
     display: inline-block;
-    min-height: 2300px;
+    min-height: 2500px;
   }
 
   .aside-menu> ul> li{
@@ -574,7 +573,203 @@ footer {
   .content-principal-br input{
     margin-left: 5px;
   }
-  .formdados2>div {
+  
+  .alterardados2{
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff9a00;
+    color:#f9f9f9;
+    text-align: center;
+  
+  }
+   
+  #cidade {
+    margin-left: 150px;
+    
+  }
+
+  #bairro {
+    margin-left: 150px;
+  
+  }
+  
+  @media only screen and (max-width: 950px) {
+
+    #main-br{
+      display: inline-block;
+      min-height: 2500px;
+    }
+  
+    #nome{
+      margin-left: 5px;
+      width: 50%;
+  
+    }
+  
+    #sexo{
+      margin-left: 5px;
+       }
+  
+  
+    #nascimento{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+    #nascimento {
+      margin-left: 4px;
+      width: 35%;
+    }
+    
+    
+    #nome {
+      width: 50%;
+    }
+  
+    
+    #cpf {
+      width: 25%;
+    }
+    
+    #rua{
+      width: 50%;
+    }
+  
+    
+    #numero {
+      width: 30%;
+    }
+    
+    #bairro {
+      width: 60%;
+    }
+    
+    #complemento {
+      width: 25%;
+    }
+    
+    #telefone{
+      width: 20%;
+    }
+    
+    #referencia{
+      width: 35%;
+    }
+    
+    #cep {
+      width: 40%;
+    }
+    
+    #cidade {
+      width: 70%;
+    }
+    
+    #email {
+      width: 25%;
+    }
+    
+    #confirmarEmail {
+      width: 25%;
+    }
+    
+    #senha {
+      width: 10%;
+    }
+     
+  }
+  
+
+  
+}
+ 
+@media only screen and (max-width: 920px) {
+
+  #main-br{
+    display: inline-block;
+    min-height: 2500px;
+  }
+
+  #nome{
+    margin-left: 5px;
+    width: 50%;
+
+  }
+
+  #sexo{
+    margin-left: 5px;
+     }
+
+
+  #nascimento{
+    margin-left: 5px;
+    width: 100%;
+
+  }
+  #cpf{
+    margin-left: 5px;
+    width: 100%;
+
+  }
+  #rua{
+    margin-left: 5px;
+    width: 100%;
+    display: inline-block;
+
+  }
+
+  #numero {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #bairro {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #complemento {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #telefone{
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #referencia{
+    margin-left: 5px;
+    width: 100%; 
+  }
+  
+  #cep {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #cidade {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #email {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #confirmarEmail {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #senha {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+
+  .formd>div {
     margin-right: 2px;
     display: flex;
     flex-direction: column;
@@ -591,51 +786,208 @@ footer {
     flex-direction: column;
   }
 
-  #email1 {
-    margin-left: 5px;
-    width: 25%;
+    
+  .btnalterar {
+    display: inline-block;
+    align-items: center;
   }
-
-  .btnalterar2{
+  
+  .btnexcluir {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .btncancelar {
+    display: inline-block;
     align-items: center;
   }
 
-  .btncancelar2{
-    align-items: center;
-  }
 }
+
+@media only screen and (max-width: 750px) {
+
+  .content-principal-br{
+    border-top: solid 1px #000;
+    border-left:none;
+    
+  }
+
+  #main-br{
+    display: inline-block;
+    min-height: 2500px;
+  }
+
+  .aside-menu> ul> li{
+    text-align: center;
+  }
+
+  .content-principal-br input{
+    margin-left: 5px;
+  }
   
+  .alterardados2{
+ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ff9a00;
+    color:#f9f9f9;
+    text-align: center;
+  
+  }
+ 
+  #nome{
+    margin-left: 5px;
+    width: 100%;
+
+  }
+
+  #sexo{
+    margin-left: 5px;
+     }
+
+
+  #nascimento{
+    margin-left: 5px;
+    width: 100%;
+
+  }
+  #cpf{
+    margin-left: 5px;
+    width: 100%;
+
+  }
+  #rua{
+    margin-left: 5px;
+    width: 100%;
+    display: inline-block;
+
+  }
+
+  #numero {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #bairro {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #complemento {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #telefone{
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #referencia{
+    margin-left: 5px;
+    width: 100%; 
+  }
+  
+  #cep {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #cidade {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #email {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #confirmarEmail {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+  #senha {
+    margin-left: 5px;
+    width: 100%;
+  }
+  
+
+  .formd>div {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content-principal-br h3 {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-principal-br label {
+    margin-right: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+
+    
+  .btnalterar {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .btnexcluir {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  .btncancelar {
+    display: inline-block;
+    align-items: center;
+  }
+
+}
+
+
+
   @media only screen and (max-width: 500px) {
-  
-    .alterardados2 {
-      padding-left: 5px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      text-align: center;
-      background-color: #ff9a00;
-      color:#ffffff;
-      
-    }
 
     .content-principal-br{
       border-top: solid 1px #000;
-      border-left:none;
+      padding-top:20px;
+      padding-left: none;
       
     }
   
     #main-br{
       display: inline-block;
-      min-height: 2300px;
+      min-height: 750px;
+      
     }
   
     .aside-menu> ul> li{
       text-align: center;
     }
   
-    .content-principal-br input{
-      margin-left: 5px;
+    .aside-menu{
+      padding-top: 120px;
     }
-    .formdados2>div {
+    
+    .content-principal-br label{
+      margin-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .content-principal-br input{
+    font-size: 18px;
+    margin-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    }
+
+    .formd>div {
       margin-right: 2px;
       display: flex;
       flex-direction: column;
@@ -645,23 +997,279 @@ footer {
       display: flex;
       flex-direction: column;
     }
+    .alterardados2{
+ 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ff9a00;
+      color:#f9f9f9;
+      text-align: center;
+    
+      }
   
+    .content-principal-br {
+      margin-left: 5px;
+    }
+  
+    #nome{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+  
+    #sexo{
+      margin-left: 5px;
+       }
+  
+  
+    #nascimento{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+    #cpf{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+    #rua{
+      margin-left: 5px;
+      width: 100%;
+      display: inline-block;
+  
+    }
+  
+    #numero {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #bairro {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #complemento {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #telefone{
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #referencia{
+      margin-left: 5px;
+      width: 100%; 
+    }
+    
+    #cep {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #cidade {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #email {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #confirmarEmail {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #senha {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
     .content-principal-br label {
       margin-right: 2px;
       display: flex;
       flex-direction: column;
     }
-  
-    #email1 {
-      margin-left: 5px;
-      width: 25%;
-    }
-
-    .btnalterar2{
+   
+    .btnalterar {
+      display: inline-block;
       align-items: center;
     }
+    
+    .btnexcluir {
+      display: inline-block;
+      align-items: center;
+    }
+    
+    .btncancelar {
+      display: inline-block;
+      align-items: center;
+    }
+  } 
+
+  @media only screen and (max-width: 430px){
+    .content-principal-br{
+      border-top: solid 1px #000;
+      padding-top:20px;
+      padding-left: none;
+      
+    }
   
-    .btncancelar2{
+    #main-br{
+      display: inline-block;
+      min-height: 750px;
+      
+    }
+  
+    .aside-menu> ul> li{
+      text-align: center;
+    }
+  
+    .aside-menu{
+      padding-top: 120px;
+    }
+    
+    .content-principal-br label{
+      margin-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .content-principal-br input{
+    font-size: 18px;
+    margin-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    }
+
+    .formd>div {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .content-principal-br h3 {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .alterardados2{
+ 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: #ff9a00;
+      color:#f9f9f9;
+      text-align: center;
+    
+      }
+  
+    .content-principal-br {
+      margin-left: 5px;
+    }
+  
+    #nome{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+  
+    #sexo{
+      margin-left: 5px;
+       }
+  
+  
+    #nascimento{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+    #cpf{
+      margin-left: 5px;
+      width: 100%;
+  
+    }
+    #rua{
+      margin-left: 5px;
+      width: 100%;
+      display: inline-block;
+  
+    }
+  
+    #numero {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #bairro {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #complemento {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #telefone{
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #referencia{
+      margin-left: 5px;
+      width: 100%; 
+    }
+    
+    #cep {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #cidade {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #email {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #confirmarEmail {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    #senha {
+      margin-left: 5px;
+      width: 100%;
+    }
+    
+    .content-principal-br label {
+      margin-right: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+    .novocartao2 {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    .btnalterar {
+      display: inline-block;
+      align-items: center;
+    }
+    
+    .btnexcluir {
+      display: inline-block;
+      align-items: center;
+    }
+    
+    .btncancelar {
+      display: inline-block;
       align-items: center;
     }
   }

@@ -134,12 +134,12 @@
       <main class="filter-blur" id="main-br">
         <aside class="aside-menu">
           <ul>
-            <li> Olá, nome do usuário</li>
+            <li> Olá, <p id="nomeUsuario">  </p></li>
             <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a> 
             <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
             <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
             <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
-            <li>SAIR</li>
+            <li onclick="logout();">SAIR</li>
       
           </ul>
         </aside>
@@ -163,10 +163,14 @@
                   </tr>       
               </thread>   
       
-              <tbody id="listarPedidosBody">                       
-      
-                 
-              </tbody>
+              <tbody>
+                <tr>
+                <td class="tdp" id="pnumero">00001</td>
+                <td class="tdp" id="ptipo">01 Xtudo - 01 Guarana - OBS: Sem Milho </td>
+                <td class="tdp" id="pemissao">R$45,00 - Dinnheiro - Troco para R$ 50,00</td>
+                <td class="tdp" id-="pdata"> 02/10/2021</td>
+                <td class="tdp" id="pstatus">SAIU PARA ENTREGA</td>
+                </tr>        
       
           </table>
           
@@ -413,6 +417,7 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../JS/meuspedidos.js"></script>
   
   </body>
 </html>

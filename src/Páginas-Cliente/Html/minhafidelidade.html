@@ -133,12 +133,12 @@
       <main class="filter-blur" id="main-br">
         <div class="aside-menu">
           <ul>
-            <li> Olá, nome do usuário</li> <br> <br>
+            <li> Olá, <p id="nomeUsuario">  </p></li>
             <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a> 
             <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
             <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
             <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
-            <li>SAIR</li>
+            <li onclick="logout();">SAIR</li>
       
           </ul>
       </div>
@@ -164,9 +164,17 @@
               </thread>   
       
               <tbody>
-                            
-                     
-                </tbody>
+                <tr>
+                <td class="tdf" id="fnumero">00001</td>
+                <td class="tdf" id="ftipo"> Vale compras </td>
+                <td class="tdf" id="pemissao"> 28/10/2021 </td>
+                <td class="tdf" id="fvalor"> R$ 10,00 </td>
+                <td class="tdf" id-="fvalidade"> 28/10/2021</td>
+                <td class="tdf" id="fstatus">DESCONTADO</td>
+                </tr>             
+    
+               
+            </tbody>
       
           </table>
           
@@ -414,5 +422,6 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../JS/minhafidelidade.js"></script>
   </body>
 </html>

@@ -7,9 +7,8 @@
     <title>Página do Cliente</title>
 
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
-    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="stylesheet" href="../CSS/alterardados.css" />
-    <link rel="stylesheet" href="../arquivos-uso-geral/style-modal.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -135,12 +134,12 @@
 
         <div class="aside-menu">
           <ul>
-            <li> Olá, nome do usuário</li>
+            <li> Olá, <p id="nomeUsuario">  </p></li>
             <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
-            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
+            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></a>
             <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
-            <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li> 
-            <li>SAIR</li>
+            <li> <a href="../Html/cartoes.html">CARTÕES SALVOS</li></a>
+            <li onclick="logout();">SAIR</li>
       
           </ul>
         </div>
@@ -156,79 +155,80 @@
             <div class=" md21">
               <h3>Meus dados</h3>
               <label>Nome:</label>
-              <input type="text" name="nome" id="nome" required>
+              <input type="text" name="nome" id="nome" placeholder="nome" value ="" required>
             </div>
       
             <div class="dtn1">
               <label for="nascimento">Data de nascimento:</label>
-              <input type="number" id="nascimento" required>
+              <input type="number" id="nascimento" placeholder="nascimento" value ="" required>
       
             </div>
+             
             <div class="genero1">
               <label for="sexo">Sexo:</label>
-              <label><input type="radio" id="sexo" required> Feminino</label>
-              <label><input type="radio" id="sexo" required> Masculino</label>
+              <input type="text" id="sexo" name="sexo" value="" >
+  
             </div>
             <div class="cpf1">
               <label for="cpf">CPF:</label>
-              <input type="number"  id="cpf" required>
+              <input type="number"  id="cpf" placeholder="cpf" value ="" required>
       
             </div>
             <div class="rua21">
               <h3>Endereço/Contato</h3>
               <label for="rua">Rua:</label>
-              <input type="text" id="rua" required>
+              <input type="text" id="rua" placeholder="rua" value="" required>
       
             </div>
             <div class="num1">
               <label for="numero">Número:</label>
-              <input type="number"  id="numero" required>
+              <input type="number"  id="numero" placeholder="numero" value ="" required>
       
             </div>
             <div class="bairro1">
               <label for="bairro">Bairro:</label>
-              <input type="text" id="bairro" required>
+              <input type="text" id="bairro" placeholder="bairro" value ="" required>
       
             </div>
             <div>
               <label for="complemento1">Complemento:</label>
-              <input type="text"  id="complemento" required>
+              <input type="text"  id="complemento" placeholder="complemento" value ="" required>
       
             </div>
-            <div class="ptr1">
+            <div class="referencia1">
               <label for="referencia">Ponto de referência:</label>
-              <input type="text" id="referencia" required>
+              <input type="text" id="referencia" placeholder="referencia" value ="" required>
       
             </div>
             <div class="cep1">
               <label for="cidade">CEP:</label>
-              <input type="number" id="cep" required>
+              <input type="number" id="cep" placeholder="cep" value ="" required>
       
             </div>
             <div class="cidade1">
               <label for="cidade">Cidade:</label>
-              <input type="text" id="cidade" required>
+              <input type="text" id="cidade" placeholder="cidade" value ="" required>
       
             </div>
             <div>
               <label for="telefone1">Telefone:</label>
-              <input type="number"  id="telefone" required>
+              <input type="number"  id="telefone" placeholder="telefone" value ="" required>
       
             </div>
             <div class="email12">
               <h3>Acesso/Login</h3>
               <label label for="email1">E-mail:</label>
-              <input type="email"  id="email" required>
+              <input type="email"  id="email" placeholder="email" value ="" required>
       
             </div>
             <div class="email21">
               <label for="email">Confirmar e-mail:</label>
-              <input type="email" id="confirmarEmail" required>
+              <input type="email" id="confirmarEmail" placeholder="confirmarEmail" value ="" required>
       
             </div>
             <div class="senha1">
               <label for="senha">Senha:</label>
-              <input type="password"id="senha" required>
+              <input type="number" id="senha" placeholder="senha" value ="" required="">
       
             </div>
             <div class="btnalterar2">

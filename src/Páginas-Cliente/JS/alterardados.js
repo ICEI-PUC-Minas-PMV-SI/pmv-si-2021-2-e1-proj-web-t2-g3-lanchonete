@@ -1,32 +1,65 @@
-// Carregar dado do usuario logado no banco de dados JSON  foi feito no login
 
-//armazena a id do usuario
-usuarioCorrente.id = usuario.id
+//armazena usuario logado
+var usuario1 = JSON.parse(localStorage.getItem('usuarioCorrente'))
 
-//Editar dados do cadastro do cliente no formulario
 
-let nome = document.getElementById('nome').value
-let nascimento = document.getElementById('nascimento').value
-let sexo = document.querySelector('input[name=sexo]:checked').value
-let cpf = document.getElementById('cpf').value
-let rua = document.getElementById('rua').value
-let numero = document.getElementById('numero').value
-let bairro = document.getElementById('bairro').value
-let complemento = document.getElementById('complemento').value
-let referencia = document.getElementById('referencia').value
-let cep = document.getElementById('cep').value
-let cidade = document.getElementById('cidade').value
-let telefone = document.getElementById('telefone').value
-let email = document.getElementById('email').value
-let confirmarEmail = document.getElementById('emailConfirmar').value
-let senha = document.getElementById('senha').value
+//mostra nome do usuario no menu do cliente
 
-  if (email != confirmarEmail) {
-    alert('Os emails estam diferentes. Digite novamente')
-  }
-  
+let exibirNome = document.getElementById('nomeUsuario')
+exibirNome.innerHTML = `  
+<li> <p id="nomeUsuario"> ${usuario1.nome} </p></li>
+`
+
+//Editar dados do cadastro do cliente no formulario 
+
+let nome = document.getElementById('nome')
+nome.value = usuario1.nome
+
+let nascimento = document.getElementById('nascimento')
+nascimento.value = usuario1.nascimento
+
+let cpf = document.getElementById('cpf') 
+cpf.value = usuario1.cpf
+
+let rua = document.getElementById('rua') 
+rua.value = usuario1.rua
+
+let numero = document.getElementById('numero')
+ numero.value = usuario1.numero
+
+let bairro = document.getElementById('bairro') 
+bairro.value = usuario1.bairro
+
+let complemento = document.getElementById('complemento') 
+complemento.value = usuario1.complemento
+
+let referencia = document.getElementById('referencia') 
+referencia.value = usuario1.referencia
+
+let cep = document.getElementById('cep')
+cep.value = usuario1.cep
+
+let cidade = document.getElementById('cidade')
+cidade.value = usuario1.cep
+
+let telefone = document.getElementById('telefone')
+telefone.value = usuario1.telefone
+
+let email = document.getElementById('email')
+email.value = usuario1.email
+
+let confirmarEmail = document.getElementById('confirmarEmail')
+confirmarEmail.value = usuario1.confirmarEmail
+
+let senha = document.getElementById('senha')
+senha.value = usuario1.senha
+
+let sexo = document.getElementById('sexo') 
+sexo.value = usuario1.sexo
+
+   
   // Altera om objeto de usuario 
-    let id = id = usuario.id
+    
     let usuario = {
       id: id,
       email: email,
@@ -45,9 +78,12 @@ let senha = document.getElementById('senha').value
       complemento: complemento,
       referencia: referencia
     }
-  
 
-// Envia as  alteracoes do  usuario no banco de dados JSON
+    
+// converte as alteracoes do usuario para o banco de dados
+var db_usuarios = JSON.parse(localStorage.getItem('usuario1'))
+
+ // Envia as  alteracoes do  usuario no banco de dados JSON
 db_usuarios.usuarios.push(usuario)
 
 // Salva as alteracoes do usuario no banco de dados no localStorage
