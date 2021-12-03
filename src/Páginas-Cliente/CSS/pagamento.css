@@ -330,9 +330,6 @@ justify-content: space-around;
 
 
 
-
-
-
 .radio, .checkbox {
   cursor: pointer;
   appearance: none;
@@ -458,7 +455,7 @@ justify-content: space-around;
     padding-bottom: 14%;
   }
   #espaçamento1{
-    margin-top: -35%;
+    margin-top: -36%;
     padding-bottom: 44%;
   }
 }
@@ -500,6 +497,18 @@ justify-content: space-around;
 #titulo1{
   margin-top: 11%;
 }
+}
+
+@media only screen and (max-width:950px) {
+   #espaçamento{
+     margin-top: -28%;
+     padding-bottom: 16%;
+   }
+   #espaçamento1{
+     margin-top: -39%;
+     margin-bottom: -1%;
+   }
+
 }
 
 @media only screen and (max-width:900px) {
@@ -615,6 +624,7 @@ justify-content: space-around;
 }
 
 @media only screen and (max-width:700px) {
+
   #titulo1{
     margin-left: -1%;
     margin-top: 15%;
@@ -640,15 +650,39 @@ justify-content: space-around;
     margin-left: 5%;
   }
   #espaçamento{
-    margin-top: -38%;
-    padding-bottom: 22%;
+    margin-top: -31%;
+    padding-bottom: 14%;
+    margin-left: 40%;
   }
   #espaçamento1{
-    margin-top: -57%;
-    padding-bottom: 50%;
+    margin-top: -44%;
+    padding-bottom: 44%;
+    margin-left: 75%;
+    margin-bottom: 10%;
   }
-  .wrapper{
-    margin-bottom: 3%;
+  #imgmastercre{
+    width: 80px;
+    height: 40px;
+  }
+  #imgmasterdeb{
+    width: 80px;
+    height: 40px;
+  }
+  #imgvisacre{
+    width: 90px;
+    height: 50px;
+  }
+  #imgvisadeb{
+    width: 80px;
+    height: 40px;
+  }
+  #imgpix{
+    width: 80px;
+    height: 60px;
+  }
+  #imgdinheiro{
+    width: 70px;
+    height: 35px;
   }
 }
 
@@ -663,5 +697,97 @@ justify-content: space-around;
   #AdicionarCartao{
     margin-left: 20%;
   }
-
+  #espaçamento{
+    margin-left: 38%;
+    margin-top: -36%;
   }
+  #espaçamento1{
+    margin-top: -48%;
+    margin-bottom: 14%;
+  }
+  #FinalizarPagamento{
+    margin-top: 20%;
+    margin-left: 22%;
+  }
+  }
+
+  @media only screen and (max-width:500px) {
+    #titulo1{
+      margin-top: 21%;
+    }
+    #descriçãop{
+      margin-left: 5%;
+    }
+    #espaçamento{
+      margin-top: -40%;
+    }
+    .wrapper{
+      font-size: 13px;
+    }
+    #espaçamento{
+      margin-top: -40%;
+      margin-bottom: 5%;
+    }
+    #espaçamento1{
+      margin-top: -55%;
+      margin-bottom: 21%;
+    }
+    #FinalizarPagamento{
+      margin-left: 17%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+  #titulo1{
+    size: 150%;
+    font-size: 40px;
+    margin-top: 27%;
+    margin-left: -20%;
+    width: 600px;
+  }
+  #linhap{
+    margin-left: 30%;
+  }
+  #preçop{
+    margin-left: 85%;
+  }
+  .linha1, .linha2, .linha3{
+    inline-size: 130%;
+  }
+  #AlterarPedido{
+    margin-left: 11%;
+  }
+  .dados-entrega{
+    width: 600px;
+    margin-left: -20%;
+  }
+  .pagar-site{
+    width: 600px;
+    margin-left: -20%;
+  }
+  .PagarEntrega{
+    width: 600px;
+    margin-left: -20%;
+  }
+
+.wrapper{
+font-size: 13px;
+}
+
+  #AdicionarCartao{
+    margin-left: 11%;
+  }
+  #espaçamento{
+    margin-left: 60%;
+    margin-top: -49%;
+  }
+  
+  #espaçamento1{
+    margin-top: 1%;
+    padding: 0%;
+    margin-left: 1%;
+  }
+  #FinalizarPagamento{
+    margin-top: 25%;
+  }
+}
