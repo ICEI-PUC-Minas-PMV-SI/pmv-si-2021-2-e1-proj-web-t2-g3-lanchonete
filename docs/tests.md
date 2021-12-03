@@ -39,3 +39,11 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | Cardápio | -                 | Rolar a página para melhor navegação | Ao clicar no banner de uma categoria, é esperado que a página role até tal categoria.                                                                                           |
 | Cardápio | -                 | Limpar o carrinho                    | Ao clicar em "Limpar o carrinho", é esperado que os produtos selecionados pelo usuário sejam desconsiderados.                                                                   |
 | Cardápio | Registrar cliente | Fazer cadastro de novo usuário       | Ao preencher os campos da página e clicar no botão "Cadastrar", é esperado que os dados do usuário sejam armazenados no localStorage e, dessa forma, ele consiga fazer o login. |
+| Pedidos | -                 | Exibir os pedidos feitos pelo cliente  | Espera-se que sejam carregados informações do pedido do cliente.|
+| Minha fidelidade | -        | Mostrar itens do Programa de fidelidade| É esperado que os dados dos programas de fidelidade que o cliente participa sejam exibidos. |
+| Cartões salvos | -          | Exibe os cartões cadastrados           | Espera-se que os dados dos cartões cadastrados sejam mostrados.|
+| Cartões salvos | -          | Excluir dados de cartão salvo          | Espera-se excluir cartões salvos. |
+| Adicionar cartão | -        | Adiciona novo cartão                   | Espera-se que seja possível acrescentar novo(s) cartão(ões). |
+| Meus dados | -              | Exibir  cadastro do cliente            | Espera-se visualizar os dados do cliente que estam no localStorage. |
+| Alterar dados | -           | Editar cadastro do cliente             | Espera-se alterar os dados do cadastro do cliente. |
+| Alterar dados  | -          | Excluir o cadastro do cliente          | Espera-se excluir os dados do cliente que estam salvos no localStorage. |
