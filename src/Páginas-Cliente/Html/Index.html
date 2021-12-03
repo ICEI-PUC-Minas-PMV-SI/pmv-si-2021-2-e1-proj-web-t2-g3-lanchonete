@@ -210,30 +210,19 @@
               <p>Variedade impressionante no cardápio e lanches deliciosos.</p>
               <img id="cmt03" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
             </div>
+
           </div>
+          <br> <br>
 
           <div id="adcomentario">
             <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." size="25"/>
-            <div id="av">
-              <a href="javascript:void(0)" onclick="Avaliar(1)">
-              <img src="../midia/home/icons/star01.png" id="s1"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(2)">
-              <img src="../midia/home/icons/star01.png" id="s2"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(3)">
-              <img src="../midia/home/icons/star01.png" id="s3"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(4)">
-              <img src="../midia/home/icons/star01.png" id="s4"></a>
-              
-              <a href="javascript:void(0)" onclick="Avaliar(5)">
-              <img src="../midia/home/icons/star01.png" id="s5"></a>
-            </div>
-            <button type="submit" onclick="enviarDados()">
+            <input type="number" id="nota" placeholder="Digite sua nota..."> 
+            <button type="submit" onclick="enviarComentario()">
               <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
             </button>
           </div>
+          <br>
+        
       </body>
       </main>
       
@@ -468,6 +457,8 @@
 
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js" ></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
     <script src= "../JS/Index.js"></script>
   </body>
 </html>
