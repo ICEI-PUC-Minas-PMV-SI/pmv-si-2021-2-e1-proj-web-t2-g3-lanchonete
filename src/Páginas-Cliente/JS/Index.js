@@ -38,7 +38,7 @@ function enviarComentario() {
   let nota = document.getElementById('nota')
   const novoCmt = document.createElement('div')
   novoCmt.innerHTML = `
-  <div id="comentario01" >
+  <div id="comentario" >
     <h2>${objeto.nome}</h2>
     <img src="../midia/home/icons/user.icon.png" alt="user">
     <p>${comentario.value}</p>
