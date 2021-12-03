@@ -124,7 +124,7 @@ Página para o cliente alterar dados e/ou excluir seu cadastro.
 
 Página para o cliente acompanhar seus pedidos.
 
-![MEUS PEDIDOS](https://user-images.githubusercontent.com/89786617/136479065-846149e0-5c63-43cb-b434-6a9640ae0f7c.png)
+![Pedidos 2](https://user-images.githubusercontent.com/89786617/144591364-1017df75-b1de-43df-86c5-4a8b9dadeae1.png)
 
 ---
 
@@ -132,15 +132,16 @@ Página para o cliente acompanhar seus pedidos.
 
 Página para o cliente acompanhar seus vales compras, descontos e brindes.
 
-![PROGRAMAS DE FIDELIDADE](https://user-images.githubusercontent.com/89786617/136479509-ebd90256-2240-43fb-8768-2e9605d8710e.png)
+![Fidelidade 2](https://user-images.githubusercontent.com/89786617/144591259-6e938d4d-2a2c-4390-aea4-5fae3ccc9f46.png)
 
 ---
+
 
 ## CARTÕES SALVOS - CLIENTE
 
 Página para o cliente visualizar, adicionar ou excluir cartões de crédito e/ou débito.
 
-![MEUS DADOS](https://user-images.githubusercontent.com/89786617/136479669-b2f4e7fa-d19a-4e51-b960-a6a6f262e38c.png)
+![Cartão 2](https://user-images.githubusercontent.com/89786617/144679661-dce7cb2d-87ef-400a-aff3-e81c17602d80.png)
 
 ---
 
