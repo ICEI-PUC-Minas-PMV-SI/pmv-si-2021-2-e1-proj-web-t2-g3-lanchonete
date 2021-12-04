@@ -47,3 +47,9 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | Meus dados | -              | Exibir  cadastro do cliente            | Espera-se visualizar os dados do cliente que estam no localStorage. |
 | Alterar dados | -           | Editar cadastro do cliente             | Espera-se alterar os dados do cadastro do cliente. |
 | Alterar dados  | -          | Excluir o cadastro do cliente          | Espera-se excluir os dados do cliente que estam salvos no localStorage. |
+| Carrinho  | -               | Mostrar alerta                         | Ao acessar o carrinho sem nenhum produto selecionado o cliente é informado da situação por meio de um alerta.
+| Carrinho | -                | Visualizar produtos selecionados       | Ao selecionar os produtos selecionados no cardápio, os mesmos são direcionados para o carrinho sendo apresentado seus valores e totalizados com a taxa de entrega.
+| Carrinho | -                 | Retornar para o cardápio              | Ao clicar no mesmo, o cliente é redirecionado para a página do cardápio.
+| Carrinho | -                | Direcionar para aba de Finalização do pagamento e pedido | Ao clicar no mesmo, o cliente é direcionado para a página de pagamento.
+| Pagamento | -               | Permitir que o usuário selecione sua forma de pagamento | Permite seleção ou preenchimento de dados para que selecione sua forma de pagamento
+| Pagamento | -               | Alterar pedido                         | Ao clicar no botão "alterar pedido" o usuário retorna para o carrinho com a possibilidade de alterar seu pedido.
