@@ -58,3 +58,6 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | Home | -                    | Efetuar login                          | Ao clicar no botão "Clique aqui", é apresentado o modal login-cliente.
 | Home | -                    | Rolar a página para melhor navegação   | Ao clicar na opção "Sobre nós" no cabeçalho, é esperado que a página role até a sessão da mesma.
 | Home | -                    | Avaliar a lanchonete                   | Ao digitar a avaliação e nota desejada basta enviar que o mesmo é apresentado na tela. Sendo possível adicionar um único comentário por usuário.
+| Comandas | -                | Gerenciar pedidos                      | Espera-se conseguir gerenciar a situação do pedido/comanda em tempo real alterando a sua situação, ainda não finalizada.
+| Comandas | -                | Filtrar por data                       | Espera-se conseguir filtrar as comandas emitidas por data, ainda não finalizada.
+| Comandas | -                | Filtrar por cliente                    | Espera-se conseguir filtrar as comandas emitidas por cliente, ainda não finalizada.
