@@ -49,7 +49,12 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | Alterar dados  | -          | Excluir o cadastro do cliente          | Espera-se excluir os dados do cliente que estam salvos no localStorage. |
 | Carrinho  | -               | Mostrar alerta                         | Ao acessar o carrinho sem nenhum produto selecionado o cliente é informado da situação por meio de um alerta.
 | Carrinho | -                | Visualizar produtos selecionados       | Ao selecionar os produtos selecionados no cardápio, os mesmos são direcionados para o carrinho sendo apresentado seus valores e totalizados com a taxa de entrega.
-| Carrinho | -                 | Retornar para o cardápio              | Ao clicar no mesmo, o cliente é redirecionado para a página do cardápio.
+| Carrinho | -                | Retornar para o cardápio               | Ao clicar no mesmo, o cliente é redirecionado para a página do cardápio.
 | Carrinho | -                | Direcionar para aba de Finalização do pagamento e pedido | Ao clicar no mesmo, o cliente é direcionado para a página de pagamento.
-| Pagamento | -               | Permitir que o usuário selecione sua forma de pagamento | Permite seleção ou preenchimento de dados para que selecione sua forma de pagamento
+| Pagamento | -               | Permitir que o usuário selecione sua forma de pagamento | Permite seleção ou preenchimento de dados para que selecione sua forma de pagamento, função não finalizada
 | Pagamento | -               | Alterar pedido                         | Ao clicar no botão "alterar pedido" o usuário retorna para o carrinho com a possibilidade de alterar seu pedido.
+| Home | -                    | Acessar o cardápio                     | Ao clicar clicar no botão "Faça já o seu pedido",  o cliente é direcionado para o cardápio.
+| Home | -                    | Acessar cadastro                       | Ao clicar no botão "Cadastre-se para participar" , o cliente é direcionado para a página de cadastro.
+| Home | -                    | Efetuar login                          | Ao clicar no botão "Clique aqui", é apresentado o modal login-cliente.
+| Home | -                    | Rolar a página para melhor navegação   | Ao clicar na opção "Sobre nós" no cabeçalho, é esperado que a página role até a sessão da mesma.
+| Home | -                    | Avaliar a lanchonete                   | Ao digitar a avaliação e nota desejada basta enviar que o mesmo é apresentado na tela. Sendo possível adicionar um único comentário por usuário.
