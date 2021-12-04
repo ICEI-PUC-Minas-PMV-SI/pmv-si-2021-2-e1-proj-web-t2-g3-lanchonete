@@ -37,6 +37,7 @@ function enviarComentario() {
 
   let nota = document.getElementById('nota')
   const novoCmt = document.createElement('div')
+
   novoCmt.innerHTML = `
   <div id="comentario" >
     <h2>${objeto.nome}</h2>
@@ -45,6 +46,7 @@ function enviarComentario() {
     <input id= "nota1" type= "text" value= "NOTA ${nota.value}">
   </div>
   `
+  
   const vazia = document.createTextNode('')
   novoCmt.appendChild(vazia)
 
@@ -54,4 +56,3 @@ function enviarComentario() {
   let esconder = document.getElementById('adcomentario')
   esconder.style.display = 'none'
 }
-
