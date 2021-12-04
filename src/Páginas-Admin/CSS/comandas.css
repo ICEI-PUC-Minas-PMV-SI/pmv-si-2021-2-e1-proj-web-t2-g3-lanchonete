@@ -128,3 +128,10 @@ table tr:nth-child(even) {
   text-align: center;
   font-size: 100%;
 }
+
+@media (max-width: 530px) {
+  #pesquisa-cliente {
+    float: left;
+    margin-left: 1px;
+  }
+}
