@@ -297,6 +297,7 @@
   height: 50px;
 }
 
+
 /* Ajuste responsividade*/
 
 @media (max-width: 1285px) {
@@ -454,6 +455,19 @@
   }
 }
 
+@media only screen and (max-width:1050px){
+  #botao01{
+    margin-bottom: 8%;
+  }
+  #x-cheese{
+    width: 0;
+  }
+  #x-tudo{
+    margin-right:8%;
+    width: 350px;
+  }
+}
+
 @media (max-width: 1030px) {
   #smile, #heart, #like, #shopping, #smile2, #clap {
     width: 0;
@@ -467,10 +481,95 @@
 #x-tudo {
   width: 200px;
 }
+#logo{
+  margin-top: -20%;
+  }
 }
 
 @media (max-width: 950px) {
   #x-tudo {
    width: 200px;
    }
+   #logo{
+  margin-right: 15%;
   }
+  }
+
+@media only screen and (max-width:900px) {
+    #x-tudo{
+      width: 270px;
+    }
+    #logo{
+    margin-top: -20%;
+    }
+  }
+
+@media only screen and (max-width:850px) {
+   #x-tudo{
+     width: 250px;
+   }
+   #logo{
+     margin-top: -23%;
+   }
+}
+
+@media only screen and (max-width:800px) {
+  #x-tudo{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #contato{
+    margin-left: 10%;
+  }
+  #logo{
+    margin-right: 15%;
+    margin-top: -26%;
+  }
+  #x-tudo{
+    width: 0;
+  }
+  #titulo01{
+    text-align: center;
+    margin-left: 2%;
+    margin-top: 15%;
+  }
+  #botao02{
+    margin-left: 21%;
+  }
+  #p01{
+    text-align: center;
+    margin-left: 4%;
+  }
+  #botao01{
+margin-left: 30%;
+  }
+  
+  #star{
+    width: 40px;
+  }
+  #clique{
+    font-size: 20px;
+    margin-left: 0%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+#logo{
+  width:180px;
+  margin-right: 7%;
+  margin-top: -30%;
+}
+#contato{
+  margin-left: 7%;
+  margin-top: 6%;
+}
+#titulo01{
+  margin-top: 18%;
+  margin-left: 2%;
+}
+#botao01{
+  
+}
+}
