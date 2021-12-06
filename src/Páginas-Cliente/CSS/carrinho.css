@@ -186,6 +186,31 @@
 }
 }
 
+@media only screen and (max-width: 1200px) {
+  #FinalizaçaoBotao{
+    margin-top: 10%;
+    margin-bottom: 7%;
+  }
+  #totais, #valores1, #valores2, #valores3, #valores4{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  #FinalizaçaoBotao{
+    margin-bottom: 6%;
+    margin-left: 32%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+#FinalizaçaoBotao{
+  margin-top: 10%;
+  margin-bottom: 6%;
+  margin-left: 32%;
+}
+}
+
 @media only screen and (max-width: 1024px) {
   #titulo{
     margin-top: 137px;
@@ -263,6 +288,8 @@
 @media only screen and (max-width:700px) {
   #titulo{
     margin-top: 15%;
+    margin-left: 0%;
+    width: 960px;
   }
 }
 
