@@ -357,18 +357,15 @@
   #titulo01, #titulo02, #titulo03, #titulo04 {
     font-size: 340%;
   }
-<<<<<<< HEAD
-  
   #adcomentario {
     margin-top: 5%;
     margin-bottom: 5%;
-=======
+  }
   #smile, #heart, #like, #shopping, #smile2, #clap {
     width: 94px;
   }
   #p02 {
     font-size: 230%;
->>>>>>> Gabriele
   }
 }
 
