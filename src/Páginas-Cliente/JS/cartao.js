@@ -21,22 +21,3 @@ function logout() {
     }
 }
 
-// criar banco de dados para novo Cartao
-db_novoCartao = {}
-
-//altera o objeto
-cartao ={
-    numero: numero,
-    validade: validade,
-    cvc: cvc,
-    nomeTitular: nomeTitular,
-    cpf: cpf
-}
-
- // Inclui o novo cartao no banco de dados baseado em JSON
- db_novoCartao.cartao.push(cartao)
-
- // Salva o novo banco de dados com o novo usuário no localStorage
- localStorage.setItem('db_novoCartao', JSON.stringify(db_novoCartao))
-
- window.location.href = '../../Páginas-Cliente/Html/cartao.html'
