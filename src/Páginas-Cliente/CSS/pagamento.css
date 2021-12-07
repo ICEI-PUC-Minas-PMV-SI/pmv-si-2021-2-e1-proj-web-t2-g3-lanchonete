@@ -8,6 +8,18 @@
   text-align: center;
 }
 
+#resumop{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 100%;
+  margin-left: 5%;
+  margin-top: 2%;
+  font-size: 120%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  width: 80%;
+  margin: 0 auto;
+}
+
 #descriçãop {
  color: black;
  font-family: 'Roboto', 'Oxygen', sans-serif;
@@ -16,12 +28,7 @@
  margin-top: 6%;
 }
 
-#linhap{
- color: black;
- inline-size: 51%;
- margin-left: 25%;
- margin-top: -10px;
-}
+
 
 #preçop{
  color: black;
