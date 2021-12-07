@@ -90,13 +90,15 @@
                 <a href="#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
@@ -133,8 +135,7 @@
         </div>
       </header>
 
-      <main>
-        <!--Início Home-->
+      <main class="filter-blur">
       <body>
         <div class="propaganda">
           <h1 id="titulo01">Experimente os <br> melhores lanches <br> sem sair de casa</h1>
@@ -307,7 +308,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -391,7 +392,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -406,7 +407,7 @@
             />
           </form>
           <div class="button">
-            <a href="../Html/cadastro.html" class="button">
+            <a href="cadastro.html" class="button">
               <button type="submit" id="button-cadastro">
                 Quero me cadastrar
               </button>
@@ -455,10 +456,10 @@
 
     <!-- ============================================================================== -->
 
+    <script src= "../JS/Index.js"></script>
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../../arquivos-uso-geral/script-login-cliente.js" ></script>
     <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
-    <script src= "../JS/Index.js"></script>
   </body>
 </html>
