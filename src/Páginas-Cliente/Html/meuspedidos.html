@@ -4,244 +4,201 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WarmBurguer</title>
-  </head>
+    <title>Página do Cliente</title>
 
-  <link rel="stylesheet" href="../../CSS/meuspedidos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-    rel="stylesheet"/>
-    
+  
+    <link rel="stylesheet" href="../CSS/meuspedidos.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab:wght@700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/01d2899e28.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
   <body>
     <div class="container">
-      <header>
-        <!--Primeiro componente Cabeçalho Principal-->
-        <div class="main-header">
+      <header class="filter-blur">
+        <div id="main-header">
           <div class="logo">
             <a href="#">
-              <img src="midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
+              <img src="../midia/logo-lanchonete.png" alt="Logo da Lanchonete" />
             </a>
           </div>
-
-          <!--Segundo componente Cabeçalho Principal-->
-          <div class="menu">
+          <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="#">
-                  <img
-                    src="midia/home-icon.png"
-                    alt="Ícone home"
-                    class="icon"
-                  />
+                <a href="../Páginas-Cliente/Html/Index.html">
+                  <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="fidelidade.html"> FIDELIDADE </a>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="#scroll-sobrenos"> SOBRE NÓS </a>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
               </li>
             </ul>
-          </div>
-
-          <!--Terceiro componente Cabeçalho-->
-          <div class="login-carrinho">
+          </nav>
+          <div id="login-carrinho">
             <ul>
-              <li id="login">
-                <a href="acessar-como.html">
-                  <img
-                    src="midia/login-icon.png"
-                    alt="Ícone login"
-                    id="login-icon"
-                    class="icon"
-                  />
-                  <span>LOGIN</span>
-                </a>
+              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                <i class="fas fa-sign-in-alt"></i>
+                <span>LOGIN</span>
               </li>
               <li id="carrinho">
-                <a href="#">
-                  <img
-                    src="midia/cart-icon.png"
-                    alt="Ícone carrinho"
-                    id="cart-icon"
-                    class="icon"
-                  />
+                <a href="../Páginas-Cliente/Html/carrinho.html">
+                  <i class="fas fa-shopping-cart"></i>
                   <span>CARRINHO</span>
                 </a>
               </li>
             </ul>
           </div>
-        </div>
-        <!--Encerramento Cabeçalho Principal-->
 
-        <!--Início cabeçalho inferior-->
-        <div class="sub-header">
-          <div class="horario">
-            <img src="midia/clock-icon.png" alt="Ícone relógio" class="icon" />
+          <nav id="menu-mobile">
+            <a class="icon-menu">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="../Páginas-Cliente/Html/Index.html">
+                  <span>HOME</span>
+                </a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
+              </li>
+              <li>
+                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                  >SOBRE NÓS</a
+                >
+              </li>
+              <div id="login-carrinho-mobile">
+                <li
+                  id="login-mobile"
+                  onclick="abrirModalLogin('modal-acessar-como')"
+                >
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+                <li id="carrinho-mobile">
+                  <a href="../Páginas-Cliente/Html/carrinho.html">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CARRINHO</span>
+                  </a>
+                </li>
+              </div>
+              <div id="sub-header-mobile">
+                <div id="horario">
+                  <i class="far fa-clock"></i>
+                  <span>ABERTO 18:00 às 02:00</span>
+                </div>
+                <div id="enderecos">
+                  <a href="../Páginas-Cliente/Html/enderecos.html">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>ENDEREÇOS DE ENTREGA</span>
+                  </a>
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </div>
+        <div id="sub-header">
+          <div id="horario">
+            <i class="far fa-clock"></i>
             <span>ABERTO 18:00 às 02:00</span>
           </div>
-          <div class="enderecos">
-            <a href="#">
-              <img
-                src="midia/location-icon.png"
-                alt="Ícone localização"
-                class="icon"
-              />
+          <div id="enderecos">
+            <a href="../Páginas-Cliente/Html/enderecos.html">
+              <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
           </div>
         </div>
       </header>
-<<<<<<< HEAD:src/Páginas-Cliente/Html/Index.html
 
-      <!--Início Home-->
-      <body>
-        <div class="propaganda">
-          <h1 id="titulo01">Experimente os <br> melhores lanches <br> sem sair de casa</h1>
-          <p id="p01">Lanches deliciosos para todos os gostos</p>
-          <button id="botao01"><a href="cardapio.html">FAÇA JÁ O SEU PEDIDO</a></button>
-          <img id="x-cheese" src="../midia/home/images/x-cheese.png" alt="x-cheese">
-          <img id="x-tudo" src="../midia/home/images/x-tudo.png" alt="x-tudo">
-        </div>
-
-        <div class= "fidelidade">
-            <h1 id="titulo02">Programa fidelidade</h1>
-            <p id="p02">Compartilhe nossa página no Facebook <br> <b> e ganhe 5% de desconto </b> na próxima compra.</p>
-            <button id="botao02"><a href="cadastro.html">CADASTRE-SE PARA PARTICIPAR</a></button>
-            <p id="clique">Já faz parte do programa? <br> <b><a id="aqui" href="../Html/acessar-como.html"> Clique aqui </a></b> para entrar</p>
-            <img id="star01" src="../midia/home/icons/star.icon.png" alt="star">
-            <img id="star02" src="../midia/home/icons/star.icon.png" alt="star">
-            <img id="smile" src="../midia/home/icons//smile.icon.png" alt="smile">
-            <img id="heart" src="../midia/home/icons/heart.icon.png" alt="heart">
-            <img id="like" src="../midia/home/icons/like.icon.png" alt="like">
-            <img id="shopping" src="../midia/home/icons/shopping.icon.png" alt="shopping">
-            <img id="smile2" src="../midia/home/icons/smile2.png" alt="smile">
-            <img id="clap" src="../midia/home/icons/clap.icon.png" alt="clap">
-        </div>
-
-        <div id="scroll-sobrenos" class="sobre">
-<<<<<<< HEAD
-          <p id="ajustescroll" ></p>
-=======
-          <p id="ajustescrollsobre"></p>
->>>>>>> Gabriele
-          <h1 id="titulo03" >Sobre nós</h1>
-          <p id="p03" >A Warmburguer é uma empresa que entrou no mercado buscando acima de tudo uma boa qualidade, tanto no sabor quanto na entrega. Nossas refeições são preparadas com o maior carinho e os melhores ingredientes . Trabalhando com inovações em nossos serviços e sempre à disposição para sugestões de melhorias, em busca da satisfação dos nossos clientes.</p>
-          <ul id="contato" >
-            <li>warmburguer@lanchonete.com.br</li>
-            <li>Rua qualquer, 123 - Município, BH</li>
-            <li>(31) 1234-5678</li>
-          </ul>
-          <img id="email" src="../midia/home/icons/email.icon.png" alt="email">
-          <img id="localization" src="../midia/home/icons/localization.icon.png" alt="localization">
-          <img id="call" src="../midia/home/icons/call.icon.png" alt="call">
-          <img id="logo" src="../midia/home/images/logo.png" alt="logo">
-        </div>
-
-        <div class="avaliações">
-          <h1 id="titulo04" >O que os nossos clientes dizem</h1>
-          <div id="comentario01" >
-            <h2>Jéssica Soares</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p>Os melhores sanduíches da região, atendimento nota 10.</p>
-            <img id="cmt01" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
-          </div>
-
-          <div id="comentario02">
-            <h2>Paulo Augusto</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p  id="paulo">Boa apresentação e entrega dentro do prazo estimado. Realmente cumprem o que prometem.</p>
-            <img id="cmt02" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
-          </div>
-
-          <div id="comentario03">
-            <h2>Mariana Lima</h2>
-            <img src="../midia/home/icons/user.icon.png" alt="user">
-            <p>Variedade impressionante no cardápio e lanches deliciosos.</p>
-            <img id="cmt03" src="../midia/home/icons/avaliacao.png" alt="avaliacao">
-          </div>
-
-          <div id="adcomentario">
-            <input type="text" placeholder="Deixe aqui seu comentário..." size="25"/>
-            <button type="submit">
-              <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
-            </button>
-          </div>
-          <img id="avaliacao" src="../midia/home/icons/avaliacao02.png" alt="avaliacao">
-      </body>
-=======
-      <main class="main-principal-br">  
-
+      <main class="filter-blur" id="main-br">
         <aside class="aside-menu">
-            <ul>
-                <li> Olá, nome do usuário</li> <br> <br>
-                <li> <a href="meuspedidos.html">PEDIDOS</li></a> <br>
-                <li> <a href="minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li><br>
-                <li> <a href="meusdados.html">MEUS DADOS</li> </a><br>
-                <li><a href="cartoes.html">CARTÕES SALVOS</li></a> <br><br>
-                <li>SAIR</li> 
+          <ul>
+            <li> Olá, <p id="nomeUsuario">  </p></li>
+            <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a> 
+            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
+            <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
+            <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
+            <li onclick="logout();">SAIR</li>
       
-            </ul>
-          </aside>
+          </ul>
+        </aside>
       
-           <div class="content-principal-br">
-            <div id="mp">
-              <h2> PEDIDOS</h2>
-            </div>
-  
-            <div class="mpedidos">
-  
-                 <table class="tablecpedidos">
-                
-                <thread>
-                  <tr>
-                    <th class="thp">Número</th>
-                    <th class="thp">Comanda/Descrição</th>
-                    <th class="thp">Valor Total/Pagamento</th>
-                    <th class="thp">Data</th>
-                    <th class="thp">Status</th>
-                    </tr>       
-                </thread>   
-  
-                <tbody>
-                    <tr>
-                    <td class="tdp" id="pnumero">00001</td>
-                    <td class="tdp" id="ptipo">01 Xtudo - 01 Guarana - OBS: Sem Milho </td>
-                    <td class="tdp" id="pemissao">R$45,00 - Dinnheiro - Troco para R$ 50,00</td>
-                    <td class="tdp" id-="pdata"> 02/10/2021</td>
-                    <td class="tdp" id="pstatus">SAIU PARA ENTREGA</td>
-                    </tr>             
-  
-                   
-                </tbody>
-  
-            </table>
-            
-           </div>
+         <div class="content-principal-br">
+          <div id="mp">
+            <h2> PEDIDOS</h2>
+          </div>
       
-      </main>
->>>>>>> Bruna:src/Páginas-Cliente/Html/meuspedidos/meuspedidos.html
+          <div class="mpedidos">
+      
+               <table class="tablecpedidos">
+              
+              <thread>
+                <tr>
+                  <th class="thp">Número</th>
+                  <th class="thp">Comanda/Descrição</th>
+                  <th class="thp">Valor Total/Pagamento</th>
+                  <th class="thp">Data</th>
+                  <th class="thp">Status</th>
+                  </tr>       
+              </thread>   
+      
+              <tbody>
+                <tr>
+                <td class="tdp" id="pnumero">00001</td>
+                <td class="tdp" id="ptipo">01 Xtudo - 01 Guarana - OBS: Sem Milho </td>
+                <td class="tdp" id="pemissao">R$45,00 - Dinnheiro - Troco para R$ 50,00</td>
+                <td class="tdp" id-="pdata"> 02/10/2021</td>
+                <td class="tdp" id="pstatus">SAIU PARA ENTREGA</td>
+                </tr>        
+      
+          </table>
+          
+         </div>
 
-      <footer>
+
+      </main>
+
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
+      <footer class="filter-blur">
         <div class="box-footer">
-          <div class="social-media">
-            <a href="#">
-              <img src="midia/facebook-icon.png" alt="Ícone Facebook" />
+          <div id="social-media">
+            <a href="https://pt-br.facebook.com/">
+              <i class="fab fa-facebook-square"></i>
             </a>
-            <a href="#">
-              <img src="midia/instagram-icon.png" alt="Ícone Instagram" />
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
             </a>
-            <a href="#">
-              <img src="midia/tiktok-icon.png" alt="Ícone TikTok" />
+            <a href="https://www.tiktok.com/pt-BR/">
+              <i class="fab fa-tiktok"></i>
             </a>
           </div>
-          <div class="infos">
+          <div id="infos">
             <p>
               Copyright 2021 | <a href="#">Warmburguer</a> | All rights reserved
             </p>
@@ -249,5 +206,218 @@
         </div>
       </footer>
     </div>
+
+    <!-- =============================== ADICIONAR MODAIS =============================== -->
+
+    <section id="modal-acessar-como" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <h3>ACESSAR COMO</h3>
+          <div class="opcoes">
+            <div
+              id="admin"
+              onclick="abrirModal('modal-login-adm', 'modal-acessar-como')"
+            >
+              ADMINISTRADOR
+            </div>
+            <div
+              id="cliente"
+              onclick="abrirModal('modal-login-cliente', 'modal-acessar-como')"
+            >
+              CLIENTE
+            </div>
+          </div>
+          <img
+            src="midia/x-icon.png"
+            alt="Ícone X"
+            id="x-icon"
+            onclick="fecharModalLogin('modal-acessar-como')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-login-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN ADMINISTRADOR</h3>
+            </div>
+            <div class="inputs">
+              <div id="cpf">
+                <input
+                  type="text"
+                  id="input-cpf-adm"
+                  placeholder="CPF"
+                  required
+                  minlength="11"
+                  maxlength="11"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-adm"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-recuperar-senha-adm" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-adm"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="modal-login-cliente" class="modal">
+      <div class="modal-box">
+        <div class="caixa">
+          <form action="">
+            <div class="header">
+              <i class="fas fa-user-circle" id="user-icon"></i>
+              <h3>LOGIN CLIENTE</h3>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+              <div id="senha">
+                <input
+                  type="password"
+                  id="input-senha-cliente"
+                  placeholder="Senha"
+                  required
+                  minlength="8"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENTRAR</button>
+            </div>
+            <p
+              onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            >
+              Esqueci a minha senha
+            </p>
+            <img
+              src="midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
+            />
+          </form>
+          <div class="button">
+            <a href="../Páginas-Cliente/Html/cadastro.html" class="button">
+              <button type="submit" id="button-cadastro">
+                Quero me cadastrar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="modal-recuperar-senha-cliente" class="modal">
+      <form action="">
+        <div class="modal-box">
+          <div class="caixa">
+            <h3>RECUPERAR SENHA</h3>
+            <div>
+              <p>Insira o endereço de e-mail associado à sua conta.</p>
+              <p>
+                Nós lhe enviaremos um e-mail com link para recadastrar sua
+                senha.
+              </p>
+            </div>
+            <div class="inputs">
+              <div id="email">
+                <input
+                  type="email"
+                  id="input-email-recuperar-cliente"
+                  placeholder="E-mail"
+                  required
+                  minlength="10"
+                />
+              </div>
+            </div>
+            <div class="button">
+              <button type="submit">ENVIAR</button>
+            </div>
+            <img
+              src="midia/x-icon.png"
+              alt="Ícone X"
+              id="x-icon"
+              onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
+            />
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============================================================================== -->
+
+    <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
+    <script src="../../arquivos-uso-geral/script-modal.js"></script>
+    <script src="../JS/meuspedidos.js"></script>
+  
   </body>
 </html>

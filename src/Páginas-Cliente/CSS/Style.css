@@ -378,6 +378,10 @@
   #x-cheese, #x-tudo {
     width: 220px;
   }
+  #adcomentario {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
   #smile, #heart, #like, #shopping, #smile2, #clap {
     width: 75px;
   }

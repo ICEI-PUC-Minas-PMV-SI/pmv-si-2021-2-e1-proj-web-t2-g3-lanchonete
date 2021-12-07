@@ -6,12 +6,14 @@ function autenticarADM(event) {
 
   const cpfADM = document.getElementById('input-cpf-adm').value
   const senhaADM = document.getElementById('input-senha-adm').value
+  localStorage.setItem('login', cpfADM)
+  localStorage.setItem('senha', senhaADM)
 
   if (cpfADM == '00000000000' && senhaADM == '12345678') {
-    window.location.href = 'Páginas-Admin/Html/Perfil-admin.html'
-
-    console.log('oi')
+    window.location.pathname = "src/Páginas-Admin/Html/Perfil-admin.html"
   } else {
     alert('Acesso negado!')
+    localStorage.removeItem('login')
+    localStorage.removetem('senha')
   }
 }

@@ -104,7 +104,6 @@ header{
   z-index: 1;
   overflow:hidden;
   transition: width 0.5s;
-
 }
 #iconMenu{
   font-size: 30px;
