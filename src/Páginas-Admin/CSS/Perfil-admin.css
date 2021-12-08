@@ -54,33 +54,41 @@
     appearance: none;
     font-weight: bold;
 }
-#inputForm{
+#razaoSocial,
+#inputForm, #nomePrincipal, 
+#cpfPrincipal, #bairroPrincipal,
+#complementoEmpresa,#cepPrincipal,
+#bairroEmpresa, #complementoPrincipal,
+#cidadePrincipal,#cidadeEmpresa , #cnpj {
     border:none;
     background-color:white;
 }
 
-#rua{
+#ruaPrincipal, #ruaEmpresa{
     width: 250px;
     background-color:white;
     border: none;
     
 }
-#number{
+#numberPrincipal, 
+#numberOp, #numberConta,
+#numberEmpresa, #numberAg {
     width: 100px;
     background-color:white;
     border: none;
 }
-#referencia{
+#referenciaPrincipal{
     width: 200px;
     background-color:white;
     border: none;
 }
-#cep{
+#cepPrincipal, #cepEmpresa{
     width: 130px;
     background-color:white;
     border: none;
 }
-#salvar{
+#salvar, #salvarPrincipal,
+#salvarEmpresa, #salvarLogin,#salvarBanc{
     margin-left: 40px;
     font-weight: bold;
     font-size: 20px;
@@ -93,7 +101,8 @@
     background-color:white;
     border: none;
 }
-#email{
+#email, #email-login,
+#confirmarEmail{
     width: 250px;
     background-color:white;
     border: none;
@@ -103,12 +112,12 @@
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
 }
-#senha{
+#senhaLogin,#confirmarSenha{
     width: 250px;
     border:none;
     background-color:white;
 }
-#text{
+#pix{
     background-color:white;
     border: none;
 

@@ -15,7 +15,7 @@ function processaFormLogin(event) {
     trocarLogin()
     localStorage.setItem('db_trocarLogin', true)
 
-    window.location.href = 'meusdados/meusdados.html'
+    window.location.pathname = "src/Páginas-Cliente/Html/meusdados.html"
   } else {
     // Se login falhou, avisa ao usuário
     alert('Usuário ou senha incorretos')

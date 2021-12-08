@@ -28,18 +28,21 @@
     <nav id="menuLateral">
         <button onclick="fecharMenu()" id="btn-fechar" ><i class="fas fa-times"></i></button><br><br>
         <div id="div_imagem"><img id="logoPrincipal" src="../../template-admin/midia/logo-lanchonete.png"></div>
-        <a href="Perfil-admin.html">
+        <a href="../../Páginas-Admin/Html/Perfil-admin.html">
           <i class="far fa-user-circle"></i>
           Perfil</a>
-        <a href="Financeiro.html">
+        <a href="../../Páginas-Admin/Html/Financeiro.html">
           <i class="fas fa-coins"></i>
           Financeiro</a>
-        <a href="c">
-          <i class="fas fa-utensils"></i>
-          Cardápio</a>
-        <a href="">
-          <i class="far fa-sticky-note"></i>
-          Comandas</a>
+          <a href="../../Páginas-Admin/cadastro-produtos/cadastro-prod.html">
+            <i class="fas fa-utensils"></i>
+            Cadastro Produtos</a>
+          <a href="../../Páginas-Admin/cadastro-promocoes/cadastro-prom.html">
+            <i class="fas fa-search-dollar"></i>
+              Cadastro Promoções</a>
+          <a href="../../Páginas-Admin/Html/comandas.html">
+            <i class="far fa-sticky-note"></i>
+            Comandas</a>
         <a onclick="sair()">
           <i class="fas fa-sign-out-alt"></i>
           Sair</a>
@@ -56,51 +59,53 @@
                     <form name="dados_principais" action="." method="post">
                         <div>
                           <label id="labelForm" for="Nome">Nome:</label>
-                          <input id="inputForm" type="text" name="Nome" value="" placeholder="Digite seu nome " required>
+                          <input id="nomePrincipal" type="text" name="Nome" value="" placeholder="Digite seu nome " required>
                         </div>
                         <br>
                         <div>
                           <label id="labelForm" for="CPF">CPF:</label>
-                          <input id="inputForm" type="number" name="CPF" value="" placeholder="Digite seu CPF " required>
+                          <input id="cpfPrincipal" type="number" name="CPF" value="" placeholder="Digite seu CPF " required>
                         </div>
                         <br>
                         <div>
                           <label id="labelForm" for="Rua">Rua:</label>
-                          <input id="rua" type="text" name="Rua" value="" placeholder="Digite o nome de sua rua" required>
+                          <input id="ruaPrincipal" type="text" name="Rua" value="" placeholder="Digite o nome de sua rua" required>
                           <br><br>
                 
                           <label id="labelForm" for="Numero">Numero:</label>
-                          <input id="number" type="number" name="Numero" placeholder="Digite o número" value="" required>
+                          <input id="numberPrincipal" type="number" name="Numero" placeholder="Digite o número" value="" required>
                           <br><br>
 
                 
                           <label id="labelForm" for="Bairro">Bairro:</label>
-                          <input id="text" type="Bairro" name="Bairro" value="" placeholder="Digite seu bairro" required>
+                          <input id="bairroPrincipal" type="Bairro" name="Bairro" value="" placeholder="Digite seu bairro" required>
                           <br><br>
                         </div>
                 
                         <div>
                           <label id="labelForm" for="Complemento">Complemento:</label>
-                          <input id="text" type="text" name="Complemento" placeholder="Digite o complemento" value="">
+                          <input id="complementoPrincipal" type="text" name="Complemento" placeholder="Digite o complemento" value="">
                         </div>
                         <br>
                 
                         <div>
                           <label id="labelForm" for="Referencia">Referência:</label>
-                          <input id="referencia" type="text" name="Referencia" placeholder="Digite a referencia" value="">
+                          <input id="referenciaPrincipal" type="text" name="Referencia" placeholder="Digite a referencia" value="">
                           <br><br>
                 
                           <label id="labelForm" for="Cep">Cep:</label>
-                          <input id="cep" type="number" name="Cep" value="" placeholder="Digite seu nome" required>
+                          <input id="cepPrincipal" type="number" name="Cep" value="" placeholder="Digite seu nome" required>
                           <br><br>
                 
                           <label id="labelForm" for="Cidade">Cidade:</label>
-                          <input id="text" type="Bairro" name="Cidade" value="" placeholder="Digite sua cidade" required>
+                          <input id="cidadePrincipal" type="Bairro" name="Cidade" value="" placeholder="Digite sua cidade" required>
                           <br><br>
                         </div>
-                
-                        <input id="salvar" type="submit" name="Salvar" placeholder="Digite seu nome" value="Salvar">
+                        
                       </form>
+                      <div>
+                        <button id="salvarPrincipal" onclick="salvarPrincipal()">Salvar</button>
+                      </div>
                 
                 </div>
             </li>
@@ -111,44 +116,45 @@
                     <form name="dados_empresariais" action="." method="post">
                         <div>
                           <label id="labelForm" for="CNPJ">CNPJ:</label>
-                          <input id="inputForm" type="number" name="CNPJ" value="" maxlength="13" placeholder="Digite o CNPJ" required>
+                          <input id="cnpj" type="number" name="CNPJ" value="" maxlength="13" placeholder="Digite o CNPJ" required>
                         </div>
                         <br>
                         <div>
                           <label id="labelForm" for="razao">Razão Social:</label>
-                          <input id="inputForm" type="text" name="razao" value="" placeholder="Digite a Razão Social" required>
+                          <input id="razaoSocial" type="text" name="razao" value="" placeholder="Digite a Razão Social" required>
                         </div>
                         <br>
                         <div>
                           <label id="labelForm" for="Rua">Rua:</label>
-                          <input id="rua" type="text" name="Rua" value="" placeholder="Digite a rua" required>
+                          <input id="ruaEmpresa" type="text" name="Rua" value="" placeholder="Digite a rua" required>
                           <br><br>
                 
                           <label id="labelForm" for="Numero">Numero:</label>
-                          <input id="number" type="number" name="Numero" value="" placeholder="Digite o número" required>
+                          <input id="numberEmpresa" type="number" name="Numero" value="" placeholder="Digite o número" required>
                           <br><br>
                 
                           <label id="labelForm" for="Bairro">Bairro:</label>
-                          <input id="text" type="Bairro" name="Bairro" value="" placeholder="Digite o bairro" required>
+                          <input id="bairroEmpresa" type="Bairro" name="Bairro" value="" placeholder="Digite o bairro" required>
                           <br><br>
                         </div>
                         <div>
                           <label id="labelForm" for="complemento">Complemento:</label>
-                          <input id="complemento" type="text" name="complemento" placeholder="Digite o complemento" value="">
+                          <input id="complementoEmpresa" type="text" name="complemento" placeholder="Digite o complemento" value="">
                           <br><br>
                 
                           <label id="labelForm" for="Cep">Cep:</label>
-                          <input id="cep" type="number" name="Cep" value="" placeholder="Digite o CEP" required>
+                          <input id="cepEmpresa" type="number" name="Cep" value="" placeholder="Digite o CEP" required>
                           <br><br>
                 
                           <label id="labelForm" for="Cidade">Cidade:</label>
-                          <input id="text" type="Bairro" name="Cidade" value="" placeholder="Digite a cidade" required>
+                          <input id="cidadeEmpresa" type="Bairro" name="Cidade" value="" placeholder="Digite a cidade" required>
                           <br><br>
                         </div>
-                
-                        <input id="salvar" type="submit" name="Salvar" value="Salvar">
-                
+
                       </form>
+                      <div>
+                        <button id="salvarEmpresa" onclick="salvarEmpresa()">Salvar</button>
+                      </div>
                 
                 </div>
             </li>
@@ -159,25 +165,27 @@
                     <form name="dados_acesso" action="." method="post">
                         <div>
                           <label id="labelForm" for="Email">E-mail:</label>
-                          <input id="email" type="email" name="Email" value="" placeholder="Digite seu E-mail" required>
+                          <input id="email-login" type="email" name="Email" value="" placeholder="Digite seu E-mail" required>
                           <br><br>
                 
                           <label id="labelForm" for="confirmar">Confirmar e-mail:</label>
-                          <input id="email" type="email" name="confirmar" value="" placeholder="Confirme seu E-mail" required>
+                          <input id="confirmarEmail" type="email" name="confirmar" value="" placeholder="Confirme seu E-mail" required>
                           <br><br>
                         </div>               
                         <div>
                           <label id="labelForm" for="senha">Senha:</label>
-                          <input id="senha" type="password" name="senha" value="" placeholder="Digite sua senha" required>
+                          <input id="senhaLogin" type="password" name="senha" value="" placeholder="Digite sua senha" required>
                           <br><br>
                 
                           <label id="labelForm" for="senha">Confirmar senha:</label>
-                          <input id="senha" type="password" name="senha" value="" placeholder="Confirme sua senha" required>
+                          <input id="confirmarSenha" type="password" name="senha" value="" placeholder="Confirme sua senha" required>
                         </div>
                         <br>
                 
-                        <input id="salvar" type="submit" name="Salvar" value="Salvar">
                       </form>
+                      <div>
+                        <button id="salvarLogin" onclick="salvarLogin()">Salvar</button>
+                      </div>
                 
                 </div>
             </li>
@@ -188,31 +196,32 @@
                     <form name="dados_bancarios" action="." method="post">
                         <div>
                           <label id="labelForm" for="agencia">Agência:</label>
-                          <input id="number" type="number" name="Email" value="" placeholder="Digite a agência" required>
+                          <input id="numberAg" type="number" name="Email" value="" placeholder="Digite a agência" required>
                         </div>
                         <br>
                 
                         <div>
                           <label id="labelForm" for="operacao">Operação:</label>
-                          <input id="number" type="number" name="operacao" value="" placeholder="Digite a agência" required>
+                          <input id="numberOp" type="number" name="operacao" value="" placeholder="Digite a agência" required>
                         </div>
                         <br>
                 
                         <div>
                           <label id="labelForm" for="corrente">Conta Corrente:</label>
-                          <input id="number" type="number" name="corrente" value="" placeholder="Digite a conta" required>
+                          <input id="numberConta" type="number" name="corrente" value="" placeholder="Digite a conta" required>
                         </div>
                         <br>
                 
                         <div>
                           <label id="labelForm" for="PIX">PIX:</label>
-                          <input id="text" type="text" name="PIX" value="" placeholder="Digite o PIX" required>
+                          <input id="pix" type="text" name="PIX" value="" placeholder="Digite o PIX" required>
                         </div>
                         <br>
                 
-                        <input id="salvar" type="submit" name="Salvar" value="Salvar">
-                
                       </form>
+                      <div>
+                        <button id="salvarBanc" onclick="salvarBanc()">Salvar</button>
+                      </div>
                 
                 </div>
             </li>
@@ -222,6 +231,7 @@
     </main>
   </div>
   <script src="../../template-admin/admin.js"></script>
+  <script src="../../Páginas-Admin/Javascript/Perfil-admin.js"></script>
 </body>
 
 </html>
