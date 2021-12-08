@@ -39,7 +39,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
     let produtosSelecionados = JSON.parse(
       localStorage.getItem('db_produtosSelecionados')
     )
-    let listaProdutos = document.getElementById('lista-produtos')
+    let listaProdutos = document.getElementById('resumop')
     listaProdutos.innerHTML = ''
   
     let precos = []
@@ -54,7 +54,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
       precos.push(parseFloat(produto.precoProduto).toFixed(2))
     }
   
-    let soma = 0
+    let soma = 5
     for (preco of precos) {
       soma += parseFloat(preco)
     }
@@ -66,5 +66,4 @@ if (localStorage.getItem('db_produtosSelecionados')) {
 
 
 
-  let opcselecionada = document.getElementsByClassName('botao')
   
