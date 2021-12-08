@@ -120,7 +120,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
       precos.push(parseFloat(produto.precoProduto).toFixed(2))
     }
   
-    let soma = 4
+    let soma = 5
     for (preco of precos) {
       soma += parseFloat(preco)
     }
