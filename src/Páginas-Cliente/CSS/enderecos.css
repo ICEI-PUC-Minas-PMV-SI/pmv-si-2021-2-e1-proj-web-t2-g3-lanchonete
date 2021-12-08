@@ -22,9 +22,9 @@ input[type="text"]{
     justify-content: center;
     margin-bottom: 80px;
 }
-table, th, td{
+table, th, td, tr{
     color: black;
-    border: 1.5px solid black;
+    border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;

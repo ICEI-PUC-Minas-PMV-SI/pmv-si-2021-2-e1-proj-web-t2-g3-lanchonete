@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página do Administrador</title>
 
-    <link rel="stylesheet" href="../../template-admin/style.css"/>
-    <link rel="stylesheet" href="../CSS/Financeiro.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      data-auto-a11y="true"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página do Administrador</title>
 
-  </head>
-  <body>
-    <header>
-        <button onclick="mostrarMenu()" id="btn-menu"><i id="iconMenu" class="fas fa-bars"></i></button>
-        <div id="cabecalho">Financeiro</div>
-        <i id="iconMenu2" class="fas fa-bars"></i>
-    </header>
-    <nav id="menuLateral">
-        <button onclick="fecharMenu()" id="btn-fechar" ><i class="fas fa-times"></i></button><br><br>
-        <div id="div_imagem"><img id="logoPrincipal" src="../../template-admin/midia/logo-lanchonete.png"></div>
-        <a href="Perfil-admin.html">
-          <i class="far fa-user-circle"></i>
-          Perfil</a>
-        <a href="Financeiro.html">
-          <i class="fas fa-coins"></i>
-          Financeiro</a>
-        <a href="">
-          <i class="fas fa-utensils"></i>
-          Cardápio</a>
-        <a href="comandas.html">
-          <i class="far fa-sticky-note"></i>
-          Comandas</a>
-        <a href="">
-          <i class="fas fa-sign-out-alt"></i>
-          Sair</a>
-    </nav>
-    <!--Final Template Padrão-->
+  <link rel="stylesheet" href="../../template-admin/style.css" />
+  <link rel="stylesheet" href="../CSS/Financeiro.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet" />
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
 
-    <main id="teste">
-      <div id="bloco1">
-        <h2 id="visaoGeral"> Visão Geral</h2>
-        <ul class="lista1">
-          <li id="vendasMes"> Vendas Mês</li>
-          <li id="icone2">
-            <img id="iconeFinanceiro" src="../midia/ícone-financeiro.png" alt="icone Financeiro">
-          </li>
-          <li id="vendasHoje"> Vendas Hoje</li>
-        </ul>
+</head>
 
-        <ul class="lista2">
-          <li id="valor1">R$ 0,00</li>
-          <li id="valor2" value="">R$ 0,00</li>
-        </ul>
-      </div>
+<body>
+  <header>
+    <button onclick="mostrarMenu()" id="btn-menu"><i id="iconMenu" class="fas fa-bars"></i></button>
+    <div id="cabecalho">Financeiro</div>
+    <i id="iconMenu2" class="fas fa-bars"></i>
+  </header>
+  <nav id="menuLateral">
+    <button onclick="fecharMenu()" id="btn-fechar"><i class="fas fa-times"></i></button><br><br>
+    <div id="div_imagem"><img id="logoPrincipal" src="../../template-admin/midia/logo-lanchonete.png"></div>
+    <a href="Perfil-admin.html">
+      <i class="far fa-user-circle"></i>
+      Perfil</a>
+    <a href="Financeiro.html">
+      <i class="fas fa-coins"></i>
+      Financeiro</a>
+    <a href="../../Páginas-Admin/Html/Financeiro.html">
+      <i class="fas fa-coins"></i>
+      Financeiro</a>
+    <a href="../../Páginas-Admin/cadastro-produtos/cadastro-prod.html">
+      <i class="fas fa-utensils"></i>
+      Cadastro Produtos</a>
+    <a href="../../Páginas-Admin/cadastro-promocoes/cadastro-prom.html">
+      <i class="fas fa-search-dollar"></i>
+      Cadastro Promoções</a>
+    <a href="../../Páginas-Admin/Html/comandas.html">
+      <i class="far fa-sticky-note"></i>
+      Comandas</a>
+    <a href="">
+      <i class="fas fa-sign-out-alt"></i>
+      Sair</a>
+  </nav>
+  <!--Final Template Padrão-->
 
-      <div>
-        <h2 id="periodo">RECEITA POR PERÍODO</h2>
-      </div>
-      <form name="formPesquisa" action="" method="post">
+  <main id="teste">
+    <div id="bloco1">
+      <h2 id="visaoGeral"> Visão Geral</h2>
+      <ul class="lista1">
+        <li id="vendasMes"> Vendas Mês</li>
+        <li id="icone2">
+          <img id="iconeFinanceiro" src="../midia/ícone-financeiro.png" alt="icone Financeiro">
+        </li>
+        <li id="vendasHoje"> Vendas Hoje</li>
+      </ul>
+
+      <ul class="lista2">
+        <li id="valor1">R$ 0,00</li>
+        <li id="valor2" value="">R$ 0,00</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 id="periodo">RECEITA POR PERÍODO</h2>
+    </div>
+    <form name="formPesquisa" action="" method="post">
       <ul class="data">
         <input type="date" id="datas" required>
         <input type="date" id="datas" required>
@@ -113,83 +117,83 @@
         </table>
       </div>
 
-        <div>
-          <h4 id="botaoImprimir">IMPRIMIR LISTA</h4>
-        </div>
+      <div>
+        <h4 id="botaoImprimir">IMPRIMIR LISTA</h4>
+      </div>
 
-        <div>
-          <h2 id="ranking">RANKING MENSAL</h2>
-        </div>
-        
-        <div>
-          <table>
-            <tr>
-              <th>LANCHE</th>
-              <th>VALOR</th>
-            </tr>
-            <tr>
-              <td>FRANGO CATUPIRY ARTESANAL</td>
-              <td>R$ 25,90</td>
-            </tr>
-            <tr>
-              <td>FRANGO COM CHEDDAR E BACON</td>
-              <td>R$ 25,90</td>
-            </tr>
-            <tr>
-              <td>COXINHA FIT</td>
-              <td>R$ 25,90</td>
-            </tr>
-            <tr>
-              <td>25/10/2021</td>
-              <td>R$ 25,90</td>
-            </tr>
-          </table>
-        </div>
+      <div>
+        <h2 id="ranking">RANKING MENSAL</h2>
+      </div>
 
-        <div>
-          <h2 id="fidelidade">CLIENTES FIDELIDADE</h2>
-        </div>
+      <div>
+        <table>
+          <tr>
+            <th>LANCHE</th>
+            <th>VALOR</th>
+          </tr>
+          <tr>
+            <td>FRANGO CATUPIRY ARTESANAL</td>
+            <td>R$ 25,90</td>
+          </tr>
+          <tr>
+            <td>FRANGO COM CHEDDAR E BACON</td>
+            <td>R$ 25,90</td>
+          </tr>
+          <tr>
+            <td>COXINHA FIT</td>
+            <td>R$ 25,90</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+          </tr>
+        </table>
+      </div>
 
-        <div>
-          <table>
-            <tr>
-              <th>INICIO</th>
-              <th>NOME</th>
-              <th>CATEGORIA</th>
-              <th>STATUS</th>
-            </tr>
-            <tr>
-              <td>25/10/2021</td>
-              <td>JOÃO LUCAS</td>
-              <td>3</td>
-              <td>(R$ 175/R$ 200)EM ANDAMENTO</td>
-            </tr>
-            <tr>
-              <td>25/10/2021</td>
-              <td>JOÃO LUCAS</td>
-              <td>3</td>
-              <td>(R$ 100/R$ 100)CONCLUÍDO</td>
-            </tr>
-            <tr>
-              <td>25/10/2021</td>
-              <td>R$ 25,90</td>
-              <td>2</td>
-              <td>(R$ 100/R$ 100)CONCLUÍDO</td>
-            </tr>
-            <tr>
-              <td>25/10/2021</td>
-              <td>R$ 25,90</td>
-              <td>1</td>
-              <td>(R$ 20/R$ 50)EM ANDAMENTO</td>
-            </tr>
-          </table>
-        </div>
-        <br><br><br>
-    </main>
+      <div>
+        <h2 id="fidelidade">CLIENTES FIDELIDADE</h2>
+      </div>
+
+      <div>
+        <table>
+          <tr>
+            <th>INICIO</th>
+            <th>NOME</th>
+            <th>CATEGORIA</th>
+            <th>STATUS</th>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>JOÃO LUCAS</td>
+            <td>3</td>
+            <td>(R$ 175/R$ 200)EM ANDAMENTO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>JOÃO LUCAS</td>
+            <td>3</td>
+            <td>(R$ 100/R$ 100)CONCLUÍDO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>2</td>
+            <td>(R$ 100/R$ 100)CONCLUÍDO</td>
+          </tr>
+          <tr>
+            <td>25/10/2021</td>
+            <td>R$ 25,90</td>
+            <td>1</td>
+            <td>(R$ 20/R$ 50)EM ANDAMENTO</td>
+          </tr>
+        </table>
+      </div>
+      <br><br><br>
+  </main>
 
   </div>
-<script src="../../template-admin/admin.js"></script>
-<script src="../../Páginas-Admin/Javascript/Financeiro.js" ></script>
+  <script src="../../template-admin/admin.js"></script>
+  <script src="../../Páginas-Admin/Javascript/Financeiro.js"></script>
 </body>
 
 </html>
