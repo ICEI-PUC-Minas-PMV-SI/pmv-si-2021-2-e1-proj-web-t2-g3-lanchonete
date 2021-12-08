@@ -134,8 +134,9 @@
 
   <h1 id="titulo1" >Resumo do Pedido</h1>
 
-    <div class="resumop">
-      <p id="descriçãop" >1x X-Tudo <hr id="linhap" > </p><p id="preçop" >R$18,90</p>
+    <div id="resumop">
+      <p id="descriçãop"></p>
+      <p id="preçop"></p>
     </div>
 
   <div class="linha1"><hr></div>
@@ -145,16 +146,16 @@
 <div class="botao">
   <form>
     <label for=""></label> <br>
-  <select name="" id="">
+  <select name="" id="selecionarcampo">
     <option value="">ENTREGA EM CASA</option>
     <option value="">RETIRAR NA LANCHONETE</option>
   </select>
   </form>
 </div>
 
-<h1 id="TextoObservaçao" ><b>Adicionar observação:</b></h1>
+<h1 id="TextoObservaçao" onclick="clique" ><b>Adicionar observação:</b></h1>
 
-<div id="observaçao" >
+<div id="observaçao" onclick="clicar">
   <input type="text" placeholder="Adicione aqui">
   <button type="submit"> <img src="../../Páginas-Cliente/midia/pagamento/imagens/send.png" alt="">  </button>
 </div>
@@ -163,14 +164,14 @@
 
   <div class="linha2"><hr></div>
 
-  <div class="taxa-entrega"><p>Taxa de entrega: R$3,90</p></div>
+  <div class="taxa-entrega"><p>Taxa de entrega: R$4.00</p></div>
 
   <div class="linha3"><hr></div>
 
 <div id="total">
   <p id="primeiro">Total do pedido</p>
   <p id="linha"></p>
-  <p id="valor" > R$22,80</p> 
+  <p id="valortotal02"></p> 
 
 </div>
 
@@ -207,7 +208,7 @@
 <div class="ajuste"><p> . </p></div>
 
 
-<div class="wrapper">
+<div class="cartaogeral">
   <div class="form-group">
     <input class="radio" name="theradio" id="radio1" type='radio'  checked/>
     <label for="radio1"><p id="letras">Mastercard crédito <img src="../midia/pagamento/imagens/master.png" alt="" id="imgmastercre"></p></label>
@@ -471,5 +472,6 @@
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
     <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+    <script src="../JS/pagamento.js"></script>
   </body>
 </html>

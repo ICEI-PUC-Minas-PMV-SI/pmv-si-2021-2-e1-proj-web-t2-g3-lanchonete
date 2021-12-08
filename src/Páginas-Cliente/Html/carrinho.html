@@ -55,10 +55,12 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
@@ -88,17 +90,20 @@
                 <a href="Index.html#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -131,47 +136,45 @@
         </div>
       </header>
 
-<!--CARRINHO: Produtos, total, quantidade-->
-<body>
+        <!--CARRINHO: Produtos, total, quantidade-->
+<main class="filter-blur">
+  <body>
+    <h1 id="titulo" >
+      <img id="img-titulo" src="../midia/carrinho/carrinho.icon.png" alt="carrinho">
+       Meu carrinho</h1>
 
-  <h1 id="titulo" >
-    <img id="img-titulo" src="../midia/carrinho/carrinho.icon.png" alt="carrinho">
-    Meu carrinho</h1>
+     <div id="conjuntoDescriçao">
+       <h2 id="pdescrição" >Produtos</h2>
+       <h2 id="ptotal" >Total</h2>
+       <div id="lista-produtos"></div>
+       <p id="valor-total"></p>
+     </div>
 
-    <div id="conjuntoDescriçao">
-      <h2 id="pdescrição" >Produtos</h2>
-      <h2 id="ptotal" >Total</h2>
+     <div class="divisoria"><hr><br><br></div>
 
-      <div id="lista-produtos"></div>
-      <p id="valor-total"></p>
-  </div>
+   <!--Valores-->
+     <div id="totais" >
+        <div id="subtotal"><P>Subtotal do pedido:<h1 id="valores1"></h1></P></div>
+        <div id="frete00"><P>Valor da entrega:<h1 id="valores3">R$4.00</h1></P></div>
+        <div id="totalp"><P>Total do pedido:<h1 id="valores4"></h1></P></div>
+     </div>
 
-<div class="divisoria"><hr><br><br></div>
+   <!--Continuar comprando-->
+     <div>
+       <button id="ContinuarComprando">
+         <img id="imgcontinuar" src="../../Páginas-Cliente/midia/carrinho/compras.icon.png" alt="">
+          <a href="../Html/cardapio.html" id="continuar" >Continuar comprando</a>
+       </button>
+     </div>
 
-
-<!--Valores-->
-<div id="totais" >
-  <div id="subtotal"><P>Subtotal do pedido:<h1 id="valores1"></h1></P></div>
-  <div id="desconto"><P>Valor do desconto:<h1 id="valores2">R$0.00</h1></P></div>
-  <div id="frete00"><P>Valor da entrega:<h1 id="valores3">R$4,00</h1></P></div>
-  <div id="totalp"><P>Total do pedido:<h1 id="valores4"></h1></P></div>
-</div>
-
-<!--Continuar comprando-->
-<div>
-  <button id="ContinuarComprando">
-    <img id="imgcontinuar" src="../../Páginas-Cliente/midia/carrinho/compras.icon.png" alt="">
-    <a href="../Html/cardapio.html" id="continuar" >Continuar comprando</a>
-  </button>
-</div>
-
-<!--Finalização de pedido-->
-         <div>
-              <button id="FinalizaçaoBotao">
-                <a href="../Html/pagamento.html">Finalizar pagamento</a>
-              </button>
-         </div>
-</body>
+   <!--Finalização de pedido-->
+     <div>
+       <button id="FinalizaçaoBotao">
+          <a href="../Html/pagamento.html">Finalizar pagamento</a>
+       </button>
+     </div>
+  </body>
+</main>
       
 <footer class="filter-blur">
   <div class="box-footer">

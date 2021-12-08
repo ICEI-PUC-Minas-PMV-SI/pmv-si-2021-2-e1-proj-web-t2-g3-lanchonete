@@ -98,7 +98,6 @@ if (localStorage.getItem('db_produtosSelecionados')) {
 
 
 
-
 //cep
   if (localStorage.getItem('db_produtosSelecionados')) {
     let produtosSelecionados = JSON.parse(
@@ -131,7 +130,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
   }
 
 
-
+  //enviar dados
 
 
 

@@ -8,6 +8,18 @@
   text-align: center;
 }
 
+#resumop{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 100%;
+  margin-left: 5%;
+  margin-top: 2%;
+  font-size: 120%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  width: 80%;
+  margin: 0 auto;
+}
+
 #descriçãop {
  color: black;
  font-family: 'Roboto', 'Oxygen', sans-serif;
@@ -16,12 +28,7 @@
  margin-top: 6%;
 }
 
-#linhap{
- color: black;
- inline-size: 51%;
- margin-left: 25%;
- margin-top: -10px;
-}
+
 
 #preçop{
  color: black;
@@ -138,9 +145,9 @@
  margin-left: 5%;
 }
 
-#valor{
+#valortotal02{
  color: green;
- margin-left:5%;
+ margin-left: 5%;
 }
 
 #AlterarPedido{
@@ -264,7 +271,7 @@ body {
   font-family: roboto;
 }
 
-.wrapper {
+.cartaogeral {
   padding: 30px;
   margin-top: 30%;
   margin-bottom: -10%;
@@ -458,37 +465,69 @@ justify-content: space-around;
     margin-top: -36%;
     padding-bottom: 44%;
   }
+  #FinalizarPagamento{
+    margin-top: -2%;
+    margin-left: 35%;
+  }
+  .PagarEntrega{
+    margin-bottom: 4%;
+  }
 }
-
 
 @media only screen and (max-width: 1070px) {
-#titulo1{
-  margin-top: 12%;
-}
-}
-
+  #titulo1{
+    margin-top: 12%;
+  }
+  #espaçamento{
+    margin-top: -25%;
+    margin-bottom: 1%;
+  }
+  #espaçamento1{
+    margin-top: -38%;
+    margin-bottom:3%;
+  }
+  .cartaogeral{
+    margin-bottom: -25%;
+  }
+  #FinalizarPagamento{
+    margin-bottom: 17%;
+    margin-top: -10%;
+    margin-left: 34%;
+  }
+  }
+  
 @media only screen and (max-width:1020px) {
-#titulo{
-  margin-top: 19%;
-}
-}
-
+  #titulo1{
+    margin-top: 13%;
+  }
+  #espaçamento{
+    margin-top: -26%;
+  }
+  #espaçamento1{
+    margin-top: -38%;
+  }
+  .cartaogeral{
+    margin-bottom: -28%;
+  }
+  }
+  
 
 @media only screen and (max-width:1000px) {
   #titulo1{
     margin-top: 13%;
   }
-  .form-group1{
-    margin-top: -26%;
+  #espaçamento{
+margin-top: -26%;
   }
   #espaçamento1 {
-    margin-top: -37%;
+    margin-top: -39%;
   }
-  .wrapper{
+  .cartaogeral{
     margin-bottom: -50%;
   }
   #FinalizarPagamento{
-    margin-left: 34%;
+    margin-left: 33%;
+    margin-top: 19%;
   }
   
 }
@@ -505,8 +544,8 @@ justify-content: space-around;
      padding-bottom: 16%;
    }
    #espaçamento1{
-     margin-top: -39%;
-     margin-bottom: -1%;
+     margin-top: -42%;
+     margin-bottom: 8%;
    }
 
 }
@@ -521,20 +560,14 @@ justify-content: space-around;
   #total{
     margin-left: 8%;
   }
-  .form-group{
-    margin-top: 1%;
-  }
-  .form-group1{
-    margin-top: -29%;
-  }
-  .form-group2{
-    margin-top: -23%;
-  }
   #AdicionarCartao{
     margin-left: 31%;
   }
-  .wrapper{
-    margin-bottom: -50%;
+  #espaçamento{
+margin-top: -30%;
+  }
+  #espaçamento1{
+    margin-top: -43%;
   }
   #FinalizarPagamento{
     margin-left: 30%;
@@ -618,7 +651,7 @@ justify-content: space-around;
      margin-left: 29%;
      margin-top: 208px;
    }
-   .wrapper{
+   .cartaogeral{
      margin-bottom: -52%;
    }
 }
@@ -721,7 +754,7 @@ justify-content: space-around;
     #espaçamento{
       margin-top: -40%;
     }
-    .wrapper{
+    .cartaogeral{
       font-size: 13px;
     }
     #espaçamento{
@@ -770,7 +803,7 @@ justify-content: space-around;
     margin-left: -20%;
   }
 
-.wrapper{
+.cartaogeral{
 font-size: 13px;
 }
 
