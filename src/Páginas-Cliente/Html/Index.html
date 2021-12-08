@@ -57,10 +57,12 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
@@ -216,7 +218,7 @@
           <br> <br>
 
           <div id="adcomentario">
-            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." size="25"/>
+            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." maxlength="60"/>
             <input type="number" id="nota" placeholder="Digite sua nota..."> 
             <button type="submit" onclick="enviarComentario()">
               <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
@@ -226,7 +228,13 @@
         
       </body>
       </main>
-      
+
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
       <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
