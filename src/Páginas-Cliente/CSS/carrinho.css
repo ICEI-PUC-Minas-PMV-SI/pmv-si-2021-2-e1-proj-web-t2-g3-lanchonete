@@ -172,6 +172,10 @@
   #titulo{
     margin-top: 137px;
   }
+  #FinalizaçaoBotao{
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
 }
 
 @media only screen and (max-width: 1294px) {

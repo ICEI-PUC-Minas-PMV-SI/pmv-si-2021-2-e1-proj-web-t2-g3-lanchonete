@@ -63,3 +63,8 @@ if (localStorage.getItem('db_produtosSelecionados')) {
     valorTotal.innerHTML = 'R$' + soma.toFixed(2)
 
   }
+
+
+
+  let opcselecionada = document.getElementsByClassName('botao')
+  
