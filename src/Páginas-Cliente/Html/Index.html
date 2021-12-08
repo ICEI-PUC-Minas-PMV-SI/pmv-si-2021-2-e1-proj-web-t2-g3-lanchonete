@@ -57,10 +57,12 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
@@ -90,13 +92,15 @@
                 <a href="#scroll-sobrenos">SOBRE NÓS</a>
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
@@ -133,8 +137,7 @@
         </div>
       </header>
 
-      <main>
-        <!--Início Home-->
+      <main class="filter-blur">
       <body>
         <div class="propaganda">
           <h1 id="titulo01">Experimente os <br> melhores lanches <br> sem sair de casa</h1>
@@ -156,7 +159,8 @@
               <button>
                 <b><a id="aqui" onclick="abrirModalLogin('modal-login-cliente')" > Clique aqui </a></b>
               </button>
-            para entrar</p>
+              para entrar
+            </p>
 
 
             <img id="smile" src="../midia/home/icons//smile.icon.png" alt="smile">
@@ -214,7 +218,7 @@
           <br> <br>
 
           <div id="adcomentario">
-            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." size="25"/>
+            <input type="text" id="cmt" volue="" placeholder="Deixe aqui seu comentário..." maxlength="60"/>
             <input type="number" id="nota" placeholder="Digite sua nota..."> 
             <button type="submit" onclick="enviarComentario()">
               <img id="enviar" src= "../midia/home/icons/send.png" alt="comentario"/>
@@ -224,7 +228,13 @@
         
       </body>
       </main>
-      
+
+      <div class="button-up">
+        <a href="#">
+          <i class="fas fa-angle-up"></i>
+        </a>
+      </div>
+
       <footer class="filter-blur">
         <div class="box-footer">
           <div id="social-media">
@@ -306,7 +316,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -390,7 +400,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -405,7 +415,7 @@
             />
           </form>
           <div class="button">
-            <a href="../Html/cadastro.html" class="button">
+            <a href="cadastro.html" class="button">
               <button type="submit" id="button-cadastro">
                 Quero me cadastrar
               </button>
@@ -454,10 +464,10 @@
 
     <!-- ============================================================================== -->
 
+    <script src= "../JS/Index.js"></script>
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../../arquivos-uso-geral/script-login-cliente.js" ></script>
     <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
-    <script src= "../JS/Index.js"></script>
   </body>
 </html>

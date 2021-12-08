@@ -49,7 +49,7 @@ function enviarComentario() {
   
   const vazia = document.createTextNode('')
   novoCmt.appendChild(vazia)
-
+  
   const element = document.getElementById('caixa-cmt')
   element.appendChild(novoCmt)
 
