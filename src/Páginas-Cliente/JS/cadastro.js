@@ -13,7 +13,11 @@ function cadastrar(event) {
   let cpf = document.getElementById('cpf').value
   let telefone = document.getElementById('telefone').value
   let nascimento = document.getElementById('nascimento').value
-  let sexo = document.querySelector('input[name=sexo]:checked').id
+  try {
+    let sexo = document.querySelector('input[name=sexo]:checked').id
+  } catch (error) {
+    console.log(error)
+  }
   let cep = document.getElementById('cep').value
   let cidade = document.getElementById('cidade').value
   let rua = document.getElementById('rua').value
