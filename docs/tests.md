@@ -1,37 +1,6 @@
-# Plano de Testes de Software
-
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
-
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
-
-## Ferramentas de Testes (Opcional)
-
-Comente sobre as ferramentas de testes utilizadas.
-
-> **Links Úteis**:
->
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> - [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
-
-# Registro de Testes de Software
-
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
-
-## Avaliação
-
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links Úteis**:
->
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-
 # Testes de Software
 
-| Página           | Requisito         | Funcionalidade                                           | Cenário de Teste                                                                                                                                                                                               |
+| Página           |Requisito Funcional| Funcionalidade                                           | Cenário de Teste                                                                                                                                                                                               |
 | ---------------- | ----------------- | -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Cardápio         | -                 | Exibir produtos disponíveis                              | Ao carregar a página, é esperado que todos os produtos de cada categoria (lanches, lanches fit, bebidas e sobremesas) sejam mostrados para o usuário.                                                          |
 | Cardápio         | Pesquisar lanches | Pesquisar lanches                                        | Ao digitar algo no campo "Pesquisar por um produto" e clicar no botão da lupa, os produtos que contém a palavra digitada serão mostrados.                                                                      |
@@ -62,3 +31,9 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 | Comandas         | -                 | Gerenciar pedidos                                        | Espera-se conseguir gerenciar a situação do pedido/comanda em tempo real alterando a sua situação, ainda não finalizada.                                                                                       |
 | Comandas         | -                 | Filtrar por data                                         | Espera-se conseguir filtrar as comandas emitidas por data, ainda não finalizada.                                                                                                                               |
 | Comandas         | -                 | Filtrar por cliente                                      | Espera-se conseguir filtrar as comandas emitidas por cliente, ainda não finalizada.                                                                                                                            |
+| Endereços        | -                 | Pesquisar CEPs e bairros                                 | Espera-se conseguir pesquisar entre bairros e ceps que são atendidos pela lanchonete|
+| Perfil-Admin     | -                 | Armazenar dados administrador                            | Espera-se que o administrador consiga armazenar e alterar todos os dados de cadastro referentes à empresa.|
+| Financeiro- Admin| Relatório de Receitas | Relatório de Receitas                                | Funcionalidade não concluída para emissão de relatório de receitas. Entretanto, é simulado um relatorio de receitas para verificação.|
+| Financeiro-Admin | Ranking de lanches| Ranquear lanches                                         | Funcionalidade não concluída para ranqueamento de lanches com dados do localStorage. Entretanto, é possível visualizar o relatório na página financeira.|
+| Cadastro-Produtos| Cadastrar produtos| Cadastro de produtos                                     | Espera-se que o administrador consiga realizar o cadastro de produtos|
+| Cadastro-Produtos|Cadastrar promoções| Cadastro de promoções                                    | Espera-se que o administrador consiga realizar o cadastro de promoções.|                   

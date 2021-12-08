@@ -149,6 +149,7 @@ table{
   text-align: center;
   text-decoration:underline;
   margin-top: 60px;
+  display: none;
 }
 #ranking{
   text-align: center;
@@ -162,4 +163,7 @@ table{
   position: relative;
   top: 10px;
 
+}
+#tabelaReceita{
+  display: none;
 }

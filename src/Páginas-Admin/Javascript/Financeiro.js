@@ -42,3 +42,10 @@
     atual2.value = 'R$ ' + soma3.toFixed(2)
 
   }}
+
+  function pesquisar(){
+    let botao = document.getElementById('tabelaReceita')
+    botao.style.display = 'flex'
+    botao.style.justifyContent = 'center'
+    botao.style.border = 'none'
+  }

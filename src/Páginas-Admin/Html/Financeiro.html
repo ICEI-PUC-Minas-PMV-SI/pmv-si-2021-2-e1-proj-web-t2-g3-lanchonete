@@ -26,12 +26,9 @@
   <nav id="menuLateral">
     <button onclick="fecharMenu()" id="btn-fechar"><i class="fas fa-times"></i></button><br><br>
     <div id="div_imagem"><img id="logoPrincipal" src="../../template-admin/midia/logo-lanchonete.png"></div>
-    <a href="Perfil-admin.html">
+    <a href="../../Páginas-Admin/Html/Perfil-admin.html">
       <i class="far fa-user-circle"></i>
       Perfil</a>
-    <a href="Financeiro.html">
-      <i class="fas fa-coins"></i>
-      Financeiro</a>
     <a href="../../Páginas-Admin/Html/Financeiro.html">
       <i class="fas fa-coins"></i>
       Financeiro</a>
@@ -80,10 +77,10 @@
         <li id="inicio-fim2">Final</li>
       </ul>
       <div id="pesquisar">
-        <input type="submit" for="datas" id="button1" value="PESQUISAR"></input>
+        <button onclick="pesquisar()" for="datas" id="button1" >PESQUISAR</button>
       </div>
       <div>
-        <table>
+        <table id="tabelaReceita">
           <tr>
             <th>DATA</th>
             <th>VALOR</th>
