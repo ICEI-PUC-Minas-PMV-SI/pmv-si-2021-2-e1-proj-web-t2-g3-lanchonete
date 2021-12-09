@@ -17,19 +17,19 @@
 
   </head>
   <body>
-    <div class="container">
-      <div class="caixa">
-        <div class="header">
+    <div id="container">
+      <div id="caixa">
+        <div id="header">
           <img
             src="../../Páginas-Cliente/midia/pagamento/imagens/cartao novo.png"
             alt="ícone-cartao"
             id="imgcartao"
           />
-          <h1>Adicionar cartão</h1>
-          <h2>Digite as informações do cartão que você  deseja usar para pagamento:</h2>
+          <h1 id="addc">Adicionar cartão</h1>
+          <h2 id="addc1">Digite as informações do cartão que você  deseja usar para pagamento:</h2>
         </div>
         
-        <div class="inputs">
+        <div id="inputs">
 
           <div id="numero">
             <input type="number" placeholder="Número do cartão" required minlength="10" />
@@ -53,14 +53,13 @@
 
         </div>
 
-        <div class="button">
+        <div id="button">
 
-         <button type="button" onclick="cadastroCartao()">Adicionar</button>
+         <button id="adcbutton" type="button" onclick="cadastroCartao()">Adicionar</button>
 
          </div>
-         <a href="../Html/cartoes.html"> <p>Ver cartões salvos</p> </a>
+         <a href="../Html/cartoes.html" id="a1"> <p id="a2">Ver cartões salvos</p> </a>
          <a href="../Html/pagamento.html" id="x-icon"> <img src="../../Páginas-Cliente/midia/pagamento/imagens/x-icon.png" alt="Ícone X" /> </a>
-
       </div>
     </div>
     <script src="../JS/addcartao.js"></script>

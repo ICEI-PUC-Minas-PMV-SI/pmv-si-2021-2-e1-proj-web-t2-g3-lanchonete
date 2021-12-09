@@ -7,11 +7,11 @@ function cadastroCartao(){
 
   var dadoscartao = JSON.parse(localStorage.getItem("DadosCartao"))
 
-if(dadoscartao == null) {
+  if(dadoscartao == null) {
   localStorage.setItem("DadosCartao", "[]");
   dadoscartao = [];
 }
- var auxRegistro = {
+  var auxRegistro = {
    numero: numero.value,
    validade: validade.value,
    cvc: cvc.value,
@@ -21,4 +21,14 @@ if(dadoscartao == null) {
 
   dadoscartao.push(auxRegistro);
   localStorage.setItem("dadoscartao", JSON.stringify(dadoscartao));
+}
+
+
+
+
+
+function acao(){
+  let container1 = document.getElementById('container')
+
+  container1.style.display = 'block'
 }

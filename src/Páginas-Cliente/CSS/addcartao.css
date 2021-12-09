@@ -5,19 +5,22 @@
         box-sizing: border-box;
       }
       
-      a {
+      #a1 {
         text-decoration: none;
         color: #ffffff;
       }
       
-      .container {
+
+
+
+      #container {
         height: 100vh;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
       }
       
-      .header {
+      #header {
         text-align: center;
         margin-bottom: 15px;
       }
@@ -27,7 +30,7 @@
         margin-bottom: 10px;
       }
       
-      h1 {
+      #addc {
         color: #ffffff;
         font: normal bold 23px 'Nunito', sans-serif;
         margin: 0 1px;
@@ -35,17 +38,17 @@
         margin-bottom: 2%;
       }
 
-       h2{
+       #addc1{
            color:#ffffff;
            font: normal bold 23px 'Nunito', sans-serif;
            font-size: 17px;
 
        }
       
-      .caixa {
+      #caixa {
         background-color: #bc1823;
-        width: 1550px;
-        height: 650px;
+        width: 750px;
+        height: 600px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -56,19 +59,19 @@
         margin: 0;
       }
       
-      .inputs {
+      #inputs {
         width: 100%;
       }
       
       #numero,
       #validade,
-      .button {
+      #button {
         width: 100%;
         display: flex;
         justify-content: center;
       }
 
-       #cvc, #nomecartao, #cpftitular, #abcd .button {
+       #cvc, #nomecartao, #cpftitular, #abcd #adcbutton {
            width: 100%;
            display: flex;
            justify-content: center;
@@ -85,7 +88,7 @@
         outline: none;
       }
       
-      button {
+      #adcbutton {
         background-color: #ff9a00;
         color: #ffffff;
         width: 90%;
@@ -96,13 +99,13 @@
         margin-bottom: 10px;
       }
       
-      p {
+      #a2 {
         color: rgba(238, 238, 238, 0.9);
         font: normal normal 14px 'Roboto', sans-serif;
         text-align: center;
       }
       
-      .button a {
+      .button #a1 {
         width: 100%;
         display: flex;
         justify-content: center;
