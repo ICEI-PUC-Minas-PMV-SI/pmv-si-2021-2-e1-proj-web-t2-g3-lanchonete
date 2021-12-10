@@ -14,10 +14,12 @@
 
 
       #container {
-        height: 100vh;
+        height: 90vh;
         display: none;
         align-items: center;
         justify-content: center;
+        margin-left: 22%;
+        z-index: 10;
       }
       
       #header {
@@ -47,20 +49,21 @@
       
       #caixa {
         background-color: #bc1823;
-        width: 750px;
-        height: 600px;
+        width: 700px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 8px;
         border-radius: 10px;
         position: relative;
         margin: 0;
       }
       
       #inputs {
-        width: 100%;
+        width: 90%;
+
       }
       
       #numero,
@@ -77,10 +80,12 @@
            justify-content: center;
        }
       
-      input {
+      
+
+      #container input{
         background-color: #efefef;
         width: 90%;
-        height: 48px;
+        height: 38px;
         font: normal normal 16px 'Roboto', sans-serif;
         margin: 0 20px 20px 20px;
         padding: 5px 15px;
@@ -105,7 +110,7 @@
         text-align: center;
       }
       
-      .button #a1 {
+      #button #a1 {
         width: 100%;
         display: flex;
         justify-content: center;
