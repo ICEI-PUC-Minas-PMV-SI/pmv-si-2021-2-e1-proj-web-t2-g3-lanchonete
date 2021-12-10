@@ -1,3 +1,46 @@
+#pesquisa {
+  display: flex;
+}
+
+#data {
+  background: white;
+  width: 160px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-color:#bc1823;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 4%;
+  margin-left: 2px;
+}
+
+#data input {
+  background-color:white;
+  border: none;
+  outline: none;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#data button {
+  background-color: white;
+  border: none;
+  border-style: none;
+}
+
+#data button:hover {
+  background-color: white;
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+#data img {
+  width: 25px;
+}
+
 #pesquisa-cliente {
   background: white;
   width: 300px;
