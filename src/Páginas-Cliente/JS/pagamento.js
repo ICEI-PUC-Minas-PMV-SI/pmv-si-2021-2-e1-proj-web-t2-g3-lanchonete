@@ -24,13 +24,7 @@ if (localStorage.getItem('db_produtosSelecionados')) {
   
     let valorTotal = document.getElementById('valortotal02')
     valorTotal.innerHTML = 'R$' + soma.toFixed(2)
-
   }
-
-
-  
-  
-
 
 
 
@@ -65,5 +59,10 @@ if (localStorage.getItem('db_produtosSelecionados')) {
   }
 
 
+
+
+function clique(){
+  alert('Seu pedido foi realizado com sucesso, agradecemos a preferência!')
+}
 
   

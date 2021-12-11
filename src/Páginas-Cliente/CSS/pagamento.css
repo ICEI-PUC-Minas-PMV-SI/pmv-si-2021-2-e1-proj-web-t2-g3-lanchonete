@@ -416,6 +416,12 @@ justify-content: space-around;
 }
 
 
+
+
+
+
+/*Responsividade*/
+
 @media only screen and (max-width:1200px) {
 #titulo1{
   margin-top: 11%;

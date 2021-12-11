@@ -5,19 +5,24 @@
         box-sizing: border-box;
       }
       
-      a {
+      #a1 {
         text-decoration: none;
         color: #ffffff;
       }
       
-      .container {
-        height: 100vh;
-        display: flex;
+
+
+
+      #container {
+        height: 90vh;
+        display: none;
         align-items: center;
         justify-content: center;
+        margin-left: 22%;
+        z-index: 10;
       }
       
-      .header {
+      #header {
         text-align: center;
         margin-bottom: 15px;
       }
@@ -27,7 +32,7 @@
         margin-bottom: 10px;
       }
       
-      h1 {
+      #addc {
         color: #ffffff;
         font: normal bold 23px 'Nunito', sans-serif;
         margin: 0 1px;
@@ -35,49 +40,52 @@
         margin-bottom: 2%;
       }
 
-       h2{
+       #addc1{
            color:#ffffff;
            font: normal bold 23px 'Nunito', sans-serif;
            font-size: 17px;
 
        }
       
-      .caixa {
+      #caixa {
         background-color: #bc1823;
-        width: 1550px;
-        height: 650px;
+        width: 700px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        gap: 8px;
         border-radius: 10px;
         position: relative;
         margin: 0;
       }
       
-      .inputs {
-        width: 100%;
+      #inputs {
+        width: 90%;
+
       }
       
       #numero,
       #validade,
-      .button {
+      #button {
         width: 100%;
         display: flex;
         justify-content: center;
       }
 
-       #cvc, #nomecartao, #cpftitular, #abcd .button {
+       #cvc, #nomecartao, #cpftitular, #abcd #adcbutton {
            width: 100%;
            display: flex;
            justify-content: center;
        }
       
-      input {
+      
+
+      #container input{
         background-color: #efefef;
         width: 90%;
-        height: 48px;
+        height: 38px;
         font: normal normal 16px 'Roboto', sans-serif;
         margin: 0 20px 20px 20px;
         padding: 5px 15px;
@@ -85,7 +93,7 @@
         outline: none;
       }
       
-      button {
+      #adcbutton {
         background-color: #ff9a00;
         color: #ffffff;
         width: 90%;
@@ -96,13 +104,13 @@
         margin-bottom: 10px;
       }
       
-      p {
+      #a2 {
         color: rgba(238, 238, 238, 0.9);
         font: normal normal 14px 'Roboto', sans-serif;
         text-align: center;
       }
       
-      .button a {
+      #button #a1 {
         width: 100%;
         display: flex;
         justify-content: center;
