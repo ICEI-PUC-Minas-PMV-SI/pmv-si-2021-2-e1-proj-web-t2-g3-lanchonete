@@ -82,7 +82,7 @@ function trocarLogin() {
 
   trocarLogin.innerHTML = `
     <li id="meu-perfil">
-      <a href="meusdados/meusdados.html">
+      <a href="meusdados.html">
         <i class="far fa-user"></i>
         <span>MEU PERFIL</span>
       </a>
