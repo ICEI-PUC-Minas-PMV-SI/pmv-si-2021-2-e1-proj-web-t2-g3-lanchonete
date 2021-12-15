@@ -62,7 +62,7 @@ function logout() {
     confirm('Deseja sair?')
     if (confirm = true) {
         
-        localStorage.removeItem(JSON.stringify(usuario))
+        localStorage.removeItem('usuarioCorrente')
         window.location.href = "../../Páginas-Cliente/Html/Index.html"
     }
 }
