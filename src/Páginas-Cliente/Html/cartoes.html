@@ -7,8 +7,9 @@
     <title>Página do Cliente</title>
 
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
-    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css " />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="stylesheet" href="../CSS/cartoes.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,20 +47,22 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
             </ul>
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="../Html/carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -84,20 +87,23 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="../Html/carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -133,60 +139,60 @@
       <main class="filter-blur" id= "main-br">
 
         
-          <div class="aside-menu">
-            <ul>
-              <li> Olá, <p id="nomeUsuario">  </p></li>
-              <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
-              <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
-              <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
-              <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
-              <li onclick="logout();">SAIR</li>
-        
-            </ul>
-          </div>
-        
-           <div class="content-principal-br">
-        
-            <div class="cs">
-        
-              <h2> CARTÕES SALVOS </h2>
-        
-            </div>
-                          
-              <div class="mcartoes">
-          
-                   <table class="tablecartoes">
-                  
-                    <thread> 
-                      <th class="thc">Número do cartão</th>
-                      <th class="thc"> Validade </th>
-                      <th class="thc">Nome no cartão</th>
-                      <th class="thc">CPF</th>
-                      <th class="thc">Ação</th>
-                    </thread>
-          
-                    <tbody>
-                      <tr> 
-                        <td class="tdc"> 111122224444333</td>
-                        <td class="tdc"> 02/2021 </td>
-                        <td class="tdc"> Ana Beatriz Silva </td>
-                        <td class="tdc"> 10613902596 </td>
-                        <td class="tdc"><button class="excluircartao">EXCLUIR</button></td>
-                      </tr>
-                                        
-                    </tbody>
-                    </table>
-                          
-                         
-               </div>
-              
-               <div class="cbotoes"> 
-                <button  class="addcartao" ><a href="../Html/adicionarcartao.html">ADICIONAR CARTÃO</button></a>
-              </div>
+        <div class="aside-menu">
+          <ul>
+            <li> Olá, <p id="nomeUsuario">  </p></li>
+            <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
+            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</a></li>
+            <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
+            <li><a href="../Html/cartoes.html">CARTÕES SALVOS</li></a> 
+            <li onclick="logout();">SAIR</li>
+      
+          </ul>
         </div>
-
-      </main>
-
+      
+         <div class="content-principal-br">
+      
+          <div class="cs">
+      
+            <h2> CARTÕES SALVOS </h2>
+      
+          </div>
+                        
+            <div class="mcartoes">
+        
+                 <table class="tablecartoes">
+                
+                  <thread> 
+                    <th class="thc">Número do cartão</th>
+                    <th class="thc"> Validade </th>
+                    <th class="thc">Nome no cartão</th>
+                    <th class="thc">CPF</th>
+                    <th class="thc">Ação</th>
+                  </thread>
+        
+                  <tbody>
+                    <tr> 
+                      <td class="tdc"> 111122224444333</td>
+                      <td class="tdc"> 02/2021 </td>
+                      <td class="tdc"> Ana Beatriz Silva </td>
+                      <td class="tdc"> 10613902596 </td>
+                      <td class="tdc"><button class="excluircartao">EXCLUIR</button></td>
+                    </tr>
+                                      
+                  </tbody>
+                  </table>
+                        
+                       
+             </div>
+            
+             <div class="cbotoes"> 
+              <button  class="addcartao" ><a href="../Html/adicionarcartao.html">ADICIONAR CARTÃO</button></a>
+            </div>
+      </div>
+    
+    </main>
+       
       <div class="button-up">
         <a href="#">
           <i class="fas fa-angle-up"></i>
@@ -236,7 +242,7 @@
             </div>
           </div>
           <img
-            src="../midia/login/x-icon.png"
+            src="midia/x-icon.png"
             alt="Ícone X"
             id="x-icon"
             onclick="fecharModalLogin('modal-acessar-como')"
@@ -275,7 +281,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -283,7 +289,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
@@ -320,7 +326,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -359,7 +365,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -367,7 +373,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
@@ -411,7 +417,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -422,10 +428,11 @@
     </section>
 
     <!-- ============================================================================== -->
-
-
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../JS/cartao.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+
   </body>
 </html>

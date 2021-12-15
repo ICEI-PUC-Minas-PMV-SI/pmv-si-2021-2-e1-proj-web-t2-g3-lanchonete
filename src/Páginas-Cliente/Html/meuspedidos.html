@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página do Cliente</title>
 
-  
-    <link rel="stylesheet" href="../CSS/meuspedidos.css" />
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
+    <link rel="stylesheet" href="../CSS/meuspedidos.css" />
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,19 +33,19 @@
           <nav id="menu-desktop">
             <ul>
               <li>
-                <a href="../Páginas-Cliente/Html/Index.html">
+                <a href="../Html/Index.html">
                   <i class="fas fa-home"></i>
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
+                <a href="../Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
+                <a href="../Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
                 >
               </li>
@@ -53,14 +53,16 @@
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
-                <a href="../Páginas-Cliente/Html/carrinho.html">
+                <a href="../Html/carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -72,33 +74,36 @@
             </a>
             <ul>
               <li>
-                <a href="../Páginas-Cliente/Html/Index.html">
+                <a href="../Html/Index.html">
                   <span>HOME</span>
                 </a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/cardapio.html">CARDÁPIO</a>
+                <a href="../Html/cardapio.html">CARDÁPIO</a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/fidelidade.html">FIDELIDADE</a>
+                <a href="../Html/fidelidade.html">FIDELIDADE</a>
               </li>
               <li>
-                <a href="../Páginas-Cliente/Html/Index.html#scroll-sobrenos"
+                <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
                 >
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
-                  <a href="../Páginas-Cliente/Html/carrinho.html">
+                  <a href="../Html/carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -108,7 +113,7 @@
                   <span>ABERTO 18:00 às 02:00</span>
                 </div>
                 <div id="enderecos">
-                  <a href="../Páginas-Cliente/Html/enderecos.html">
+                  <a href="../Html/enderecos.html">
                     <i class="fas fa-map-marker-alt"></i>
                     <span>ENDEREÇOS DE ENTREGA</span>
                   </a>
@@ -123,7 +128,7 @@
             <span>ABERTO 18:00 às 02:00</span>
           </div>
           <div id="enderecos">
-            <a href="../Páginas-Cliente/Html/enderecos.html">
+            <a href="../Html/enderecos.html">
               <i class="fas fa-map-marker-alt"></i>
               <span>ENDEREÇOS DE ENTREGA</span>
             </a>
@@ -175,10 +180,10 @@
           </table>
           
          </div>
-
-
+    
+    
       </main>
-
+      
       <div class="button-up">
         <a href="#">
           <i class="fas fa-angle-up"></i>
@@ -267,7 +272,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -351,7 +356,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -366,7 +371,7 @@
             />
           </form>
           <div class="button">
-            <a href="../Páginas-Cliente/Html/cadastro.html" class="button">
+            <a href="../Html/cadastro.html" class="button">
               <button type="submit" id="button-cadastro">
                 Quero me cadastrar
               </button>
@@ -414,10 +419,11 @@
     </section>
 
     <!-- ============================================================================== -->
-
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../JS/meuspedidos.js"></script>
-  
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+
   </body>
 </html>

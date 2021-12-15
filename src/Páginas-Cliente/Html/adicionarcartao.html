@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="stylesheet" href="../CSS/adicionarcartao.css" />
-    <link rel="stylesheet" href="../arquivos-uso-geral/style-modal.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -47,20 +47,22 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
             </ul>
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="../Html/carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -85,20 +87,23 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="../Html/carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -189,8 +194,6 @@
       </form>
       </div>
 
-
-
       </main>
 
       <div class="button-up">
@@ -242,7 +245,7 @@
             </div>
           </div>
           <img
-            src="../midia/login/x-icon.png"
+            src="midia/x-icon.png"
             alt="Ícone X"
             id="x-icon"
             onclick="fecharModalLogin('modal-acessar-como')"
@@ -281,7 +284,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -289,7 +292,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
@@ -326,7 +329,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -365,7 +368,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -373,7 +376,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
@@ -417,7 +420,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -428,10 +431,11 @@
     </section>
 
     <!-- ============================================================================== -->
-
-
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../JS/adicionarcartao.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+
   </body>
 </html>

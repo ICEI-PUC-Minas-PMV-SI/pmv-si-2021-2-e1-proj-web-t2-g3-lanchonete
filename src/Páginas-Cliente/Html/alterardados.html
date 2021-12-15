@@ -7,6 +7,7 @@
     <title>Página do Cliente</title>
 
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-header-footer.css" />
+    <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="stylesheet" href="../CSS/alterardados.css" />
     <link rel="stylesheet" href="../../arquivos-uso-geral/style-modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,20 +47,22 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
             </ul>
           </nav>
           <div id="login-carrinho">
             <ul>
-              <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
-                <i class="fas fa-sign-in-alt"></i>
-                <span>LOGIN</span>
-              </li>
+              <span id="trocar-login">
+                <li id="login" onclick="abrirModalLogin('modal-acessar-como')">
+                  <i class="fas fa-sign-in-alt"></i>
+                  <span>LOGIN</span>
+                </li>
+              </span>
               <li id="carrinho">
                 <a href="../Html/carrinho.html">
                   <i class="fas fa-shopping-cart"></i>
-                  <span>CARRINHO</span>
+                  <span>CARRINHO</span><span id="numero-carrinho"></span>
                 </a>
               </li>
             </ul>
@@ -84,20 +87,23 @@
               <li>
                 <a href="../Html/Index.html#scroll-sobrenos"
                   >SOBRE NÓS</a
-                > 
+                >
               </li>
               <div id="login-carrinho-mobile">
-                <li
-                  id="login-mobile"
-                  onclick="abrirModalLogin('modal-acessar-como')"
-                >
-                  <i class="fas fa-sign-in-alt"></i>
-                  <span>LOGIN</span>
-                </li>
+                <span id="trocar-login-mobile">
+                  <li
+                    id="login-mobile"
+                    onclick="abrirModalLogin('modal-acessar-como')"
+                  >
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>LOGIN</span>
+                  </li>
+                </span>
                 <li id="carrinho-mobile">
                   <a href="../Html/carrinho.html">
                     <i class="fas fa-shopping-cart"></i>
-                    <span>CARRINHO</span>
+                    <span>CARRINHO</span
+                    ><span id="numero-carrinho-mobile"></span>
                   </a>
                 </li>
               </div>
@@ -130,118 +136,121 @@
         </div>
       </header>
 
-      <main class="filter-blur" id="main-br">
+     
+        <main class="filter-blur" id="main-br">
 
-        <div class="aside-menu">
-          <ul>
-            <li> Olá, <p id="nomeUsuario">  </p></li>
-            <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
-            <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></a>
-            <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
-            <li> <a href="../Html/cartoes.html">CARTÕES SALVOS</li></a>
-            <li onclick="logout();">SAIR</li>
-      
-          </ul>
-        </div>
-      
-         <div class="content-principal-br">
-      
-          <div class="alterardados2">
-            <h2> ALTERAR DADOS</h2>
+          <div class="aside-menu">
+            <ul>
+              <li> Olá, <p id="nomeUsuario">  </p></li>
+              <li> <a href="../Html/meuspedidos.html">PEDIDOS</li></a>
+              <li> <a href="../Html/minhafidelidade.html">PROGRAMAS DE FIDELIDADE</li></a>
+              <li> <a href="../Html/meusdados.html">MEUS DADOS</li> </a>
+              <li> <a href="../Html/cartoes.html">CARTÕES SALVOS</li></a>
+              <li onclick="logout();">SAIR</li>
+        
+            </ul>
           </div>
-      
-          <form class="formdados2">
-      
-            <div class=" md21">
-              <h3>Meus dados</h3>
-              <label>Nome:</label>
-              <input type="text" name="nome" id="nome" placeholder="nome" value ="" required>
+        
+           <div class="content-principal-br">
+        
+            <div class="alterardados2">
+              <h2> ALTERAR DADOS</h2>
             </div>
-      
-            <div class="dtn1">
-              <label for="nascimento">Data de nascimento:</label>
-              <input type="number" id="nascimento" placeholder="nascimento" value ="" required>
-      
-            </div>
-             
-            <div class="genero1">
-              <label for="sexo">Sexo:</label>
-              <input type="text" id="sexo" name="sexo" value="" >
-  
-            </div>
-            <div class="cpf1">
-              <label for="cpf">CPF:</label>
-              <input type="number"  id="cpf" placeholder="cpf" value ="" required>
-      
-            </div>
-            <div class="rua21">
-              <h3>Endereço/Contato</h3>
-              <label for="rua">Rua:</label>
-              <input type="text" id="rua" placeholder="rua" value="" required>
-      
-            </div>
-            <div class="num1">
-              <label for="numero">Número:</label>
-              <input type="number"  id="numero" placeholder="numero" value ="" required>
-      
-            </div>
-            <div class="bairro1">
-              <label for="bairro">Bairro:</label>
-              <input type="text" id="bairro" placeholder="bairro" value ="" required>
-      
-            </div>
-            <div>
-              <label for="complemento1">Complemento:</label>
-              <input type="text"  id="complemento" placeholder="complemento" value ="" required>
-      
-            </div>
-            <div class="referencia1">
-              <label for="referencia">Ponto de referência:</label>
-              <input type="text" id="referencia" placeholder="referencia" value ="" required>
-      
-            </div>
-            <div class="cep1">
-              <label for="cidade">CEP:</label>
-              <input type="number" id="cep" placeholder="cep" value ="" required>
-      
-            </div>
-            <div class="cidade1">
-              <label for="cidade">Cidade:</label>
-              <input type="text" id="cidade" placeholder="cidade" value ="" required>
-      
-            </div>
-            <div>
-              <label for="telefone1">Telefone:</label>
-              <input type="number"  id="telefone" placeholder="telefone" value ="" required>
-      
-            </div>
-            <div class="email12">
-              <h3>Acesso/Login</h3>
-              <label label for="email1">E-mail:</label>
-              <input type="email"  id="email" placeholder="email" value ="" required>
-      
-            </div>
-            <div class="email21">
-              <label for="email">Confirmar e-mail:</label>
-              <input type="email" id="confirmarEmail" placeholder="confirmarEmail" value ="" required>
-      
-            </div>
-            <div class="senha1">
-              <label for="senha">Senha:</label>
-              <input type="number" id="senha" placeholder="senha" value ="" required="">
-      
-            </div>
-            <div class="btnalterar2">
-              <button id="mdalterar2" onclick="alterarUsuario();" type="submit"> ALTERAR</button>
-            </div>
-      
-            <div class="btncancelar2">
-              <button id="mdcancelar2"><a href="../Html/meusdados.html">CANCELAR</button></a>
-            </div>
-      
-          </form>
-        </div>
+        
+            <form class="formdados2">
+        
+              <div class=" md21">
+                <h3>Meus dados</h3>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="nome" value ="" required>
+              </div>
+        
+              <div class="dtn1">
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="number" id="nascimento" placeholder="nascimento" value ="" required>
+        
+              </div>
+               
+              <div class="genero1">
+                <label for="sexo">Sexo:</label>
+                <input type="text" id="sexo" name="sexo" value="" >
+    
+              </div>
+              <div class="cpf1">
+                <label for="cpf">CPF:</label>
+                <input type="number"  id="cpf" placeholder="cpf" value ="" required>
+        
+              </div>
+              <div class="rua21">
+                <h3>Endereço/Contato</h3>
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" placeholder="rua" value="" required>
+        
+              </div>
+              <div class="num1">
+                <label for="numero">Número:</label>
+                <input type="number"  id="numero" placeholder="numero" value ="" required>
+        
+              </div>
+              <div class="bairro1">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" placeholder="bairro" value ="" required>
+        
+              </div>
+              <div>
+                <label for="complemento1">Complemento:</label>
+                <input type="text"  id="complemento" placeholder="complemento" value ="" required>
+        
+              </div>
+              <div class="referencia1">
+                <label for="referencia">Ponto de referência:</label>
+                <input type="text" id="referencia" placeholder="referencia" value ="" required>
+        
+              </div>
+              <div class="cep1">
+                <label for="cidade">CEP:</label>
+                <input type="number" id="cep" placeholder="cep" value ="" required>
+        
+              </div>
+              <div class="cidade1">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" placeholder="cidade" value ="" required>
+        
+              </div>
+              <div>
+                <label for="telefone1">Telefone:</label>
+                <input type="number"  id="telefone" placeholder="telefone" value ="" required>
+        
+              </div>
+              <div class="email12">
+                <h3>Acesso/Login</h3>
+                <label label for="email1">E-mail:</label>
+                <input type="email"  id="email" placeholder="email" value ="" required>
+        
+              </div>
+              <div class="email21">
+                <label for="email">Confirmar e-mail:</label>
+                <input type="email" id="confirmarEmail" placeholder="confirmarEmail" value ="" required>
+        
+              </div>
+              <div class="senha1">
+                <label for="senha">Senha:</label>
+                <input type="number" id="senha" placeholder="senha" value ="" required="">
+        
+              </div>
+              <div class="btnalterar2">
+                <button id="mdalterar2" onclick="alterarUsuario();" type="submit"> ALTERAR</button>
+              </div>
+        
+              <div class="btncancelar2">
+                <button id="mdcancelar2"><a href="../Html/meusdados.html">CANCELAR</button></a>
+              </div>
+        
+            </form>
+          </div>
+
       </main>
+
       <div class="button-up">
         <a href="#">
           <i class="fas fa-angle-up"></i>
@@ -291,7 +300,7 @@
             </div>
           </div>
           <img
-            src="../midia/login/x-icon.png"
+            src="midia/x-icon.png"
             alt="Ícone X"
             id="x-icon"
             onclick="fecharModalLogin('modal-acessar-como')"
@@ -330,7 +339,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-adm">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -338,7 +347,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-adm', 'modal-acessar-como')"
@@ -375,7 +384,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-adm', 'modal-login-adm')"
@@ -414,7 +423,7 @@
               </div>
             </div>
             <div class="button">
-              <button type="submit">ENTRAR</button>
+              <button type="submit" id="btn-entrar-cliente">ENTRAR</button>
             </div>
             <p
               onclick="abrirModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -422,7 +431,7 @@
               Esqueci a minha senha
             </p>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-login-cliente', 'modal-acessar-como')"
@@ -466,7 +475,7 @@
               <button type="submit">ENVIAR</button>
             </div>
             <img
-              src="../midia/login/x-icon.png"
+              src="midia/x-icon.png"
               alt="Ícone X"
               id="x-icon"
               onclick="fecharModal('modal-recuperar-senha-cliente', 'modal-login-cliente')"
@@ -477,10 +486,11 @@
     </section>
 
     <!-- ============================================================================== -->
-
-
     <script src="../../arquivos-uso-geral/script-menu-mobile.js"></script>
     <script src="../../arquivos-uso-geral/script-modal.js"></script>
     <script src="../JS/alterardados.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-cliente.js"></script>
+    <script src="../../arquivos-uso-geral/script-login-adm.js"></script>
+
   </body>
 </html>
