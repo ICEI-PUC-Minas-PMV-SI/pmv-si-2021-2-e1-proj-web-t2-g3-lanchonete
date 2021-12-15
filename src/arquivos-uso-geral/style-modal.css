@@ -107,6 +107,10 @@
   justify-content: center;
 }
 
+.modal #email {
+  transform: none;
+}
+
 /* =========== ADICIONAR ANIMAÇÃO AO ABRIR MODAL ============= */
 
 @keyframes modal {
