@@ -323,6 +323,15 @@
       "imagem": "../midia/cardapio/images/promocao/coxinha-fit.png",
       "precoAntigo": "7.90",
       "precoNovo": "5.90"
+    },
+    {
+      "categoria": "Bebidas",
+      "id": "160",
+      "nome": "Refrigerante teste",
+      "descricao": "teste",
+      "imagem": "../midia/cardapio/images/bebidas/refrigerante.png",
+      "preco": "8.70",
+      "quantidade": "1"
     }
   ]
 }

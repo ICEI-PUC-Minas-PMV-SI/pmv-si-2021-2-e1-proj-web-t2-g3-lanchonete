@@ -63,6 +63,8 @@ function logout() {
     if (confirm = true) {
         
         localStorage.removeItem('usuarioCorrente')
+        localStorage.removeItem('db_usuarios')
+        localStorage.removeItem('db_trocarLogin')
         window.location.href = "../../Páginas-Cliente/Html/Index.html"
     }
 }
